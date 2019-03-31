@@ -1,0 +1,49 @@
+//
+// user.scss
+// Use this to write your custom SCSS
+//
+.navbar-brand-img, .navbar-brand > img{
+  max-height: 36px;
+}
+.bg-soft-red{
+  background-color: rgba(243,163,154,1);
+}
+.bg-soft-ocre{
+  background-color: rgba(252,232,179,1);
+}
+.chart-container{
+  position: relative;
+  margin: auto;
+  height: 128px
+}
+.bg-green-light{
+  background-color: #47E6B1
+}
+.bg-green{
+  background-color: #22C88A
+}
+.bg-orange-light{
+  background-color: #FFE1C5
+}
+.bg-red-light{
+  background-color: #FDC2CC
+}
+.bg-pink-light{
+  background-color: #f8bbd0
+}
+.bg-blue-light{
+  background-color: #d5e5fa;
+}
+.badge-xl{
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 16px;
+}
+.badge-soft-success.badge-xl{
+  background: #D2FFF2;
+  border: 1px solid #A2F5DD;
+}
+.badge-soft-secondary.badge-xl{
+  background: none;
+  border: 1px solid #E3EBF6;
+}
