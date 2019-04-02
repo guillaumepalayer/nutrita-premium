@@ -6,938 +6,914 @@
     })
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light border-0 px-3 py-0 mb-2 mb-md-5 fixed-top" id="topnav">
-      <div class="container">
-        <div class="row justify-content-between align-items-center vw-100">
-          <div class="col-auto">
-            <a class="btn btn-link text-dark pl-0" data-dismiss="modal" aria-label="Close">
-              <div class="row align-items-center no-gutters">
-                <div class="col-auto">
-                  <h4 class="modal-title">Journal</h4>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-auto">
-            <div class="row align-items-center no-gutters">
-              <div class="col-auto">
-                <a class="px-3" data-toggle="modal" data-target="#NewWeight">
-                  <i class="fe fe-search text-dark"></i></span>
-                </a>
-              </div>
-              <div class="col-auto">
-                <div class="dropdown">
-                  <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fe fe-more-vertical"></i>
-                  </a>
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a href="#!" class="dropdown-item">
-                      Help
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div> <!-- / .container -->
-    </nav>
-
+    @@include("partials/topnav-connected.html")
 
     <!-- MAIN CONTENT
     ================================================== -->
-    <div class="main-content mt-5">
-      <ul class="nav nav-pills nav-overflow pl-3 border-0 pt-3 mb-3">
-        <li class="nav-item">
-          <a class="badge badge-xl badge-soft-success mr-3" href="#">What I ate</a>
-        </li>
-        <li class="nav-item">
-          <a class="badge badge-xl badge-soft-secondary mr-3" href="#">What Ibought</a>
-        </li>
-        <li class="nav-item">
-          <a class="badge badge-xl badge-soft-secondary mr-3" href="#">Favorites</a>
-        </li>
-      </ul>
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col">
-            <div class="card">
-              <div class="card-body p-0">
-                <ul class="list-group list-group-lg list-group-flush list my--4">
-                  <a data-toggle="modal" href="#modalFood">
-                    <li class="list-group-item px-0 py-4 border-0 pl-3">
-                      <div class="row align-items-start">
-                        <div class="col-auto pl-3">
-                          <span class="avatar avatar-lg">
-                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
-                          </span>
-                        </div>
-                        <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
-                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Keto score
-                                    <span class="badge badge-soft-success">Good</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Nutrient Density
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Insulin Index
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
+    <div class="container mb-6">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8 mt-6 mt-lg-7">
+          <!-- Title -->
+          <h1 class="header-title pt-3 mb-3">
+            Journal
+          </h1>
+          <ul class="nav nav-pills nav-overflow border-0 pt-3 mb-3">
+            <li class="nav-item">
+              <a class="badge badge-xl badge-soft-success mr-3" href="#">What I ate</a>
+            </li>
+            <li class="nav-item">
+              <a class="badge badge-xl badge-soft-secondary mr-3" href="#">What Ibought</a>
+            </li>
+            <li class="nav-item">
+              <a class="badge badge-xl badge-soft-secondary mr-3" href="#">Favorites</a>
+            </li>
+          </ul>
+          <div class="card">
+            <div class="card-body p-0">
+              <ul class="list-group list-group-lg list-group-flush list my--4">
+                <h5 class="pt-3 px-3 mt-1 mb-0 font-weight-normal">Today</h5>
+                <a data-toggle="modal" href="#modalFood">
+                  <li class="list-group-item px-0 py-4 pl-3">
+                    <div class="row align-items-start">
+                      <div class="col-auto pl-3">
+                        <span class="avatar avatar-lg">
+                          <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                        </span>
                       </div>
-                    </li>
-                  </a>
-                  <a data-toggle="modal" href="#modalFood">
-                    <li class="list-group-item px-0 py-4 border-0 pl-3">
-                      <div class="row align-items-start">
-                        <div class="col-auto pl-3">
-                          <span class="avatar avatar-lg">
-                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
-                          </span>
-                        </div>
-                        <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
-                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Keto score
-                                    <span class="badge badge-soft-success">Good</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
+                      <div class="col-8 col-md-10 pl-1 pr-0">
+                        <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                        <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                        <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Keto score
+                                  <span class="badge badge-soft-success">Good</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
                                 </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Nutrient Density
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Nutrient Density
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
                                 </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Insulin Index
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Insulin Index
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
                                 </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                          </ul>
-                        </div>
+                            </div>
+                          </li>
+                        </ul>
                       </div>
-                    </li>
-                  </a>
-                  <a data-toggle="modal" href="#modalFood">
-                    <li class="list-group-item px-0 py-4 border-0 pl-3">
-                      <div class="row align-items-start">
-                        <div class="col-auto pl-3">
-                          <span class="avatar avatar-lg">
-                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
-                          </span>
-                        </div>
-                        <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
-                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Keto score
-                                    <span class="badge badge-soft-success">Good</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Nutrient Density
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Insulin Index
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
+                    </div>
+                  </li>
+                </a>
+                <a data-toggle="modal" href="#modalFood">
+                  <li class="list-group-item px-0 py-4 pl-3">
+                    <div class="row align-items-start">
+                      <div class="col-auto pl-3">
+                        <span class="avatar avatar-lg">
+                          <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                        </span>
                       </div>
-                    </li>
-                  </a>
-                  <a data-toggle="modal" href="#modalFood">
-                    <li class="list-group-item px-0 py-4 border-0 pl-3">
-                      <div class="row align-items-start">
-                        <div class="col-auto pl-3">
-                          <span class="avatar avatar-lg">
-                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
-                          </span>
-                        </div>
-                        <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
-                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Keto score
-                                    <span class="badge badge-soft-success">Good</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
+                      <div class="col-8 col-md-10 pl-1 pr-0">
+                        <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                        <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                        <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Keto score
+                                  <span class="badge badge-soft-success">Good</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
                                 </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Nutrient Density
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Nutrient Density
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
                                 </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Insulin Index
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Insulin Index
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
                                 </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                          </ul>
-                        </div>
+                            </div>
+                          </li>
+                        </ul>
                       </div>
-                    </li>
-                  </a>
-                  <a data-toggle="modal" href="#modalFood">
-                    <li class="list-group-item px-0 py-4 border-0 pl-3">
-                      <div class="row align-items-start">
-                        <div class="col-auto pl-3">
-                          <span class="avatar avatar-lg">
-                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
-                          </span>
-                        </div>
-                        <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
-                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Keto score
-                                    <span class="badge badge-soft-success">Good</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Nutrient Density
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Insulin Index
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
+                    </div>
+                  </li>
+                </a>
+                <h5 class="pt-3 px-3 mt-1 mb-0 font-weight-normal border-top">Yesterday</h5>
+                <a data-toggle="modal" href="#modalFood">
+                  <li class="list-group-item px-0 py-4 pl-3">
+                    <div class="row align-items-start">
+                      <div class="col-auto pl-3">
+                        <span class="avatar avatar-lg">
+                          <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                        </span>
                       </div>
-                    </li>
-                  </a>
-                  <a data-toggle="modal" href="#modalFood">
-                    <li class="list-group-item px-0 py-4 border-0 pl-3">
-                      <div class="row align-items-start">
-                        <div class="col-auto pl-3">
-                          <span class="avatar avatar-lg">
-                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
-                          </span>
-                        </div>
-                        <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
-                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Keto score
-                                    <span class="badge badge-soft-success">Good</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
+                      <div class="col-8 col-md-10 pl-1 pr-0">
+                        <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                        <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                        <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Keto score
+                                  <span class="badge badge-soft-success">Good</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
                                 </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Nutrient Density
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Nutrient Density
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
                                 </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Insulin Index
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Insulin Index
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
                                 </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                          </ul>
-                        </div>
+                            </div>
+                          </li>
+                        </ul>
                       </div>
-                    </li>
-                  </a>
-                  <a data-toggle="modal" href="#modalFood">
-                    <li class="list-group-item px-0 py-4 border-0 pl-3">
-                      <div class="row align-items-start">
-                        <div class="col-auto pl-3">
-                          <span class="avatar avatar-lg">
-                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
-                          </span>
-                        </div>
-                        <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
-                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Keto score
-                                    <span class="badge badge-soft-success">Good</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Nutrient Density
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Insulin Index
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
+                    </div>
+                  </li>
+                </a>
+                <a data-toggle="modal" href="#modalFood">
+                  <li class="list-group-item px-0 py-4 pl-3">
+                    <div class="row align-items-start">
+                      <div class="col-auto pl-3">
+                        <span class="avatar avatar-lg">
+                          <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                        </span>
                       </div>
-                    </li>
-                  </a>
-                  <a data-toggle="modal" href="#modalFood">
-                    <li class="list-group-item px-0 py-4 border-0 pl-3">
-                      <div class="row align-items-start">
-                        <div class="col-auto pl-3">
-                          <span class="avatar avatar-lg">
-                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
-                          </span>
-                        </div>
-                        <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
-                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Keto score
-                                    <span class="badge badge-soft-success">Good</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
+                      <div class="col-8 col-md-10 pl-1 pr-0">
+                        <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                        <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                        <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Keto score
+                                  <span class="badge badge-soft-success">Good</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
                                 </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Nutrient Density
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Nutrient Density
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
                                 </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Insulin Index
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Insulin Index
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
                                 </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                          </ul>
-                        </div>
+                            </div>
+                          </li>
+                        </ul>
                       </div>
-                    </li>
-                  </a>
-                  <a data-toggle="modal" href="#modalFood">
-                    <li class="list-group-item px-0 py-4 border-0 pl-3">
-                      <div class="row align-items-start">
-                        <div class="col-auto pl-3">
-                          <span class="avatar avatar-lg">
-                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
-                          </span>
-                        </div>
-                        <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
-                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Keto score
-                                    <span class="badge badge-soft-success">Good</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Nutrient Density
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Insulin Index
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
+                    </div>
+                  </li>
+                </a>
+                <h5 class="pt-3 px-3 mt-1 mb-0 font-weight-normal border-top">Thursday 28 March</h5>
+                <a data-toggle="modal" href="#modalFood">
+                  <li class="list-group-item px-0 py-4 pl-3">
+                    <div class="row align-items-start">
+                      <div class="col-auto pl-3">
+                        <span class="avatar avatar-lg">
+                          <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                        </span>
                       </div>
-                    </li>
-                  </a>
-                  <a data-toggle="modal" href="#modalFood">
-                    <li class="list-group-item px-0 py-4 border-0 pl-3">
-                      <div class="row align-items-start">
-                        <div class="col-auto pl-3">
-                          <span class="avatar avatar-lg">
-                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
-                          </span>
-                        </div>
-                        <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
-                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Keto score
-                                    <span class="badge badge-soft-success">Good</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
+                      <div class="col-8 col-md-10 pl-1 pr-0">
+                        <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                        <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                        <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Keto score
+                                  <span class="badge badge-soft-success">Good</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
                                 </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Nutrient Density
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Nutrient Density
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
                                 </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Insulin Index
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Insulin Index
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
                                 </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
                                     </div>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                          </ul>
-                        </div>
+                            </div>
+                          </li>
+                        </ul>
                       </div>
-                    </li>
-                  </a>
-                </ul>
-              </div>
-              <a href="#!" class="card-footer text-center font-weight-bold border-top">See more</a>
+                    </div>
+                  </li>
+                </a>
+                <a data-toggle="modal" href="#modalFood">
+                  <li class="list-group-item px-0 py-4 pl-3">
+                    <div class="row align-items-start">
+                      <div class="col-auto pl-3">
+                        <span class="avatar avatar-lg">
+                          <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                        </span>
+                      </div>
+                      <div class="col-8 col-md-10 pl-1 pr-0">
+                        <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                        <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                        <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Keto score
+                                  <span class="badge badge-soft-success">Good</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
+                                </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Nutrient Density
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
+                                </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Insulin Index
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
+                                </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </a>
+                <a data-toggle="modal" href="#modalFood">
+                  <li class="list-group-item px-0 py-4 pl-3">
+                    <div class="row align-items-start">
+                      <div class="col-auto pl-3">
+                        <span class="avatar avatar-lg">
+                          <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                        </span>
+                      </div>
+                      <div class="col-8 col-md-10 pl-1 pr-0">
+                        <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                        <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                        <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Keto score
+                                  <span class="badge badge-soft-success">Good</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
+                                </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Nutrient Density
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
+                                </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Insulin Index
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
+                                </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </a>
+                <h5 class="pt-3 px-3 mt-1 mb-0 font-weight-normal border-top">Monday 27 March</h5>
+                <a data-toggle="modal" href="#modalFood">
+                  <li class="list-group-item px-0 py-4 pl-3">
+                    <div class="row align-items-start">
+                      <div class="col-auto pl-3">
+                        <span class="avatar avatar-lg">
+                          <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                        </span>
+                      </div>
+                      <div class="col-8 col-md-10 pl-1 pr-0">
+                        <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                        <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                        <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Keto score
+                                  <span class="badge badge-soft-success">Good</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
+                                </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Nutrient Density
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
+                                </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Insulin Index
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
+                                </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </a>
+                <a data-toggle="modal" href="#modalFood">
+                  <li class="list-group-item px-0 py-4 pl-3">
+                    <div class="row align-items-start">
+                      <div class="col-auto pl-3">
+                        <span class="avatar avatar-lg">
+                          <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                        </span>
+                      </div>
+                      <div class="col-8 col-md-10 pl-1 pr-0">
+                        <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                        <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                        <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Keto score
+                                  <span class="badge badge-soft-success">Good</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
+                                </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Nutrient Density
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
+                                </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Insulin Index
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
+                                </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </a>
+                <a data-toggle="modal" href="#modalFood">
+                  <li class="list-group-item px-0 py-4 pl-3">
+                    <div class="row align-items-start">
+                      <div class="col-auto pl-3">
+                        <span class="avatar avatar-lg">
+                          <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                        </span>
+                      </div>
+                      <div class="col-8 col-md-10 pl-1 pr-0">
+                        <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                        <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                        <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Keto score
+                                  <span class="badge badge-soft-success">Good</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
+                                </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Nutrient Density
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
+                                </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="nav-item ml-0">
+                            <div style="width: 164px;">
+                              <div class="d-flex justify-content-left no-gutters align-content-center">
+                                <p class="card-text small text-secondary mb-0">
+                                  Insulin Index
+                                  <span class="badge badge-soft-success">Moderate</span>
+                                  <span class="card-text small text-secondary mb-0"></span>
+                                  </span>
+                                </p>
+                              </div>
+                              <div class="row align-items-center no-gutters">
+                                <div class="col-auto">
+                                  <div class="card-text small text-secondary mr-2">7/10</div>
+                                </div>
+                                <div class="col">
+                                  <div class="progress progress-sm">
+                                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </a>
+              </ul>
             </div>
+            <a href="#!" class="card-footer text-center font-weight-bold border-top">See more</a>
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="alert alert-dark alert-dismissible fade show fixed-bottom mx-3" role="alert" style="margin-bottom: 56px;">
+      Product added to your day
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">×</span>
+      </button>
+    </div>
     </div> <!-- / .main-content -->
-    <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2">
-      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal" href="https://guillaumepalayer.github.io/nutrita-premium/dist/dashboard-full.html"><i class="fe fe-home d-block mb-2"></i>Home</a>
-      <a class="nav-link text-dark h5 py-0 text-center mb-0" href="https://guillaumepalayer.github.io/nutrita-premium/dist/journal.html"><i class="fe fe-activity text-success d-block mb-2"></i>Journal</a>
-      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal" href="#"><i class="fe fe-user d-block mb-2"></i>Profile</a>
+    <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal" href="dashboard-full.html"><i class="fe fe-home d-block mb-2"></i>Home</a>
+      <a class="nav-link text-dark h5 py-0 text-center mb-0" href="journal.html"><i class="fe fe-activity text-success d-block mb-2"></i>Journal</a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal" href="foryou.html"><img class="d-block mx-auto mb-2" src="assets/img/baseline-photo_filter-24px.svg" alt="" width="16">For You</a>
     </nav>
 
 
@@ -1420,8 +1396,8 @@
           </div>
           <nav class="navbar fixed-bottom">
             <div class="btn-group btn-block" role="group" aria-label="Basic example">
-                <a class="btn btn-success w-50" href="https://guillaumepalayer.github.io/nutrita-premium/dist/dashboard-full.html">I ate</a>
-                <a class="btn btn-white w-50 border-left-0" href="https://guillaumepalayer.github.io/nutrita-premium/dist/dashboard-full.html">I bought</a>
+                <a class="btn btn-success w-50" href="journal.html">I ate</a>
+                <a class="btn btn-white w-50 border-left-0" href="journal.html">I bought</a>
             </div>
           </nav>
         </div>

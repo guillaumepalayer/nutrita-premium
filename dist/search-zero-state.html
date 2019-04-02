@@ -20,255 +20,600 @@
     <title>Nutrita Premium</title>
   </head>
   <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light border-0 p-0 bg-transparent" id="topnav">
+    <nav class="navbar navbar-expand-lg navbar-light px-3 mb-2 mb-md-5 bg-white fixed-top d-none d-md-flex" id="topnav">
       <div class="container">
 
 
         <!-- Brand -->
-        <a class="navbar-brand mr-3 d-none d-lg-flex" href="index.html">
+        <a class="navbar-brand mr-3 d-none d-lg-flex align-items-center" href="index.html">
           <img src="assets/img/logo.svg" alt="..." class="navbar-brand-img">
-          <span class="text-secondary ml-2 align-middle">Nutrita</span>
+          <span class="text-secondary ml-2 h3 mb-0">Nutrita</span>
         </a>
         <!-- Search Form desktop -->
-        <form class="form-inline w-50 d-none d-lg-flex">
-          <div class="input-group input-group-merge input-group-lg w-100" data-toggle="lists" data-lists-values='["name"]'>
+        <a class="d-none d-lg-block w-50" href="search-zero-state.html">
+          <form class="form-inline d-block w-auto">
+            <div class="input-group input-group-merge input-group-lg" data-toggle="lists" data-lists-values='["name"]'>
 
-            <!-- Input -->
-            <input type="search" class="form-control form-control-lg form-control-prepended bg-white border-bottom-1 border-right-0 border-top-0 rounded-0 mr-3" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search">
-            <div class="input-group-prepend d-lg-none">
-              <div class="input-group-text bg-light border-0">
-                <i class="fe fe-menu"></i>
+              <!-- Input -->
+              <input type="search" class="form-control form-control-prepended bg-light border-0" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
+              <div class="input-group-prepend d-lg-none">
+                <div class="input-group-text bg-light border-0">
+                  <i class="fe fe-menu"></i>
+                </div>
+              </div>
+              <div class="input-group-prepend d-none d-lg-flex">
+                <div class="input-group-text bg-light border-0">
+                  <i class="fe fe-search"></i>
+                </div>
               </div>
             </div>
-            <div class="input-group-prepend d-none d-lg-flex">
-              <div class="input-group-text bg-light border-0">
-                <i class="fe fe-search"></i>
-              </div>
-            </div>
+          </form>
+        </a>
 
-          </div>
-        </form>
         <!-- Search Form mobile -->
-        <form class="form-inline w-100 d-lg-none mt-2">
-          <div class="input-group input-group-merge input-group-lg w-100" data-toggle="lists" data-lists-values='["name"]'>
+        <a class="vw-100 d-flex d-lg-none" href="search-zero-state.html">
+          <form class="form-inline w-100 d-lg-none">
+            <div class="input-group input-group-merge input-group-lg w-100" data-toggle="lists" data-lists-values='["name"]'>
 
-            <!-- Input -->
-            <input type="search" class="form-control form-control-lg form-control-prepended bg-white border-bottom-1 border-right-0 border-top-0 rounded-0 mr-3" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search">
-            <div class="input-group-prepend d-lg-none">
-              <div class="input-group-text bg-white border-0">
-                <i class="fe fe-arrow-left text-secondary"></i>
+              <!-- Input -->
+              <input type="search" class="form-control form-control-prepended bg-white border-light" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
+              <div class="input-group-prepend d-lg-none">
+                <div class="input-group-text bg-white border-light">
+                  <i class="fe fe-menu"></i>
+                </div>
               </div>
+              <div class="input-group-prepend d-none d-lg-flex">
+                <div class="input-group-text bg-light border-0">
+                  <i class="fe fe-search"></i>
+                </div>
+              </div>
+
             </div>
-            <div class="input-group-prepend d-none d-lg-flex">
-              <div class="input-group-text bg-light border-0">
-                <i class="fe fe-search"></i>
+          </form>
+        </a>
+
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse order-lg-last" id="navbar">
+
+          <!-- Form -->
+          <form class="mt-4 mb-3 d-md-none">
+            <input type="search" class="form-control form-control-rounded" placeholder="Search" aria-label="Search">
+          </form>
+
+          <!-- Navigation -->
+
+          <ul class="nav nav-tabs mr-5 border-0 justify-content-end">
+            <li class="nav-item mr-3">
+              <a class="nav-link border-success border-bottom-2 font-weight-bold active" href="dashboard-full.html">
+                Home
+              </a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="journal.html">
+                Journal
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex" href="foryou.html">
+                For You
+              </a>
+            </li>
+          </ul>
+          <div class="navbar-user">
+
+            <!-- Dropdown -->
+            <div class="dropdown mr-4 d-none d-md-flex">
+
+              <!-- Toggle -->
+              <a href="#" class="text-muted" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="icon active">
+                  <i class="fe fe-bell"></i>
+                </span>
+              </a>
+
+              <!-- Menu -->
+              <div class="dropdown-menu dropdown-menu-right dropdown-menu-card">
+                <div class="card-header">
+                  <div class="row align-items-center">
+                    <div class="col">
+
+                      <!-- Title -->
+                      <h5 class="card-header-title">
+                        Notifications
+                      </h5>
+
+                    </div>
+                    <div class="col-auto">
+
+                      <!-- Link -->
+                      <a href="#!" class="small">
+                        View all
+                      </a>
+
+                    </div>
+                  </div> <!-- / .row -->
+                </div> <!-- / .card-header -->
+                <div class="card-body">
+
+                  <!-- List group -->
+                  <div class="list-group list-group-flush my-n3">
+                    <a class="list-group-item px-0" href="#!">
+
+                      <div class="row">
+                        <div class="col-auto">
+
+                          <!-- Avatar -->
+                          <div class="avatar avatar-sm">
+                            <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
+                          </div>
+
+                        </div>
+                        <div class="col ml-n2">
+
+                          <!-- Content -->
+                          <div class="small text-muted">
+                            <strong class="text-body">Dianna Smiley</strong> shared your post with <strong class="text-body">Ab Hadley</strong>, <strong class="text-body">Adolfo Hess</strong>, and <strong class="text-body">3 others</strong>.
+                          </div>
+
+                        </div>
+                        <div class="col-auto">
+
+                          <small class="text-muted">
+                            2m
+                          </small>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                    </a>
+                    <a class="list-group-item px-0" href="#!">
+
+                      <div class="row">
+                        <div class="col-auto">
+
+                          <!-- Avatar -->
+                          <div class="avatar avatar-sm">
+                            <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
+                          </div>
+
+                        </div>
+                        <div class="col ml-n2">
+
+                          <!-- Content -->
+                          <div class="small text-muted">
+                            <strong class="text-body">Ab Hadley</strong> reacted to your post with a 😍
+                          </div>
+
+                        </div>
+                        <div class="col-auto">
+
+                          <small class="text-muted">
+                            2m
+                          </small>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                    </a>
+                    <a class="list-group-item px-0" href="#!">
+
+                      <div class="row">
+                        <div class="col-auto">
+
+                          <!-- Avatar -->
+                          <div class="avatar avatar-sm">
+                            <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
+                          </div>
+
+                        </div>
+                        <div class="col ml-n2">
+
+                          <!-- Content -->
+                          <div class="small text-muted">
+                            <strong class="text-body">Adolfo Hess</strong> commented <blockquote class="text-body">“I don’t think this really makes sense to do without approval from Johnathan since he’s the one...” </blockquote>
+                          </div>
+
+                        </div>
+                        <div class="col-auto">
+
+                          <small class="text-muted">
+                            2m
+                          </small>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                    </a>
+                    <a class="list-group-item px-0" href="#!">
+
+                      <div class="row">
+                        <div class="col-auto">
+
+                          <!-- Avatar -->
+                          <div class="avatar avatar-sm">
+                            <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
+                          </div>
+
+                        </div>
+                        <div class="col ml-n2">
+
+                          <!-- Content -->
+                          <div class="small text-muted">
+                            <strong class="text-body">Daniela Dewitt</strong> subscribed to you.
+                          </div>
+
+                        </div>
+                        <div class="col-auto">
+
+                          <small class="text-muted">
+                            2m
+                          </small>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                    </a>
+                    <a class="list-group-item px-0" href="#!">
+
+                      <div class="row">
+                        <div class="col-auto">
+
+                          <!-- Avatar -->
+                          <div class="avatar avatar-sm">
+                            <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
+                          </div>
+
+                        </div>
+                        <div class="col ml-n2">
+
+                          <!-- Content -->
+                          <div class="small text-muted">
+                            <strong class="text-body">Miyah Myles</strong> shared your post with <strong class="text-body">Ryu Duke</strong>, <strong class="text-body">Glen Rouse</strong>, and <strong class="text-body">3 others</strong>.
+                          </div>
+
+                        </div>
+                        <div class="col-auto">
+
+                          <small class="text-muted">
+                            2m
+                          </small>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                    </a>
+                    <a class="list-group-item px-0" href="#!">
+
+                      <div class="row">
+                        <div class="col-auto">
+
+                          <!-- Avatar -->
+                          <div class="avatar avatar-sm">
+                            <img src="assets/img/avatars/profiles/avatar-6.jpg" alt="..." class="avatar-img rounded-circle">
+                          </div>
+
+                        </div>
+                        <div class="col ml-n2">
+
+                          <!-- Content -->
+                          <div class="small text-muted">
+                            <strong class="text-body">Ryu Duke</strong> reacted to your post with a 😍
+                          </div>
+
+                        </div>
+                        <div class="col-auto">
+
+                          <small class="text-muted">
+                            2m
+                          </small>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                    </a>
+                    <a class="list-group-item px-0" href="#!">
+
+                      <div class="row">
+                        <div class="col-auto">
+
+                          <!-- Avatar -->
+                          <div class="avatar avatar-sm">
+                            <img src="assets/img/avatars/profiles/avatar-7.jpg" alt="..." class="avatar-img rounded-circle">
+                          </div>
+
+                        </div>
+                        <div class="col ml-n2">
+
+                          <!-- Content -->
+                          <div class="small text-muted">
+                            <strong class="text-body">Glen Rouse</strong> commented <blockquote class="text-body">“I don’t think this really makes sense to do without approval from Johnathan since he’s the one...” </blockquote>
+                          </div>
+
+                        </div>
+                        <div class="col-auto">
+
+                          <small class="text-muted">
+                            2m
+                          </small>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                    </a>
+                    <a class="list-group-item px-0" href="#!">
+
+                      <div class="row">
+                        <div class="col-auto">
+
+                          <!-- Avatar -->
+                          <div class="avatar avatar-sm">
+                            <img src="assets/img/avatars/profiles/avatar-8.jpg" alt="..." class="avatar-img rounded-circle">
+                          </div>
+
+                        </div>
+                        <div class="col ml-n2">
+
+                          <!-- Content -->
+                          <div class="small text-muted">
+                            <strong class="text-body">Grace Gross</strong> subscribed to you.
+                          </div>
+
+                        </div>
+                        <div class="col-auto">
+
+                          <small class="text-muted">
+                            2m
+                          </small>
+
+                        </div>
+                      </div> <!-- / .row -->
+
+                    </a>
+                  </div>
+
+                </div>
+              </div> <!-- / .dropdown-menu -->
+
+            </div>
+
+            <!-- Dropdown -->
+            <div class="dropdown">
+
+              <!-- Toggle -->
+              <a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="https://pbs.twimg.com/profile_images/1046781704608915458/5xxk-UR7_400x400.jpg" alt="..." class="avatar-img rounded-circle">
+              </a>
+
+              <!-- Menu -->
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="profile-posts.html" class="dropdown-item">Profile</a>
+                <a href="settings.html" class="dropdown-item">Settings</a>
+                <hr class="dropdown-divider">
+                <a href="sign-in.html" class="dropdown-item">Logout</a>
               </div>
+
             </div>
 
           </div>
-        </form>
+        </div>
 
       </div> <!-- / .container -->
     </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light px-3 mb-2 mb-md-5 bg-transparent border-0 fixed-top d-flex d-md-none" id="topnav">
+      <div class="container">
+
+
+        <!-- Search Form mobile -->
+        <a class="vw-100 d-flex d-lg-none" href="search-zero-state.html">
+          <form class="form-inline w-100 d-lg-none">
+            <div class="input-group input-group-merge input-group-lg w-100" data-toggle="lists" data-lists-values='["name"]'>
+
+              <!-- Input -->
+              <input type="search" class="form-control form-control-prepended bg-white border-light" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
+              <div class="input-group-prepend d-lg-none">
+                <div class="input-group-text bg-white border-light">
+                  <i class="fe fe-menu"></i>
+                </div>
+              </div>
+              <div class="input-group-prepend d-none d-lg-flex">
+                <div class="input-group-text bg-light border-0">
+                  <i class="fe fe-search"></i>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </a>
+
+      </div> <!-- / .container -->
+    </nav>
+
+
     <!-- MAIN CONTENT
     ================================================== -->
-    <div class="main-content mt-4">
-      <div class="container mt-n3">
-        <ul class="list-group list-group-flush mb-4">
-          <a href="https://guillaumepalayer.github.io/nutrita-premium/dist/search-results.html">
-            <li class="list-group-item px-0">
-              <div class="row align-items-center vw-100 text-dark">
-                <div class="col-auto ml-2">
-                  <i class="fe fe-clock rounded-circle bg-light"></i>
+    <div class="container mb-6">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8 mt-6 mt-lg-7">
+          <ul class="list-group list-group-flush mb-4">
+            <a href="search-results.html">
+              <li class="list-group-item px-0">
+                <div class="row align-items-center vw-100 text-dark">
+                  <div class="col-auto ml-2">
+                    <i class="fe fe-clock rounded-circle bg-light"></i>
+                  </div>
+                  <div class="col">
+                    <h4 class="mb-0 font-weight-normal text-dark">Beef liver raw</h4>
+                  </div>
+                  <div class="col-auto align-items-end">
+                      <i class="fe fe-arrow-up-left"></i>
+                  </div>
                 </div>
-                <div class="col">
-                  <h4 class="mb-0 font-weight-normal text-dark">Beef liver raw</h4>
+              </li>
+            </a>
+            <a href="search-results.html">
+              <li class="list-group-item px-0">
+                <div class="row align-items-center vw-100 text-dark">
+                  <div class="col-auto ml-2">
+                    <i class="fe fe-clock rounded-circle bg-light"></i>
+                  </div>
+                  <div class="col">
+                    <h4 class="mb-0 font-weight-normal text-dark">Beef liver raw</h4>
+                  </div>
+                  <div class="col-auto align-items-end">
+                      <i class="fe fe-arrow-up-left"></i>
+                  </div>
                 </div>
-                <div class="col-auto align-items-end">
-                    <i class="fe fe-arrow-up-left"></i>
+              </li>
+            </a>
+          </ul>
+          <ul class="nav nav-tabs nav-tabs-sm nav-overflow mb-4">
+            <li class="nav-item">
+              <a href="#">
+                <div class="card mb-3 bg-dark px-3 py-4">
+                  <img class="rounded" src="https://nutrita.app/static/media/zinc.361f0755.svg" alt="" width="88" height="88">
                 </div>
-              </div>
+                <h2 class="h4 text-dark">Top sources of Zinc</h2>
+              </a>
             </li>
-          </a>
-          <a href="https://guillaumepalayer.github.io/nutrita-premium/dist/search-results.html">
-            <li class="list-group-item px-0">
-              <div class="row align-items-center vw-100 text-dark">
-                <div class="col-auto ml-2">
-                  <i class="fe fe-clock rounded-circle bg-light"></i>
+            <li class="nav-item">
+              <a href="#">
+                <div class="card mb-3 bg-dark px-3 py-4">
+                  <img class="rounded" src="https://nutrita.app/static/media/leucine.91ab660c.svg" alt="" width="88" height="88">
                 </div>
-                <div class="col">
-                  <h4 class="mb-0 font-weight-normal text-dark">Beef liver raw</h4>
-                </div>
-                <div class="col-auto align-items-end">
-                    <i class="fe fe-arrow-up-left"></i>
-                </div>
-              </div>
+                <h2 class="h4 text-dark">Top source of Leucine</h2>
+              </a>
             </li>
-          </a>
-        </ul>
+            <li class="nav-item">
+              <a href="#">
+                <div class="card mb-3 bg-dark px-3 py-4">
+                  <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
+                </div>
+                <h2 class="h4 text-dark">Top source of Vitamin K2</h2>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <div class="card mb-3 bg-dark px-3 py-4">
+                  <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
+                </div>
+                <h2 class="h4 text-dark">Collection title</h2>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#">
+                <div class="card mb-3 bg-dark px-3 py-4">
+                  <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
+                </div>
+                <h2 class="h4 text-dark">Collection title</h2>
+              </a>
+            </li>
+            <li class="nav-item pr-3">
+              <a href="#">
+                <div class="card mb-3 bg-dark px-3 py-4">
+                  <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
+                </div>
+                <h2 class="h4 text-dark">Collection title</h2>
+              </a>
+            </li>
+            <li class="nav-item pr-3">
+              <a href="#">
+                <div class="card mb-3 bg-dark px-3 py-4">
+                  <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
+                </div>
+                <h2 class="h4 text-dark">Collection title</h2>
+              </a>
+            </li>
+          </ul>
+          <label for="customRange2">Keto Score<i class="fe fe-info align-top ml-1"></i></label>
+          <input type="range" class="custom-range" min="0" max="10" id="customRange1">
+          <div class="row justify-content-between text-secondary mt-n3 pt-1 mb-4">
+            <div class="col">
+            <small>0</small>
+            </div>
+            <div class="col text-center">
+            <small>5</small>
+            </div>
+            <div class="col text-right">
+            <small>10</small>
+            </div>
+          </div>
+          <label for="customRange1">Insulin Index<i class="fe fe-info align-top ml-1"></i></label>
+          <input type="range" class="custom-range" min="0" max="100" id="customRange2">
+          <div class="row justify-content-between text-secondary mt-n3 pt-1 mb-4">
+            <div class="col">
+            <small>0%</small>
+            </div>
+            <div class="col text-center">
+            <small>50</small>
+            </div>
+            <div class="col text-right">
+            <small>100%</small>
+            </div>
+          </div>
+          <label for="customRange3">Nutrient Density<i class="fe fe-info align-top ml-1"></i></label>
+          <input type="range" class="custom-range" min="0" max="100" id="customRange3">
+          <div class="row justify-content-between text-secondary mt-n3 pt-1 mb-4">
+            <div class="col">
+            <small>0%</small>
+            </div>
+            <div class="col text-center">
+            <small>50</small>
+            </div>
+            <div class="col text-right">
+            <small>100%</small>
+            </div>
+          </div>
+          <h6 class="header-pretitle mt-4">Sort by vitamins</h6>
+          <ul class="list-group list-group-flush mb-4">
+            <a href="#">
+              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
+                <h5 class="text-dark">Vitamin title</h5>
+              </li>
+            </a>
+            <a href="#">
+              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
+                <h5 class="text-dark">Vitamin title</h5>
+              </li>
+            </a>
+            <a href="#">
+              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
+                <h5 class="text-dark">Vitamin title</h5>
+              </li>
+            </a>
+            <a href="#">
+              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
+                <h5>See more</h5>
+              </li>
+            </a>
+          </ul>
+          <h6 class="header-pretitle">Sort by Minerals</h6>
+          <ul class="list-group list-group-flush mb-4">
+            <a href="#">
+              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
+                <h5 class="text-dark">Mineral title</h5>
+              </li>
+            </a>
+            <a href="#">
+              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
+                <h5 class="text-dark">Mineral title</h5>
+              </li>
+            </a>
+            <a href="#">
+              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
+                <h5 class="text-dark">Mineral title</h5>
+              </li>
+            </a>
+            <a href="#">
+              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
+                <h5>See more</h5>
+              </li>
+            </a>
+          </ul>
+        </div>
       </div>
-      <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-3 border-0 mb-4">
-        <li class="nav-item">
-          <a href="#">
-            <div class="card mb-3 bg-dark px-3 py-3">
-              <img class="rounded" src="https://nutrita.app/static/media/zinc.361f0755.svg" alt="" width="48" height="48">
-            </div>
-            <h5 class="text-dark">Top sources of Zinc</h5>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#">
-            <div class="card mb-3 bg-dark px-3 py-3">
-              <img class="rounded" src="https://nutrita.app/static/media/zinc.361f0755.svg" alt="" width="48" height="48">
-            </div>
-            <h5 class="text-dark">Top sources of Zinc</h5>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#">
-            <div class="card mb-3 bg-dark px-3 py-3">
-              <img class="rounded" src="https://nutrita.app/static/media/zinc.361f0755.svg" alt="" width="48" height="48">
-            </div>
-            <h5 class="text-dark">Top sources of Zinc</h5>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#">
-            <div class="card mb-3 bg-dark px-3 py-3">
-              <img class="rounded" src="https://nutrita.app/static/media/zinc.361f0755.svg" alt="" width="48" height="48">
-            </div>
-            <h5 class="text-dark">Top sources of Zinc</h5>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#">
-            <div class="card mb-3 bg-dark px-3 py-3">
-              <img class="rounded" src="https://nutrita.app/static/media/zinc.361f0755.svg" alt="" width="48" height="48">
-            </div>
-            <h5 class="text-dark">Top sources of Zinc</h5>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#">
-            <div class="card mb-3 bg-dark px-3 py-3">
-              <img class="rounded" src="https://nutrita.app/static/media/zinc.361f0755.svg" alt="" width="48" height="48">
-            </div>
-            <h5 class="text-dark">Top sources of Zinc</h5>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#">
-            <div class="card mb-3 bg-dark px-3 py-3">
-              <img class="rounded" src="https://nutrita.app/static/media/zinc.361f0755.svg" alt="" width="48" height="48">
-            </div>
-            <h5 class="text-dark">Top sources of Zinc</h5>
-          </a>
-        </li>
-      </ul>
-      <div class="container">
-        <h6 class="header-pretitle mb-3 mt-2">Keto Score<i class="fe fe-info align-top ml-1"></i></h6>
-        <div class="progress progress-sm">
-          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%; background: linear-gradient(90deg, rgb(230, 55, 87), rgb(246, 195, 67), rgb(0, 217, 126));"></div>
-        </div>
-        <a href="#!" class="btn btn-sm btn-rounded-circle btn-white text-white mt-n4 mb-1 ml-6" style="width: 20px; height: 20px;"></a>
-        <a href="#!" class="btn btn-sm btn-rounded-circle btn-white text-white mt-n4 mb-1 ml-7" style="width: 20px; height: 20px;"></a>
-        <div class="row justify-content-between text-secondary mt-n4 pt-1">
-          <div class="col">
-          <small>0</small>
-          </div>
-          <div class="col text-center">
-          <small>5</small>
-          </div>
-          <div class="col text-right">
-          <small>10</small>
-          </div>
-        </div>
-        <h6 class="header-pretitle mb-3 mt-4">Insulin Index<i class="fe fe-info align-top ml-1"></i></h6>
-        <div class="progress progress-sm">
-          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%; background: linear-gradient(90deg, rgb(0, 217, 126), rgb(246, 195, 67), rgb(230, 55, 87));"></div>
-        </div>
-        <a href="#!" class="btn btn-sm btn-rounded-circle btn-white text-white mt-n4 mb-1 ml-4" style="width: 20px; height: 20px;"></a>
-        <a href="#!" class="btn btn-sm btn-rounded-circle btn-white text-white mt-n4 mb-1 ml-5" style="width: 20px; height: 20px;"></a>
-        <div class="row justify-content-between text-secondary mt-n4 pt-1">
-          <div class="col">
-          <small>0%</small>
-          </div>
-          <div class="col text-center">
-          <small>50</small>
-          </div>
-          <div class="col text-right">
-          <small>100%</small>
-          </div>
-        </div>
-        <h6 class="header-pretitle mb-3 mt-4">Nutrient Density<i class="fe fe-info align-top ml-1"></i></h6>
-        <div class="progress progress-sm">
-          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 100%; background: linear-gradient(90deg, rgb(230, 55, 87), rgb(246, 195, 67), rgb(0, 217, 126));"></div>
-        </div>
-        <a href="#!" class="btn btn-sm btn-rounded-circle btn-white text-white mt-n4 mb-1 ml-6" style="width: 20px; height: 20px;"></a>
-        <a href="#!" class="btn btn-sm btn-rounded-circle btn-white text-white mt-n4 mb-1 ml-7" style="width: 20px; height: 20px;"></a>
-        <div class="row justify-content-between text-secondary mt-n4 pt-1">
-          <div class="col">
-          <small>0%</small>
-          </div>
-          <div class="col text-center">
-          <small>50</small>
-          </div>
-          <div class="col text-right">
-          <small>100%</small>
-          </div>
-        </div>
-        <h6 class="header-pretitle mt-4">Sort by vitamins</h6>
-        <ul class="list-group list-group-flush mb-4">
-          <a href="#">
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <h5 class="text-dark">Vitamin title</h5>
-            </li>
-          </a>
-          <a href="#">
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <h5 class="text-dark">Vitamin title</h5>
-            </li>
-          </a>
-          <a href="#">
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <h5 class="text-dark">Vitamin title</h5>
-            </li>
-          </a>
-          <a href="#">
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <h5>See more</h5>
-            </li>
-          </a>
-        </ul>
-        <h6 class="header-pretitle">Sort by Minerals</h6>
-        <ul class="list-group list-group-flush mb-4">
-          <a href="#">
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <h5 class="text-dark">Mineral title</h5>
-            </li>
-          </a>
-          <a href="#">
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <h5 class="text-dark">Mineral title</h5>
-            </li>
-          </a>
-          <a href="#">
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <h5 class="text-dark">Mineral title</h5>
-            </li>
-          </a>
-          <a href="#">
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <h5>See more</h5>
-            </li>
-          </a>
-        </ul>
-      </div>
-
-
     </div>
-
 
     <!-- JAVASCRIPT
     ================================================== -->

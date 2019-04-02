@@ -10,238 +10,282 @@
     <!-- MODALS
     ================================================== -->
     @@include("partials/modals.html")
-
-    <!-- NAVIGATION
-    ================================================== -->
-    @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
-      @@include("partials/sidebar.html", {
-        "category": "dashboards",
-        "subcategory": "",
-        "page": "index.html"
-      })
-    }
-    @@if (navPosition == 'topnav' || demoMode) {
-      @@include("partials/topnav.html", {
-        "category": "dashboards",
-        "subcategory": "",
-        "page": "index.html"
-      })
-    }
+    @@include("partials/topnav-connected.html")
 
     <!-- MAIN CONTENT
     ================================================== -->
-    <div class="main-content mt-6">
+    <div class="main-content mt-6 mt-lg-7">
 
       <div class="container mb-6">
-        <div class="row mb-2">
-          <div class="col">
-            <!-- Title -->
-            <h1 class="header-title text-center h3">
-              Today
-            </h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <ul class="nav nav-tabs mb-4 justify-content-center">
-              <li class="nav-item">
-                <a class="nav-link border-success border-bottom-2 font-weight-bold active small" href="#!">What I ate</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link small" href="#!">What I bought</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-4">
-          <div class="col-4 text-center">
-            <span class="h4 mb-0 text-dark d-block">0</span>
-            <span class="h6 text-muted">Food</span>
-          </div>
-          <div class="col-4 text-center">
-            <span class="h4 mb-0 text-dark d-block">0</span>
-            <span class="h6 text-muted">cals</span>
-          </div>
-        </div>
-        <div class="row justify-content-center mb-2">
-          <div class="col-auto">
-            <img class="mb-4" src="assets/img/illustrations/profil-dv-gauges.png" alt="avatar" width="256">
-          </div>
-        </div>
-        <div class="row justify-content-center mb-4 d-none">
-          <div class="col-auto">
-            <span class="h6 text-dark">0</span><span class="h6 text-muted">/10% DV Carbs</span><br>
-            <span class="h6 text-dark">0</span><span class="h6 text-muted">/20% DV Protein</span><br>
-            <span class="h6 text-dark">0</span><span class="h6 text-muted">/70% DV Fat</span>
-          </div>
-        </div>
-        <div class="card mb-5">
-          <a href="#">
-            <div class="card-body">
-              <div class="row align-items-start">
-                <div class="col ml-n2">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-5 col-xl-4">
+            <div class="row mb-2">
+              <div class="col">
+                <!-- Title -->
+                <h1 class="header-title text-center h3">
+                  Today
+                </h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <ul class="nav nav-tabs mb-4 justify-content-center">
+                  <li class="nav-item">
+                    <a class="nav-link border-success border-bottom-2 font-weight-bold active small" href="#!">What I ate</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link small" href="#!">What I bought</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row justify-content-center mb-4">
+              <div class="col-4 text-center">
+                <span class="h4 mb-0 text-dark d-block">0</span>
+                <span class="h6 text-muted">Food</span>
+              </div>
+              <div class="col-4 text-center">
+                <span class="h4 mb-0 text-dark d-block">0</span>
+                <span class="h6 text-muted">cals</span>
+              </div>
+            </div>
+            <div class="row justify-content-center mb-2">
+              <div class="col-auto">
+                <img class="mb-4" src="assets/img/illustrations/profil-dv-gauges.png" alt="avatar" width="256">
+              </div>
+            </div>
+            <div class="row justify-content-center mb-4 d-none">
+              <div class="col-auto">
+                <span class="h6 text-dark">0</span><span class="h6 text-muted">/10% DV Carbs</span><br>
+                <span class="h6 text-dark">0</span><span class="h6 text-muted">/20% DV Protein</span><br>
+                <span class="h6 text-dark">0</span><span class="h6 text-muted">/70% DV Fat</span>
+              </div>
+            </div>
+            <div class="card mb-5">
+              <a href="#">
+                <div class="card-body">
+                  <div class="row align-items-start">
+                    <div class="col ml-n2">
 
-                  <h4 class="card-title mb-1 text-dark">
-                    <i class="fe fe-bell align-middle mr-2"></i> Set up a reminder
-                  </h4>
+                      <h4 class="card-title mb-1 text-dark">
+                        <i class="fe fe-bell align-middle mr-2"></i> Set up a reminder
+                      </h4>
 
-                  <p class="card-text small text-muted mb-0">
-                    Never forget to track your foods and weight.
-                  </p>
+                      <p class="card-text small text-muted mb-0">
+                        Never forget to track your foods and weight.
+                      </p>
 
+                    </div>
+                    <div class="col-auto">
+                      <i class="fe fe-plus text-dark"></i>
+                    </div>
+                  </div>
                 </div>
+              </a>
+            </div>
+            <h3 class="mb-4">Data to Watch</h3>
+            <a class="d-block mb-3" href="#">
+              <div class="d-flex justify-content-between no-gutters">
+                <p class="card-text text-dark mb-0">
+                  <img src="assets/img/outline-grain-24px.svg" alt="" class="d-inline-block mr-2" width="20">Insulin Index <span class="badge badge-soft-secondary">No Data</span>
+                </p>
+                <div class="d-flex justify-content-end">
+                  <i class="fe fe-chevron-right text-dark"></i>
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters">
                 <div class="col-auto">
-                  <i class="fe fe-plus text-dark"></i>
+                  <div class="card-text small text-secondary mr-2">0%</div>
+                </div>
+                <div class="col">
+                  <div class="progress progress-sm">
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
+            </a>
+            <a class="d-block mb-3" href="#">
+              <div class="d-flex justify-content-between no-gutters">
+                <p class="card-text text-dark mb-0">
+                  <img src="https://nutrita.app/static/media/outline-score-24px.54069296.svg" alt="" class="d-inline-block mr-2" width="20">Keto Score <span class="badge badge-soft-secondary">No Data</span>
+                </p>
+                <div class="d-flex justify-content-end">
+                  <i class="fe fe-chevron-right text-dark"></i>
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto">
+                  <div class="card-text small text-secondary mr-2">0/10</div>
+                </div>
+                <div class="col">
+                  <div class="progress progress-sm">
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="d-block mb-3" href="#">
+              <div class="d-flex justify-content-between no-gutters">
+                <p class="card-text text-dark mb-0">
+                  <img src="https://nutrita.app/static/media/outline-donut_small-24px.68f6a64d.svg" alt="" class="d-inline-block mr-2" width="20">Nutrient Score <span class="badge badge-soft-secondary">No Data</span>
+                </p>
+                <div class="d-flex justify-content-end">
+                  <i class="fe fe-chevron-right text-dark"></i>
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto">
+                  <div class="card-text small text-secondary mr-2">0/10</div>
+                </div>
+                <div class="col">
+                  <div class="progress progress-sm">
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="d-block mb-5" href="#">
+              <div class="d-flex justify-content-between no-gutters">
+                <p class="card-text text-dark mb-0">
+                  <img src="https://nutrita.app/static/media/outline-bubble_chart-24px.e7a989d4.svg" alt="" class="d-inline-block mr-2" width="20">Amino Acid Completness <span class="badge badge-soft-secondary">No Data</span>
+                </p>
+                <div class="d-flex justify-content-end">
+                  <i class="fe fe-chevron-right text-dark"></i>
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto">
+                  <div class="card-text small text-secondary mr-2">0/10</div>
+                </div>
+                <div class="col">
+                  <div class="progress progress-sm">
+                    <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a class="d-block mb-5" href="#">
+              <div class="d-flex justify-content-between no-gutters mt-3">
+                <p class="card-text text-dark mb-0">
+                  Net Carbs
+                </p>
+                <div class="d-flex justify-content-end">
+                  <i class="fe fe-chevron-right text-dark"></i>
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto">
+                  <div class="card-text small text-secondary mr-2">No recent data</div>
+                </div>
+              </div>
+            </a>
+            <a class="d-block mb-5" href="#">
+              <div class="d-flex justify-content-between no-gutters mt-3">
+                <p class="card-text text-dark mb-0">
+                  Proteins
+                </p>
+                <div class="d-flex justify-content-end">
+                  <i class="fe fe-chevron-right text-dark"></i>
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto">
+                  <div class="card-text small text-secondary mr-2">No recent data</div>
+                </div>
+              </div>
+            </a>
+            <a class="d-block mb-5" href="#">
+              <div class="d-flex justify-content-between no-gutters mt-3">
+                <p class="card-text text-dark mb-0">
+                  HbA1c %
+                </p>
+                <div class="d-flex justify-content-end">
+                  <i class="fe fe-chevron-right text-dark"></i>
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto">
+                  <div class="card-text small text-secondary mr-2">No recent data</div>
+                </div>
+              </div>
+            </a>
+            <a class="d-block mb-5" href="#">
+              <div class="d-flex justify-content-between no-gutters mt-3">
+                <p class="card-text text-dark mb-0">
+                  Fasting blood glucose
+                </p>
+                <div class="d-flex justify-content-end">
+                  <i class="fe fe-chevron-right text-dark"></i>
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto">
+                  <div class="card-text small text-secondary mr-2">No recent data</div>
+                </div>
+              </div>
+            </a>
+            <a class="d-block mb-5" href="#">
+              <div class="d-flex justify-content-between no-gutters mt-3">
+                <p class="card-text text-dark mb-0">
+                  Fasting triglycerides
+                </p>
+                <div class="d-flex justify-content-end">
+                  <i class="fe fe-chevron-right text-dark"></i>
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto">
+                  <div class="card-text small text-secondary mr-2">No recent data</div>
+                </div>
+              </div>
+            </a>
+            <a class="d-block mb-5" href="#">
+              <div class="d-flex justify-content-between no-gutters mt-3">
+                <p class="card-text text-dark mb-0">
+                  Fasting insulin
+                </p>
+                <div class="d-flex justify-content-end">
+                  <i class="fe fe-chevron-right text-dark"></i>
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto">
+                  <div class="card-text small text-secondary mr-2">No recent data</div>
+                </div>
+              </div>
+            </a>
+            <a class="d-block mb-5" href="#">
+              <div class="d-flex justify-content-between no-gutters mt-3">
+                <p class="card-text text-dark mb-0">
+                  Blood β-hydroxybutyrate
+                </p>
+                <div class="d-flex justify-content-end">
+                  <i class="fe fe-chevron-right text-dark"></i>
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto">
+                  <div class="card-text small text-secondary mr-2">No recent data</div>
+                </div>
+              </div>
+            </a>
+            <a class="d-block mb-5" data-toggle="modal" data-target="#reportDetailsWeight">
+              <div class="d-flex justify-content-between no-gutters mt-3">
+                <p class="card-text text-dark mb-0">
+                  Weight
+                </p>
+                <div class="d-flex justify-content-end">
+                  <i class="fe fe-chevron-right text-dark"></i>
+                </div>
+              </div>
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto">
+                  <div class="card-text small text-secondary mr-2">No recent data</div>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
-
-        <h3 class="mb-4">Data to Watch</h3>
-        <a class="d-block mb-3" href="#">
-          <div class="d-flex justify-content-between no-gutters">
-            <p class="card-text text-dark mb-0">
-              <img src="assets/img/outline-grain-24px.svg" alt="" class="d-inline-block mr-2" width="20">Insulin Index <span class="badge badge-soft-secondary">No Data</span>
-            </p>
-            <div class="d-flex justify-content-end">
-              <i class="fe fe-chevron-right text-dark"></i>
-            </div>
-          </div>
-          <div class="row align-items-center no-gutters">
-            <div class="col-auto">
-              <div class="card-text small text-secondary mr-2">0%</div>
-            </div>
-            <div class="col">
-              <div class="progress progress-sm">
-                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a class="d-block mb-3" href="#">
-          <div class="d-flex justify-content-between no-gutters">
-            <p class="card-text text-dark mb-0">
-              <img src="https://nutrita.app/static/media/outline-score-24px.54069296.svg" alt="" class="d-inline-block mr-2" width="20">Keto Score <span class="badge badge-soft-secondary">No Data</span>
-            </p>
-            <div class="d-flex justify-content-end">
-              <i class="fe fe-chevron-right text-dark"></i>
-            </div>
-          </div>
-          <div class="row align-items-center no-gutters">
-            <div class="col-auto">
-              <div class="card-text small text-secondary mr-2">0/10</div>
-            </div>
-            <div class="col">
-              <div class="progress progress-sm">
-                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a class="d-block mb-3" href="#">
-          <div class="d-flex justify-content-between no-gutters">
-            <p class="card-text text-dark mb-0">
-              <img src="https://nutrita.app/static/media/outline-donut_small-24px.68f6a64d.svg" alt="" class="d-inline-block mr-2" width="20">Nutrient Score <span class="badge badge-soft-secondary">No Data</span>
-            </p>
-            <div class="d-flex justify-content-end">
-              <i class="fe fe-chevron-right text-dark"></i>
-            </div>
-          </div>
-          <div class="row align-items-center no-gutters">
-            <div class="col-auto">
-              <div class="card-text small text-secondary mr-2">0/10</div>
-            </div>
-            <div class="col">
-              <div class="progress progress-sm">
-                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
-              </div>
-            </div>
-          </div>
-        </a>
-        <a class="d-block mb-5" href="#">
-          <div class="d-flex justify-content-between no-gutters">
-            <p class="card-text text-dark mb-0">
-              <img src="https://nutrita.app/static/media/outline-bubble_chart-24px.e7a989d4.svg" alt="" class="d-inline-block mr-2" width="20">Amino Acid Completness <span class="badge badge-soft-secondary">No Data</span>
-            </p>
-            <div class="d-flex justify-content-end">
-              <i class="fe fe-chevron-right text-dark"></i>
-            </div>
-          </div>
-          <div class="row align-items-center no-gutters">
-            <div class="col-auto">
-              <div class="card-text small text-secondary mr-2">0/10</div>
-            </div>
-            <div class="col">
-              <div class="progress progress-sm">
-                <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a class="d-block mb-5" href="#">
-          <div class="d-flex justify-content-between no-gutters mt-3">
-            <p class="card-text text-dark mb-0">
-              Net Carbs
-            </p>
-            <div class="d-flex justify-content-end">
-              <i class="fe fe-chevron-right text-dark"></i>
-            </div>
-          </div>
-          <div class="row align-items-center no-gutters">
-            <div class="col-auto">
-              <div class="card-text small text-secondary mr-2">No recent data</div>
-            </div>
-          </div>
-        </a>
-
-        <a class="d-block mb-5" href="#">
-          <div class="d-flex justify-content-between no-gutters mt-3">
-            <p class="card-text text-dark mb-0">
-              Proteins
-            </p>
-            <div class="d-flex justify-content-end">
-              <i class="fe fe-chevron-right text-dark"></i>
-            </div>
-          </div>
-          <div class="row align-items-center no-gutters">
-            <div class="col-auto">
-              <div class="card-text small text-secondary mr-2">No recent data</div>
-            </div>
-          </div>
-        </a>
-        <a class="d-block mb-5" href="#">
-          <div class="d-flex justify-content-between no-gutters mt-3">
-            <p class="card-text text-dark mb-0">
-              Blood β-hydroxybutyrate
-            </p>
-            <div class="d-flex justify-content-end">
-              <i class="fe fe-chevron-right text-dark"></i>
-            </div>
-          </div>
-          <div class="row align-items-center no-gutters">
-            <div class="col-auto">
-              <div class="card-text small text-secondary mr-2">No recent data</div>
-            </div>
-          </div>
-        </a>
-        <a class="d-block mb-5" data-toggle="modal" data-target="#reportDetailsWeight">
-          <div class="d-flex justify-content-between no-gutters mt-3">
-            <p class="card-text text-dark mb-0">
-              Weight
-            </p>
-            <div class="d-flex justify-content-end">
-              <i class="fe fe-chevron-right text-dark"></i>
-            </div>
-          </div>
-          <div class="row align-items-center no-gutters">
-            <div class="col-auto">
-              <div class="card-text small text-secondary mr-2">No recent data</div>
-            </div>
-          </div>
-        </a>
-
       </div>
       <div class="alert alert-success alert-dismissible fade show fixed-bottom mx-3" role="alert" style="margin-bottom: 56px;">
         <i class="fe fe-heart mr-2"></i>Hi Guillaume!
@@ -250,10 +294,10 @@
         </button>
       </div>
 
-      <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2">
+      <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
         <a class="nav-link text-dark h5 py-0 text-center mb-0" href="#"><i class="fe fe-home text-success d-block mb-2"></i>Home</a>
-        <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal" href="https://guillaumepalayer.github.io/nutrita-premium/dist/journal.html"><i class="fe fe-activity d-block mb-2"></i>Journal</a>
-        <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal" href="#"><i class="fe fe-user d-block mb-2"></i>Profile</a>
+        <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal" href="journal.html"><i class="fe fe-activity d-block mb-2"></i>Journal</a>
+        <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal" href="foryou.html"><img class="d-block mx-auto mb-2" src="assets/img/baseline-photo_filter-24px.svg" alt="" width="16">For You</a>
       </nav>
     </div>
     <!-- IDEA: modal reportDetailsWeight -->

@@ -1,35 +1,72 @@
-<nav class="navbar navbar-expand-lg navbar-light border-0 px-3 mb-2 mb-md-5 bg-transparent fixed-top" id="topnav">
-  <a href="#"></a>
+<nav class="navbar navbar-expand-lg navbar-light px-3 mb-2 mb-md-5 bg-white fixed-top d-none d-md-flex" id="topnav">
   <div class="container">
 
 
     <!-- Brand -->
-    <a class="navbar-brand mr-3 d-none d-lg-flex" href="index.html">
+    <a class="navbar-brand mr-3 d-flex align-items-center" href="index.html">
       <img src="assets/img/logo.svg" alt="..." class="navbar-brand-img">
-      <span class="text-secondary ml-2 align-middle">Nutrita</span>
+      <span class="text-secondary ml-2 h3 mb-0">Nutrita</span>
     </a>
     <!-- Search Form desktop -->
-    <form class="form-inline w-50 d-none d-lg-flex">
-      <div class="input-group input-group-merge input-group-lg w-100" data-toggle="lists" data-lists-values='["name"]'>
+    <a class="d-block w-50" href="search-zero-state.html">
+      <form class="form-inline d-block w-auto">
+        <div class="input-group input-group-merge input-group-lg" data-toggle="lists" data-lists-values='["name"]'>
 
-        <!-- Input -->
-        <input type="search" class="form-control form-control-prepended bg-light border-0" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search">
-        <div class="input-group-prepend d-lg-none">
-          <div class="input-group-text bg-light border-0">
-            <i class="fe fe-menu"></i>
+          <!-- Input -->
+          <input type="search" class="form-control form-control-prepended bg-light border-0" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
+          <div class="input-group-prepend d-lg-none">
+            <div class="input-group-text bg-light border-0">
+              <i class="fe fe-menu"></i>
+            </div>
+          </div>
+          <div class="input-group-prepend d-none d-lg-flex">
+            <div class="input-group-text bg-light border-0">
+              <i class="fe fe-search"></i>
+            </div>
           </div>
         </div>
-        <div class="input-group-prepend d-none d-lg-flex">
-          <div class="input-group-text bg-light border-0">
-            <i class="fe fe-search"></i>
-          </div>
-        </div>
+      </form>
+    </a>
 
-      </div>
-    </form>
+
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse order-lg-last" id="navbar">
+
+      <!-- Form -->
+      <form class="mt-4 mb-3 d-md-none">
+        <input type="search" class="form-control form-control-rounded" placeholder="Search" aria-label="Search">
+      </form>
+
+      <!-- Navigation -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item mr-3">
+          <a class="nav-link" href="#modalDemo" data-toggle="modal">
+            help
+          </a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link" href="#onboardingTuto" data-toggle="modal">
+            Sign up
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#modalDemo" data-toggle="modal">
+            Log in
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div> <!-- / .container -->
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light px-3 mb-2 mb-md-5 bg-transparent border-0 fixed-top d-flex d-md-none" id="topnav">
+  <div class="container">
+
 
     <!-- Search Form mobile -->
-    <a class="vw-100" href="https://guillaumepalayer.github.io/nutrita-premium/dist/search-zero-state.html">
+    <a class="vw-100 d-flex d-lg-none" href="search-zero-state.html">
       <form class="form-inline w-100 d-lg-none">
         <div class="input-group input-group-merge input-group-lg w-100" data-toggle="lists" data-lists-values='["name"]'>
 
@@ -49,46 +86,6 @@
         </div>
       </form>
     </a>
-
-
-    <!-- Collapse -->
-    <div class="collapse navbar-collapse order-lg-last" id="navbar">
-
-      <!-- Form -->
-      <form class="mt-4 mb-3 d-md-none">
-        <input type="search" class="form-control form-control-rounded" placeholder="Search" aria-label="Search">
-      </form>
-
-      <!-- Navigation -->
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#modalDemo" data-toggle="modal">
-            Pricing
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#modalDemo" data-toggle="modal">
-            help
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#modalDemo" data-toggle="modal">
-            Blog
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#modalDemo" data-toggle="modal">
-            Sign up
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#modalDemo" data-toggle="modal">
-            Log in
-          </a>
-        </li>
-      </ul>
-
-    </div>
 
   </div> <!-- / .container -->
 </nav>
