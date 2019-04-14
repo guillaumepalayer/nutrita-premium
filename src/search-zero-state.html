@@ -6,191 +6,272 @@
     })
   </head>
   <body>
-    @@include("partials/topnav-connected.html")
+    @@include("partials/topnav-search.html")
 
     <!-- MAIN CONTENT
     ================================================== -->
-    <div class="container mb-6">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-10 col-xl-8 mt-6 mt-lg-7">
-          <ul class="list-group list-group-flush mb-4">
-            <a href="search-results.html">
-              <li class="list-group-item px-0">
-                <div class="row align-items-center vw-100 text-dark">
-                  <div class="col-auto ml-2">
-                    <i class="fe fe-clock rounded-circle bg-light"></i>
-                  </div>
-                  <div class="col">
-                    <h4 class="mb-0 font-weight-normal text-dark">Beef liver raw</h4>
-                  </div>
-                  <div class="col-auto align-items-end">
-                      <i class="fe fe-arrow-up-left"></i>
-                  </div>
-                </div>
+    <div class="main-content">
+      <div class="container mb-6">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8 mt-6 mt-lg-7">
+            <ul class="list-group mt-n5 mt-lg-n6 d-block d-md-none d-xl-block rounded-bottom bg-white mx-lg-n1 pt-2 mb-5">
+              <li class="list-group-item pl-4 border-bottom-0">
+                <a class="d-block w-100 align-items-center pt-3 text-body align-items-center d-flex" href="#"><i class="fe fe-search text-muted mr-4 h3 mb-0 align-center"></i>Cras justo odio</a>
               </li>
-            </a>
-            <a href="search-results.html">
-              <li class="list-group-item px-0">
-                <div class="row align-items-center vw-100 text-dark">
-                  <div class="col-auto ml-2">
-                    <i class="fe fe-clock rounded-circle bg-light"></i>
-                  </div>
-                  <div class="col">
-                    <h4 class="mb-0 font-weight-normal text-dark">Beef liver raw</h4>
-                  </div>
-                  <div class="col-auto align-items-end">
-                      <i class="fe fe-arrow-up-left"></i>
-                  </div>
-                </div>
+              <li class="list-group-item pl-4 border-bottom-0">
+                <a class="d-block w-100 align-items-center text-body align-items-center d-flex" href="#"><i class="fe fe-search text-muted mr-4 h3 mb-0 align-center"></i>Cras justo odio</a>
               </li>
-            </a>
-          </ul>
-          <ul class="nav nav-tabs nav-tabs-sm nav-overflow mb-4">
-            <li class="nav-item">
-              <a href="#">
-                <div class="card mb-3 bg-dark px-3 py-4">
-                  <img class="rounded" src="https://nutrita.app/static/media/zinc.361f0755.svg" alt="" width="88" height="88">
-                </div>
-                <h2 class="h4 text-dark">Top sources of Zinc</h2>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#">
-                <div class="card mb-3 bg-dark px-3 py-4">
-                  <img class="rounded" src="https://nutrita.app/static/media/leucine.91ab660c.svg" alt="" width="88" height="88">
-                </div>
-                <h2 class="h4 text-dark">Top source of Leucine</h2>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#">
-                <div class="card mb-3 bg-dark px-3 py-4">
-                  <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
-                </div>
-                <h2 class="h4 text-dark">Top source of Vitamin K2</h2>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#">
-                <div class="card mb-3 bg-dark px-3 py-4">
-                  <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
-                </div>
-                <h2 class="h4 text-dark">Collection title</h2>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#">
-                <div class="card mb-3 bg-dark px-3 py-4">
-                  <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
-                </div>
-                <h2 class="h4 text-dark">Collection title</h2>
-              </a>
-            </li>
-            <li class="nav-item pr-3">
-              <a href="#">
-                <div class="card mb-3 bg-dark px-3 py-4">
-                  <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
-                </div>
-                <h2 class="h4 text-dark">Collection title</h2>
-              </a>
-            </li>
-            <li class="nav-item pr-3">
-              <a href="#">
-                <div class="card mb-3 bg-dark px-3 py-4">
-                  <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
-                </div>
-                <h2 class="h4 text-dark">Collection title</h2>
-              </a>
-            </li>
-          </ul>
-          <label for="customRange2">Keto Score<i class="fe fe-info align-top ml-1"></i></label>
-          <input type="range" class="custom-range" min="0" max="10" id="customRange1">
-          <div class="row justify-content-between text-secondary mt-n3 pt-1 mb-4">
-            <div class="col">
-            <small>0</small>
+              <li class="list-group-item pl-4">
+                <a class="d-block w-100 align-items-center text-body align-items-center d-flex" href="#"><i class="fe fe-search text-muted mr-4 h3 mb-0 align-center"></i>Cras justo odio</a>
+              </li>
+            </ul>
+
+            <h4 class="mt-0 mt-md-4 mt-lg-0">Explore our collections</h4>
+            <p class="text-muted">This is a custom sub-header..</p>
+            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0">
+              <li class="nav-item">
+                <a href="#">
+                  <div class="card mb-3 bg-dark px-3 py-4">
+                    <img class="rounded" src="https://nutrita.app/static/media/zinc.361f0755.svg" alt="" width="88" height="88">
+                  </div>
+                  <h2 class="h4 text-dark">Top sources of Zinc</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                  <div class="card mb-3 bg-dark px-3 py-4">
+                    <img class="rounded" src="https://nutrita.app/static/media/leucine.91ab660c.svg" alt="" width="88" height="88">
+                  </div>
+                  <h2 class="h4 text-dark">Top source of Leucine</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                  <div class="card mb-3 bg-dark px-3 py-4">
+                    <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
+                  </div>
+                  <h2 class="h4 text-dark">Top source of Vitamin K2</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                  <div class="card mb-3 bg-dark px-3 py-4">
+                    <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
+                  </div>
+                  <h2 class="h4 text-dark">Collection title</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#">
+                  <div class="card mb-3 bg-dark px-3 py-4">
+                    <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
+                  </div>
+                  <h2 class="h4 text-dark">Collection title</h2>
+                </a>
+              </li>
+              <li class="nav-item pr-3">
+                <a href="#">
+                  <div class="card mb-3 bg-dark px-3 py-4">
+                    <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
+                  </div>
+                  <h2 class="h4 text-dark">Collection title</h2>
+                </a>
+              </li>
+              <li class="nav-item pr-3">
+                <a href="#">
+                  <div class="card mb-3 bg-dark px-3 py-4">
+                    <img class="rounded" src="https://nutrita.app/static/media/vitamin_k2.ea4b1e15.svg" alt="" width="88" height="88">
+                  </div>
+                  <h2 class="h4 text-dark">Collection title</h2>
+                </a>
+              </li>
+            </ul>
+            <hr class="my-5">
+            <h4>Popular filters</h4>
+            <p class="text-muted">These are some of the filters people use the most often.</p>
+            <div class="custom-control custom-checkbox mb-4">
+              <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+              <label class="custom-control-label" for="customCheck1">Vitamin C</label>
+              <small id="HelpBlock1" class="form-text text-muted">
+                Highest to lowest absolute amounts
+              </small>
             </div>
-            <div class="col text-center">
-            <small>5</small>
+            <div class="custom-control custom-checkbox mb-4">
+              <input type="checkbox" class="custom-control-input" id="customCheck2" aria-describedby="HelpBlock2">
+              <label class="custom-control-label" for="customCheck2">Magnesium</label>
+              <small id="HelpBlock2" class="form-text text-muted">
+                Highest to lowest absolute amounts
+              </small>
             </div>
-            <div class="col text-right">
-            <small>10</small>
+            <div class="custom-control custom-checkbox mb-4">
+              <input type="checkbox" class="custom-control-input" id="customCheck3" aria-describedby="HelpBlock3">
+              <label class="custom-control-label" for="customCheck3">Selenium</label>
+              <small id="HelpBlock3" class="form-text text-muted">
+                Highest to lowest absolute amounts
+              </small>
+            </div>
+            <div class="custom-control custom-checkbox mb-4">
+              <input type="checkbox" class="custom-control-input" id="customCheck4" aria-describedby="HelpBlock4">
+              <label class="custom-control-label" for="customCheck4">Vitamin K1</label>
+              <small id="HelpBlock4" class="form-text text-muted">
+                Highest to lowest absolute amounts
+              </small>
+            </div>
+            <hr class="my-5">
+            <h4>Nutrient Density</h4>
+            <p class="text-muted">It scores food out of 10 according to how nutritious it is.<i class="fe fe-info text-secondary align-top ml-1"></i></p>
+            <label for="customRange2">5/10</label>
+            <input type="range" class="custom-range" min="0" max="10" id="customRange2">
+            <div class="row justify-content-between text-secondary mt-n3 pt-1 mb-4">
+              <div class="col">
+              <small>0</small>
+              </div>
+              <div class="col text-center">
+              <small>5</small>
+              </div>
+              <div class="col text-right">
+              <small>10</small>
+              </div>
+            </div>
+            <hr class="my-5">
+            <h4>Keto Score</h4>
+            <p class="text-muted">It scores food out of 10 according to how likely it is to promote ketosis, 1 being the least ketogenic and 10 being the most.<i class="fe text-secondary fe-info align-top ml-1"></i></p>
+            <label for="customRange1">5/10</label>
+            <input type="range" class="custom-range" min="0" max="10" id="customRange1">
+            <div class="row justify-content-between text-secondary mt-n3 pt-1 mb-4">
+              <div class="col">
+              <small>0</small>
+              </div>
+              <div class="col text-center">
+              <small>5</small>
+              </div>
+              <div class="col text-right">
+              <small>10</small>
+              </div>
+            </div>
+            <hr class="my-5">
+            <h4>Insulin Index</h4>
+            <p class="text-muted">It gives a percentage score for how strongly a food may stimulate insulin secretion.<i class="fe fe-info text-secondary align-top ml-1"></i></p>
+            <label for="customRange2">50 %</label>
+            <input type="range" class="custom-range" min="0" max="10" id="customRange2">
+            <div class="row justify-content-between text-secondary mt-n3 pt-1 mb-4">
+              <div class="col">
+              <small>0 %</small>
+              </div>
+              <div class="col text-center">
+              <small>50 %</small>
+              </div>
+              <div class="col text-right">
+              <small>100 %</small>
+              </div>
+            </div>
+            <hr class="my-5">
+            <h4 class="mb-0">Vitamins</h4>
+            <div class="accordion" id="accordionVitamins">
+              <div class="card border-0 shadow-none mb-0 bg-transparent">
+                <div class="card-header p-0 border-0" id="headingOne">
+                  <a class="h5 mb-0 collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    Show all vitamins
+                  </a>
+                </div>
+                <!-- Minerals Sub Score -->
+                <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordionVitamins">
+                  <div class="card-body pl-0 pt-0">
+                    <div class="custom-control custom-checkbox mb-4">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                      <label class="custom-control-label" for="customCheck1">Mineral title</label>
+                      <small id="HelpBlock1" class="form-text text-muted">
+                        Highest to lowest absolute amounts
+                      </small>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-4">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                      <label class="custom-control-label" for="customCheck1">Mineral title</label>
+                      <small id="HelpBlock1" class="form-text text-muted">
+                        Highest to lowest absolute amounts
+                      </small>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-4">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                      <label class="custom-control-label" for="customCheck1">Mineral title</label>
+                      <small id="HelpBlock1" class="form-text text-muted">
+                        Highest to lowest absolute amounts
+                      </small>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-4">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                      <label class="custom-control-label" for="customCheck1">Mineral title</label>
+                      <small id="HelpBlock1" class="form-text text-muted">
+                        Highest to lowest absolute amounts
+                      </small>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-4">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                      <label class="custom-control-label" for="customCheck1">Vitamin C</label>
+                      <small id="HelpBlock1" class="form-text text-muted">
+                        Highest to lowest absolute amounts
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="mt-3 mb-5">
+            <h4 class="mb-0">Minerals</h4>
+            <div class="accordion" id="accordionMinerals">
+              <div class="card border-0 shadow-none mb-0 bg-transparent">
+                <div class="card-header p-0 border-0" id="headingTwo">
+                  <a class="h5 mb-0 collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="false" aria-controls="collapseTwo">
+                    Show all minerals
+                  </a>
+                </div>
+                <!-- Minerals Sub Score -->
+                <div id="collapse3" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionMinerals">
+                  <div class="card-body pl-0 pt-0">
+                    <div class="custom-control custom-checkbox mb-4">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                      <label class="custom-control-label" for="customCheck1">Mineral title</label>
+                      <small id="HelpBlock1" class="form-text text-muted">
+                        Highest to lowest absolute amounts
+                      </small>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-4">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                      <label class="custom-control-label" for="customCheck1">Mineral title</label>
+                      <small id="HelpBlock1" class="form-text text-muted">
+                        Highest to lowest absolute amounts
+                      </small>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-4">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                      <label class="custom-control-label" for="customCheck1">Mineral title</label>
+                      <small id="HelpBlock1" class="form-text text-muted">
+                        Highest to lowest absolute amounts
+                      </small>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-4">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                      <label class="custom-control-label" for="customCheck1">Mineral title</label>
+                      <small id="HelpBlock1" class="form-text text-muted">
+                        Highest to lowest absolute amounts
+                      </small>
+                    </div>
+                    <div class="custom-control custom-checkbox mb-4">
+                      <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                      <label class="custom-control-label" for="customCheck1">Vitamin C</label>
+                      <small id="HelpBlock1" class="form-text text-muted">
+                        Highest to lowest absolute amounts
+                      </small>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <label for="customRange1">Insulin Index<i class="fe fe-info align-top ml-1"></i></label>
-          <input type="range" class="custom-range" min="0" max="100" id="customRange2">
-          <div class="row justify-content-between text-secondary mt-n3 pt-1 mb-4">
-            <div class="col">
-            <small>0%</small>
-            </div>
-            <div class="col text-center">
-            <small>50</small>
-            </div>
-            <div class="col text-right">
-            <small>100%</small>
-            </div>
-          </div>
-          <label for="customRange3">Nutrient Density<i class="fe fe-info align-top ml-1"></i></label>
-          <input type="range" class="custom-range" min="0" max="100" id="customRange3">
-          <div class="row justify-content-between text-secondary mt-n3 pt-1 mb-4">
-            <div class="col">
-            <small>0%</small>
-            </div>
-            <div class="col text-center">
-            <small>50</small>
-            </div>
-            <div class="col text-right">
-            <small>100%</small>
-            </div>
-          </div>
-          <h6 class="header-pretitle mt-4">Sort by vitamins</h6>
-          <ul class="list-group list-group-flush mb-4">
-            <a href="#">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <h5 class="text-dark">Vitamin title</h5>
-              </li>
-            </a>
-            <a href="#">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <h5 class="text-dark">Vitamin title</h5>
-              </li>
-            </a>
-            <a href="#">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <h5 class="text-dark">Vitamin title</h5>
-              </li>
-            </a>
-            <a href="#">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <h5>See more</h5>
-              </li>
-            </a>
-          </ul>
-          <h6 class="header-pretitle">Sort by Minerals</h6>
-          <ul class="list-group list-group-flush mb-4">
-            <a href="#">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <h5 class="text-dark">Mineral title</h5>
-              </li>
-            </a>
-            <a href="#">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <h5 class="text-dark">Mineral title</h5>
-              </li>
-            </a>
-            <a href="#">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <h5 class="text-dark">Mineral title</h5>
-              </li>
-            </a>
-            <a href="#">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <h5>See more</h5>
-              </li>
-            </a>
-          </ul>
         </div>
       </div>
     </div>
+
 
     <!-- JAVASCRIPT
     ================================================== -->

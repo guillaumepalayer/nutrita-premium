@@ -697,95 +697,74 @@
     ================================================== -->
     
     
-      <nav class="navbar navbar-expand-lg navbar-light px-3 mb-2 mb-md-5 bg-white fixed-top d-none d-md-flex" id="topnav">
+      <nav class="navbar navbar-expand-lg navbar-light px-3 mb-2 mb-md-5 bg-white fixed-top d-none d-lg-flex" id="topnav">
         <div class="container">
+          <div class="row d-flex justify-content-between no-gutters w-100">
+            <div class="col d-flex align-items-center">
+              <!-- Brand -->
+              <a class="navbar-brand mr-3 d-flex align-items-center" href="index.html">
+                <i class="fe fe-menu mr-5 h1 mb-0 ml-n4"></i>
+                <img src="assets/img/logo.svg" alt="..." class="navbar-brand-img">
+                <span class="text-secondary ml-2 h3 mb-0">Nutrita</span>
+              </a>
+            </div>
+            <div class="col-lg-8 col-xl-8">
+              <!-- Search Form mobile -->
+              <a href="search-zero-state.html">
+                <form class="form-inline">
+                  <div class="input-group input-group-merge input-group-lg w-100 rounded" data-toggle="lists" data-lists-values='["name"]'>
 
-
-          <!-- Brand -->
-          <a class="navbar-brand mr-3 d-flex align-items-center" href="index.html">
-            <img src="assets/img/logo.svg" alt="..." class="navbar-brand-img">
-            <span class="text-secondary ml-2 h3 mb-0">Nutrita</span>
-          </a>
-          <!-- Search Form desktop -->
-          <a class="d-block w-50" href="search-zero-state.html">
-            <form class="form-inline d-block w-auto">
-              <div class="input-group input-group-merge input-group-lg" data-toggle="lists" data-lists-values='["name"]'>
-
-                <!-- Input -->
-                <input type="search" class="form-control form-control-prepended bg-light border-0" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
-                <div class="input-group-prepend d-lg-none">
-                  <div class="input-group-text bg-light border-0">
-                    <i class="fe fe-menu"></i>
+                    <!-- Input -->
+                    <input type="search" class="form-control form-control-prepended bg-white" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
+                    <div class="input-group-prepend">
+                      <div class="input-group-text bg-white">
+                        <i class="fe fe-search"></i>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="input-group-prepend d-none d-lg-flex">
-                  <div class="input-group-text bg-light border-0">
-                    <i class="fe fe-search"></i>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </a>
-
-
-          <!-- Collapse -->
-          <div class="collapse navbar-collapse order-lg-last" id="navbar">
-
-            <!-- Form -->
-            <form class="mt-4 mb-3 d-md-none">
-              <input type="search" class="form-control form-control-rounded" placeholder="Search" aria-label="Search">
-            </form>
-
-            <!-- Navigation -->
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item mr-3">
-                <a class="nav-link" href="#modalDemo" data-toggle="modal">
-                  help
-                </a>
-              </li>
-              <li class="nav-item mr-3">
-                <a class="nav-link" href="#onboardingTuto" data-toggle="modal">
-                  Sign up
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#modalDemo" data-toggle="modal">
-                  Log in
-                </a>
-              </li>
-            </ul>
-
+                </form>
+              </a>
+            </div>
+            <div class="col">
+              <ul class="navbar-nav d-flex justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="#modalDemo" data-toggle="modal">
+                    help
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#onboardingTuto" data-toggle="modal">
+                    Connect
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-
         </div> <!-- / .container -->
       </nav>
 
-      <nav class="navbar navbar-expand-lg navbar-light px-3 mb-2 mb-md-5 bg-transparent border-0 fixed-top d-flex d-md-none" id="topnav">
+      <nav class="navbar navbar-expand-lg navbar-light px-3 mb-2 mb-md-5 bg-transparent border-0 fixed-top d-flex d-lg-none" id="topnav">
         <div class="container">
+          <div class="row w-100 d-flex justify-content-center no-gutters">
+            <div class="col-12 col-lg-10 col-xl-8 px-md-3">
+              <!-- Search Form mobile -->
+              <a href="search-zero-state.html">
+                <form class="form-inline">
+                  <div class="input-group input-group-merge input-group-lg w-100 shadow-sm rounded" data-toggle="lists" data-lists-values='["name"]'>
 
+                    <!-- Input -->
+                    <input type="search" class="form-control form-control-prepended bg-white" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
+                    <div class="input-group-prepend">
+                      <div class="input-group-text bg-white">
+                        <i class="fe fe-menu"></i>
+                      </div>
+                    </div>
 
-          <!-- Search Form mobile -->
-          <a class="vw-100 d-flex d-lg-none" href="search-zero-state.html">
-            <form class="form-inline w-100 d-lg-none">
-              <div class="input-group input-group-merge input-group-lg w-100 shadow-sm rounded" data-toggle="lists" data-lists-values='["name"]'>
-
-                <!-- Input -->
-                <input type="search" class="form-control form-control-prepended bg-white border-light" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
-                <div class="input-group-prepend d-lg-none">
-                  <div class="input-group-text bg-white border-light">
-                    <i class="fe fe-menu"></i>
                   </div>
-                </div>
-                <div class="input-group-prepend d-none d-lg-flex">
-                  <div class="input-group-text bg-light border-0">
-                    <i class="fe fe-search"></i>
-                  </div>
-                </div>
-
-              </div>
-            </form>
-          </a>
-
+                </form>
+              </a>
+            </div>
+          </div>
         </div> <!-- / .container -->
       </nav>
 
@@ -866,12 +845,28 @@
 
       <div class="container mb-5">
         <div class="row justify-content-center">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <div class="card mb-0 bg-soft-ocre">
+          <div class="card-deck col-12 col-lg-10 col-xl-8 px-lg-0">
+            <div class="card bg-green-light mx-0 mx-lg-3">
               <div class="card-body p-4">
                 <div class="media">
                   <div class="media-body mr-3">
-                    <h4>Introducing Nutrita Premium</h4>
+                    <h6 class="text-uppercase text-white mb-1">Macro Calculator</h6>
+                    <h4>Find the right food for the right goal</h4>
+                    <p class="small text-secondary">Nutrita is here to listen and give you some simple advices based on good science.</p>
+                    <button class="btn btn-outline-dark btn-sm h5 font-weight-normal mb-2" data-toggle="modal" data-target="#onboardingTuto">Get Started</button>
+                  </div>
+                  <div class="align-self-center">
+                    <img class="mr-n3 mt-n3 mb-n3" src="https://nutrita-calculator.firebaseapp.com/static/media/happiness.51409435.svg" alt="" width="108">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card bg-soft-ocre d-none d-lg-flex">
+              <div class="card-body p-4">
+                <div class="media">
+                  <div class="media-body mr-3">
+                    <h6 class="text-uppercase text-warning mb-1">Nutrita Premium</h6>
+                    <h4>Free 30-day trial</h4>
                     <p class="small text-secondary">Turn your food habits and personal data into meaningful insights</p>
                     <button class="btn btn-outline-dark btn-sm h5 font-weight-normal mb-2" data-toggle="modal" data-target="#onboardingTuto">Get started</button>
                   </div>
@@ -907,8 +902,8 @@
                           <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Keto score
@@ -930,8 +925,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Nutrient Density
@@ -953,8 +948,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Insulin Index
@@ -993,8 +988,8 @@
                           <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Keto score
@@ -1016,8 +1011,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Nutrient Density
@@ -1039,8 +1034,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Insulin Index
@@ -1079,8 +1074,8 @@
                           <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Keto score
@@ -1102,8 +1097,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Nutrient Density
@@ -1125,8 +1120,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Insulin Index
@@ -1157,6 +1152,46 @@
               </div>
               <a href="#!" class="card-footer text-center font-weight-bold border-top">See more</a>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IDEA: keto guides -->
+      <div class="container mb-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
+            <!-- Title -->
+            <h1 class="header-title mb-4">
+              Learn more with our keto guides
+            </h1>
+            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-4">
+
+              <li class="nav-item" style="min-width: 192px">
+                <a href="https://nutrita.app/keto-flu/" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3" src="https://nutrita.app/wp-content/uploads/2018/10/keto-flu-blog-post.svg" alt="">
+                  <h2 class="h4 text-dark">What’s the Keto Flu & How to Cure it</h2>
+                </a>
+              </li>
+              <li class="nav-item" style="min-width: 192px">
+                <a href="#" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/12/keto-guide-beginner-blog-400x250.png" alt="">
+                  <h2 class="h4 text-dark">The Ultimate Keto Diet Guide for Beginners</h2>
+                </a>
+              </li>
+              <li class="nav-item" style="min-width: 192px">
+                <a href="https://nutrita.app/measure-ketone-levels/" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/10/measure-ketosis-post.jpg" alt="">
+                  <h2 class="h4 text-dark">3 ways to measure ketone levels: which is the best?  </h2>
+                </a>
+              </li>
+              <li class="nav-item" style="min-width: 192px">
+                <a href="#" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/11/ketosis-blog-featured-img-400x250.png" alt="">
+                  <h2 class="h4 text-dark">The Ultimate Guide to Ketosis</h2>
+                </a>
+              </li>
+            </ul>
+
           </div>
         </div>
       </div>
@@ -1203,8 +1238,8 @@
                           <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Keto score
@@ -1226,8 +1261,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Nutrient Density
@@ -1249,8 +1284,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Insulin Index
@@ -1289,8 +1324,8 @@
                           <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Keto score
@@ -1312,8 +1347,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Nutrient Density
@@ -1335,8 +1370,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Insulin Index
@@ -1375,8 +1410,8 @@
                           <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Keto score
@@ -1398,8 +1433,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Nutrient Density
@@ -1421,8 +1456,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Insulin Index
@@ -1453,6 +1488,34 @@
               </div>
               <a href="#!" class="card-footer text-center font-weight-bold border-top">See more</a>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- IDEA: diabet guides -->
+      <div class="container mb-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 col-xl-8">
+            <!-- Title -->
+            <h1 class="header-title mb-4">
+              Learn more with our blood sugar guides
+            </h1>
+            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-4">
+
+              <li class="nav-item" style="max-width: 192px; min-width: 192px">
+                <a href="" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/01/insulin-resistance-guide-blog-400x250.png" alt="">
+                  <h2 class="h4 text-dark">The ultimate Guide to Insulin, Insulin resistance and more…</h2>
+                </a>
+              </li>
+              <li class="nav-item" style="max-width: 192px; min-width: 192px">
+                <a href="#" target="_blank">
+                  <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/12/keto-diabet-blog-post.png" alt="">
+                  <h2 class="h4 text-dark">Can a keto diet reverse type 2 diabetes?</h2>
+                </a>
+              </li>
+            </ul>
+
           </div>
         </div>
       </div>
@@ -1500,8 +1563,8 @@
                           <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Keto score
@@ -1523,8 +1586,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Nutrient Density
@@ -1546,8 +1609,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Insulin Index
@@ -1586,8 +1649,8 @@
                           <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Keto score
@@ -1609,8 +1672,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Nutrient Density
@@ -1632,8 +1695,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Insulin Index
@@ -1672,8 +1735,8 @@
                           <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Keto score
@@ -1695,8 +1758,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Nutrient Density
@@ -1718,8 +1781,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Insulin Index
@@ -1754,19 +1817,20 @@
         </div>
       </div>
 
-      <div class="container mb-5">
+
+      <div class="container mb-5 d-md-none">
         <div class="row justify-content-center">
           <div class="col-12 col-lg-10 col-xl-8">
-            <div class="card mb-4 bg-green-light">
+            <div class="card mb-0 bg-soft-ocre">
               <div class="card-body p-4">
                 <div class="media">
                   <div class="media-body mr-3">
-                    <h6 class="text-uppercase text-white mb-1">Food Calculator</h6>
-                    <h4 class="mb-4">Find the right food for the right goal</h4>
-                    <button class="btn btn-outline-dark btn-sm h5 font-weight-normal mb-2" data-toggle="modal" data-target="#onboardingTuto">Get Started</button>
+                    <h4>Introducing Nutrita Premium</h4>
+                    <p class="small text-secondary">Turn your food habits and personal data into meaningful insights</p>
+                    <button class="btn btn-outline-dark btn-sm h5 font-weight-normal mb-2" data-toggle="modal" data-target="#onboardingTuto">Get started</button>
                   </div>
                   <div class="align-self-center">
-                    <img class="mr-n3 mt-n3 mb-n3" src="https://nutrita-calculator.firebaseapp.com/static/media/happiness.51409435.svg" alt="" width="108">
+                    <img class="mr-n3 mt-n3 mb-n3" src="assets/img/illustrations/undraw_fitness_tracker_3033.svg" alt="" width="108">
                   </div>
                 </div>
               </div>
@@ -1797,8 +1861,8 @@
                           <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Keto score
@@ -1820,8 +1884,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Nutrient Density
@@ -1843,8 +1907,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Insulin Index
@@ -1883,8 +1947,8 @@
                           <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Keto score
@@ -1906,8 +1970,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Nutrient Density
@@ -1929,8 +1993,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Insulin Index
@@ -1969,8 +2033,8 @@
                           <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Keto score
@@ -1992,8 +2056,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Nutrient Density
@@ -2015,8 +2079,8 @@
                                 </div>
                               </div>
                             </li>
-                            <li class="nav-item ml-0">
-                              <div style="width: 164px;">
+                            <li class="nav-item mr-auto">
+                              <div style="min-width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Insulin Index
@@ -2047,53 +2111,6 @@
               </div>
               <a href="#!" class="card-footer text-center font-weight-bold border-top">See more</a>
             </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container mb-5">
-        <div class="row justify-content-center">
-          <div class="col-12 col-lg-10 col-xl-8">
-            <!-- Title -->
-            <h1 class="header-title mb-4">
-              Learn more with our resources
-            </h1>
-            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-4">
-              <li class="nav-item">
-                <a href="#">
-                  <div class="card mb-3 p-3">
-                    <img class="rounded" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/01/insulin-resistance-guide-blog-400x250.png" alt="" width="128">
-                  </div>
-                  <h2 class="h4 text-dark">The ultimate Guide to Insulin, Insulin resistance and more…</h2>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#">
-                  <div class="card mb-3 p-3">
-                    <img class="rounded" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/01/carnivore_diet_guide-blog-400x250.png" alt="" width="128">
-                  </div>
-                  <h2 class="h4 text-dark">The Ultimate Guide to the Carnivore Diet</h2>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#">
-                  <div class="card mb-3 p-3">
-                    <img class="rounded" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/12/keto-guide-beginner-blog-400x250.png" alt="" width="128">
-                  </div>
-                  <h2 class="h4 text-dark">The Ultimate Keto Diet Guide for Beginners</h2>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#">
-                  <div class="card mb-3 p-3">
-                    <img class="rounded" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/11/ketosis-blog-featured-img-400x250.png" alt="" width="128">
-                  </div>
-                  <h2 class="h4 text-dark">The Ultimate Guide to Ketosis</h2>
-                </a>
-              </li>
-              <li class="nav-item pr-3"><a href="#!"><div class="card mb-3"><div class="card-body row align-items-center justify-content-center" style="width: 128px; height: 104px;"><div class="col text-center text-muted"><i class="fe fe-plus display-4 text-muted"></i></div></div></div><h2 class="h4 text-dark">More</h2></a></li>
-            </ul>
-
           </div>
         </div>
       </div>
@@ -2780,28 +2797,32 @@
               </div>
               <div class="form-row mb-4">
                 <div class="form-group col-6 mb-0">
-                  <select class="custom-select custom-select-lg">
+                  <label for="gender">Gender</label>
+                  <select class="custom-select custom-select-lg" id="gender">
                     <option selected>Female</option>
                     <option value="1">Male</option>
                     <option value="2">Rather not say</option>
                   </select>
                 </div>
                 <div class="form-group col-6 mb-0">
-                  <input type="text" class="form-control form-control-lg" placeholder="MM/DD/YYYY" data-mask="00/00/0000">
+                  <label for="birthday">Birthday</label>
+                  <input type="text" class="form-control form-control-lg" placeholder="MM/DD/YYYY" data-mask="00/00/0000" id="birthday">
                 </div>
               </div>
               <div class="form-row mb-4">
                 <div class="form-group col-6 mb-0">
+                  <label for="weight">Weight</label>
                   <div class="input-group input-group-lg">
-                    <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Weight">
+                    <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Weight" id="weight">
                     <div class="input-group-append">
                       <span class="input-group-text rounded-right border-left-0" id="basic-addon3">Kg</span>
                     </div>
                   </div>
                 </div>
                 <div class="form-group col-6 mb-0">
+                  <label for="height">Height</label>
                   <div class="input-group input-group-lg">
-                    <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Height">
+                    <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Height" id="height">
                     <div class="input-group-append">
                       <span class="input-group-text rounded-right border-left-0" id="basic-addon2">cm</span>
                     </div>
@@ -2959,16 +2980,53 @@
             <div class="clearfix mb-4">
               <img class="mt-n6 float-right img-fluid" alt="onboarding-bodyfat" src="assets/img/illustrations/tuto-3.svg" data-holder-rendered="true" height="320">
             </div>
-            <div class="px-4">
-              <h2>Your HbA1c %</h2>
-              <form class="mb-4">
-                <div class="input-group input-group-lg mb-3">
-                  <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="HbA1c">
+            <div class="px-4 pb-4">
+              <h2>Blood metrics</h2>
+              <div class="row align-items-center mb-4">
+                <div class="col small text-muted">
+                  <button type="button" class="btn btn-sm btn-link text-muted pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="HbA1c">HbA1c</label>
+                <div class="input-group input-group-lg">
+                  <input type="text" class="form-control border-right-0" placeholder="0" aria-label="HbA1c" id="HbA1c">
                   <div class="input-group-append">
-                    <span class="input-group-text rounded-right" id="basic-addon2">%</span>
+                    <span class="input-group-text rounded-right border-left-0" id="basic-addon3">%</span>
                   </div>
                 </div>
-              </form>
+                <small id="hba1c" class="form-text text-muted pt-2 mb-0">Optional</small>
+              </div>
+              <div class="form-group">
+                <label for="FastingBloodGlucose">Fasting blood glucose</label>
+                <div class="input-group input-group-lg">
+                  <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="FastingBloodGlucose" id="FastingBloodGlucose">
+                  <div class="input-group-append">
+                    <span class="input-group-text rounded-right border-left-0" id="basic-addon3">mmol/L</span>
+                  </div>
+                </div>
+                <small id="FastingBloodGlucose" class="form-text text-muted pt-2 mb-0">Optional</small>
+              </div>
+              <div class="form-group">
+                <label for="FastingTriglycerides">Fasting triglycerides</label>
+                <div class="input-group input-group-lg">
+                  <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="FastingTriglycerides" id="FastingTriglycerides">
+                  <div class="input-group-append">
+                    <span class="input-group-text rounded-right border-left-0" id="basic-addon3">mmol/L</span>
+                  </div>
+                </div>
+                <small id="FastingTriglycerides" class="form-text text-muted pt-2 mb-0">Optional</small>
+              </div>
+              <div class="form-group">
+                <label for="FastingInsulin">Fasting insulin</label>
+                <div class="input-group input-group-lg">
+                  <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="FastingInsulin" id="FastingInsulin">
+                  <div class="input-group-append">
+                    <span class="input-group-text rounded-right border-left-0" id="basic-addon3">pmol/L</span>
+                  </div>
+                </div>
+                <small id="FastingInsulin" class="form-text text-muted pt-2 mb-0">Optional</small>
+              </div>
               <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
             </div>
           </div>
