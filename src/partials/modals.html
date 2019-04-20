@@ -4,7 +4,7 @@
   <div class="modal-dialog modal-dialog-vertical" role="document">
     <form class="modal-content" id="demoForm">
       <div class="modal-body">
-        
+
         <!-- Close -->
         <a class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -66,7 +66,7 @@
         </h4>
 
         <p class="small text-muted mb-3">
-          Usually dictated by the color scheme, but can be overriden. 
+          Usually dictated by the color scheme, but can be overriden.
         </p>
 
         <div class="btn-group-toggle d-flex mb-4" data-toggle="buttons">
@@ -77,10 +77,10 @@
             <input type="radio" name="sidebarColor" id="sidebarColorVibrant" value="vibrant"> Vibrant
           </label>
         </div>
-      
+
       </div>
       <div class="modal-footer border-0">
-        
+
         <button type="submit" class="btn btn-block btn-primary mt-auto">
           Preview
         </button>
@@ -90,6 +90,731 @@
   </div>
 </div>
 }
+
+<!-- Modal: sidebar -->
+<div class="modal fade" id="sidebarModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical modal-sidebar-nav" role="document">
+    <div class="modal-content">
+      <div class="modal-body px-0 px-md-4">
+        <nav class="navbar navbar-vertical fixed-left navbar-expand-sm navbar-light border-0">
+
+          <!-- Brand -->
+          <a class="navbar-brand text-left" href="index.html">
+            <img src="assets/img/logo.svg" class="navbar-brand-img" alt="..." height="36"> <span class="text-secondary ml-2 h3 mb-0">Nutrita</span>
+          </a>
+
+          <!-- Collapse -->
+          <div class="collapse navbar-collapse show" id="navbarVertical">
+
+            <!-- Navigation -->
+            <ul class="navbar-nav mb-md-3">
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  <i class="fe fe-home"></i>Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sidebarProducts" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarProducts">
+                 <i class="fe fe-box"></i> Products
+                </a>
+                <div class="collapse" id="sidebarProducts" style="">
+                  <ul class="nav nav-sm flex-column">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        Keto score
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        Nutrient density
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        Insulin index
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link ">
+                         Macro calculator <span class="badge badge-soft-success ml-auto">New</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  <i class="fe fe-dollar-sign"></i> Pricing
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  <i class="fe fe-smartphone"></i> Nutrita iOS App
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="changelog.html">
+                  <i class="fe fe-feather"></i> From the blog
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sidebarCompany" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCompany">
+                 <i class="fe fe-command"></i> Company
+                </a>
+                <div class="collapse" id="sidebarCompany" style="">
+                  <ul class="nav nav-sm flex-column">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        About Nutrita
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        Partner program
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link ">
+                         Careers
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <hr class="navbar-divider my-3">
+            <p class="small text-secondary">Sign in now to get 30 days of personal nutrition tracking!</p>
+            <button class="btn btn-success"type="button" name="button">Sign Up</button>
+            <hr class="navbar-divider my-3">
+            <!-- Navigation -->
+            <ul class="navbar-nav mb-md-3">
+              <li class="nav-item">
+                <a class="nav-link small" href="">
+                  Language: English <i class="fe fe-chevron-right ml-auto text-right"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link small" href="">
+                  Help
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link small" href="">
+                  Send feedback
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link small" href="">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link small" href="">
+                  Terms of service
+                </a>
+              </li>
+            </ul>
+
+          </div> <!-- / .navbar-collapse -->
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal: sidebar User Connected-->
+<div class="modal fade" id="sidebarModalUserConnected" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical modal-sidebar-nav" role="document">
+    <div class="modal-content">
+      <div class="modal-body px-0 px-md-4 pt-0 pt-md-3">
+        <nav class="navbar navbar-vertical fixed-left navbar-expand-sm navbar-light border-0">
+
+          <!-- Collapse -->
+          <div class="collapse navbar-collapse show" id="navbarVertical">
+            <div class="row d-flex justify-content-between align-items-center mb-4">
+              <div class="col-auto">
+                <a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="https://pbs.twimg.com/profile_images/1046781704608915458/5xxk-UR7_400x400.jpg" alt="..." class="avatar-img rounded-circle">
+                </a>
+              </div>
+              <div class="col-auto">
+                <a class="text-muted" href="#" data-toggle="modal" data-target="#sidebarModalUserNotification" role="button">
+                  <span class="icon active">
+                    <i class="fe fe-bell"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Navigation -->
+            <ul class="navbar-nav mb-md-3">
+              <li class="nav-item">
+                <a class="nav-link" href="dashboard-full.html">
+                  <i class="fe fe-home"></i>Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="journal.html">
+                  <i class="fe fe-activity"></i>Journal
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  <i class="fe fe-user"></i>Profile
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  <i class="fe fe-settings"></i>Settings
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  <i class="fe fe-gift"></i>Free months
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">
+                  <i class="fe fe-smartphone"></i> Nutrita iOS App
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="changelog.html">
+                  <i class="fe fe-feather"></i> From the blog
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sidebarCompany" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCompany">
+                 <i class="fe fe-command"></i> Company
+                </a>
+                <div class="collapse" id="sidebarCompany" style="">
+                  <ul class="nav nav-sm flex-column">
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        About Nutrita
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">
+                        Partner program
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link ">
+                         Careers
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <hr class="navbar-divider my-3">
+            <!-- Navigation -->
+            <ul class="navbar-nav mb-md-3">
+              <li class="nav-item">
+                <a class="nav-link small" href="">
+                  Language: English <i class="fe fe-chevron-right ml-auto text-right"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link small" href="">
+                  Help
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link small" href="">
+                  Send feedback
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link small" href="">
+                  Privacy Policy
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link small" href="">
+                  Terms of service
+                </a>
+              </li>
+            </ul>
+
+          </div> <!-- / .navbar-collapse -->
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal: sidebar user notification-->
+<div class="modal fade" id="sidebarModalUserNotification" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical modal-sidebar" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <!-- List group -->
+        <div class="list-group list-group-flush my-n3">
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+          <a class="list-group-item px-0" href="#!">
+            <div class="row no-gutters">
+              <div class="col-auto mr-3">
+                <i class="fe fe-bell text-premium"></i>
+              </div>
+              <div class="col mr-1">
+                <!-- Content -->
+                <div class="small text-muted">
+                  Notification content on one, two or three line...
+                </div>
+              </div>
+            </div> <!-- / .row -->
+            <div class="row">
+              <div class="col text-right">
+                <small class="text-muted h6">
+                  2m
+                </small>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Modal: Members -->
 <div class="modal fade" id="modalMembers" tabindex="-1" role="dialog" aria-hidden="true">
@@ -104,7 +829,7 @@
               <h4 class="card-header-title" id="exampleModalCenterTitle">
                 Add a member
               </h4>
-              
+
             </div>
             <div class="col-auto">
 
@@ -112,12 +837,12 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-              
+
             </div>
           </div> <!-- / .row -->
         </div>
         <div class="card-header">
-          
+
           <!-- Form -->
           <form>
             <div class="input-group input-group-flush input-group-merge">
@@ -136,10 +861,10 @@
           <!-- List group -->
           <ul class="list-group list-group-flush list my-n3">
             <li class="list-group-item px-0">
-              
+
               <div class="row align-items-center">
                 <div class="col-auto">
-                  
+
                   <!-- Avatar -->
                   <a href="profile-posts.html" class="avatar">
                     <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
@@ -157,10 +882,10 @@
                   <p class="small mb-0">
                     <span class="text-success">●</span> Online
                   </p>
-                  
+
                 </div>
                 <div class="col-auto">
-                  
+
                   <!-- Button -->
                   <a href="#!" class="btn btn-sm btn-white">
                     Add
@@ -171,10 +896,10 @@
 
             </li>
             <li class="list-group-item px-0">
-              
+
               <div class="row align-items-center">
                 <div class="col-auto">
-                  
+
                   <!-- Avatar -->
                   <a href="profile-posts.html" class="avatar">
                     <img src="assets/img/avatars/profiles/avatar-6.jpg" alt="..." class="avatar-img rounded-circle">
@@ -192,10 +917,10 @@
                   <p class="small mb-0">
                     <span class="text-success">●</span> Online
                   </p>
-                  
+
                 </div>
                 <div class="col-auto">
-                  
+
                   <!-- Button -->
                   <a href="#!" class="btn btn-sm btn-white">
                     Add
@@ -206,10 +931,10 @@
 
             </li>
             <li class="list-group-item px-0">
-              
+
               <div class="row align-items-center">
                 <div class="col-auto">
-                  
+
                   <!-- Avatar -->
                   <a href="profile-posts.html" class="avatar">
                     <img src="assets/img/avatars/profiles/avatar-7.jpg" alt="..." class="avatar-img rounded-circle">
@@ -227,10 +952,10 @@
                   <p class="small mb-0">
                     <span class="text-warning">●</span> Busy
                   </p>
-                  
+
                 </div>
                 <div class="col-auto">
-                  
+
                   <!-- Button -->
                   <a href="#!" class="btn btn-sm btn-white">
                     Add
@@ -241,10 +966,10 @@
 
             </li>
             <li class="list-group-item px-0">
-              
+
               <div class="row align-items-center">
                 <div class="col-auto">
-                  
+
                   <!-- Avatar -->
                   <a href="profile-posts.html" class="avatar">
                     <img src="assets/img/avatars/profiles/avatar-8.jpg" alt="..." class="avatar-img rounded-circle">
@@ -262,10 +987,10 @@
                   <p class="small mb-0">
                     <span class="text-danger">●</span> Offline
                   </p>
-                  
+
                 </div>
                 <div class="col-auto">
-                  
+
                   <!-- Button -->
                   <a href="#!" class="btn btn-sm btn-white">
                     Add
@@ -288,7 +1013,7 @@
   <div class="modal-dialog modal-dialog-vertical" role="document">
     <div class="modal-content">
       <div class="modal-body" data-toggle="lists" data-lists-values='["name"]'>
-     
+
         <!-- Form -->
         <form class="mb-4">
           <div class="input-group input-group-merge">
@@ -307,7 +1032,7 @@
             <a href="team-overview.html" class="list-group-item px-0">
               <div class="row align-items-center">
                 <div class="col-auto">
-                  
+
                   <!-- Avatar -->
                   <div class="avatar">
                     <img src="assets/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded">
@@ -325,14 +1050,14 @@
                   <p class="small text-muted mb-0">
                     <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 2hr ago</time>
                   </p>
-                  
+
                 </div>
               </div> <!-- / .row -->
             </a>
             <a href="team-overview.html" class="list-group-item px-0">
               <div class="row align-items-center">
                 <div class="col-auto">
-                  
+
                   <!-- Avatar -->
                   <div class="avatar">
                     <img src="assets/img/avatars/teams/team-logo-2.jpg" alt="..." class="avatar-img rounded">
@@ -350,7 +1075,7 @@
                   <p class="small text-muted mb-0">
                     <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 2hr ago</time>
                   </p>
-                  
+
                 </div>
               </div> <!-- / .row -->
             </a>
@@ -358,7 +1083,7 @@
 
               <div class="row align-items-center">
                 <div class="col-auto">
-                  
+
                   <!-- Avatar -->
                   <div class="avatar avatar-4by3">
                     <img src="assets/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded">
@@ -376,7 +1101,7 @@
                   <p class="small text-muted mb-0">
                     <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 4hr ago</time>
                   </p>
-                  
+
                 </div>
               </div> <!-- / .row -->
 
@@ -385,7 +1110,7 @@
 
               <div class="row align-items-center">
                 <div class="col-auto">
-                  
+
                   <!-- Avatar -->
                   <div class="avatar avatar-4by3">
                     <img src="assets/img/avatars/projects/project-2.jpg" alt="..." class="avatar-img rounded">
@@ -403,7 +1128,7 @@
                   <p class="small text-muted mb-0">
                     <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 4hr ago</time>
                   </p>
-                  
+
                 </div>
               </div> <!-- / .row -->
 
@@ -412,7 +1137,7 @@
 
               <div class="row align-items-center">
                 <div class="col-auto">
-                  
+
                   <!-- Avatar -->
                   <div class="avatar avatar-4by3">
                     <img src="assets/img/avatars/projects/project-3.jpg" alt="..." class="avatar-img rounded">
@@ -430,16 +1155,16 @@
                   <p class="small text-muted mb-0">
                     <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 4hr ago</time>
                   </p>
-                  
+
                 </div>
               </div> <!-- / .row -->
-            
+
             </a>
             <a href="profile-posts.html" class="list-group-item px-0">
-            
+
               <div class="row align-items-center">
                 <div class="col-auto">
-                  
+
                   <!-- Avatar -->
                   <div class="avatar">
                     <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
@@ -447,7 +1172,7 @@
 
                 </div>
                 <div class="col ml-n2">
-                  
+
                   <!-- Title -->
                   <h4 class="text-body mb-1 name">
                     Dianna Smiley
@@ -466,7 +1191,7 @@
 
               <div class="row align-items-center">
                 <div class="col-auto">
-                  
+
                   <!-- Avatar -->
                   <div class="avatar">
                     <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
@@ -474,7 +1199,7 @@
 
                 </div>
                 <div class="col ml-n2">
-                  
+
                   <!-- Title -->
                   <h4 class="text-body mb-1 name">
                     Ab Hadley
@@ -487,11 +1212,11 @@
 
                 </div>
               </div> <!-- / .row -->
-            
+
             </a>
           </div>
         </div>
-      
+
       </div>
     </div>
   </div>
@@ -514,17 +1239,17 @@
             &times;
           </span>
         </button>
-        
+
       </div>
       <div class="modal-body">
 
         <!-- List group -->
         <div class="list-group list-group-flush my-n3">
           <a class="list-group-item px-0" href="#!">
-          
+
             <div class="row">
               <div class="col-auto">
-                
+
                 <!-- Avatar -->
                 <div class="avatar avatar-sm">
                   <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
@@ -532,7 +1257,7 @@
 
               </div>
               <div class="col ml-n2">
-                
+
                 <!-- Content -->
                 <div class="small text-muted">
                   <strong class="text-body">Dianna Smiley</strong> shared your post with <strong class="text-body">Ab Hadley</strong>, <strong class="text-body">Adolfo Hess</strong>, and <strong class="text-body">3 others</strong>.
@@ -544,7 +1269,7 @@
                 <small class="text-muted">
                   2m
                 </small>
-                
+
               </div>
             </div> <!-- / .row -->
 
@@ -553,7 +1278,7 @@
 
             <div class="row">
               <div class="col-auto">
-                
+
                 <!-- Avatar -->
                 <div class="avatar avatar-sm">
                   <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
@@ -561,7 +1286,7 @@
 
               </div>
               <div class="col ml-n2">
-                
+
                 <!-- Content -->
                 <div class="small text-muted">
                   <strong class="text-body">Ab Hadley</strong> reacted to your post with a 😍
@@ -573,7 +1298,7 @@
                 <small class="text-muted">
                   2m
                 </small>
-                
+
               </div>
             </div> <!-- / .row -->
 
@@ -582,7 +1307,7 @@
 
             <div class="row">
               <div class="col-auto">
-                
+
                 <!-- Avatar -->
                 <div class="avatar avatar-sm">
                   <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
@@ -590,7 +1315,7 @@
 
               </div>
               <div class="col ml-n2">
-                
+
                 <!-- Content -->
                 <div class="small text-muted">
                   <strong class="text-body">Adolfo Hess</strong> commented <blockquote class="text-body">“I don’t think this really makes sense to do without approval from Johnathan since he’s the one...” </blockquote>
@@ -602,7 +1327,7 @@
                 <small class="text-muted">
                   2m
                 </small>
-                
+
               </div>
             </div> <!-- / .row -->
 
@@ -611,7 +1336,7 @@
 
             <div class="row">
               <div class="col-auto">
-                
+
                 <!-- Avatar -->
                 <div class="avatar avatar-sm">
                   <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
@@ -619,7 +1344,7 @@
 
               </div>
               <div class="col ml-n2">
-                
+
                 <!-- Content -->
                 <div class="small text-muted">
                   <strong class="text-body">Daniela Dewitt</strong> subscribed to you.
@@ -631,7 +1356,7 @@
                 <small class="text-muted">
                   2m
                 </small>
-                
+
               </div>
             </div> <!-- / .row -->
 
@@ -640,7 +1365,7 @@
 
             <div class="row">
               <div class="col-auto">
-                
+
                 <!-- Avatar -->
                 <div class="avatar avatar-sm">
                   <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
@@ -648,7 +1373,7 @@
 
               </div>
               <div class="col ml-n2">
-                
+
                 <!-- Content -->
                 <div class="small text-muted">
                   <strong class="text-body">Miyah Myles</strong> shared your post with <strong class="text-body">Ryu Duke</strong>, <strong class="text-body">Glen Rouse</strong>, and <strong class="text-body">3 others</strong>.
@@ -660,7 +1385,7 @@
                 <small class="text-muted">
                   2m
                 </small>
-                
+
               </div>
             </div> <!-- / .row -->
 
@@ -669,7 +1394,7 @@
 
             <div class="row">
               <div class="col-auto">
-                
+
                 <!-- Avatar -->
                 <div class="avatar avatar-sm">
                   <img src="assets/img/avatars/profiles/avatar-6.jpg" alt="..." class="avatar-img rounded-circle">
@@ -677,7 +1402,7 @@
 
               </div>
               <div class="col ml-n2">
-                
+
                 <!-- Content -->
                 <div class="small text-muted">
                   <strong class="text-body">Ryu Duke</strong> reacted to your post with a 😍
@@ -689,7 +1414,7 @@
                 <small class="text-muted">
                   2m
                 </small>
-                
+
               </div>
             </div> <!-- / .row -->
 
@@ -698,7 +1423,7 @@
 
             <div class="row">
               <div class="col-auto">
-                
+
                 <!-- Avatar -->
                 <div class="avatar avatar-sm">
                   <img src="assets/img/avatars/profiles/avatar-7.jpg" alt="..." class="avatar-img rounded-circle">
@@ -706,7 +1431,7 @@
 
               </div>
               <div class="col ml-n2">
-                
+
                 <!-- Content -->
                 <div class="small text-muted">
                   <strong class="text-body">Glen Rouse</strong> commented <blockquote class="text-body">“I don’t think this really makes sense to do without approval from Johnathan since he’s the one...” </blockquote>
@@ -718,7 +1443,7 @@
                 <small class="text-muted">
                   2m
                 </small>
-                
+
               </div>
             </div> <!-- / .row -->
 
@@ -727,7 +1452,7 @@
 
             <div class="row">
               <div class="col-auto">
-                
+
                 <!-- Avatar -->
                 <div class="avatar avatar-sm">
                   <img src="assets/img/avatars/profiles/avatar-8.jpg" alt="..." class="avatar-img rounded-circle">
@@ -735,7 +1460,7 @@
 
               </div>
               <div class="col ml-n2">
-                
+
                 <!-- Content -->
                 <div class="small text-muted">
                   <strong class="text-body">Grace Gross</strong> subscribed to you.
@@ -747,7 +1472,7 @@
                 <small class="text-muted">
                   2m
                 </small>
-                
+
               </div>
             </div> <!-- / .row -->
 

@@ -5,6 +5,13 @@
 .navbar-brand-img, .navbar-brand > img{
   max-height: 36px;
 }
+.navbar-collapse:before{
+  border-top-width: 0
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    border-bottom-width: 2px;
+    border-color: $green;
+}
 .bg-soft-red{
   background-color: rgba(243,163,154,1);
 }
@@ -46,4 +53,7 @@
 .badge-soft-secondary.badge-xl{
   background: none;
   border: 1px solid #E3EBF6;
+}
+.modal-dialog-vertical.modal-sidebar-nav{
+  max-width: 250px;
 }

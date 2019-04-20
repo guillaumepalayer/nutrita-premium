@@ -20,413 +20,347 @@
     <title>Nutrita Premium</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light px-3 mb-2 mb-md-5 bg-white fixed-top d-none d-md-flex" id="topnav">
+    <nav class="navbar navbar-expand-lg navbar-light px-3 mb-2 mb-md-5 bg-white fixed-top d-none d-lg-flex" id="topnav">
       <div class="container">
+        <div class="row d-flex justify-content-between no-gutters w-100">
+          <div class="col d-flex align-items-center">
+            <!-- Brand -->
+            <a class="text-dark" href="#" data-toggle="modal" data-target="#sidebarModalUserConnected"><i class="fe fe-menu mr-3 h1 mb-0"></i></a>
+            <a class="navbar-brand mr-auto d-flex align-items-center" href="dashboard-full.html">
+              <img src="assets/img/logo.svg" alt="..." class="navbar-brand-img">
+              <span class="text-secondary ml-2 h3 mb-0">Nutrita</span>
+            </a>
+          </div>
+          <div class="col-lg-8 col-xl-8">
+            <!-- Search Form mobile -->
+            <a href="search-zero-state.html">
+              <form class="form-inline">
+                <div class="input-group input-group-merge input-group-lg w-100 rounded" data-toggle="lists" data-lists-values='["name"]'>
 
-
-        <!-- Brand -->
-        <a class="navbar-brand mr-3 d-none d-lg-flex align-items-center" href="index.html">
-          <img src="assets/img/logo.svg" alt="..." class="navbar-brand-img">
-          <span class="text-secondary ml-2 h3 mb-0">Nutrita</span>
-        </a>
-        <!-- Search Form desktop -->
-        <a class="d-none d-lg-block w-50" href="search-zero-state.html">
-          <form class="form-inline d-block w-auto">
-            <div class="input-group input-group-merge input-group-lg" data-toggle="lists" data-lists-values='["name"]'>
-
-              <!-- Input -->
-              <input type="search" class="form-control form-control-prepended bg-light border-0" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
-              <div class="input-group-prepend d-lg-none">
-                <div class="input-group-text bg-light border-0">
-                  <i class="fe fe-menu"></i>
-                </div>
-              </div>
-              <div class="input-group-prepend d-none d-lg-flex">
-                <div class="input-group-text bg-light border-0">
-                  <i class="fe fe-search"></i>
-                </div>
-              </div>
-            </div>
-          </form>
-        </a>
-
-        <!-- Search Form mobile -->
-        <a class="vw-100 d-flex d-lg-none" href="search-zero-state.html">
-          <form class="form-inline w-100 d-lg-none">
-            <div class="input-group input-group-merge input-group-lg w-100" data-toggle="lists" data-lists-values='["name"]'>
-
-              <!-- Input -->
-              <input type="search" class="form-control form-control-prepended bg-white" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
-              <div class="input-group-prepend d-lg-none">
-                <div class="input-group-text bg-white">
-                  <i class="fe fe-menu"></i>
-                </div>
-              </div>
-              <div class="input-group-prepend d-none d-lg-flex">
-                <div class="input-group-text bg-light border-0">
-                  <i class="fe fe-search"></i>
-                </div>
-              </div>
-
-            </div>
-          </form>
-        </a>
-
-
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse order-lg-last" id="navbar">
-
-          <!-- Form -->
-          <form class="mt-4 mb-3 d-md-none">
-            <input type="search" class="form-control form-control-rounded" placeholder="Search" aria-label="Search">
-          </form>
-
-          <!-- Navigation -->
-
-          <ul class="nav nav-tabs mr-5 border-0 justify-content-end">
-            <li class="nav-item mr-3">
-              <a class="nav-link border-success border-bottom-2 font-weight-bold active" href="dashboard-full.html">
-                Dashboard
-              </a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="journal.html">
-                Journal
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link d-flex" href="foryou.html">
-                For You
-              </a>
-            </li>
-          </ul>
-          <div class="navbar-user">
-
-            <!-- Dropdown -->
-            <div class="dropdown mr-4 d-none d-md-flex">
-
-              <!-- Toggle -->
-              <a href="#" class="text-muted" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="icon active">
-                  <i class="fe fe-bell"></i>
-                </span>
-              </a>
-
-              <!-- Menu -->
-              <div class="dropdown-menu dropdown-menu-right dropdown-menu-card">
-                <div class="card-header">
-                  <div class="row align-items-center">
-                    <div class="col">
-
-                      <!-- Title -->
-                      <h5 class="card-header-title">
-                        Notifications
-                      </h5>
-
+                  <!-- Input -->
+                  <input type="search" class="form-control form-control-prepended bg-white" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
+                  <div class="input-group-prepend">
+                    <div class="input-group-text bg-white">
+                      <i class="fe fe-search"></i>
                     </div>
-                    <div class="col-auto">
+                  </div>
+                </div>
+              </form>
+            </a>
+          </div>
+          <div class="col ml-auto d-flex justify-content-end">
+            <div class="navbar-user">
 
-                      <!-- Link -->
-                      <a href="#!" class="small">
-                        View all
+              <!-- Dropdown -->
+              <div class="dropdown mr-4 d-none d-md-flex">
+
+                <!-- Toggle -->
+                <a href="#" class="text-muted" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="icon active">
+                    <i class="fe fe-bell"></i>
+                  </span>
+                </a>
+
+                <!-- Menu -->
+                <div class="dropdown-menu dropdown-menu-right dropdown-menu-card">
+                  <div class="card-header">
+                    <div class="row align-items-center">
+                      <div class="col">
+
+                        <!-- Title -->
+                        <h5 class="card-header-title">
+                          Notifications
+                        </h5>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Link -->
+                        <a class="small" href="#" data-toggle="modal" data-target="#sidebarModalUserNotification" role="button">
+                          View all
+                        </a>
+
+                      </div>
+                    </div> <!-- / .row -->
+                  </div> <!-- / .card-header -->
+                  <div class="card-body">
+
+                    <!-- List group -->
+                    <div class="list-group list-group-flush my-n3">
+                      <a class="list-group-item px-0" href="#!">
+                        <div class="row no-gutters">
+                          <div class="col-auto mr-3">
+                            <i class="fe fe-bell text-premium"></i>
+                          </div>
+                          <div class="col mr-1">
+                            <!-- Content -->
+                            <div class="small text-muted">
+                              Notification content on one, two or three line...
+                            </div>
+                          </div>
+                        </div> <!-- / .row -->
+                        <div class="row">
+                          <div class="col text-right">
+                            <small class="text-muted h6">
+                              2m
+                            </small>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="list-group-item px-0" href="#!">
+                        <div class="row no-gutters">
+                          <div class="col-auto mr-3">
+                            <i class="fe fe-bell text-premium"></i>
+                          </div>
+                          <div class="col mr-1">
+                            <!-- Content -->
+                            <div class="small text-muted">
+                              Notification content on one, two or three line...
+                            </div>
+                          </div>
+                        </div> <!-- / .row -->
+                        <div class="row">
+                          <div class="col text-right">
+                            <small class="text-muted h6">
+                              2m
+                            </small>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="list-group-item px-0" href="#!">
+                        <div class="row no-gutters">
+                          <div class="col-auto mr-3">
+                            <i class="fe fe-bell text-premium"></i>
+                          </div>
+                          <div class="col mr-1">
+                            <!-- Content -->
+                            <div class="small text-muted">
+                              Notification content on one, two or three line...
+                            </div>
+                          </div>
+                        </div> <!-- / .row -->
+                        <div class="row">
+                          <div class="col text-right">
+                            <small class="text-muted h6">
+                              2m
+                            </small>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="list-group-item px-0" href="#!">
+                        <div class="row no-gutters">
+                          <div class="col-auto mr-3">
+                            <i class="fe fe-bell text-premium"></i>
+                          </div>
+                          <div class="col mr-1">
+                            <!-- Content -->
+                            <div class="small text-muted">
+                              Notification content on one, two or three line...
+                            </div>
+                          </div>
+                        </div> <!-- / .row -->
+                        <div class="row">
+                          <div class="col text-right">
+                            <small class="text-muted h6">
+                              2m
+                            </small>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="list-group-item px-0" href="#!">
+                        <div class="row no-gutters">
+                          <div class="col-auto mr-3">
+                            <i class="fe fe-bell text-premium"></i>
+                          </div>
+                          <div class="col mr-1">
+                            <!-- Content -->
+                            <div class="small text-muted">
+                              Notification content on one, two or three line...
+                            </div>
+                          </div>
+                        </div> <!-- / .row -->
+                        <div class="row">
+                          <div class="col text-right">
+                            <small class="text-muted h6">
+                              2m
+                            </small>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="list-group-item px-0" href="#!">
+                        <div class="row no-gutters">
+                          <div class="col-auto mr-3">
+                            <i class="fe fe-bell text-premium"></i>
+                          </div>
+                          <div class="col mr-1">
+                            <!-- Content -->
+                            <div class="small text-muted">
+                              Notification content on one, two or three line...
+                            </div>
+                          </div>
+                        </div> <!-- / .row -->
+                        <div class="row">
+                          <div class="col text-right">
+                            <small class="text-muted h6">
+                              2m
+                            </small>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="list-group-item px-0" href="#!">
+                        <div class="row no-gutters">
+                          <div class="col-auto mr-3">
+                            <i class="fe fe-bell text-premium"></i>
+                          </div>
+                          <div class="col mr-1">
+                            <!-- Content -->
+                            <div class="small text-muted">
+                              Notification content on one, two or three line...
+                            </div>
+                          </div>
+                        </div> <!-- / .row -->
+                        <div class="row">
+                          <div class="col text-right">
+                            <small class="text-muted h6">
+                              2m
+                            </small>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="list-group-item px-0" href="#!">
+                        <div class="row no-gutters">
+                          <div class="col-auto mr-3">
+                            <i class="fe fe-bell text-premium"></i>
+                          </div>
+                          <div class="col mr-1">
+                            <!-- Content -->
+                            <div class="small text-muted">
+                              Notification content on one, two or three line...
+                            </div>
+                          </div>
+                        </div> <!-- / .row -->
+                        <div class="row">
+                          <div class="col text-right">
+                            <small class="text-muted h6">
+                              2m
+                            </small>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="list-group-item px-0" href="#!">
+                        <div class="row no-gutters">
+                          <div class="col-auto mr-3">
+                            <i class="fe fe-bell text-premium"></i>
+                          </div>
+                          <div class="col mr-1">
+                            <!-- Content -->
+                            <div class="small text-muted">
+                              Notification content on one, two or three line...
+                            </div>
+                          </div>
+                        </div> <!-- / .row -->
+                        <div class="row">
+                          <div class="col text-right">
+                            <small class="text-muted h6">
+                              2m
+                            </small>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="list-group-item px-0" href="#!">
+                        <div class="row no-gutters">
+                          <div class="col-auto mr-3">
+                            <i class="fe fe-bell text-premium"></i>
+                          </div>
+                          <div class="col mr-1">
+                            <!-- Content -->
+                            <div class="small text-muted">
+                              Notification content on one, two or three line...
+                            </div>
+                          </div>
+                        </div> <!-- / .row -->
+                        <div class="row">
+                          <div class="col text-right">
+                            <small class="text-muted h6">
+                              2m
+                            </small>
+                          </div>
+                        </div>
+                      </a>
+                      <a class="list-group-item px-0" href="#!">
+                        <div class="row no-gutters">
+                          <div class="col-auto mr-3">
+                            <i class="fe fe-bell text-premium"></i>
+                          </div>
+                          <div class="col mr-1">
+                            <!-- Content -->
+                            <div class="small text-muted">
+                              Notification content on one, two or three line...
+                            </div>
+                          </div>
+                        </div> <!-- / .row -->
+                        <div class="row">
+                          <div class="col text-right">
+                            <small class="text-muted h6">
+                              2m
+                            </small>
+                          </div>
+                        </div>
                       </a>
 
                     </div>
-                  </div> <!-- / .row -->
-                </div> <!-- / .card-header -->
-                <div class="card-body">
 
-                  <!-- List group -->
-                  <div class="list-group list-group-flush my-n3">
-                    <a class="list-group-item px-0" href="#!">
-
-                      <div class="row">
-                        <div class="col-auto">
-
-                          <!-- Avatar -->
-                          <div class="avatar avatar-sm">
-                            <img src="assets/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded-circle">
-                          </div>
-
-                        </div>
-                        <div class="col ml-n2">
-
-                          <!-- Content -->
-                          <div class="small text-muted">
-                            <span class="text-muted">Notification content on one, two or three line...</span>.
-                          </div>
-
-                        </div>
-                        <div class="col-auto">
-
-                          <small class="text-muted">
-                            2m
-                          </small>
-
-                        </div>
-                      </div> <!-- / .row -->
-
-                    </a>
-                    <a class="list-group-item px-0" href="#!">
-
-                      <div class="row">
-                        <div class="col-auto">
-
-                          <!-- Avatar -->
-                          <div class="avatar avatar-sm">
-                            <img src="assets/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded-circle">
-                          </div>
-
-                        </div>
-                        <div class="col ml-n2">
-
-                          <!-- Content -->
-                          <div class="small text-muted">
-                            <span class="text-muted">Notification content on one, two or three line...</span>.
-                          </div>
-
-                        </div>
-                        <div class="col-auto">
-
-                          <small class="text-muted">
-                            2m
-                          </small>
-
-                        </div>
-                      </div> <!-- / .row -->
-
-                    </a>
-                    <a class="list-group-item px-0" href="#!">
-
-                      <div class="row">
-                        <div class="col-auto">
-
-                          <!-- Avatar -->
-                          <div class="avatar avatar-sm">
-                            <img src="assets/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded-circle">
-                          </div>
-
-                        </div>
-                        <div class="col ml-n2">
-
-                          <!-- Content -->
-                          <div class="small text-muted">
-                            <span class="text-muted">Notification content on one, two or three line...</span>.
-                          </div>
-
-                        </div>
-                        <div class="col-auto">
-
-                          <small class="text-muted">
-                            2m
-                          </small>
-
-                        </div>
-                      </div> <!-- / .row -->
-
-                    </a>
-                    <a class="list-group-item px-0" href="#!">
-
-                      <div class="row">
-                        <div class="col-auto">
-
-                          <!-- Avatar -->
-                          <div class="avatar avatar-sm">
-                            <img src="assets/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded-circle">
-                          </div>
-
-                        </div>
-                        <div class="col ml-n2">
-
-                          <!-- Content -->
-                          <div class="small text-muted">
-                            <span class="text-muted">Notification content on one, two or three line...</span>.
-                          </div>
-
-                        </div>
-                        <div class="col-auto">
-
-                          <small class="text-muted">
-                            2m
-                          </small>
-
-                        </div>
-                      </div> <!-- / .row -->
-
-                    </a>
-                    <a class="list-group-item px-0" href="#!">
-
-                      <div class="row">
-                        <div class="col-auto">
-
-                          <!-- Avatar -->
-                          <div class="avatar avatar-sm">
-                            <img src="assets/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded-circle">
-                          </div>
-
-                        </div>
-                        <div class="col ml-n2">
-
-                          <!-- Content -->
-                          <div class="small text-muted">
-                            <span class="text-muted">Notification content on one, two or three line...</span>.
-                          </div>
-
-                        </div>
-                        <div class="col-auto">
-
-                          <small class="text-muted">
-                            2m
-                          </small>
-
-                        </div>
-                      </div> <!-- / .row -->
-
-                    </a>
-                    <a class="list-group-item px-0" href="#!">
-
-                      <div class="row">
-                        <div class="col-auto">
-
-                          <!-- Avatar -->
-                          <div class="avatar avatar-sm">
-                            <img src="assets/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded-circle">
-                          </div>
-
-                        </div>
-                        <div class="col ml-n2">
-
-                          <!-- Content -->
-                          <div class="small text-muted">
-                            <span class="text-muted">Notification content on one, two or three line...</span>.
-                          </div>
-
-                        </div>
-                        <div class="col-auto">
-
-                          <small class="text-muted">
-                            2m
-                          </small>
-
-                        </div>
-                      </div> <!-- / .row -->
-
-                    </a>
-                    <a class="list-group-item px-0" href="#!">
-
-                      <div class="row">
-                        <div class="col-auto">
-
-                          <!-- Avatar -->
-                          <div class="avatar avatar-sm">
-                            <img src="assets/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded-circle">
-                          </div>
-
-                        </div>
-                        <div class="col ml-n2">
-
-                          <!-- Content -->
-                          <div class="small text-muted">
-                            <span class="text-muted">Notification content on one, two or three line...</span>.
-                          </div>
-
-                        </div>
-                        <div class="col-auto">
-
-                          <small class="text-muted">
-                            2m
-                          </small>
-
-                        </div>
-                      </div> <!-- / .row -->
-
-                    </a>
-                    <a class="list-group-item px-0" href="#!">
-
-                      <div class="row">
-                        <div class="col-auto">
-
-                          <!-- Avatar -->
-                          <div class="avatar avatar-sm">
-                            <img src="assets/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded-circle">
-                          </div>
-
-                        </div>
-                        <div class="col ml-n2">
-
-                          <!-- Content -->
-                          <div class="small text-muted">
-                            <span class="text-muted">Notification content on one, two or three line...</span>.
-                          </div>
-
-                        </div>
-                        <div class="col-auto">
-
-                          <small class="text-muted">
-                            2m
-                          </small>
-
-                        </div>
-                      </div> <!-- / .row -->
-
-                    </a>
                   </div>
+                </div> <!-- / .dropdown-menu -->
 
+              </div>
+
+              <!-- Dropdown -->
+              <div class="dropdown">
+
+                <!-- Toggle -->
+                <a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="https://pbs.twimg.com/profile_images/1046781704608915458/5xxk-UR7_400x400.jpg" alt="..." class="avatar-img rounded-circle">
+                </a>
+
+                <!-- Menu -->
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a href="profile.html" class="dropdown-item">Profile</a>
+                  <a href="settings.html" class="dropdown-item">Settings</a>
+                  <hr class="dropdown-divider">
+                  <a href="sign-in.html" class="dropdown-item">Logout</a>
                 </div>
-              </div> <!-- / .dropdown-menu -->
 
-            </div>
-
-            <!-- Dropdown -->
-            <div class="dropdown">
-
-              <!-- Toggle -->
-              <a href="#" class="avatar avatar-sm avatar-online dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="https://pbs.twimg.com/profile_images/1046781704608915458/5xxk-UR7_400x400.jpg" alt="..." class="avatar-img rounded-circle">
-              </a>
-
-              <!-- Menu -->
-              <div class="dropdown-menu dropdown-menu-right">
-                <a href="profile.html" class="dropdown-item">Profile</a>
-                <a href="settings.html" class="dropdown-item">Settings</a>
-                <hr class="dropdown-divider">
-                <a href="sign-in.html" class="dropdown-item">Logout</a>
               </div>
 
             </div>
-
           </div>
         </div>
-
       </div> <!-- / .container -->
     </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-light px-3 mb-2 mb-md-5 bg-transparent border-0 fixed-top d-flex d-md-none" id="topnav">
+    <nav class="navbar navbar-expand-lg navbar-light px-3 mb-2 mb-md-5 bg-transparent border-0 fixed-top d-flex d-lg-none" id="topnav">
       <div class="container">
+        <div class="row w-100 d-flex justify-content-center no-gutters">
+          <div class="col-12 col-lg-10 col-xl-8 px-md-3">
+            <!-- Search Form mobile -->
+            <a href="search-zero-state.html">
+              <form class="form-inline">
+                <div class="input-group input-group-merge input-group-lg w-100 shadow-sm rounded" data-toggle="lists" data-lists-values='["name"]'>
 
+                  <!-- Input -->
+                  <input type="search" class="form-control form-control-prepended bg-white" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
+                  <div class="input-group-prepend">
+                    <div class="input-group-text bg-white">
+                      <i class="fe fe-menu"></i>
+                    </div>
+                  </div>
 
-        <!-- Search Form mobile -->
-        <a class="vw-100 d-flex d-lg-none" href="search-zero-state.html">
-          <form class="form-inline w-100 d-lg-none">
-            <div class="input-group input-group-merge input-group-lg w-100 shadow-sm rounded" data-toggle="lists" data-lists-values='["name"]'>
-
-              <!-- Input -->
-              <input type="search" class="form-control form-control-prepended bg-white" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
-              <div class="input-group-prepend d-lg-none">
-                <div class="input-group-text bg-white">
-                  <i class="fe fe-menu"></i>
                 </div>
-              </div>
-              <div class="input-group-prepend d-none d-lg-flex">
-                <div class="input-group-text bg-light border-0">
-                  <i class="fe fe-search"></i>
-                </div>
-              </div>
-
-            </div>
-          </form>
-        </a>
-
+              </form>
+            </a>
+          </div>
+        </div>
       </div> <!-- / .container -->
     </nav>
 
@@ -455,7 +389,7 @@
                         <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                         <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                         <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -478,7 +412,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -501,7 +435,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -541,7 +475,7 @@
                         <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                         <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                         <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -564,7 +498,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -587,7 +521,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -627,7 +561,7 @@
                         <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                         <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                         <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -650,7 +584,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -673,7 +607,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -713,7 +647,7 @@
                         <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                         <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                         <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -736,7 +670,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -759,7 +693,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -799,7 +733,7 @@
                         <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                         <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                         <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -822,7 +756,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -845,7 +779,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -885,7 +819,7 @@
                         <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                         <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                         <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -908,7 +842,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -931,7 +865,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -971,7 +905,7 @@
                         <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                         <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                         <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -994,7 +928,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -1017,7 +951,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -1057,7 +991,7 @@
                         <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                         <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                         <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -1080,7 +1014,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -1103,7 +1037,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -1143,7 +1077,7 @@
                         <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                         <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                         <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -1166,7 +1100,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -1189,7 +1123,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -1229,7 +1163,7 @@
                         <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
                         <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                         <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -1252,7 +1186,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -1275,7 +1209,7 @@
                               </div>
                             </div>
                           </li>
-                          <li class="nav-item ml-0">
+                          <li class="nav-item mr-auto">
                             <div style="width: 164px;">
                               <div class="d-flex justify-content-left no-gutters align-content-center">
                                 <p class="card-text small text-secondary mb-0">
@@ -1315,7 +1249,7 @@
     <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
       <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal" href="dashboard-full.html"><i class="fe fe-home d-block mb-2"></i>Home</a>
       <a class="nav-link text-secondary h5 py-0 text-center mb-0" href="journal.html"><i class="fe fe-activity d-block mb-2"></i>Journal</a>
-      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal" href="foryou.html"><img class="d-block mx-auto mb-2" src="assets/img/baseline-photo_filter-24px.svg" alt="" width="16">For You</a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal" href="profile.html"><i class="fe fe-user d-block mb-2"></i>Profile</a>
     </nav>
     <!-- IDEA: modal food details -->
     <div class="modal fade fixed-right" id="modalFood" tabindex="-1" role="dialog" aria-labelledby="modalFood" aria-hidden="true">
