@@ -192,12 +192,12 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">
+                    <a class="nav-link" href="profile.html">
                       <i class="fe fe-user"></i>Profile
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">
+                    <a class="nav-link" href="settings.html">
                       <i class="fe fe-settings"></i>Settings
                     </a>
                   </li>
@@ -913,7 +913,7 @@
                 <input type="text" class="form-control form-control-lg" placeholder="Date" data-toggle="flatpickr">
               </div>
               <div class="form-group col-6 mb-0">
-                <input type="text" class="form-control form-control-lg" placeholder="00:00 pm" aria-label="Height">
+                <input type="text" class="form-control form-control-lg" placeholder="00:00 pm" aria-label="hours/minutes">
               </div>
             </div>
             <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
@@ -924,6 +924,103 @@
         </div>
       </div>
     </div><!-- / modal NewWeight -->
+
+    <!-- IDEA: modal reminder -->
+    <div class="modal fade fixed-right" id="newReminder" tabindex="-1" role="dialog" aria-labelledby="newReminder" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-block p-0 border-0 mb-3">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto">
+                <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+                  <div class="row align-items-center no-gutters">
+                    <div class="col-auto pr-3">
+                      <i class="fe fe-arrow-left"></i>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <div class="row align-items-center no-gutters">
+                  <div class="col-auto">
+                    <div class="dropdown">
+                      <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fe fe-more-vertical"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#!" class="dropdown-item">
+                          Help
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="mt-n6 float-right img-fluid" alt="Chart line illustration" src="assets/img/illustrations/onboarding-meal-frequency.svg" data-holder-rendered="true" height="300">
+          </div>
+          <div class="modal-body pt-2 pb-5 mb-6">
+            <h2>Add new reminder</h2>
+            <p class="card-text text-muted mb-3">
+              Never forget to track your foods and weight.
+            </p>
+            <div class="row align-items-center mb-4">
+              <div class="col small text-muted">
+                <button type="button" class="btn btn-sm btn-link text-muted pl-0">12 h</button> | <button type="button" class="btn btn-sm btn-link text-success">24 h</button>
+              </div>
+            </div>
+            <div class="form-row d-block mb-4">
+              <div class="form-group mb-0">
+                <input type="text" class="form-control form-control-lg" placeholder="00:00 pm" aria-label="hours/minutes">
+              </div>
+            </div>
+            <!-- Pretitle -->
+            <h6 class="header-pretitle text-secondary mb-3">
+              Repeat
+            </h6>
+            <div class="btn-group-toggle mr-2 d-inline-block" data-toggle="buttons">
+              <label class="btn btn-sm btn-rounded-circle btn-success active">
+                <input type="checkbox" checked autocomplete="off">S
+              </label>
+            </div>
+            <div class="btn-group-toggle mr-2 d-inline-block" data-toggle="buttons">
+              <label class="btn btn-sm btn-rounded-circle btn-success">
+                <input type="checkbox" checked autocomplete="off">M
+              </label>
+            </div>
+            <div class="btn-group-toggle mr-2 d-inline-block" data-toggle="buttons">
+              <label class="btn btn-sm btn-rounded-circle btn-success">
+                <input type="checkbox" checked autocomplete="off">T
+              </label>
+            </div>
+            <div class="btn-group-toggle mr-2 d-inline-block" data-toggle="buttons">
+              <label class="btn btn-sm btn-rounded-circle btn-success">
+                <input type="checkbox" checked autocomplete="off">W
+              </label>
+            </div>
+            <div class="btn-group-toggle mr-2 d-inline-block" data-toggle="buttons">
+              <label class="btn btn-sm btn-rounded-circle btn-success">
+                <input type="checkbox" checked autocomplete="off">T
+              </label>
+            </div>
+            <div class="btn-group-toggle mr-2 d-inline-block" data-toggle="buttons">
+              <label class="btn btn-sm btn-rounded-circle btn-success">
+                <input type="checkbox" checked autocomplete="off">F
+              </label>
+            </div>
+            <div class="btn-group-toggle d-inline-block" data-toggle="buttons">
+              <label class="btn btn-sm btn-rounded-circle btn-success">
+                <input type="checkbox" checked autocomplete="off">S
+              </label>
+            </div>
+
+          </div>
+          <nav class="navbar fixed-bottom px-4">
+            <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Save it</button>
+          </nav>
+        </div>
+      </div>
+    </div><!-- / modal reminder -->
 
     <!-- IDEA: modal reportDetailsBlood -->
     <div class="modal fade fixed-right" id="reportDetailsBlood" tabindex="-1" role="dialog" aria-labelledby="reportDetailsBlood" aria-hidden="true">
@@ -1675,22 +1772,22 @@
             <div class="px-4">
               <h2>Choose a goal</h2>
               <ul class="list-group list-group-flush">
-                <a data-toggle="modal" href="#onboardingAboutUs">
+                <a data-toggle="modal" href="#onboardingAboutYou">
                   <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
                     <small class="text-secondary">Lose fat</small> <i class="fe fe-chevron-right text-secondary"></i>
                   </li>
                 </a>
-                <a data-toggle="modal" href="#onboardingAboutUs">
+                <a data-toggle="modal" href="#onboardingAboutYou">
                   <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
                     <small class="text-secondary">Control blood sugar</small> <i class="fe fe-chevron-right text-secondary"></i>
                   </li>
                 </a>
-                <a data-toggle="modal" href="#onboardingAboutUs">
+                <a data-toggle="modal" href="#onboardingAboutYou">
                   <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
                     <small class="text-secondary">Build muscles</small> <i class="fe fe-chevron-right text-secondary"></i>
                   </li>
                 </a>
-                <a data-toggle="modal" href="#onboardingAboutUs">
+                <a data-toggle="modal" href="#onboardingAboutYou">
                   <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
                     <small class="text-secondary">Maintain body weight</small> <i class="fe fe-chevron-right text-secondary"></i>
                   </li>
@@ -1749,15 +1846,15 @@
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
-            <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingAboutUs">Continue</button>
+            <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingAboutYou">Continue</button>
           </nav>
         </div>
       </div>
     </div>
     / modal goal description -->
 
-    <!-- IDEA: modal onboardingAboutUs -->
-    <div class="modal fade fixed-right" id="onboardingAboutUs" tabindex="-5" role="dialog" aria-labelledby="onboardingAboutUs" aria-hidden="true">
+    <!-- IDEA: modal onboardingAboutYou -->
+    <div class="modal fade fixed-right" id="onboardingAboutYou" tabindex="-5" role="dialog" aria-labelledby="onboardingAboutYou" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
           <div class="modal-body p-0 pb-5">
@@ -2933,268 +3030,6 @@
 
                 </a>
               </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal: Activity -->
-    <div class="modal fade" id="sidebarModalActivity" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-vertical" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-
-            <!-- Title -->
-            <h4 class="modal-title">
-              Notifications
-            </h4>
-
-            <!-- Close -->
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">
-                &times;
-              </span>
-            </button>
-
-          </div>
-          <div class="modal-body">
-
-            <!-- List group -->
-            <div class="list-group list-group-flush my-n3">
-              <a class="list-group-item px-0" href="#!">
-
-                <div class="row">
-                  <div class="col-auto">
-
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                    </div>
-
-                  </div>
-                  <div class="col ml-n2">
-
-                    <!-- Content -->
-                    <div class="small text-muted">
-                      <strong class="text-body">Dianna Smiley</strong> shared your post with <strong class="text-body">Ab Hadley</strong>, <strong class="text-body">Adolfo Hess</strong>, and <strong class="text-body">3 others</strong>.
-                    </div>
-
-                  </div>
-                  <div class="col-auto">
-
-                    <small class="text-muted">
-                      2m
-                    </small>
-
-                  </div>
-                </div> <!-- / .row -->
-
-              </a>
-              <a class="list-group-item px-0" href="#!">
-
-                <div class="row">
-                  <div class="col-auto">
-
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
-                    </div>
-
-                  </div>
-                  <div class="col ml-n2">
-
-                    <!-- Content -->
-                    <div class="small text-muted">
-                      <strong class="text-body">Ab Hadley</strong> reacted to your post with a 😍
-                    </div>
-
-                  </div>
-                  <div class="col-auto">
-
-                    <small class="text-muted">
-                      2m
-                    </small>
-
-                  </div>
-                </div> <!-- / .row -->
-
-              </a>
-              <a class="list-group-item px-0" href="#!">
-
-                <div class="row">
-                  <div class="col-auto">
-
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <img src="assets/img/avatars/profiles/avatar-3.jpg" alt="..." class="avatar-img rounded-circle">
-                    </div>
-
-                  </div>
-                  <div class="col ml-n2">
-
-                    <!-- Content -->
-                    <div class="small text-muted">
-                      <strong class="text-body">Adolfo Hess</strong> commented <blockquote class="text-body">“I don’t think this really makes sense to do without approval from Johnathan since he’s the one...” </blockquote>
-                    </div>
-
-                  </div>
-                  <div class="col-auto">
-
-                    <small class="text-muted">
-                      2m
-                    </small>
-
-                  </div>
-                </div> <!-- / .row -->
-
-              </a>
-              <a class="list-group-item px-0" href="#!">
-
-                <div class="row">
-                  <div class="col-auto">
-
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <img src="assets/img/avatars/profiles/avatar-4.jpg" alt="..." class="avatar-img rounded-circle">
-                    </div>
-
-                  </div>
-                  <div class="col ml-n2">
-
-                    <!-- Content -->
-                    <div class="small text-muted">
-                      <strong class="text-body">Daniela Dewitt</strong> subscribed to you.
-                    </div>
-
-                  </div>
-                  <div class="col-auto">
-
-                    <small class="text-muted">
-                      2m
-                    </small>
-
-                  </div>
-                </div> <!-- / .row -->
-
-              </a>
-              <a class="list-group-item px-0" href="#!">
-
-                <div class="row">
-                  <div class="col-auto">
-
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
-                    </div>
-
-                  </div>
-                  <div class="col ml-n2">
-
-                    <!-- Content -->
-                    <div class="small text-muted">
-                      <strong class="text-body">Miyah Myles</strong> shared your post with <strong class="text-body">Ryu Duke</strong>, <strong class="text-body">Glen Rouse</strong>, and <strong class="text-body">3 others</strong>.
-                    </div>
-
-                  </div>
-                  <div class="col-auto">
-
-                    <small class="text-muted">
-                      2m
-                    </small>
-
-                  </div>
-                </div> <!-- / .row -->
-
-              </a>
-              <a class="list-group-item px-0" href="#!">
-
-                <div class="row">
-                  <div class="col-auto">
-
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <img src="assets/img/avatars/profiles/avatar-6.jpg" alt="..." class="avatar-img rounded-circle">
-                    </div>
-
-                  </div>
-                  <div class="col ml-n2">
-
-                    <!-- Content -->
-                    <div class="small text-muted">
-                      <strong class="text-body">Ryu Duke</strong> reacted to your post with a 😍
-                    </div>
-
-                  </div>
-                  <div class="col-auto">
-
-                    <small class="text-muted">
-                      2m
-                    </small>
-
-                  </div>
-                </div> <!-- / .row -->
-
-              </a>
-              <a class="list-group-item px-0" href="#!">
-
-                <div class="row">
-                  <div class="col-auto">
-
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <img src="assets/img/avatars/profiles/avatar-7.jpg" alt="..." class="avatar-img rounded-circle">
-                    </div>
-
-                  </div>
-                  <div class="col ml-n2">
-
-                    <!-- Content -->
-                    <div class="small text-muted">
-                      <strong class="text-body">Glen Rouse</strong> commented <blockquote class="text-body">“I don’t think this really makes sense to do without approval from Johnathan since he’s the one...” </blockquote>
-                    </div>
-
-                  </div>
-                  <div class="col-auto">
-
-                    <small class="text-muted">
-                      2m
-                    </small>
-
-                  </div>
-                </div> <!-- / .row -->
-
-              </a>
-              <a class="list-group-item px-0" href="#!">
-
-                <div class="row">
-                  <div class="col-auto">
-
-                    <!-- Avatar -->
-                    <div class="avatar avatar-sm">
-                      <img src="assets/img/avatars/profiles/avatar-8.jpg" alt="..." class="avatar-img rounded-circle">
-                    </div>
-
-                  </div>
-                  <div class="col ml-n2">
-
-                    <!-- Content -->
-                    <div class="small text-muted">
-                      <strong class="text-body">Grace Gross</strong> subscribed to you.
-                    </div>
-
-                  </div>
-                  <div class="col-auto">
-
-                    <small class="text-muted">
-                      2m
-                    </small>
-
-                  </div>
-                </div> <!-- / .row -->
-
-              </a>
             </div>
 
           </div>

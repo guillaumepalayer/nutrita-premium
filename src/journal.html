@@ -32,12 +32,12 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link pl-0 py-3" href="">
+                  <a class="nav-link pl-0 py-3" href="profile.html">
                     <i class="fe fe-user h1 mb-0"></i>Profile
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link pl-0 py-3" href="">
+                  <a class="nav-link pl-0 py-3" href="settings.html">
                     <i class="fe fe-settings h1 mb-0"></i>Settings
                   </a>
                 </li>
@@ -48,7 +48,7 @@
         <div class="col-12 col-lg-8 mt-6 mt-lg-7">
 
           <div class="alert alert-light bg-white alert-dismissible border fade show pr-4 py-4" role="alert">
-            <a href="#" data-toggle="modal" data-target="#reportDetailsBlood">
+            <a href="#" data-toggle="modal" data-target="#newReminder">
               <div class="row d-flex align-items-start">
                 <div class="col-auto">
                   <i class="fe fe-bell h2 mb-0 text-primary"></i>
@@ -60,7 +60,8 @@
                   <p class="card-text small text-muted mb-3">
                     Never forget to track your foods and weight.
                   </p>
-                  <a class="h5 text-secondary" href="#" data-dismiss="alert" aria-label="Close">No, thanks</a>
+                  <a class="h5 text-secondary mr-2" href="#" data-dismiss="alert" aria-label="Close">No, thanks</a>
+                  <a href="#!" class="btn btn-link btn-sm font-weight-bold" data-toggle="modal" data-target="#newReminder">Add</a>
 
                 </div>
                 <div class="col-auto">
@@ -983,18 +984,28 @@
         </div>
       </div>
     </div>
+    <div class="fixed-bottom">
+      <div class="row">
+        <div class="col-12 col-lg-4">
+          <div class="alert alert-dark alert-dismissible fade show mx-3 pr-4 mb-6 mb-lg-4" role="alert">
+            <div class="row d-flex align-items-center">
+              <div class="col">
+                Product added
+              </div>
+              <div class="col-auto pr-0 justify-content-between align-items-center d-flex">
+                <a class="h5 mb-0 text-success" href="#" data-dismiss="alert" aria-label="Close">Undo</a>
+                <button type="button" class="close position-relative d-flex align-self-end py-0 pr-2" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+              </div>
+            </div>
 
-    <div class="alert alert-dark alert-dismissible fade show fixed-bottom mx-3 d-flex align-items-center pr-4" role="alert" style="margin-bottom: 56px;">
-      <div class="row d-flex align-items-center">
-        <div class="col">
-          Product added to your day
-        </div>
-        <div class="col-auto pr-0">
-          <a class="h5 text-success" href="#" data-dismiss="alert" aria-label="Close">Undo</a>
+          </div>
         </div>
       </div>
-
     </div>
+
+
     </div> <!-- / .main-content -->
     <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
       <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal" href="dashboard-full.html"><i class="fe fe-home d-block mb-2"></i>Home</a>
