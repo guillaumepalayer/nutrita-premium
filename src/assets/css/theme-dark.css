@@ -10516,3 +10516,17 @@ a:focus, button:focus {
 
 .modal-dialog-vertical.modal-sidebar-nav {
   max-width: 250px; }
+
+.btn-slide-right {
+  position: absolute !important;
+  right: -8px;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 1 !important; }
+
+.btn-slide-left {
+  position: absolute !important;
+  left: -8px;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  z-index: 1 !important; }
