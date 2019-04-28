@@ -1,95 +1,4 @@
-@@if (demoMode) {
-<!-- Modal: Demo -->
-<div class="modal fade fixed-right" id="modalDemo" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical" role="document">
-    <form class="modal-content" id="demoForm">
-      <div class="modal-body">
 
-        <!-- Close -->
-        <a class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </a>
-
-        <div class="text-center">
-          <img src="assets/img/illustrations/designer-life.svg" alt="..." class="img-fluid mb-3">
-        </div>
-
-        <h2 class="text-center mb-2">
-          Make Dashkit Your Own
-        </h2>
-
-        <p class="text-center mb-4">
-          Set preferences that will be cookied for your live preview demonstration.
-        </p>
-
-        <hr class="mb-4">
-
-        <h4 class="mb-1">
-          Color Scheme
-        </h4>
-
-        <p class="small text-muted mb-3">
-          Overall light or dark presentation.
-        </p>
-
-        <div class="btn-group-toggle d-flex mb-4" data-toggle="buttons">
-          <label class="btn btn-white active col">
-            <input type="radio" name="colorScheme" id="colorSchemeLight" value="light" checked> <i class="fe fe-sun mr-2"></i> Light Mode
-          </label>
-          <label class="btn btn-white col ml-2">
-            <input type="radio" name="colorScheme" id="colorSchemeDark" value="dark"> <i class="fe fe-moon mr-2"></i> Dark Mode
-          </label>
-        </div>
-
-        <h4 class="mb-1">
-          Navigation Position
-        </h4>
-
-        <p class="small text-muted mb-3">
-          Select the primary navigation paradigm for your app.
-        </p>
-
-        <div class="btn-group-toggle d-flex mb-4" data-toggle="buttons">
-          <label class="btn btn-white active col">
-            <input type="radio" name="navPosition" id="navPositionSidenav" value="sidenav" checked> Sidenav
-          </label>
-          <label class="btn btn-white col ml-2">
-            <input type="radio" name="navPosition" id="navPositionTopnav" value="topnav"> Topnav
-          </label>
-          <label class="btn btn-white col ml-2">
-            <input type="radio" name="navPosition" id="navPositionCombo" value="combo"> Combo
-          </label>
-        </div>
-
-        <h4 class="mb-1">
-          Sidebar Color
-        </h4>
-
-        <p class="small text-muted mb-3">
-          Usually dictated by the color scheme, but can be overriden.
-        </p>
-
-        <div class="btn-group-toggle d-flex mb-4" data-toggle="buttons">
-          <label class="btn btn-white active col">
-            <input type="radio" name="sidebarColor" id="sidebarColorDefault" value="default" checked> Default
-          </label>
-          <label class="btn btn-white col ml-2">
-            <input type="radio" name="sidebarColor" id="sidebarColorVibrant" value="vibrant"> Vibrant
-          </label>
-        </div>
-
-      </div>
-      <div class="modal-footer border-0">
-
-        <button type="submit" class="btn btn-block btn-primary mt-auto">
-          Preview
-        </button>
-
-      </div>
-    </form>
-  </div>
-</div>
-}
 
 <!-- Modal: sidebar -->
 <div class="modal fade" id="sidebarModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -237,7 +146,10 @@
                 </a>
               </div>
               <div class="col-auto">
-                <a class="text-muted" href="#" data-toggle="modal" data-target="#sidebarModalUserNotification" role="button">
+                <a href="https://gitbook.com" class="btn btn-link text-muted" role="button" target="_blank">
+                  <i class="fe fe-help-circle h2"></i>
+                </a>
+                <a class="btn btn-link text-muted" href="#" data-toggle="modal" data-target="#sidebarModalUserNotification" role="button">
                   <span class="icon active">
                     <i class="fe fe-bell"></i>
                   </span>
@@ -982,7 +894,7 @@
             <input type="text" class="form-control form-control-lg" placeholder="00:00 pm" aria-label="hours/minutes">
           </div>
         </div>
-        <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+        <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
       </div>
       <nav class="navbar fixed-bottom px-4">
         <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Save it</button>
@@ -1251,7 +1163,7 @@
             <input type="text" class="form-control form-control-lg" placeholder="00:00 pm" aria-label="Height">
           </div>
         </div>
-        <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+        <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
       </div>
       <nav class="navbar fixed-bottom px-4">
         <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Save it</button>
@@ -1751,7 +1663,7 @@
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
     <div class="modal-content">
       <div class="fixed-top d-flex justify-content-between align-items-center pl-4">
-        <h4 class="modal-title">Get started with Nutrita Pro</h4>
+        <h4 class="modal-title">Get started with Nutrita Premium</h4>
         <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true"><i class="fe fe-x"></i></span>
         </button>
@@ -1806,7 +1718,7 @@
           </a>
         </div>
       </div>
-      <p class="text-center mb-6 pb-4 h5">Starting at $2.99 a week</p>
+      <p class="text-center mb-6 pb-5 h5">Starting at $2.99 a week</p>
       <nav class="navbar fixed-bottom px-4">
         <button class="btn btn-success vw-100 mb-2" type="button" data-toggle="modal" data-target="#onboardingGoalsSelection">Start now</button>
         <button class="btn btn-link vw-100 text-success btn-sm" type="button" data-toggle="modal" data-target="#signIn">I already have an account</button>
@@ -1923,7 +1835,7 @@
 <div class="modal fade fixed-right" id="onboardingAboutYou" tabindex="-5" role="dialog" aria-labelledby="onboardingAboutYou" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
     <div class="modal-content">
-      <div class="modal-body p-0 pb-5">
+      <div class="modal-body p-0 pb-6">
         <div class="d-flex justify-content-between align-items-center">
           <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
           <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
@@ -1974,7 +1886,58 @@
               </div>
             </div>
           </div>
-          <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+          <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+        </div>
+      </div>
+      <nav class="navbar fixed-bottom px-4">
+        <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingActivity">Continue</button>
+      </nav>
+    </div>
+  </div>
+</div><!-- / modal food -->
+
+<!-- IDEA: modal onboarding-activity -->
+<div class="modal fade fixed-right" id="onboardingActivity" tabindex="-9" role="dialog" aria-labelledby="onboardingActivity" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-0 pb-6">
+        <div class="d-flex justify-content-between align-items-center">
+          <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
+          <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"><i class="fe fe-x"></i></span>
+          </button>
+        </div>
+        <div class="clearfix mb-4">
+          <img class="mt-n6 float-right img-fluid" alt="onboarding-goal-description" src="assets/img/illustrations/onboarding-goal-description.svg" data-holder-rendered="true" height="320">
+        </div>
+        <div class="px-4">
+          <h2>Activity levels</h2>
+          <form class="mb-2">
+            <select class="custom-select custom-select-lg mb-3">
+              <option selected>Sedentary</option>
+              <option>Lightly Active</option>
+              <option>Moderately Active</option>
+              <option>Very Active</option>
+              <option>Extremely Active</option>
+            </select>
+          </form>
+          <div class="bd-example my-4">
+
+            <dl>
+              <dt>Sedentary</dt>
+              <dd>Desk job and little to no exercise</dd>
+              <dt>Lightly Active</dt>
+              <dd>Light exercise 1–3 days/week</dd>
+              <dt>Moderately Active</dt>
+              <dd>Moderate exercise 3–5 days/week</dd>
+              <dt>Very Active</dt>
+              <dd>Hard exercise 6–7 days/week</dd>
+              <dt>Extremely Active</dt>
+              <dd>Hard daily exercise and physical job or training</dd>
+            </dl>
+
+          </div>
+          <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
         </div>
       </div>
       <nav class="navbar fixed-bottom px-4">
@@ -2015,8 +1978,9 @@
             </div>
           </form>
           <h6 class="header-pretitle">How-To</h6>
-          <p class="text-secondary mb-4 small">Your waist is situated just after the top of your hip bone. If you don’t have a tape measure at home, use your earbuds cable and wrap your waist with it. Compare the lenght measured with a A4 paper sheet. A A4 measures 21.0 × 29.7 centimeters.</p>
-          <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+          <p class="text-secondary mb-0 small">Your waist is situated just after the top of your hip bone. If you don’t have a tape measure at home, use your earbuds cable and wrap your waist with it. Compare the lenght measured with a A4 paper sheet. A A4 measures 21.0 × 29.7 centimeters.</p>
+          <img class="img-fluid my-4" src="assets/img/illustrations/waist-woman.svg" alt="how to measure your waist - Woman">
+          <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
         </div>
       </div>
       <nav class="navbar fixed-bottom px-4">
@@ -2101,7 +2065,7 @@
               </a>
             </li>
           </ul>
-          <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+          <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
         </div>
       </div>
       <nav class="navbar fixed-bottom px-4">
@@ -2172,7 +2136,7 @@
             </div>
             <small id="FastingInsulin" class="form-text text-muted pt-2 mb-0">Optional</small>
           </div>
-          <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+          <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
         </div>
       </div>
       <nav class="navbar fixed-bottom px-4">
@@ -2225,7 +2189,7 @@
               </div>
             </div>
           </div>
-          <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+          <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
         </div>
       </div>
       <nav class="navbar fixed-bottom px-4">
@@ -2260,7 +2224,7 @@
               <option value="3">Sound sleeper</option>
             </select>
           </form>
-          <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+          <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
         </div>
       </div>
       <nav class="navbar fixed-bottom px-4">

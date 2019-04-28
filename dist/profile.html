@@ -29,11 +29,12 @@
           </div>
           <div class="col ml-auto d-flex justify-content-end">
             <div class="navbar-user">
-
+              <a href="https://gitbook.com" class="btn btn-primary mr-3" role="button" target="_blank">
+                Get support
+              </a>
               <a href="settings.html" class="btn btn-link text-dark" role="button">
                 <i class="fe fe-settings"></i>
               </a>
-
             </div>
           </div>
         </div>
@@ -188,7 +189,10 @@
                     </a>
                   </div>
                   <div class="col-auto">
-                    <a class="text-muted" href="#" data-toggle="modal" data-target="#sidebarModalUserNotification" role="button">
+                    <a href="https://gitbook.com" class="btn btn-link text-muted" role="button" target="_blank">
+                      <i class="fe fe-help-circle h2"></i>
+                    </a>
+                    <a class="btn btn-link text-muted" href="#" data-toggle="modal" data-target="#sidebarModalUserNotification" role="button">
                       <span class="icon active">
                         <i class="fe fe-bell"></i>
                       </span>
@@ -933,7 +937,7 @@
                 <input type="text" class="form-control form-control-lg" placeholder="00:00 pm" aria-label="hours/minutes">
               </div>
             </div>
-            <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+            <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
           </div>
           <nav class="navbar fixed-bottom px-4">
             <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Save it</button>
@@ -1202,7 +1206,7 @@
                 <input type="text" class="form-control form-control-lg" placeholder="00:00 pm" aria-label="Height">
               </div>
             </div>
-            <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+            <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
           </div>
           <nav class="navbar fixed-bottom px-4">
             <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Save it</button>
@@ -1702,7 +1706,7 @@
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
           <div class="fixed-top d-flex justify-content-between align-items-center pl-4">
-            <h4 class="modal-title">Get started with Nutrita Pro</h4>
+            <h4 class="modal-title">Get started with Nutrita Premium</h4>
             <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true"><i class="fe fe-x"></i></span>
             </button>
@@ -1757,7 +1761,7 @@
               </a>
             </div>
           </div>
-          <p class="text-center mb-6 pb-4 h5">Starting at $2.99 a week</p>
+          <p class="text-center mb-6 pb-5 h5">Starting at $2.99 a week</p>
           <nav class="navbar fixed-bottom px-4">
             <button class="btn btn-success vw-100 mb-2" type="button" data-toggle="modal" data-target="#onboardingGoalsSelection">Start now</button>
             <button class="btn btn-link vw-100 text-success btn-sm" type="button" data-toggle="modal" data-target="#signIn">I already have an account</button>
@@ -1874,7 +1878,7 @@
     <div class="modal fade fixed-right" id="onboardingAboutYou" tabindex="-5" role="dialog" aria-labelledby="onboardingAboutYou" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="modal-body p-0 pb-5">
+          <div class="modal-body p-0 pb-6">
             <div class="d-flex justify-content-between align-items-center">
               <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
               <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
@@ -1925,7 +1929,58 @@
                   </div>
                 </div>
               </div>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+            </div>
+          </div>
+          <nav class="navbar fixed-bottom px-4">
+            <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingActivity">Continue</button>
+          </nav>
+        </div>
+      </div>
+    </div><!-- / modal food -->
+
+    <!-- IDEA: modal onboarding-activity -->
+    <div class="modal fade fixed-right" id="onboardingActivity" tabindex="-9" role="dialog" aria-labelledby="onboardingActivity" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content">
+          <div class="modal-body p-0 pb-6">
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
+              <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="fe fe-x"></i></span>
+              </button>
+            </div>
+            <div class="clearfix mb-4">
+              <img class="mt-n6 float-right img-fluid" alt="onboarding-goal-description" src="assets/img/illustrations/onboarding-goal-description.svg" data-holder-rendered="true" height="320">
+            </div>
+            <div class="px-4">
+              <h2>Activity levels</h2>
+              <form class="mb-2">
+                <select class="custom-select custom-select-lg mb-3">
+                  <option selected>Sedentary</option>
+                  <option>Lightly Active</option>
+                  <option>Moderately Active</option>
+                  <option>Very Active</option>
+                  <option>Extremely Active</option>
+                </select>
+              </form>
+              <div class="bd-example my-4">
+
+                <dl>
+                  <dt>Sedentary</dt>
+                  <dd>Desk job and little to no exercise</dd>
+                  <dt>Lightly Active</dt>
+                  <dd>Light exercise 1–3 days/week</dd>
+                  <dt>Moderately Active</dt>
+                  <dd>Moderate exercise 3–5 days/week</dd>
+                  <dt>Very Active</dt>
+                  <dd>Hard exercise 6–7 days/week</dd>
+                  <dt>Extremely Active</dt>
+                  <dd>Hard daily exercise and physical job or training</dd>
+                </dl>
+
+              </div>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -1966,8 +2021,9 @@
                 </div>
               </form>
               <h6 class="header-pretitle">How-To</h6>
-              <p class="text-secondary mb-4 small">Your waist is situated just after the top of your hip bone. If you don’t have a tape measure at home, use your earbuds cable and wrap your waist with it. Compare the lenght measured with a A4 paper sheet. A A4 measures 21.0 × 29.7 centimeters.</p>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-0 small">Your waist is situated just after the top of your hip bone. If you don’t have a tape measure at home, use your earbuds cable and wrap your waist with it. Compare the lenght measured with a A4 paper sheet. A A4 measures 21.0 × 29.7 centimeters.</p>
+              <img class="img-fluid my-4" src="assets/img/illustrations/waist-woman.svg" alt="how to measure your waist - Woman">
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -2052,7 +2108,7 @@
                   </a>
                 </li>
               </ul>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -2123,7 +2179,7 @@
                 </div>
                 <small id="FastingInsulin" class="form-text text-muted pt-2 mb-0">Optional</small>
               </div>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -2176,7 +2232,7 @@
                   </div>
                 </div>
               </div>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -2211,7 +2267,7 @@
                   <option value="3">Sound sleeper</option>
                 </select>
               </form>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -3057,124 +3113,153 @@
 
     <!-- MAIN CONTENT
     ================================================== -->
-    <div class="container my-6">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-6">
-          <div class="card">
+    <div class="main-content my-6">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6">
+            <div class="card">
 
-            <div class="card-body">
+              <div class="card-body">
 
-              <a href="profile-posts.html" class="avatar avatar-xl card-avatar card-avatar-top">
-                <img src="https://pbs.twimg.com/profile_images/1046781704608915458/5xxk-UR7_400x400.jpg" class="avatar-img rounded-circle border border-4 border-card" alt="...">
-              </a>
+                <a href="profile-posts.html" class="avatar avatar-xl card-avatar card-avatar-top">
+                  <img src="https://pbs.twimg.com/profile_images/1046781704608915458/5xxk-UR7_400x400.jpg" class="avatar-img rounded-circle border border-4 border-card" alt="...">
+                </a>
 
-              <h2 class="card-title text-center mb-4">
-                Guillaume palayer
-              </h2>
-              <!-- Pretitle -->
-              <h6 class="header-pretitle text-secondary text-center">
-                Goal
-              </h6>
-              <!-- Title -->
-              <h4 class="header-title text-center">
-                <a class="pb-5 d-block w-100" href="#" data-toggle="modal" data-target="#onboardingGoalsSelection">Ketogenic diet</a>
-              </h4>
-              <hr class="mb-4 mt-0">
-              <h2 class="card-title">
-                About you
-              </h2>
-              <p class="card-text mb-4">
-                This information lets Nutrita estimate accurate data while adding food to your journal. You’ll also get coaching that’s tailored to you.
-              </p>
-
-              <!-- Pretitle -->
-              <h6 class="header-pretitle text-secondary">
-                Gender
-              </h6>
-              <!-- Title -->
-              <h4 class="header-title">
-                <a class="pb-5 d-block w-100" href="#" data-toggle="modal" data-target="#onboardingAboutYou">Male</a>
-              </h4>
-              <!-- Pretitle -->
-              <h6 class="header-pretitle text-secondary">
-                Birthday
-              </h6>
-              <!-- Title -->
-              <h4 class="header-title">
-                <a class="pb-5 d-block w-100" href="#" data-toggle="modal" data-target="#onboardingAboutYou">05/15/1988</a>
-              </h4>
-              <!-- Pretitle -->
-              <h6 class="header-pretitle text-secondary">
-                Weight
-              </h6>
-              <!-- Title -->
-              <h4 class="header-title">
-                <a class="pb-5 d-block w-100" href="#" data-toggle="modal" data-target="#onboardingAboutYou">70 kg</a>
-              </h4>
-              <!-- Pretitle -->
-              <h6 class="header-pretitle text-secondary">
-                Weight
-              </h6>
-              <!-- Title -->
-              <h4 class="header-title">
-                <a class="pb-5 d-block w-100" href="#" data-toggle="modal" data-target="#onboardingAboutYou">70 kg</a>
-              </h4>
-              <!-- Pretitle -->
-              <h6 class="header-pretitle text-secondary">
-                Height
-              </h6>
-              <!-- Title -->
-              <h4 class="header-title">
-                <a class="pb-5 d-block w-100" href="#" data-toggle="modal" data-target="#onboardingAboutYou">183 cm</a>
-              </h4>
-              <!-- Pretitle -->
-              <h6 class="header-pretitle text-secondary">
-                Waist
-              </h6>
-              <!-- Title -->
-              <h4 class="header-title">
-                <a class="pb-5 d-block w-100" href="#" data-toggle="modal" data-target="#onboardingWaist">80 cm</a>
-              </h4>
-              <!-- Pretitle -->
-              <h6 class="header-pretitle text-secondary">
-                Body Fat %
-              </h6>
-              <!-- Title -->
-              <h4 class="header-title">
-                <a class="pb-5 d-block w-100" href="#" data-toggle="modal" data-target="#onboardingBodyFat">12 %</a>
-              </h4>
-              <!-- Pretitle -->
-              <h6 class="header-pretitle text-secondary">
-                Craving
-              </h6>
-              <!-- Title -->
-              <h4 class="header-title">
-                <a class="pb-5 d-block w-100" href="#" data-toggle="modal" data-target="#onboardingCraving">Normal craving</a>
-              </h4>
-              <!-- Pretitle -->
-              <h6 class="header-pretitle text-secondary">
-                Meals frequency
-              </h6>
-              <!-- Title -->
-              <h4 class="header-title">
-                <a class="pb-5 d-block w-100" href="#" data-toggle="modal" data-target="#onboardingCraving">3</a>
-              </h4>
-              <!-- Pretitle -->
-              <h6 class="header-pretitle text-secondary">
-                Sleep
-              </h6>
-              <!-- Title -->
-              <h4 class="header-title">
-                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingSleep">Normal sleeper</a>
-              </h4>
-
+                <h2 class="card-title text-center">
+                  Hi Guillaume palayer
+                </h2>
+                <a class="d-block w-100 text-center mb-4" href="settings.html">Edit profile</a>
+                <p class="card-text text-center mb-4">
+                  This information lets Nutrita estimate accurate data while adding food to your journal. You’ll also get coaching that’s tailored to you.
+                </p>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingGoalsSelection">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Goal
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    Ketogenic diet
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingAboutYou">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Gender
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    Male
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingAboutYou">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Birthday
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    05/15/1988
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingAboutYou">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Weight
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    70 kg
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingAboutYou">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Weight
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    70 kg
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingAboutYou">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Height
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    183 cm
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingWaist">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Waist
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    80 cm
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingBodyFat">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Body Fat %
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    12 %
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingCraving">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Craving
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    Normal craving
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingCraving">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Meals frequency
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    3
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingSleep">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Sleep
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    Normal sleeper
+                  </h4>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
 
+      </div> <!-- / .main-content -->
     </div> <!-- / .main-content -->
     <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
       <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal" href="dashboard-full.html"><i class="fe fe-home d-block mb-2"></i>Home</a>

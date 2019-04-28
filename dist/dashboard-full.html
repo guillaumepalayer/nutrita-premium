@@ -171,7 +171,10 @@
                     </a>
                   </div>
                   <div class="col-auto">
-                    <a class="text-muted" href="#" data-toggle="modal" data-target="#sidebarModalUserNotification" role="button">
+                    <a href="https://gitbook.com" class="btn btn-link text-muted" role="button" target="_blank">
+                      <i class="fe fe-help-circle h2"></i>
+                    </a>
+                    <a class="btn btn-link text-muted" href="#" data-toggle="modal" data-target="#sidebarModalUserNotification" role="button">
                       <span class="icon active">
                         <i class="fe fe-bell"></i>
                       </span>
@@ -916,7 +919,7 @@
                 <input type="text" class="form-control form-control-lg" placeholder="00:00 pm" aria-label="hours/minutes">
               </div>
             </div>
-            <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+            <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
           </div>
           <nav class="navbar fixed-bottom px-4">
             <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Save it</button>
@@ -1185,7 +1188,7 @@
                 <input type="text" class="form-control form-control-lg" placeholder="00:00 pm" aria-label="Height">
               </div>
             </div>
-            <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+            <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
           </div>
           <nav class="navbar fixed-bottom px-4">
             <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Save it</button>
@@ -1685,7 +1688,7 @@
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
           <div class="fixed-top d-flex justify-content-between align-items-center pl-4">
-            <h4 class="modal-title">Get started with Nutrita Pro</h4>
+            <h4 class="modal-title">Get started with Nutrita Premium</h4>
             <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true"><i class="fe fe-x"></i></span>
             </button>
@@ -1740,7 +1743,7 @@
               </a>
             </div>
           </div>
-          <p class="text-center mb-6 pb-4 h5">Starting at $2.99 a week</p>
+          <p class="text-center mb-6 pb-5 h5">Starting at $2.99 a week</p>
           <nav class="navbar fixed-bottom px-4">
             <button class="btn btn-success vw-100 mb-2" type="button" data-toggle="modal" data-target="#onboardingGoalsSelection">Start now</button>
             <button class="btn btn-link vw-100 text-success btn-sm" type="button" data-toggle="modal" data-target="#signIn">I already have an account</button>
@@ -1857,7 +1860,7 @@
     <div class="modal fade fixed-right" id="onboardingAboutYou" tabindex="-5" role="dialog" aria-labelledby="onboardingAboutYou" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="modal-body p-0 pb-5">
+          <div class="modal-body p-0 pb-6">
             <div class="d-flex justify-content-between align-items-center">
               <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
               <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
@@ -1908,7 +1911,58 @@
                   </div>
                 </div>
               </div>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+            </div>
+          </div>
+          <nav class="navbar fixed-bottom px-4">
+            <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingActivity">Continue</button>
+          </nav>
+        </div>
+      </div>
+    </div><!-- / modal food -->
+
+    <!-- IDEA: modal onboarding-activity -->
+    <div class="modal fade fixed-right" id="onboardingActivity" tabindex="-9" role="dialog" aria-labelledby="onboardingActivity" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content">
+          <div class="modal-body p-0 pb-6">
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
+              <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="fe fe-x"></i></span>
+              </button>
+            </div>
+            <div class="clearfix mb-4">
+              <img class="mt-n6 float-right img-fluid" alt="onboarding-goal-description" src="assets/img/illustrations/onboarding-goal-description.svg" data-holder-rendered="true" height="320">
+            </div>
+            <div class="px-4">
+              <h2>Activity levels</h2>
+              <form class="mb-2">
+                <select class="custom-select custom-select-lg mb-3">
+                  <option selected>Sedentary</option>
+                  <option>Lightly Active</option>
+                  <option>Moderately Active</option>
+                  <option>Very Active</option>
+                  <option>Extremely Active</option>
+                </select>
+              </form>
+              <div class="bd-example my-4">
+
+                <dl>
+                  <dt>Sedentary</dt>
+                  <dd>Desk job and little to no exercise</dd>
+                  <dt>Lightly Active</dt>
+                  <dd>Light exercise 1–3 days/week</dd>
+                  <dt>Moderately Active</dt>
+                  <dd>Moderate exercise 3–5 days/week</dd>
+                  <dt>Very Active</dt>
+                  <dd>Hard exercise 6–7 days/week</dd>
+                  <dt>Extremely Active</dt>
+                  <dd>Hard daily exercise and physical job or training</dd>
+                </dl>
+
+              </div>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -1949,8 +2003,9 @@
                 </div>
               </form>
               <h6 class="header-pretitle">How-To</h6>
-              <p class="text-secondary mb-4 small">Your waist is situated just after the top of your hip bone. If you don’t have a tape measure at home, use your earbuds cable and wrap your waist with it. Compare the lenght measured with a A4 paper sheet. A A4 measures 21.0 × 29.7 centimeters.</p>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-0 small">Your waist is situated just after the top of your hip bone. If you don’t have a tape measure at home, use your earbuds cable and wrap your waist with it. Compare the lenght measured with a A4 paper sheet. A A4 measures 21.0 × 29.7 centimeters.</p>
+              <img class="img-fluid my-4" src="assets/img/illustrations/waist-woman.svg" alt="how to measure your waist - Woman">
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -2035,7 +2090,7 @@
                   </a>
                 </li>
               </ul>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -2106,7 +2161,7 @@
                 </div>
                 <small id="FastingInsulin" class="form-text text-muted pt-2 mb-0">Optional</small>
               </div>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -2159,7 +2214,7 @@
                   </div>
                 </div>
               </div>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -2194,7 +2249,7 @@
                   <option value="3">Sound sleeper</option>
                 </select>
               </form>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -3067,12 +3122,15 @@
           </div>
           <div class="col ml-auto d-flex justify-content-end">
             <div class="navbar-user">
+              <a href="https://gitbook.com" class="btn btn-link text-muted" role="button" target="_blank">
+                <i class="fe fe-help-circle h2"></i>
+              </a>
 
               <!-- Dropdown -->
-              <div class="dropdown mr-4 d-none d-md-flex">
+              <div class="dropdown mr-2 d-none d-md-flex">
 
                 <!-- Toggle -->
-                <a href="#" class="text-muted" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a href="#" class="btn btn-link text-muted" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <span class="icon active">
                     <i class="fe fe-bell"></i>
                   </span>
@@ -3384,8 +3442,8 @@
 
     <!-- MAIN CONTENT
     ================================================== -->
-    <div class="main-content mt-6 mt-lg-7">
-      <div class="container">
+    <div class="main-content my-6">
+      <div class="container pt-5">
         <div class="row justify-content-center">
           <div class="col-12 col-lg-2 d-none d-lg-flex">
             <nav class="navbar navbar-vertical navbar-expand-sm navbar-light bg-transparent border-0">
@@ -3424,7 +3482,9 @@
               <a href="#" data-toggle="modal" data-target="#newReminder">
                 <div class="row d-flex align-items-start">
                   <div class="col-auto">
-                    <i class="fe fe-bell h2 mb-0 text-primary"></i>
+                    <div class="avatar">
+                      <span class="avatar-title rounded-circle border bg-white"><i class="fe fe-bell h2 mb-0 text-primary"></i></span>
+                    </div>
                   </div>
                   <div class="col ml-n2">
 
@@ -3569,12 +3629,22 @@
                 </div>
                 <div class="row align-items-center">
                   <div class="col">
+                    <div class="header d-block w-100 mb-2">
+                    <!-- Body -->
+                    <div class="header-body mr-n4">
+                      <div class="row align-items-end">
+                        <div class="col">
 
-                    <!-- Title -->
-                    <h4 class="mb-4">
-                      Your goals
-                    </h4>
 
+                          <!-- Title -->
+                          <h4 class="header-title">
+                            Your goals
+                          </h4>
+
+                        </div>
+                      </div> <!-- / .row -->
+                    </div> <!-- / .header-body -->
+                  </div>
                   </div>
                 </div>
                 <div class="row">
@@ -3583,12 +3653,12 @@
                       <div class="col-auto">
 
                         <!-- Nav -->
-                        <ul class="nav nav-tabs nav-overflow card-header-tabs border-bottom">
-                          <li style="min-width: 194px;" class="nav-item border-left-0 mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[0,10,5,15,10,20,15,25,20,30,25,40]}]}}">
+                        <ul class="nav nav-tabs nav-overflow card-header-tabs border-bottom mr-n4">
+                          <li style="min-width: 164px;" class="nav-item border-left-0 mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[0,10,5,15,10,20,15,25,20,30,25,40]}]}}">
                             <a class="nav-link pl-0 pr-4 active" href="#" data-toggle="tab">
-                              <div class="d-flex justify-content-between no-gutters mt-3">
+                              <div class="d-flex justify-content-between no-gutters mt-2">
                                 <p class="card-text text-dark mb-0">
-                                  Net Carbs Limit
+                                  <span class="chart-legend-item align-self-center"><i class="chart-legend-indicator bg-red-light"></i></span>Net Carbs Limit
                                 </p>
                               </div>
                               <div class="row align-items-center">
@@ -3598,11 +3668,11 @@
                               </div>
                             </a>
                           </li>
-                          <li style="min-width: 194px;" class="nav-item border-left mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[7,35,12,27,34,17,19,30,28,32,24,39]}]}}">
-                            <a class="nav-link px-4" href="#" data-toggle="tab">
-                              <div class="d-flex justify-content-between no-gutters mt-3">
+                          <li style="min-width: 164px;" class="nav-item border-left mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[7,35,12,27,34,17,19,30,28,32,24,39]}]}}">
+                            <a class="nav-link px-3" href="#" data-toggle="tab">
+                              <div class="d-flex justify-content-between no-gutters mt-2">
                                 <p class="card-text text-dark mb-0">
-                                  Proteins Target
+                                  <span class="chart-legend-item align-self-center"><i class="chart-legend-indicator bg-orange-light"></i></span>Proteins Target
                                 </p>
                               </div>
                               <div class="row align-items-center">
@@ -3612,9 +3682,9 @@
                               </div>
                             </a>
                           </li>
-                          <li style="min-width: 204px;" class="nav-item border-left mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[2,12,35,25,36,25,34,16,4,14,15,37]}]}}">
-                            <a class="nav-link px-4" href="#" data-toggle="tab">
-                              <div class="d-flex justify-content-between no-gutters mt-3">
+                          <li style="min-width: 184px;" class="nav-item border-left mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[2,12,35,25,36,25,34,16,4,14,15,37]}]}}">
+                            <a class="nav-link px-3" href="#" data-toggle="tab">
+                              <div class="d-flex justify-content-between no-gutters mt-2">
                                 <p class="card-text text-dark mb-0">
                                   HbA1c % Target
                                 </p>
@@ -3626,9 +3696,9 @@
                               </div>
                             </a>
                           </li>
-                          <li style="min-width: 248px;" class="nav-item border-left mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[2,12,35,25,36,25,34,16,4,14,15,37]}]}}">
-                            <a class="nav-link px-4" href="#" data-toggle="tab">
-                              <div class="d-flex justify-content-between no-gutters mt-3">
+                          <li style="min-width: 238px;" class="nav-item border-left mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[2,12,35,25,36,25,34,16,4,14,15,37]}]}}">
+                            <a class="nav-link px-3" href="#" data-toggle="tab">
+                              <div class="d-flex justify-content-between no-gutters mt-2">
                                 <p class="card-text text-dark mb-0">
                                   Fasting blood glucose Target
                                 </p>
@@ -3640,9 +3710,9 @@
                               </div>
                             </a>
                           </li>
-                          <li style="min-width: 238px;" class="nav-item border-left mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[2,12,35,25,36,25,34,16,4,14,15,37]}]}}">
-                            <a class="nav-link px-4" href="#" data-toggle="tab">
-                              <div class="d-flex justify-content-between no-gutters mt-3">
+                          <li style="min-width: 228px;" class="nav-item border-left mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[2,12,35,25,36,25,34,16,4,14,15,37]}]}}">
+                            <a class="nav-link px-3" href="#" data-toggle="tab">
+                              <div class="d-flex justify-content-between no-gutters mt-2">
                                 <p class="card-text text-dark mb-0">
                                   Fasting triglycerides Target
                                 </p>
@@ -3654,9 +3724,9 @@
                               </div>
                             </a>
                           </li>
-                          <li style="min-width: 204px;" class="nav-item border-left mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[2,12,35,25,36,25,34,16,4,14,15,37]}]}}">
-                            <a class="nav-link px-4" href="#" data-toggle="tab">
-                              <div class="d-flex justify-content-between no-gutters mt-3">
+                          <li style="min-width: 194px;" class="nav-item border-left mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[2,12,35,25,36,25,34,16,4,14,15,37]}]}}">
+                            <a class="nav-link px-3" href="#" data-toggle="tab">
+                              <div class="d-flex justify-content-between no-gutters mt-2">
                                 <p class="card-text text-dark mb-0">
                                   Fasting insulin Target
                                 </p>
@@ -3668,9 +3738,9 @@
                               </div>
                             </a>
                           </li>
-                          <li style="min-width: 268px;" class="nav-item border-left mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[2,12,35,25,36,25,34,16,4,14,15,37]}]}}">
-                            <a class="nav-link px-4" href="#" data-toggle="tab">
-                              <div class="d-flex justify-content-between no-gutters mt-3">
+                          <li style="min-width: 258px;" class="nav-item border-left mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[2,12,35,25,36,25,34,16,4,14,15,37]}]}}">
+                            <a class="nav-link px-3" href="#" data-toggle="tab">
+                              <div class="d-flex justify-content-between no-gutters mt-2">
                                 <p class="card-text text-dark mb-0">
                                   Blood β-hydroxybutyrate Target
                                 </p>
@@ -3682,9 +3752,9 @@
                               </div>
                             </a>
                           </li>
-                          <li style="min-width: 174px;" class="nav-item border-left mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[2,12,35,25,36,25,34,16,4,14,15,37]}]}}">
-                            <a class="nav-link px-4" href="#" data-toggle="tab">
-                              <div class="d-flex justify-content-between no-gutters mt-3">
+                          <li style="min-width: 204px;" class="nav-item border-left mx-0" data-toggle="chart" data-target="#performanceChart" data-update="{&quot;data&quot;:{&quot;datasets&quot;:[{&quot;data&quot;:[2,12,35,25,36,25,34,16,4,14,15,37]}]}}">
+                            <a class="nav-link px-3" href="#" data-toggle="tab">
+                              <div class="d-flex justify-content-between no-gutters mt-2">
                                 <p class="card-text text-dark mb-0">
                                   Weight Target
                                 </p>
@@ -3697,19 +3767,22 @@
                             </a>
                           </li>
                         </ul>
+                        <button class="btn btn-rounded-circle btn-white btn-slide-right d-none d-lg-block mr-3" type="button" name="button">
+                          <i class="fe fe-chevron-right"></i>
+                        </button>
                       </div>
                     </div> <!-- / .row -->
                     <!-- Chart -->
                     <div class="chart pt-5"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
                       <canvas id="performanceChart" class="chart-canvas chartjs-render-monitor" width="853" height="450" style="display: block; height: 300px; width: 569px;"></canvas>
                     </div>
-
-                    <div class="header mt-5 mb-4">
+                    <a class="text-right border-top d-block w-100 py-3 mb-4" href="#" data-toggle="modal" data-target="#reportDetailsBlood">Net Carbs Report <i class="fe fe-chevron-right"></i></a>
+                    <div class="header mb-4">
                       <div class="header-body pt-0">
                         <div class="row align-items-end">
                           <div class="col">
                             <h6 class="header-pretitle">Net Carbs limit Food equivalents</h6>
-                            <h1 class="header-title">It's like eating...</h1>
+                            <h4 class="header-title">It's like eating...</h4>
                           </div>
                           <div class="col-auto">
                             <ul class="nav nav-tabs header-tabs">
@@ -3738,7 +3811,7 @@
                     </div>
                     <ul class="list-group list-group-lg list-group-flush list mt-0 mb-0 mr-n3 ml-n3">
                       <a data-toggle="modal" href="#modalFood">
-                        <li class="list-group-item px-0 py-4 border-0 pl-3">
+                        <li class="list-group-item px-0 pb-0 border-0 pl-3">
                           <div class="row align-items-start">
                             <div class="col-auto pl-3">
                               <span class="avatar avatar-lg">
@@ -3747,84 +3820,13 @@
                             </div>
                             <div class="col-8 col-md-10 pl-1 pr-0">
                               <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                              <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
-                              <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                                <li class="nav-item mr-auto">
-                                  <div style="width: 164px;">
-                                    <div class="d-flex justify-content-left no-gutters align-content-center">
-                                      <p class="card-text small text-secondary mb-0">
-                                        Keto score
-                                        <span class="badge badge-soft-success">Good</span>
-                                        <span class="card-text small text-secondary mb-0"></span>
-                                        </span>
-                                      </p>
-                                    </div>
-                                    <div class="row align-items-center no-gutters">
-                                      <div class="col-auto">
-                                        <div class="card-text small text-secondary mr-2">7/10</div>
-                                      </div>
-                                      <div class="col">
-                                        <div class="progress progress-sm">
-                                          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
-                                <li class="nav-item mr-auto">
-                                  <div style="width: 164px;">
-                                    <div class="d-flex justify-content-left no-gutters align-content-center">
-                                      <p class="card-text small text-secondary mb-0">
-                                        Nutrient Density
-                                        <span class="badge badge-soft-success">Moderate</span>
-                                        <span class="card-text small text-secondary mb-0"></span>
-                                        </span>
-                                      </p>
-                                    </div>
-                                    <div class="row align-items-center no-gutters">
-                                      <div class="col-auto">
-                                        <div class="card-text small text-secondary mr-2">7/10</div>
-                                      </div>
-                                      <div class="col">
-                                        <div class="progress progress-sm">
-                                          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
-                                <li class="nav-item mr-auto">
-                                  <div style="width: 164px;">
-                                    <div class="d-flex justify-content-left no-gutters align-content-center">
-                                      <p class="card-text small text-secondary mb-0">
-                                        Insulin Index
-                                        <span class="badge badge-soft-success">Moderate</span>
-                                        <span class="card-text small text-secondary mb-0"></span>
-                                        </span>
-                                      </p>
-                                    </div>
-                                    <div class="row align-items-center no-gutters">
-                                      <div class="col-auto">
-                                        <div class="card-text small text-secondary mr-2">7/10</div>
-                                      </div>
-                                      <div class="col">
-                                        <div class="progress progress-sm">
-                                          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
-                              </ul>
+                              <h6 class="text-uppercase text-muted my-2 pr-2">1.9 x cup. Chopped</h6>
                             </div>
                           </div>
                         </li>
                       </a>
                       <a data-toggle="modal" href="#modalFood">
-                        <li class="list-group-item px-0 py-4 border-0 pl-3">
+                        <li class="list-group-item px-0 pb-0 border-0 pl-3">
                           <div class="row align-items-start">
                             <div class="col-auto pl-3">
                               <span class="avatar avatar-lg">
@@ -3833,84 +3835,13 @@
                             </div>
                             <div class="col-8 col-md-10 pl-1 pr-0">
                               <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                              <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
-                              <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                                <li class="nav-item mr-auto">
-                                  <div style="width: 164px;">
-                                    <div class="d-flex justify-content-left no-gutters align-content-center">
-                                      <p class="card-text small text-secondary mb-0">
-                                        Keto score
-                                        <span class="badge badge-soft-success">Good</span>
-                                        <span class="card-text small text-secondary mb-0"></span>
-                                        </span>
-                                      </p>
-                                    </div>
-                                    <div class="row align-items-center no-gutters">
-                                      <div class="col-auto">
-                                        <div class="card-text small text-secondary mr-2">7/10</div>
-                                      </div>
-                                      <div class="col">
-                                        <div class="progress progress-sm">
-                                          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
-                                <li class="nav-item mr-auto">
-                                  <div style="width: 164px;">
-                                    <div class="d-flex justify-content-left no-gutters align-content-center">
-                                      <p class="card-text small text-secondary mb-0">
-                                        Nutrient Density
-                                        <span class="badge badge-soft-success">Moderate</span>
-                                        <span class="card-text small text-secondary mb-0"></span>
-                                        </span>
-                                      </p>
-                                    </div>
-                                    <div class="row align-items-center no-gutters">
-                                      <div class="col-auto">
-                                        <div class="card-text small text-secondary mr-2">7/10</div>
-                                      </div>
-                                      <div class="col">
-                                        <div class="progress progress-sm">
-                                          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
-                                <li class="nav-item mr-auto">
-                                  <div style="width: 164px;">
-                                    <div class="d-flex justify-content-left no-gutters align-content-center">
-                                      <p class="card-text small text-secondary mb-0">
-                                        Insulin Index
-                                        <span class="badge badge-soft-success">Moderate</span>
-                                        <span class="card-text small text-secondary mb-0"></span>
-                                        </span>
-                                      </p>
-                                    </div>
-                                    <div class="row align-items-center no-gutters">
-                                      <div class="col-auto">
-                                        <div class="card-text small text-secondary mr-2">7/10</div>
-                                      </div>
-                                      <div class="col">
-                                        <div class="progress progress-sm">
-                                          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
-                              </ul>
+                              <h6 class="text-uppercase text-muted my-2 pr-2">1.9 x cup. Chopped</h6>
                             </div>
                           </div>
                         </li>
                       </a>
                       <a data-toggle="modal" href="#modalFood">
-                        <li class="list-group-item px-0 py-4 border-0 pl-3">
+                        <li class="list-group-item px-0 pb-0 border-0 pl-3">
                           <div class="row align-items-start">
                             <div class="col-auto pl-3">
                               <span class="avatar avatar-lg">
@@ -3919,89 +3850,15 @@
                             </div>
                             <div class="col-8 col-md-10 pl-1 pr-0">
                               <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                              <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
-                              <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                                <li class="nav-item mr-auto">
-                                  <div style="width: 164px;">
-                                    <div class="d-flex justify-content-left no-gutters align-content-center">
-                                      <p class="card-text small text-secondary mb-0">
-                                        Keto score
-                                        <span class="badge badge-soft-success">Good</span>
-                                        <span class="card-text small text-secondary mb-0"></span>
-                                        </span>
-                                      </p>
-                                    </div>
-                                    <div class="row align-items-center no-gutters">
-                                      <div class="col-auto">
-                                        <div class="card-text small text-secondary mr-2">7/10</div>
-                                      </div>
-                                      <div class="col">
-                                        <div class="progress progress-sm">
-                                          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
-                                <li class="nav-item mr-auto">
-                                  <div style="width: 164px;">
-                                    <div class="d-flex justify-content-left no-gutters align-content-center">
-                                      <p class="card-text small text-secondary mb-0">
-                                        Nutrient Density
-                                        <span class="badge badge-soft-success">Moderate</span>
-                                        <span class="card-text small text-secondary mb-0"></span>
-                                        </span>
-                                      </p>
-                                    </div>
-                                    <div class="row align-items-center no-gutters">
-                                      <div class="col-auto">
-                                        <div class="card-text small text-secondary mr-2">7/10</div>
-                                      </div>
-                                      <div class="col">
-                                        <div class="progress progress-sm">
-                                          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
-                                <li class="nav-item mr-auto">
-                                  <div style="width: 164px;">
-                                    <div class="d-flex justify-content-left no-gutters align-content-center">
-                                      <p class="card-text small text-secondary mb-0">
-                                        Insulin Index
-                                        <span class="badge badge-soft-success">Moderate</span>
-                                        <span class="card-text small text-secondary mb-0"></span>
-                                        </span>
-                                      </p>
-                                    </div>
-                                    <div class="row align-items-center no-gutters">
-                                      <div class="col-auto">
-                                        <div class="card-text small text-secondary mr-2">7/10</div>
-                                      </div>
-                                      <div class="col">
-                                        <div class="progress progress-sm">
-                                          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </li>
-                              </ul>
+                              <h6 class="text-uppercase text-muted my-2 pr-2">1.9 x cup. Chopped</h6>
                             </div>
                           </div>
                         </li>
                       </a>
                     </ul>
-
-
                   </div>
                 </div>
               </div>
-              <a class="card-footer text-right font-weight-bold border-top" href="#" data-toggle="modal" data-target="#reportDetailsBlood">Net Carbs Report <i class="fe fe-chevron-right"></i></a>
             </div>
             <div class="card mb-4 d-block d-lg-none">
               <div class="card-body">
@@ -4080,99 +3937,128 @@
               </div>
             </div>
             <!-- IDEA: keto guides -->
-            <div class="row justify-content-center mb-5">
-              <div class="col-12">
-                <!-- Title -->
-                <h1 class="header-title mb-4">
-                  Learn all things keto
-                </h1>
-                <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-4">
+            <div class="container mb-5 mb-lg-6">
+              <div class="row justify-content-center">
+                <div class="col">
+                  <!-- Title -->
+                  <h1 class="header-title mb-4">
+                    Learn all things keto
+                  </h1>
+                  <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0">
 
-                  <li class="nav-item" style="min-width: 192px">
-                    <a href="https://nutrita.app/keto-flu/" target="_blank">
-                      <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita.app/wp-content/uploads/2018/10/keto-flu-blog-post.svg" alt="">
-                      <h2 class="h4 text-dark">What’s the Keto Flu & How to Cure it</h2>
-                    </a>
-                  </li>
-                  <li class="nav-item" style="min-width: 192px">
-                    <a href="#" target="_blank">
-                      <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/12/keto-guide-beginner-blog-400x250.png" alt="">
-                      <h2 class="h4 text-dark">The Ultimate Keto Diet Guide for Beginners</h2>
-                    </a>
-                  </li>
-                  <li class="nav-item" style="min-width: 192px">
-                    <a href="https://nutrita.app/measure-ketone-levels/" target="_blank">
-                      <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/10/measure-ketosis-post.jpg" alt="">
-                      <h2 class="h4 text-dark">3 ways to measure ketone levels: which is the best?  </h2>
-                    </a>
-                  </li>
-                  <li class="nav-item" style="min-width: 192px">
-                    <a href="#" target="_blank">
-                      <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/11/ketosis-blog-featured-img-400x250.png" alt="">
-                      <h2 class="h4 text-dark">The Ultimate Guide to Ketosis</h2>
-                    </a>
-                  </li>
-                </ul>
-
+                    <li class="nav-item" style="min-width: 192px">
+                      <a href="https://nutrita.app/keto-flu/" target="_blank">
+                        <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita.app/wp-content/uploads/2018/10/keto-flu-blog-post.svg" alt="">
+                        <h2 class="h4 text-dark">What’s the Keto Flu & How to Cure it</h2>
+                      </a>
+                    </li>
+                    <li class="nav-item" style="min-width: 192px">
+                      <a href="#" target="_blank">
+                        <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/12/keto-guide-beginner-blog-400x250.png" alt="">
+                        <h2 class="h4 text-dark">The Ultimate Keto Diet Guide for Beginners</h2>
+                      </a>
+                    </li>
+                    <li class="nav-item" style="min-width: 192px">
+                      <a href="https://nutrita.app/measure-ketone-levels/" target="_blank">
+                        <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/10/measure-ketosis-post.jpg" alt="">
+                        <h2 class="h4 text-dark">3 ways to measure ketone levels: which is the best?  </h2>
+                      </a>
+                    </li>
+                    <li class="nav-item" style="min-width: 192px">
+                      <a href="#" target="_blank">
+                        <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/11/ketosis-blog-featured-img-400x250.png" alt="">
+                        <h2 class="h4 text-dark">The Ultimate Guide to Ketosis</h2>
+                      </a>
+                    </li>
+                  </ul>
+                  <button class="btn btn-rounded-circle btn-white btn-slide-right d-none d-lg-block" type="button" name="button">
+                    <i class="fe fe-chevron-right"></i>
+                  </button>
+                </div>
               </div>
             </div>
 
             <!-- IDEA: keto recipes -->
-            <div class="row justify-content-center mb-5">
-              <div class="col-12">
-                <!-- Title -->
-                <h1 class="header-title mb-4">
-                  It’s keto & it’s delicious
-                </h1>
-                <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-4">
+            <div class="container mb-5 mb-lg-6">
+              <div class="row justify-content-center">
+                <div class="col">
+                  <!-- Title -->
+                  <h1 class="header-title mb-4">
+                    It’s keto & it’s delicious
+                  </h1>
+                  <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0">
 
-                  <li class="nav-item" style="min-width: 192px">
-                    <a href="https://nutrita.app/keto-flu/" target="_blank">
-                      <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
-                      <h2 class="h4 text-dark">Title recipe</h2>
-                    </a>
-                  </li>
-                  <li class="nav-item" style="min-width: 192px">
-                    <a href="https://nutrita.app/keto-flu/" target="_blank">
-                      <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
-                      <h2 class="h4 text-dark">Title recipe</h2>
-                    </a>
-                  </li>
-                  <li class="nav-item" style="min-width: 192px">
-                    <a href="https://nutrita.app/keto-flu/" target="_blank">
-                      <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
-                      <h2 class="h4 text-dark">Title recipe</h2>
-                    </a>
-                  </li>
-                  <li class="nav-item" style="min-width: 192px">
-                    <a href="https://nutrita.app/keto-flu/" target="_blank">
-                      <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
-                      <h2 class="h4 text-dark">Title recipe</h2>
-                    </a>
-                  </li>
-                  <li class="nav-item" style="min-width: 192px">
-                    <a href="https://nutrita.app/keto-flu/" target="_blank">
-                      <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
-                      <h2 class="h4 text-dark">Title recipe</h2>
-                    </a>
-                  </li>
-                  <li class="nav-item" style="min-width: 192px">
-                    <a href="https://nutrita.app/keto-flu/" target="_blank">
-                      <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
-                      <h2 class="h4 text-dark">Title recipe</h2>
-                    </a>
-                  </li>
-                  <li class="nav-item" style="min-width: 192px">
-                    <a href="https://nutrita.app/keto-flu/" target="_blank">
-                      <div style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm d-flex justify-content-center align-items-center">
-                        <i class="fe fe-plus h1 text-dark mb-0"></i>
+                    <li class="nav-item" style="min-width: 192px">
+                      <a href="https://nutrita.app/keto-flu/" target="_blank">
+                        <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
+                        <h2 class="h4 text-dark">Title recipe</h2>
+                      </a>
+                    </li>
+                    <li class="nav-item" style="min-width: 192px">
+                      <a href="https://nutrita.app/keto-flu/" target="_blank">
+                        <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
+                        <h2 class="h4 text-dark">Title recipe</h2>
+                      </a>
+                    </li>
+                    <li class="nav-item" style="min-width: 192px">
+                      <a href="https://nutrita.app/keto-flu/" target="_blank">
+                        <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
+                        <h2 class="h4 text-dark">Title recipe</h2>
+                      </a>
+                    </li>
+                    <li class="nav-item" style="min-width: 192px">
+                      <a href="https://nutrita.app/keto-flu/" target="_blank">
+                        <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
+                        <h2 class="h4 text-dark">Title recipe</h2>
+                      </a>
+                    </li>
+                    <li class="nav-item" style="min-width: 192px">
+                      <a href="https://nutrita.app/keto-flu/" target="_blank">
+                        <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
+                        <h2 class="h4 text-dark">Title recipe</h2>
+                      </a>
+                    </li>
+                    <li class="nav-item" style="min-width: 192px">
+                      <a href="https://nutrita.app/keto-flu/" target="_blank">
+                        <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://perfectketo.ucr.io/-/format/auto/-/quality/lighter/-/max_icc_size/10/-/resize/500x/https://perfectketo.com/wp-content/themes/perfectketo/img/recipe-keto-stirfry.jpg" alt="">
+                        <h2 class="h4 text-dark">Title recipe</h2>
+                      </a>
+                    </li>
+                    <li class="nav-item" style="min-width: 192px">
+                      <a href="https://nutrita.app/keto-flu/" target="_blank">
+                        <div style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm d-flex justify-content-center align-items-center">
+                          <i class="fe fe-plus h1 text-dark mb-0"></i>
+                        </div>
+                        <h2 class="h4 text-dark">See more</h2>
+                      </a>
+                    </li>
+                  </ul>
+                  <button class="btn btn-rounded-circle btn-white btn-slide-right d-none d-lg-block" type="button" name="button">
+                    <i class="fe fe-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- IDEA: Device connection -->
+            <div class="container mb-5 pt-0 pt-lg-5">
+              <div class="row justify-content-center">
+                <div class="col">
+                  <div class="card mb-0 bg-blue-light">
+                    <div class="card-body p-4">
+                      <div class="media">
+                        <div class="media-body mr-3">
+                          <h6 class="text-uppercase text-secondary mb-1">Nutrita Premium</h6>
+                          <h4 class="mb-4">Connect your Keto & Glucose meter</h4>
+                          <button class="btn btn-outline-primary btn-sm h5 font-weight-normal mb-2" data-toggle="modal" data-target="#onboardingTuto">Get free 30-day trial</button>
+                        </div>
+                        <div class="align-self-center">
+                          <img class="mr-n3 mt-n3 mb-n3 d-flex d-md-none" src="assets/img/illustrations/undraw_sync4_xlc6.svg" alt="" width="108">
+                          <img class="mr-n3 mt-n6 mb-n3 d-none d-md-flex" src="assets/img/illustrations/undraw_sync4_xlc6.svg" alt="" width="188">
+                        </div>
                       </div>
-                      <h2 class="h4 text-dark">See more</h2>
-                    </a>
-                  </li>
-
-                </ul>
-
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -4213,37 +4099,6 @@
             <div class="row justify-content-center mb-4">
               <div class="col-auto">
                 <img class="mb-4" src="assets/img/illustrations/profil-dv-gauges-full.png" alt="avatar" width="256">
-              </div>
-            </div>
-            <div class="card mb-4">
-              <div class="card-body">
-                <h4 class="card-title mb-4">
-                  Your badges
-                </h4>
-                <div class="row align-items-start no-gutters mb-3">
-                  <div class="col-auto pr-3">
-                    <img src="assets/img//illustrations/no-added-sugar.svg" alt="" width="24">
-                  </div>
-                  <div class="col">
-                    <p class="small mb-0">No added sugar</p>
-                  </div>
-                </div>
-                <div class="row align-items-start no-gutters mb-3">
-                  <div class="col-auto pr-3">
-                    <img src="assets/img//illustrations/no-flour.svg" alt="" width="24">
-                  </div>
-                  <div class="col">
-                    <p class="small mb-0">No flour</p>
-                  </div>
-                </div>
-                <div class="row align-items-start no-gutters mb-3">
-                  <div class="col-auto pr-3">
-                    <img src="assets/img//illustrations/no-seed-oil.svg" alt="" width="24">
-                  </div>
-                  <div class="col">
-                    <p class="small mb-0">No seed soil</p>
-                  </div>
-                </div>
               </div>
             </div>
             <div class="card mb-4 d-none d-lg-block">

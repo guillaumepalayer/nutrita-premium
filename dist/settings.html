@@ -29,11 +29,12 @@
           </div>
           <div class="col ml-auto d-flex justify-content-end">
             <div class="navbar-user">
-
+              <a href="https://gitbook.com" class="btn btn-primary mr-3" role="button" target="_blank">
+                Get support
+              </a>
               <a href="settings.html" class="btn btn-link text-dark" role="button">
                 <i class="fe fe-settings"></i>
               </a>
-
             </div>
           </div>
         </div>
@@ -188,7 +189,10 @@
                     </a>
                   </div>
                   <div class="col-auto">
-                    <a class="text-muted" href="#" data-toggle="modal" data-target="#sidebarModalUserNotification" role="button">
+                    <a href="https://gitbook.com" class="btn btn-link text-muted" role="button" target="_blank">
+                      <i class="fe fe-help-circle h2"></i>
+                    </a>
+                    <a class="btn btn-link text-muted" href="#" data-toggle="modal" data-target="#sidebarModalUserNotification" role="button">
                       <span class="icon active">
                         <i class="fe fe-bell"></i>
                       </span>
@@ -933,7 +937,7 @@
                 <input type="text" class="form-control form-control-lg" placeholder="00:00 pm" aria-label="hours/minutes">
               </div>
             </div>
-            <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+            <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
           </div>
           <nav class="navbar fixed-bottom px-4">
             <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Save it</button>
@@ -1202,7 +1206,7 @@
                 <input type="text" class="form-control form-control-lg" placeholder="00:00 pm" aria-label="Height">
               </div>
             </div>
-            <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+            <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
           </div>
           <nav class="navbar fixed-bottom px-4">
             <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Save it</button>
@@ -1702,7 +1706,7 @@
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
           <div class="fixed-top d-flex justify-content-between align-items-center pl-4">
-            <h4 class="modal-title">Get started with Nutrita Pro</h4>
+            <h4 class="modal-title">Get started with Nutrita Premium</h4>
             <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true"><i class="fe fe-x"></i></span>
             </button>
@@ -1757,7 +1761,7 @@
               </a>
             </div>
           </div>
-          <p class="text-center mb-6 pb-4 h5">Starting at $2.99 a week</p>
+          <p class="text-center mb-6 pb-5 h5">Starting at $2.99 a week</p>
           <nav class="navbar fixed-bottom px-4">
             <button class="btn btn-success vw-100 mb-2" type="button" data-toggle="modal" data-target="#onboardingGoalsSelection">Start now</button>
             <button class="btn btn-link vw-100 text-success btn-sm" type="button" data-toggle="modal" data-target="#signIn">I already have an account</button>
@@ -1874,7 +1878,7 @@
     <div class="modal fade fixed-right" id="onboardingAboutYou" tabindex="-5" role="dialog" aria-labelledby="onboardingAboutYou" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="modal-body p-0 pb-5">
+          <div class="modal-body p-0 pb-6">
             <div class="d-flex justify-content-between align-items-center">
               <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
               <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
@@ -1925,7 +1929,58 @@
                   </div>
                 </div>
               </div>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+            </div>
+          </div>
+          <nav class="navbar fixed-bottom px-4">
+            <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingActivity">Continue</button>
+          </nav>
+        </div>
+      </div>
+    </div><!-- / modal food -->
+
+    <!-- IDEA: modal onboarding-activity -->
+    <div class="modal fade fixed-right" id="onboardingActivity" tabindex="-9" role="dialog" aria-labelledby="onboardingActivity" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content">
+          <div class="modal-body p-0 pb-6">
+            <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
+              <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true"><i class="fe fe-x"></i></span>
+              </button>
+            </div>
+            <div class="clearfix mb-4">
+              <img class="mt-n6 float-right img-fluid" alt="onboarding-goal-description" src="assets/img/illustrations/onboarding-goal-description.svg" data-holder-rendered="true" height="320">
+            </div>
+            <div class="px-4">
+              <h2>Activity levels</h2>
+              <form class="mb-2">
+                <select class="custom-select custom-select-lg mb-3">
+                  <option selected>Sedentary</option>
+                  <option>Lightly Active</option>
+                  <option>Moderately Active</option>
+                  <option>Very Active</option>
+                  <option>Extremely Active</option>
+                </select>
+              </form>
+              <div class="bd-example my-4">
+
+                <dl>
+                  <dt>Sedentary</dt>
+                  <dd>Desk job and little to no exercise</dd>
+                  <dt>Lightly Active</dt>
+                  <dd>Light exercise 1–3 days/week</dd>
+                  <dt>Moderately Active</dt>
+                  <dd>Moderate exercise 3–5 days/week</dd>
+                  <dt>Very Active</dt>
+                  <dd>Hard exercise 6–7 days/week</dd>
+                  <dt>Extremely Active</dt>
+                  <dd>Hard daily exercise and physical job or training</dd>
+                </dl>
+
+              </div>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -1966,8 +2021,9 @@
                 </div>
               </form>
               <h6 class="header-pretitle">How-To</h6>
-              <p class="text-secondary mb-4 small">Your waist is situated just after the top of your hip bone. If you don’t have a tape measure at home, use your earbuds cable and wrap your waist with it. Compare the lenght measured with a A4 paper sheet. A A4 measures 21.0 × 29.7 centimeters.</p>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-0 small">Your waist is situated just after the top of your hip bone. If you don’t have a tape measure at home, use your earbuds cable and wrap your waist with it. Compare the lenght measured with a A4 paper sheet. A A4 measures 21.0 × 29.7 centimeters.</p>
+              <img class="img-fluid my-4" src="assets/img/illustrations/waist-woman.svg" alt="how to measure your waist - Woman">
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -2052,7 +2108,7 @@
                   </a>
                 </li>
               </ul>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -2123,7 +2179,7 @@
                 </div>
                 <small id="FastingInsulin" class="form-text text-muted pt-2 mb-0">Optional</small>
               </div>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -2176,7 +2232,7 @@
                   </div>
                 </div>
               </div>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -2211,7 +2267,7 @@
                   <option value="3">Sound sleeper</option>
                 </select>
               </form>
-              <p class="text-secondary mb-4 small">This information lets Nutrita estimate accurate data while you track your food. You’ll also get coaching that’s tailored to you.</p>
+              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -3057,245 +3113,359 @@
 
     <!-- MAIN CONTENT
     ================================================== -->
-    <div class="container mb-6">
-      <div class="row justify-content-center">
-        <div class="col-12 col-lg-6">
-          <div class="card">
+    <div class="main-content my-6">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6">
+            <div class="card">
 
-            <div class="card-body">
+              <div class="card-body">
 
 
 
-              <!-- Pretitle -->
-              <h6 class="header-pretitle text-secondary">
-                Overview
-              </h6>
+                <!-- Pretitle -->
+                <h6 class="header-pretitle text-secondary">
+                  Overview
+                </h6>
 
-              <!-- Title -->
-              <h1 class="header-title mb-5">
-                Settings
-              </h1>
+                <!-- Title -->
+                <h1 class="header-title mb-5">
+                  Settings
+                </h1>
 
-              <div class="table-responsive">
-                <table class="table">
-                  <tbody>
-                    <tr>
-                      <td colspan="2" class="p-0 border-top-0 pt-0">
-                        <h2 class="mb-2">Carbs</h2>
-                      </td>
-                    </tr>
-                    <tr class="small">
-                      <td colspan="2" class="px-0 text-secondary border-top-0 pt-2">
-                        <div class="row no-gutters">
-                          <div class="col align-self-start">
-                            <span class="text-secondary d-inline-block">Carbs limit / day</span>
-                          </div>
-                          <div class="col-auto text-right">
-                            <span class="h6 text-secondary pr-2 font-weight-normal">Net</span>
-                          </div>
-                          <div class="col-auto">
-                            <div class="custom-control custom-switch d-flex align-items-center">
-                              <input type="checkbox" class="custom-control-input" id="customSwitch1"><label class="custom-control-label py-2 mb-0 text-muted align-middle h6 font-weight-normal" for="customSwitch1">Total</label>
+                <div class="table-responsive">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <td colspan="2" class="p-0 border-top-0 pt-0">
+                          <h2 class="mb-2">Carbs</h2>
+                        </td>
+                      </tr>
+                      <tr class="small">
+                        <td colspan="2" class="px-0 text-secondary border-top-0 pt-2">
+                          <div class="row no-gutters">
+                            <div class="col align-self-start">
+                              <span class="text-secondary d-inline-block">Carbs limit / day</span>
+                            </div>
+                            <div class="col-auto text-right">
+                              <span class="h6 text-secondary pr-2 font-weight-normal">Net</span>
+                            </div>
+                            <div class="col-auto">
+                              <div class="custom-control custom-switch d-flex align-items-center">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1"><label class="custom-control-label py-2 mb-0 text-muted align-middle h6 font-weight-normal" for="customSwitch1">Total</label>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="px-0 text-right align-middle border-0 pt-0 pb-5 w-100">
-                        <input type="range" class="custom-range" min="0" max="100" id="customRange2">
-                        <div class="row no-gutters justify-content-between text-secondary mt-n3 pt-1">
-                          <div class="col text-left">
-                          <small>0</small>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-0 text-right align-middle border-0 pt-0 pb-5 w-100">
+                          <input type="range" class="custom-range" min="0" max="100" id="customRange2">
+                          <div class="row no-gutters justify-content-between text-secondary mt-n3 pt-1">
+                            <div class="col text-left">
+                            <small>0</small>
+                            </div>
+                            <div class="col text-center">
+                            <small>100</small>
+                            </div>
+                            <div class="col text-right">
+                            <small>200</small>
+                            </div>
                           </div>
-                          <div class="col text-center">
-                          <small>100</small>
+                        </td>
+                        <td class="px-0 text-right align-middle border-0 pt-0 pb-5">
+                          <h5 class="pull-net-carbs m-0">30g</h5>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="2" class="p-0 border-top-1 pt-4">
+                          <h2 class="mb-2">Protein</h2>
+                        </td>
+                      </tr>
+                      <tr class="small">
+                        <td class="px-0 text-secondary border-top-0 pt-2">Protein target / day</td>
+                        <td class="px-0 text-right align-middle border-top-0 pt-2">
+                          <h5 class="pull-protein m-0">126g</h5>
+                          <p class="small text-muted mb-0">(1.8g/kg)</p>
+                        </td>
+                      </tr>
+                      <tr class="">
+                        <td colspan="2" class="pt-0 px-0 border-0 pb-0">
+                          <input type="range" class="custom-range" min="0" max="10" id="customRange2">
+                          <div class="row no-gutters justify-content-between text-secondary mt-n3 pt-1 mb-4">
+                            <div class="col">
+                            <small>x</small>
+                            </div>
+                            <div class="col text-center">
+                            <small>x</small>
+                            </div>
+                            <div class="col text-right">
+                            <small>x</small>
+                            </div>
                           </div>
-                          <div class="col text-right">
-                          <small>200</small>
-                          </div>
-                        </div>
-                      </td>
-                      <td class="px-0 text-right align-middle border-0 pt-0 pb-5">
-                        <h5 class="pull-net-carbs m-0">30g</h5>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colspan="2" class="p-0 border-top-0">
-                        <h2 class="mb-2">Protein</h2>
-                      </td>
-                    </tr>
-                    <tr class="small">
-                      <td class="px-0 text-secondary border-top-0 pt-2">Protein target / day</td>
-                      <td class="px-0 text-right align-middle border-top-0 pt-2">
-                        <h5 class="pull-protein m-0">126g</h5>
-                        <p class="small text-muted mb-0">(1.8g/kg)</p>
-                      </td>
-                    </tr>
-                    <tr class="">
-                      <td colspan="2" class="pt-0 px-0 border-0 pb-0">
-                        <input type="range" class="custom-range" min="0" max="10" id="customRange2">
-                        <div class="row no-gutters justify-content-between text-secondary mt-n3 pt-1 mb-4">
-                          <div class="col">
-                          <small>x</small>
-                          </div>
-                          <div class="col text-center">
-                          <small>x</small>
-                          </div>
-                          <div class="col text-right">
-                          <small>x</small>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
 
-              <h2 class="card-title mb-4">
-                Measurement
-              </h2>
-              <!-- Pretitle -->
-              <h6 class="header-pretitle text-secondary">
-                Units
-              </h6>
-              <!-- Title -->
-              <h4 class="header-title">
-                <a class="pb-5 d-block w-100" href="#" data-toggle="modal" data-target="#onboardingAboutYou">Metrics</a>
-              </h4>
-              <!-- Pretitle -->
-              <h6 class="header-pretitle text-secondary">
-                Energy
-              </h6>
-              <!-- Title -->
-              <h4 class="header-title">
-                <a class="pb-6 d-block w-100" href="#" data-toggle="modal" data-target="#">Calories</a>
-              </h4>
-
-
-              <h2 class="card-title mb-4">
-                Notifications
-              </h2>
-
-              <div class="row mb-5">
-                <div class="col">
+                <h2 class="card-title mb-4">
+                  Profile
+                </h2>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingAboutYou">
                   <!-- Pretitle -->
                   <h6 class="header-pretitle text-secondary">
-                    Completed goals
+                    Change name
                   </h6>
                   <!-- Title -->
-                  <h4 class="header-title">
-                    Get updates when you reach your goal
+                  <h4 class="header-title text-dark">
+                    Guillaume Palayer
                   </h4>
-                </div>
-                <div class="col-auto pr-0">
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                    <label class="custom-control-label" for="customSwitch1"></label>
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-6">
-                <div class="col">
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingAboutYou">
                   <!-- Pretitle -->
                   <h6 class="header-pretitle text-secondary">
-                    Goal progress tips
+                    Change email
                   </h6>
                   <!-- Title -->
-                  <h4 class="header-title">
-                    Get tips to help you meet your activity goal
+                  <h4 class="header-title text-dark">
+                    guillaume.palayer@gmail.com
                   </h4>
-                </div>
-                <div class="col-auto pr-0">
-                  <div class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
-                    <label class="custom-control-label" for="customSwitch2"></label>
-                  </div>
-                </div>
-              </div>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Change Avatar
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    Upload a new picture
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingPaymentOptions">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Change payment method
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    €9.99/month • Renews on May 4, 2019
+                  </h4>
+                </a>
+                <hr>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Change Nutrita Premium plan
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    Low-carb 3 months
+                  </h4>
+                </a>
+                <hr>
+                <a class="pb-6 d-block w-100" href="#" data-toggle="modal" data-target="#">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Cancel membership
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    You and anyone sharing this membership will lose data from your Nutrita Premium.
+                  </h4>
+                </a>
 
-              <h2 class="card-title mb-4">
-                Reminders
-              </h2>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item px-0 border-top-0">
-                  <div class="row">
-                    <div class="col">
-                      <!-- Title -->
-                      <h4 class="header-title mb-2">
-                        06:30 am
-                      </h4>
-                      <!-- Pretitle -->
-                      <h6 class="header-pretitle text-secondary mb-0">
-                        Repeat Sun, Mon, Tue, Wed, Thu, Fri, Sat.
-                      </h6>
-                    </div>
-                    <div class="col-auto pr-0">
-                      <a class="btn btn-link text-dark" href="#"><i class="fe fe-trash-2"></i></a>
+                <h2 class="card-title mb-4">
+                  Measurement
+                </h2>
+                <a class="d-block w-100" href="#" data-toggle="modal" data-target="#onboardingAboutYou">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Units
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    Metrics
+                  </h4>
+                </a>
+                <hr>
+                <a class="pb-6 d-block w-100" href="#" data-toggle="modal" data-target="#">
+                  <!-- Pretitle -->
+                  <h6 class="header-pretitle text-secondary">
+                    Energy
+                  </h6>
+                  <!-- Title -->
+                  <h4 class="header-title text-dark">
+                    Calories
+                  </h4>
+                </a>
+
+                <h2 class="card-title mb-4">
+                  Notifications
+                </h2>
+
+                <div class="row">
+                  <div class="col">
+                    <!-- Pretitle -->
+                    <h6 class="header-pretitle text-secondary">
+                      Completed goals
+                    </h6>
+                    <!-- Title -->
+                    <h4 class="header-title">
+                      Get updates when you reach your goal
+                    </h4>
+                  </div>
+                  <div class="col-auto pr-0">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                      <label class="custom-control-label" for="customSwitch1"></label>
                     </div>
                   </div>
-                </li>
-                <li class="list-group-item px-0">
-                  <div class="row">
-                    <div class="col">
-                      <!-- Title -->
-                      <h4 class="header-title mb-2">
-                        06:30 am
-                      </h4>
-                      <!-- Pretitle -->
-                      <h6 class="header-pretitle text-secondary mb-0">
-                        Repeat Sun, Mon, Tue, Wed, Thu, Fri, Sat.
-                      </h6>
-                    </div>
-                    <div class="col-auto pr-0">
-                      <a class="btn btn-link text-dark" href="#"><i class="fe fe-trash-2"></i></a>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col">
+                    <!-- Pretitle -->
+                    <h6 class="header-pretitle text-secondary">
+                      Goal progress tips
+                    </h6>
+                    <!-- Title -->
+                    <h4 class="header-title">
+                      Get tips to help you meet your activity goal
+                    </h4>
+                  </div>
+                  <div class="col-auto pr-0">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                      <label class="custom-control-label" for="customSwitch2"></label>
                     </div>
                   </div>
-                </li>
-                <li class="list-group-item px-0">
-                  <div class="row">
-                    <div class="col">
-                      <!-- Title -->
-                      <h4 class="header-title mb-2">
-                        06:30 am
-                      </h4>
-                      <!-- Pretitle -->
-                      <h6 class="header-pretitle text-secondary mb-0">
-                        Repeat Sun, Mon, Tue, Wed, Thu, Fri, Sat.
-                      </h6>
-                    </div>
-                    <div class="col-auto pr-0">
-                      <a class="btn btn-link text-dark" href="#"><i class="fe fe-trash-2"></i></a>
+                </div>
+                <hr>
+                <div class="row">
+                  <div class="col">
+                    <!-- Pretitle -->
+                    <h6 class="header-pretitle text-secondary">
+                      Allow Desktop Notifications
+                    </h6>
+                    <!-- Title -->
+                    <h4 class="header-title">
+                      Receive notification through your default web browser
+                    </h4>
+                  </div>
+                  <div class="col-auto pr-0">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch3">
+                      <label class="custom-control-label" for="customSwitch3"></label>
                     </div>
                   </div>
-                </li>
-                <li class="list-group-item px-0">
-                  <div class="row">
-                    <div class="col">
-                      <!-- Title -->
-                      <h4 class="header-title mb-2">
-                        06:30 am
-                      </h4>
-                      <!-- Pretitle -->
-                      <h6 class="header-pretitle text-secondary mb-0">
-                        Repeat Sun, Mon, Tue, Wed, Thu, Fri, Sat.
-                      </h6>
-                    </div>
-                    <div class="col-auto pr-0">
-                      <a class="btn btn-link text-dark" href="#"><i class="fe fe-trash-2"></i></a>
+                </div>
+                <hr>
+                <div class="row mb-6">
+                  <div class="col">
+                    <!-- Pretitle -->
+                    <h6 class="header-pretitle text-secondary">
+                      Opt out of marketing emails
+                    </h6>
+                    <!-- Title -->
+                    <h4 class="header-title">
+                      Receive periodically offers and news from Nutrita
+                    </h4>
+                  </div>
+                  <div class="col-auto pr-0">
+                    <div class="custom-control custom-switch">
+                      <input type="checkbox" class="custom-control-input" id="customSwitch4">
+                      <label class="custom-control-label" for="customSwitch4"></label>
                     </div>
                   </div>
-                </li>
-              </ul>
+                </div>
+
+                <h2 class="card-title mb-4">
+                  Reminders
+                </h2>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item px-0 border-top-0">
+                    <div class="row">
+                      <div class="col">
+                        <!-- Title -->
+                        <h4 class="header-title mb-2">
+                          06:30 am
+                        </h4>
+                        <!-- Pretitle -->
+                        <h6 class="header-pretitle text-secondary mb-0">
+                          Repeat Sun, Mon, Tue, Wed, Thu, Fri, Sat.
+                        </h6>
+                      </div>
+                      <div class="col-auto pr-0">
+                        <a class="btn btn-link text-dark" href="#"><i class="fe fe-trash-2"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0">
+                    <div class="row">
+                      <div class="col">
+                        <!-- Title -->
+                        <h4 class="header-title mb-2">
+                          06:30 am
+                        </h4>
+                        <!-- Pretitle -->
+                        <h6 class="header-pretitle text-secondary mb-0">
+                          Repeat Sun, Mon, Tue, Wed, Thu, Fri, Sat.
+                        </h6>
+                      </div>
+                      <div class="col-auto pr-0">
+                        <a class="btn btn-link text-dark" href="#"><i class="fe fe-trash-2"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0">
+                    <div class="row">
+                      <div class="col">
+                        <!-- Title -->
+                        <h4 class="header-title mb-2">
+                          06:30 am
+                        </h4>
+                        <!-- Pretitle -->
+                        <h6 class="header-pretitle text-secondary mb-0">
+                          Repeat Sun, Mon, Tue, Wed, Thu, Fri, Sat.
+                        </h6>
+                      </div>
+                      <div class="col-auto pr-0">
+                        <a class="btn btn-link text-dark" href="#"><i class="fe fe-trash-2"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item px-0">
+                    <div class="row">
+                      <div class="col">
+                        <!-- Title -->
+                        <h4 class="header-title mb-2">
+                          06:30 am
+                        </h4>
+                        <!-- Pretitle -->
+                        <h6 class="header-pretitle text-secondary mb-0">
+                          Repeat Sun, Mon, Tue, Wed, Thu, Fri, Sat.
+                        </h6>
+                      </div>
+                      <div class="col-auto pr-0">
+                        <a class="btn btn-link text-dark" href="#"><i class="fe fe-trash-2"></i></a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href="#!" class="card-footer text-center font-weight-bold border-top" data-toggle="modal" data-target="#newReminder">Add</a>
             </div>
-            <a href="#!" class="card-footer text-center font-weight-bold border-top" data-toggle="modal" data-target="#newReminder">Add</a>
           </div>
         </div>
       </div>
-    </div>
 
 
+      </div> <!-- / .main-content -->
     </div> <!-- / .main-content -->
     <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
       <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal" href="dashboard-full.html"><i class="fe fe-home d-block mb-2"></i>Home</a>
