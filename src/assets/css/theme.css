@@ -10450,27 +10450,6 @@ a:focus, button:focus {
 .bg-blue-light {
   background-color: #d5e5fa; }
 
-.bg-blue-sky {
-  background: #56CCF2;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2F80ED, #56CCF2);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-
-.bg-sweet-morning {
-  background: #FF5F6D;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #FFC371, #FF5F6D);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-
-.bg-moonlit-asteroid {
-  background: #0F2027;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-
 .badge-xl {
   font-size: 14px;
   padding: 8px;
@@ -10500,3 +10479,51 @@ a:focus, button:focus {
   top: 50% !important;
   transform: translateY(-50%) !important;
   z-index: 1 !important; }
+
+@media (max-width: 768px) {
+  .avatar-xxl {
+    width: 8rem;
+    height: 8rem;
+    font-size: 2.66667rem; } }
+
+.main-radial-progress-chart {
+  min-height: 260px;
+  min-width: 260px; }
+
+.main-radial-progress-chart svg {
+  width: 250;
+  max-width: 300px; }
+
+.main-radial-progress-chart.week {
+  text-align: center; }
+
+.main-radial-progress-chart > .date {
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 15px; }
+
+.main-radial-progress-chart > .circle {
+  margin: 3px auto;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  color: #565656;
+  font-size: 14px;
+  font-weight: 300; }
+
+.main-radial-progress-chart > .active {
+  color: white;
+  background-color: #fa1654 !important; }
+
+.container-progress-gauge div {
+  display: inline-block;
+  width: 64px; }
+
+.rbc-center-text {
+  fill: #95AAC9;
+  font-size: 14px;
+  font-weight: bold; }

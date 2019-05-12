@@ -19,7 +19,6 @@ var ThemeCharts = (function() {
   var fonts = {
     base: 'Cerebri Sans'
   }
-
   var colors = {
     gray: {
       300: '#E3EBF6',
@@ -33,6 +32,9 @@ var ThemeCharts = (function() {
       300: '#A6C5F7',
       700: '#2C7BE5',
     },
+    bgGreenLight:'#47E6B1',
+    bgOrangeLight:'#FFE1C5',
+    bgRedLight:'#FDC2CC',
     black: '#12263F',
     white: '#FFFFFF',
     transparent: 'transparent',
@@ -57,7 +59,7 @@ var ThemeCharts = (function() {
           defaultColor: ( colorScheme == 'dark' ) ? colors.gray[700] : colors.gray[600],
           defaultFontColor: ( colorScheme == 'dark' ) ? colors.gray[700] : colors.gray[600],
           defaultFontFamily: fonts.base,
-          defaultFontSize: 13,
+          defaultFontSize: 12,
           layout: {
             padding: 0
           },
@@ -183,7 +185,7 @@ var ThemeCharts = (function() {
           }
         },
         doughnut: {
-          cutoutPercentage: 83,
+          cutoutPercentage: 92,
           tooltips: {
             callbacks: {
               title: function(item, data) {
@@ -338,7 +340,7 @@ var ThemeCharts = (function() {
 
   // Toggle ticks
   function toggleTicks(elem, $chart) {
-    
+
     if (elem.data('prefix') !== undefined || elem.data('prefix') !== undefined) {
       var prefix = elem.data('prefix') ? elem.data('prefix') : '';
       var suffix = elem.data('suffix') ? elem.data('suffix') : '';
@@ -405,5 +407,5 @@ var ThemeCharts = (function() {
     fonts: fonts,
     colorScheme: colorScheme
   };
-  
+
 })();

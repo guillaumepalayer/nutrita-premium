@@ -91,8 +91,6 @@
       </div> <!-- / .container -->
     </nav>
 
-    
-
     <!-- Modal: sidebar -->
     <div class="modal fade" id="sidebarModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical modal-sidebar-nav" role="document">
@@ -185,11 +183,13 @@
                 <hr class="navbar-divider my-3">
                 <!-- Navigation -->
                 <ul class="navbar-nav mb-md-3">
+                  <!-- IDEA: language selection
                   <li class="nav-item">
                     <a class="nav-link small" href="">
                       Language: English <i class="fe fe-chevron-right ml-auto text-right"></i>
                     </a>
                   </li>
+                  -->
                   <li class="nav-item">
                     <a class="nav-link small" href="">
                       Help
@@ -218,6 +218,7 @@
         </div>
       </div>
     </div>
+
     <!-- Modal: sidebar User Connected-->
     <div class="modal fade" id="sidebarModalUserConnected" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical modal-sidebar-nav" role="document">
@@ -338,6 +339,7 @@
         </div>
       </div>
     </div>
+
     <!-- Modal: sidebar user notification-->
     <div class="modal fade" id="sidebarModalUserNotification" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical modal-sidebar" role="document">
@@ -1021,12 +1023,97 @@
             <img class="mt-n6 float-right img-fluid" alt="Chart line illustration" src="assets/img/illustrations/onboarding-meal-frequency.svg" data-holder-rendered="true" height="300">
           </div>
           <div class="modal-body pt-2 pb-5 mb-6">
-            <h2>Add new reminder</h2>
+            <h2>Add new fasting timer</h2>
             <p class="card-text text-muted mb-3">
-              Never forget to track your foods and weight.
+              Select an option and choose at which hour it'll start.
             </p>
-            <div class="row align-items-center mb-4">
-              <div class="col small text-muted">
+            <div class="card px-0">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item border-bottom-0">
+                  <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label vw-100" for="customRadio1">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col">
+                          <h4 class="mb-0">16-8 Method • Classic</h4>
+                          <span class="small text-muted mb-0">Skip breakfast</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item border-bottom-0">
+                  <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label vw-100" for="customRadio2">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col">
+                          <h4 class="mb-0">16-8 Method • Late</h4>
+                          <span class="small text-muted mb-0">Skip dinner</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item border-bottom-0">
+                  <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label vw-100" for="customRadio3">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col">
+                          <h4 class="mb-0">14-10 Method • Classic</h4>
+                          <span class="small text-muted mb-0">Skip breakfast</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item border-bottom-0">
+                  <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                    <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label vw-100" for="customRadio4">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col">
+                          <h4 class="mb-0">14-10 Method • Late</h4>
+                          <span class="small text-muted mb-0">Skip dinner</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item border-bottom-0">
+                  <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                    <input type="radio" id="customRadio5" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label vw-100" for="customRadio5">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col">
+                          <h4 class="mb-0">5-2 Method</h4>
+                          <span class="small text-muted mb-0">2 full fasting days</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item border-bottom-0">
+                  <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                    <input type="radio" id="customRadio6" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label vw-100" for="customRadio6">
+                      <div class="row justify-content-between align-items-center">
+                        <div class="col">
+                          <h4 class="mb-0">6-1 Method</h4>
+                          <span class="small text-muted mb-0">One fasting day</span>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="row align-items-center mb-2">
+              <div class="col">
+                <h4>
+                  Schedule the starting time
+                </h4>
                 <button type="button" class="btn btn-sm btn-link text-muted pl-0">12 h</button> | <button type="button" class="btn btn-sm btn-link text-success">24 h</button>
               </div>
             </div>
@@ -1035,7 +1122,7 @@
                 <input type="text" class="form-control form-control-lg" placeholder="00:00 pm" aria-label="hours/minutes">
               </div>
             </div>
-            <!-- Pretitle -->
+            <!-- Pretitle --
             <h6 class="header-pretitle text-secondary mb-3">
               Repeat
             </h6>
@@ -1074,6 +1161,7 @@
                 <input type="checkbox" checked autocomplete="off">S
               </label>
             </div>
+            -->
 
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -1105,7 +1193,7 @@
                 <div class="row align-items-center no-gutters">
                   <div class="col-auto">
                     <a class="px-3" data-toggle="modal" data-target="#NewBlood">
-                      <i class="fe fe-plus text-dark"></i></span>
+                      <i class="fe fe-plus text-dark"></i>
                     </a>
                   </div>
                   <div class="col-auto">
@@ -1255,6 +1343,252 @@
       </div>
     </div><!-- / modal NewBlood -->
 
+    <!-- IDEA: modal macroNutrients -->
+    <div class="modal fade fixed-right" id="macroNutrients" tabindex="-1" role="dialog" aria-labelledby="macroNutrients" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-block p-0 border-0 mb-3">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto">
+                <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+                  <div class="row align-items-center no-gutters">
+                    <div class="col-auto pr-3">
+                      <i class="fe fe-arrow-left"></i>
+                    </div>
+                    <div class="col-auto">
+                      <h4 class="modal-title">Macro nutrients</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <div class="row align-items-center no-gutters">
+                  <div class="col-auto">
+                    <a class="px-3" data-toggle="modal" data-target="#NewBlood">
+                      <i class="fe fe-plus text-dark"></i>
+                    </a>
+                  </div>
+                  <div class="col-auto">
+                    <div class="dropdown">
+                      <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fe fe-more-vertical"></i>
+                      </a>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#!" class="dropdown-item">
+                          Help
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <ul class="nav nav-tabs justify-content-between">
+                  <li class="nav-item pl-4">
+                    <a class="nav-link small font-weight-bold active" href="#!">Week</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link small" href="#!">Month</a>
+                  </li>
+                  <li class="nav-item pr-4">
+                    <a class="nav-link small" href="#!">Year</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body pt-2 pb-5">
+            <div class="row align-items-center mb-4">
+              <div class="col">
+                <button class="btn btn-sm btn-success mr-2" type="button" name="button">Carbs limit</button>
+                <button class="btn btn-sm btn-white mr-2" type="button" name="button">Protein target</button>
+                <button class="btn btn-sm btn-white mr-2" type="button" name="button">Fat</button>
+              </div>
+            </div>
+            <div class="row justify-content-between align-items-center mb-4">
+              <div class="col-auto">
+                <i class="fe fe-chevron-left text-dark"></i>
+              </div>
+              <div class="col-auto text-center">
+                <h4 class="font-weight-normal mb-0">September</h4>
+                <small class="text-secondary">7.1 %</small>
+              </div>
+              <div class="col-auto">
+                <i class="fe fe-chevron-right text-muted"></i>
+              </div>
+            </div>
+            <div class="row align-items-center mb-4">
+              <div class="col">
+                <div class="chart"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                <canvas id="macroNutrientsChart" class="chart-canvas chartjs-render-monitor" width="284" height="125" style="display: block; height: 125px; width: 284px;"></canvas>
+              </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <p class="text-muted">Explainations. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras bibendum sed turpis non ornare. <a href="#" target="_blank">Learn more</a>.</p>
+              </div>
+            </div>
+            <hr class="my-3">
+            <ul class="list-group list-group-lg list-group-flush list">
+              <h5 class="pt-4 mt-1 mb-0 font-weight-normal">Today</h5>
+              <a data-toggle="modal" href="#modalFood">
+                <li class="list-group-item px-0 py-4 border-0 pl-0">
+                  <div class="row align-items-start">
+                    <div class="col-3">
+                      <span class="avatar avatar-lg">
+                        <img src="https://d3n85fzfv5z2vw.cloudfront.net/liver.jpg" alt="..." class="avatar-img rounded">
+                      </span>
+                    </div>
+                    <div class="col-9">
+                      <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a data-toggle="modal" href="#modalFood">
+                <li class="list-group-item px-0 py-4 border-0 pl-0">
+                  <div class="row align-items-start">
+                    <div class="col-3">
+                      <span class="avatar avatar-lg">
+                        <img src="https://d3n85fzfv5z2vw.cloudfront.net/salmon.jpg" alt="..." class="avatar-img rounded">
+                      </span>
+                    </div>
+                    <div class="col-9">
+                      <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a data-toggle="modal" href="#modalFood">
+                <li class="list-group-item px-0 py-4 border-0 pl-0">
+                  <div class="row align-items-start">
+                    <div class="col-3">
+                      <span class="avatar avatar-lg">
+                        <img src="https://d3n85fzfv5z2vw.cloudfront.net/avocado.jpg" alt="..." class="avatar-img rounded">
+                      </span>
+                    </div>
+                    <div class="col-9">
+                      <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
+                    </div>
+                  </div>
+                </li>
+              </a>
+            </ul>
+            <ul class="list-group list-group-lg list-group-flush list">
+              <h5 class="pt-4 mt-1 mb-0 font-weight-normal">Yesterday</h5>
+              <a data-toggle="modal" href="#modalFood">
+                <li class="list-group-item px-0 py-4 border-0 pl-0">
+                  <div class="row align-items-start">
+                    <div class="col-3">
+                      <span class="avatar avatar-lg">
+                        <img src="https://d3n85fzfv5z2vw.cloudfront.net/liver.jpg" alt="..." class="avatar-img rounded">
+                      </span>
+                    </div>
+                    <div class="col-9">
+                      <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a data-toggle="modal" href="#modalFood">
+                <li class="list-group-item px-0 py-4 border-0 pl-0">
+                  <div class="row align-items-start">
+                    <div class="col-3">
+                      <span class="avatar avatar-lg">
+                        <img src="https://d3n85fzfv5z2vw.cloudfront.net/salmon.jpg" alt="..." class="avatar-img rounded">
+                      </span>
+                    </div>
+                    <div class="col-9">
+                      <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a data-toggle="modal" href="#modalFood">
+                <li class="list-group-item px-0 py-4 border-0 pl-0">
+                  <div class="row align-items-start">
+                    <div class="col-3">
+                      <span class="avatar avatar-lg">
+                        <img src="https://d3n85fzfv5z2vw.cloudfront.net/avocado.jpg" alt="..." class="avatar-img rounded">
+                      </span>
+                    </div>
+                    <div class="col-9">
+                      <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
+                    </div>
+                  </div>
+                </li>
+              </a>
+            </ul>
+            <ul class="list-group list-group-lg list-group-flush list">
+              <h5 class="pt-4 mt-1 mb-0 font-weight-normal">Thursday 28 March</h5>
+              <a data-toggle="modal" href="#modalFood">
+                <li class="list-group-item px-0 py-4 border-0 pl-0">
+                  <div class="row align-items-start">
+                    <div class="col-3">
+                      <span class="avatar avatar-lg">
+                        <img src="https://d3n85fzfv5z2vw.cloudfront.net/liver.jpg" alt="..." class="avatar-img rounded">
+                      </span>
+                    </div>
+                    <div class="col-9">
+                      <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a data-toggle="modal" href="#modalFood">
+                <li class="list-group-item px-0 py-4 border-0 pl-0">
+                  <div class="row align-items-start">
+                    <div class="col-3">
+                      <span class="avatar avatar-lg">
+                        <img src="https://d3n85fzfv5z2vw.cloudfront.net/salmon.jpg" alt="..." class="avatar-img rounded">
+                      </span>
+                    </div>
+                    <div class="col-9">
+                      <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
+                    </div>
+                  </div>
+                </li>
+              </a>
+              <a data-toggle="modal" href="#modalFood">
+                <li class="list-group-item px-0 py-4 border-0 pl-0">
+                  <div class="row align-items-start">
+                    <div class="col-3">
+                      <span class="avatar avatar-lg">
+                        <img src="https://d3n85fzfv5z2vw.cloudfront.net/avocado.jpg" alt="..." class="avatar-img rounded">
+                      </span>
+                    </div>
+                    <div class="col-9">
+                      <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
+                    </div>
+                  </div>
+                </li>
+              </a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div><!-- / modal macroNutrients -->
 
     <!-- IDEA: modal recipes -->
     <div class="modal fade fixed-right" id="modalRecipe" tabindex="-3" role="dialog" aria-labelledby="modalRecipe" aria-hidden="true">
@@ -1998,6 +2332,7 @@
         </div>
       </div>
     </div><!-- / modal recipes -->
+
     <!-- IDEA: modal food details -->
     <div class="modal fade fixed-right" id="modalFood" tabindex="-1" role="dialog" aria-labelledby="modalFood" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -3157,8 +3492,8 @@
           <div class="modal-body pb-6">
             <h2 class="text-center">Hello, welcome back!</h2>
             <p class="text-secondary mb-4 small text-center">Sin in to your Nutrita account to get back to your health goals. Or <a href="#">Sign up</a> instead.</p>
-            <button class="btn btn-white btn-block" type="button" data-toggle="modal" data-target="#signIn">Continue with Google</button>
-            <button class="btn btn-primary btn-block" type="button" data-toggle="modal" data-target="#signIn">Continue with Facebook</button>
+            <button class="btn btn-white btn-block" type="button" data-toggle="modal" data-target="dashboard-full.html">Continue with Google</button>
+            <button class="btn btn-primary btn-block" type="button" data-toggle="modal" data-target="dashboard-full.html">Continue with Facebook</button>
             <p class="text-center text-muted my-4 small">OR</p>
             <!-- Form -->
             <form class="mb-4">
@@ -3335,9 +3670,9 @@
           <div class="modal-body pb-6">
             <h2>Express checkout</h2>
             <div class="card">
-              <ul class="list-group list-group-flush">
+              <ul class="list-group list-group-lg list-group-flush">
                 <a class="text-dark" href="#">
-                  <li class="list-group-item border-bottom-0">
+                  <li class="list-group-item border-bottom rounded-0">
                     <div class="row justify-content-between align-items-center">
                       <div class="col">
                         <h4 class="mb-0"><img class="mr-2" src="//cdn.shopify.com/s/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg" alt="Paypal" height="20">PayPal</h4>
@@ -3349,7 +3684,7 @@
                   </li>
                 </a>
                 <a class="text-dark" href="#">
-                  <li class="list-group-item border-bottom-0">
+                  <li class="list-group-item border-bottom rounded-0">
                     <div class="row justify-content-between align-items-center">
                       <div class="col">
                         <h4 class="mb-0"><img class="mr-2" src="//cdn.shopify.com/s/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg" alt="Google pay" height="20">Google Pay</h4>
@@ -3361,7 +3696,7 @@
                   </li>
                 </a>
                 <a class="text-dark" href="#">
-                  <li class="list-group-item border-bottom-0">
+                  <li class="list-group-item">
                     <div class="row justify-content-between align-items-center">
                       <div class="col">
                         <h4 class="mb-0"><img class="mr-2" src="//cdn.shopify.com/s/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg" alt="Amazon pay" height="20">Amazon Pay</h4>
@@ -4764,10 +5099,12 @@
     <script src="assets/libs/quill/dist/quill.min.js"></script>
     <script src="assets/libs/dropzone/dist/min/dropzone.min.js"></script>
     <script src="assets/libs/select2/dist/js/select2.min.js"></script>
+    <script src="assets/libs/radial-progress-chart/dist/radial-progress-chart.min.js"></script>
     <script src="assets/libs/chart.js/Chart.extension.min.js"></script>
 
     <!-- Theme JS -->
     <script src="assets/js/theme.min.js"></script>
+
 
   </body>
 </html>
