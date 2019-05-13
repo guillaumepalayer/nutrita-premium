@@ -117,7 +117,8 @@ var Header = (function() {
                 if ( !(value % 5) ) {
                   return value + ' %';
                 }
-              }
+              },
+              beginAtZero: false,
             }
           }]
         },
@@ -141,8 +142,15 @@ var Header = (function() {
       data: {
         labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
         datasets: [{
-          label: 'Macro-nutrients',
-          data: [7,5,10,8,10,6,6]
+            label: 'Carbs limit',
+            data: [10,10,10,10,10,10,10],
+            borderDash: [10,5],
+            borderWidth: 1,
+            borderColor: '#E63757'
+        },{
+          label: 'Carbs %',
+          data: [8,11,12,14,12,8,9]
+
         }]
       }
     });
@@ -759,3 +767,42 @@ var data = [
  }
 
  loop(10);
+
+ var data = {
+    labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
+    datasets: [{
+        data: [12, 3, 2, 1, 8, 8, 2, 2, 3, 5, 7, 1]
+    }]
+};
+
+var ctx = document.getElementById("LineWithLine").getContext("2d");
+
+Chart.types.Line.extend({
+    name: "LineWithLine",
+    initialize: function () {
+        Chart.types.Line.prototype.initialize.apply(this, arguments);
+    },
+    draw: function () {
+        Chart.types.Line.prototype.draw.apply(this, arguments);
+
+        var point = this.datasets[0].points[this.options.lineAtIndex]
+        var scale = this.scale
+        console.log(this);
+
+        // draw line
+        this.chart.ctx.beginPath();
+        this.chart.ctx.moveTo(scale.startPoint+12, point.y);
+        this.chart.ctx.strokeStyle = '#ff0000';
+        this.chart.ctx.lineTo(this.chart.width, point.y);
+        this.chart.ctx.stroke();
+
+        // write TODAY
+        this.chart.ctx.textAlign = 'center';
+        this.chart.ctx.fillText("TODAY", scale.startPoint + 35, point.y+10);
+    }
+});
+
+new Chart(ctx).LineWithLine(data, {
+    datasetFill : false,
+    lineAtIndex: 2
+});
