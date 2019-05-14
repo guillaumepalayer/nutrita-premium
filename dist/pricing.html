@@ -91,6 +91,284 @@
       </div> <!-- / .container -->
     </nav>
 
+    <!-- IDEA: modal modalFilterNutrientDensity -->
+    <div class="modal fade fixed-right" id="modalFilterNutrientDensity" tabindex="-1" role="dialog" aria-labelledby="modalFilterNutrientDensity" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-block p-0 border-0 mb-3">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto">
+                <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+                  <div class="row align-items-center no-gutters">
+                    <div class="col-auto pr-3">
+                      <i class="fe fe-arrow-left"></i>
+                    </div>
+                    <div class="col-auto">
+                      <h4 class="modal-title">Filter by nutrients</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown">
+                  <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fe fe-more-vertical"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a href="#!" class="dropdown-item">
+                      Help
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body pt-2 pb-6">
+            <div class="row">
+              <div class="col">
+                <h4>Nutrient Density</h4>
+                <p class="text-muted">It scores food out of 10 according to how nutritious it is.</p>
+                <label for="customRange2">Between 5 and 10</label>
+                <input type="range" class="custom-range" min="0" max="10" id="customRange2">
+                <div class="row justify-content-between text-secondary mt-n3 pt-1 mb-4">
+                  <div class="col">
+                  <small>0</small>
+                  </div>
+                  <div class="col text-center">
+                  <small>5</small>
+                  </div>
+                  <div class="col text-right">
+                  <small>10</small>
+                  </div>
+                </div>
+                <hr>
+                <h4>Vitamins</h4>
+                <p class="text-muted">Highest to lowest absolute amounts.</p>
+                <div class="custom-control custom-checkbox mb-4">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                  <label class="custom-control-label" for="customCheck1">Vitamin</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-4">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                  <label class="custom-control-label" for="customCheck1">Vitamin</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                  <label class="custom-control-label" for="customCheck1">Vitamin</label>
+                </div>
+                <div class="accordion" id="accordionVitamins">
+                  <div class="card border-0 shadow-none mb-0 bg-transparent">
+                    <div class="card-header p-0 border-0" id="headingOne">
+                      <a class="h5 mb-0 collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        Show all vitamins
+                      </a>
+                    </div>
+                    <!-- Minerals Sub Score -->
+                    <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordionVitamins">
+                      <div class="card-body pl-0 pt-0">
+                        <div class="custom-control custom-checkbox mb-4">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                          <label class="custom-control-label" for="customCheck1">Title</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-4">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                          <label class="custom-control-label" for="customCheck1">Title</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-4">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                          <label class="custom-control-label" for="customCheck1">Title</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-4">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                          <label class="custom-control-label" for="customCheck1">Title</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-4">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                          <label class="custom-control-label" for="customCheck1">Title</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <hr>
+                <h4>Minerals</h4>
+                <p class="text-muted">Highest to lowest absolute amounts.</p>
+                <div class="custom-control custom-checkbox mb-4">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                  <label class="custom-control-label" for="customCheck1">Mineral</label>
+                </div>
+                <div class="custom-control custom-checkbox mb-4">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                  <label class="custom-control-label" for="customCheck1">Mineral</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                  <label class="custom-control-label" for="customCheck1">Mineral</label>
+                </div>
+                <div class="accordion" id="accordionVitamins">
+                  <div class="card border-0 shadow-none mb-0 bg-transparent">
+                    <div class="card-header p-0 border-0" id="headingOne">
+                      <a class="h5 mb-0 collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        Show all minerals
+                      </a>
+                    </div>
+                    <!-- Minerals Sub Score -->
+                    <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordionVitamins">
+                      <div class="card-body pl-0 pt-0">
+                        <div class="custom-control custom-checkbox mb-4">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                          <label class="custom-control-label" for="customCheck1">Title</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-4">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                          <label class="custom-control-label" for="customCheck1">Title</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-4">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                          <label class="custom-control-label" for="customCheck1">Title</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-4">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                          <label class="custom-control-label" for="customCheck1">Title</label>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-4">
+                          <input type="checkbox" class="custom-control-input" id="customCheck1" aria-describedby="HelpBlock1">
+                          <label class="custom-control-label" for="customCheck1">Title</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar fixed-bottom px-4">
+            <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Apply</button>
+          </nav>
+        </div>
+      </div>
+    </div><!-- / modal modalFilterNutrientDensity -->
+
+    <!-- IDEA: modal modalFilterKetoScore -->
+    <div class="modal fade fixed-right" id="modalFilterKetoScore" tabindex="-1" role="dialog" aria-labelledby="modalFilterKetoScore" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-block p-0 border-0 mb-3">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto">
+                <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+                  <div class="row align-items-center no-gutters">
+                    <div class="col-auto pr-3">
+                      <i class="fe fe-arrow-left"></i>
+                    </div>
+                    <div class="col-auto">
+                      <h4 class="modal-title">Filter by Keto score</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown">
+                  <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fe fe-more-vertical"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a href="#!" class="dropdown-item">
+                      Help
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body pt-2 pb-6">
+            <div class="row">
+              <div class="col">
+                <h4>Keto Score</h4>
+                <label for="customRange1">Between 5 and 10</label>
+                <input type="range" class="custom-range" min="0" max="10" id="customRange1">
+                <div class="row justify-content-between text-secondary mt-n3 pt-1 mb-4">
+                  <div class="col">
+                  <small>0</small>
+                  </div>
+                  <div class="col text-center">
+                  <small>5</small>
+                  </div>
+                  <div class="col text-right">
+                  <small>10</small>
+                  </div>
+                </div>
+                <div class="card bg-white border mt-4"><div class="card-body"><h4 class="mb-2">Do you know?</h4><p class="small text-muted mb-0">It scores food out of 10 according to how likely it is to promote ketosis, 1 being the least ketogenic and 10 being the most. This score is most important for people who are following a ketogenic diet. It helps with planning meals that are both ketogenic and nutrient dense.</p></div></div>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar fixed-bottom px-4">
+            <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Apply</button>
+          </nav>
+        </div>
+      </div>
+    </div><!-- / modal modalFilterKetoScore -->
+
+    <!-- IDEA: modal modalFilterInsulinIndex -->
+    <div class="modal fade fixed-right" id="modalFilterInsulinIndex" tabindex="-1" role="dialog" aria-labelledby="modalFilterInsulinIndex" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-block p-0 border-0 mb-3">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto">
+                <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+                  <div class="row align-items-center no-gutters">
+                    <div class="col-auto pr-3">
+                      <i class="fe fe-arrow-left"></i>
+                    </div>
+                    <div class="col-auto">
+                      <h4 class="modal-title">Filter by Insulin index</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown">
+                  <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fe fe-more-vertical"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a href="#!" class="dropdown-item">
+                      Help
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body pt-2 pb-6">
+            <div class="row">
+              <div class="col">
+                <h4>Insulin Index</h4>
+                <label for="customRange2">Between 0 and 50 %</label>
+                <input type="range" class="custom-range" min="0" max="10" id="customRange2">
+                <div class="row justify-content-between text-secondary mt-n3 pt-1 mb-4">
+                  <div class="col">
+                  <small>0 %</small>
+                  </div>
+                  <div class="col text-center">
+                  <small>50 %</small>
+                  </div>
+                  <div class="col text-right">
+                  <small>100 %</small>
+                  </div>
+                </div>
+                <div class="card bg-white border mt-4"><div class="card-body"><h4 class="mb-2">Do you know?</h4><p class="small text-muted mb-0">It gives a percentage score for how strongly a food may stimulate insulin secretion, as secreting too much insulin is the hallmark of many unhealthy foods, like those containing added sugar and flour. This score matters most to people who are most affected by hyperinsulinemia, like diabetics. It helps planning meals that stimulate a low-normal rise in insulin all the while being truly nourishing.</p></div></div>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar fixed-bottom px-4">
+            <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Apply</button>
+          </nav>
+        </div>
+      </div>
+    </div><!-- / modal modalFilterInsulinIndex -->
+
     <!-- Modal: sidebar -->
     <div class="modal fade" id="sidebarModal" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical modal-sidebar-nav" role="document">
@@ -143,7 +421,7 @@
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="">
+                    <a class="nav-link" href="pricing.html">
                       <i class="fe fe-dollar-sign"></i> Pricing
                     </a>
                   </li>
@@ -179,7 +457,7 @@
                 </ul>
                 <hr class="navbar-divider my-3">
                 <p class="small text-secondary">Sign in now to get 30 days of personal nutrition tracking!</p>
-                <button class="btn btn-success"type="button" name="button">Sign Up</button>
+                <button class="btn btn-success"type="button" name="button" data-toggle="modal" data-target="#onboardingTuto">Sign Up</button>
                 <hr class="navbar-divider my-3">
                 <!-- Navigation -->
                 <ul class="navbar-nav mb-md-3">
@@ -835,7 +1113,7 @@
                 <div class="row align-items-center no-gutters">
                   <div class="col-auto">
                     <a class="px-3" data-toggle="modal" data-target="#NewWeight">
-                      <i class="fe fe-plus text-dark"></i></span>
+                      <i class="fe fe-plus text-dark"></i>
                     </a>
                   </div>
                   <div class="col-auto">
@@ -1364,11 +1642,6 @@
               <div class="col-auto">
                 <div class="row align-items-center no-gutters">
                   <div class="col-auto">
-                    <a class="px-3" data-toggle="modal" data-target="#NewBlood">
-                      <i class="fe fe-plus text-dark"></i>
-                    </a>
-                  </div>
-                  <div class="col-auto">
                     <div class="dropdown">
                       <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fe fe-more-vertical"></i>
@@ -1412,8 +1685,8 @@
                 <i class="fe fe-chevron-left text-dark"></i>
               </div>
               <div class="col-auto text-center">
-                <h4 class="font-weight-normal mb-0">September</h4>
-                <small class="text-secondary">7.1 %</small>
+                <h4 class="font-weight-normal mb-0">3 - 9 September</h4>
+                <small class="text-secondary">9 / 10 % Carbs limit</small>
               </div>
               <div class="col-auto">
                 <i class="fe fe-chevron-right text-muted"></i>
@@ -1444,7 +1717,7 @@
                     </div>
                     <div class="col-9">
                       <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">Carbs limit increase: 3 %</h6>
                       <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
                     </div>
                   </div>
@@ -1460,7 +1733,7 @@
                     </div>
                     <div class="col-9">
                       <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">Carbs limit increase: 3 %</h6>
                       <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
                     </div>
                   </div>
@@ -1476,7 +1749,7 @@
                     </div>
                     <div class="col-9">
                       <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">Carbs limit increase: 3 %</h6>
                       <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
                     </div>
                   </div>
@@ -1495,7 +1768,7 @@
                     </div>
                     <div class="col-9">
                       <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">Carbs limit increase: 3 %</h6>
                       <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
                     </div>
                   </div>
@@ -1511,7 +1784,7 @@
                     </div>
                     <div class="col-9">
                       <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">Carbs limit increase: 3 %</h6>
                       <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
                     </div>
                   </div>
@@ -1527,7 +1800,7 @@
                     </div>
                     <div class="col-9">
                       <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">Carbs limit increase: 3 %</h6>
                       <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
                     </div>
                   </div>
@@ -1546,7 +1819,7 @@
                     </div>
                     <div class="col-9">
                       <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">Carbs limit increase: 3 %</h6>
                       <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
                     </div>
                   </div>
@@ -1562,7 +1835,7 @@
                     </div>
                     <div class="col-9">
                       <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">Carbs limit increase: 3 %</h6>
                       <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
                     </div>
                   </div>
@@ -1578,12 +1851,13 @@
                     </div>
                     <div class="col-9">
                       <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                      <h6 class="text-uppercase text-muted my-2 pr-2">3 % of your Carbs limit</h6>
+                      <h6 class="text-uppercase text-muted my-2 pr-2">Carbs limit increase: 3 %</h6>
                       <small class="text-secondary my-2 pr-2">3.6 g carbs (3.6 NET)</small>
                     </div>
                   </div>
                 </li>
               </a>
+              <a href="#!" class="d-block text-center font-weight-bold">See more</a>
             </ul>
           </div>
         </div>
@@ -1837,7 +2111,6 @@
                                   Keto score
                                   <span class="badge badge-soft-success">Good</span>
                                   <span class="card-text small text-secondary mb-0"></span>
-                                  </span>
                                 </p>
                               </div>
                               <div class="row align-items-center no-gutters">
@@ -1860,7 +2133,6 @@
                                   Nutrient Density
                                   <span class="badge badge-soft-success">Moderate</span>
                                   <span class="card-text small text-secondary mb-0"></span>
-                                  </span>
                                 </p>
                               </div>
                               <div class="row align-items-center no-gutters">
@@ -1883,7 +2155,6 @@
                                   Insulin Index
                                   <span class="badge badge-soft-success">Moderate</span>
                                   <span class="card-text small text-secondary mb-0"></span>
-                                  </span>
                                 </p>
                               </div>
                               <div class="row align-items-center no-gutters">
@@ -2337,34 +2608,44 @@
     <div class="modal fade fixed-right" id="modalFood" tabindex="-1" role="dialog" aria-labelledby="modalFood" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="d-flex justify-content-end align-items-center">
-            <div class="dropdown">
-              <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fe fe-more-vertical"></i>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right">
-                <a href="#!" class="dropdown-item">
-                  Add to my day
-                </a>
-                <a href="#!" class="dropdown-item">
-                  Delete from my day
-                </a>
-                <hr>
-                <a href="#!" class="dropdown-item small">
-                  <i class="fe fe-twitter mr-2"></i>Share on Twitter
-                </a>
-                <a href="#!" class="dropdown-item small">
-                  <i class="fe fe-facebook mr-2"></i>Share on Facebook
-                </a>
-                <a href="#!" class="dropdown-item small">
-                  <i class="fe fe-copy mr-2"></i>Copy link
+          <div class="modal-header d-block p-0 border-0 mb-3">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto">
+                <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+                  <div class="row align-items-center no-gutters">
+                    <div class="col-auto pr-3">
+                      <i class="fe fe-arrow-left"></i>
+                    </div>
+                  </div>
                 </a>
               </div>
+              <div class="col-auto">
+                <button class="btn btn-link text-dark" type="button" name="button"><i class="fe fe-heart"></i></button>
+                <div class="dropdown d-inline-block">
+                  <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fe fe-more-vertical"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a href="#!" class="dropdown-item">
+                      Add to my day
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Delete from my day
+                    </a>
+                    <hr>
+                    <a href="#!" class="dropdown-item small">
+                      <i class="fe fe-twitter mr-2"></i>Share on Twitter
+                    </a>
+                    <a href="#!" class="dropdown-item small">
+                      <i class="fe fe-facebook mr-2"></i>Share on Facebook
+                    </a>
+                    <a href="#!" class="dropdown-item small">
+                      <i class="fe fe-copy mr-2"></i>Copy link
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <button class="btn btn-link text-dark" type="button" name="button"><i class="fe fe-heart"></i></button>
-            <button class="btn btn-link text-dark" type="button" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true"><i class="fe fe-x"></i></span>
-            </button>
           </div>
           <div class="modal-body pb-6">
             <div class="text-center">
@@ -2839,9 +3120,9 @@
               <img src="assets/img/illustrations/app_icon-240.svg" alt="Nutrita app logo" class="avatar-img rounded">
             </div>
             <div class="px-4">
-              <span class="badge badge-soft-success mb-2">Premium</span>
+              <span class="badge badge-soft-success mb-2">✨ Upgrade to Premium</span>
               <h2>Get unlimited access</h2>
-              <p class="lead text-muted">Subscribe to Nutrita Premium and get unlimited access to our food data base.</p>
+              <p class="lead text-muted">Upgrade to Nutrita Premium and get unlimited access to our food data base.</p>
               <p>Turn your food habits and personal data into meaningful insights</p>
             </div>
           </div>
@@ -2858,7 +3139,7 @@
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
           <div class="fixed-top d-flex justify-content-between align-items-center pl-4">
-            <h4 class="modal-title">Get started with Nutrita Premium</h4>
+            <h4 class="modal-title">✨ Upgrade to Premium</h4>
             <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true"><i class="fe fe-x"></i></span>
             </button>
@@ -3277,6 +3558,7 @@
           <div class="modal-body p-0 pb-6">
             <div class="d-flex justify-content-between align-items-center">
               <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
+              <button class="btn btn-link text-dark text-right vw-100" type="button" data-toggle="modal" data-target="#onboardingCraving">Skip</button>
               <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true"><i class="fe fe-x"></i></span>
               </button>
@@ -3336,7 +3618,6 @@
           </div>
           <nav class="navbar fixed-bottom px-4">
             <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingCraving">Continue</button>
-            <button class="btn btn-link text-secondary vw-100" type="button" data-toggle="modal" data-target="#onboardingCraving">Skip</button>
           </nav>
         </div>
       </div>
@@ -3349,6 +3630,7 @@
           <div class="modal-body p-0 pb-6">
             <div class="d-flex justify-content-between align-items-center">
               <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
+              <button class="btn btn-link text-dark text-right vw-100" type="button" data-toggle="modal" data-target="#onboardingSleep">Skip</button>
               <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true"><i class="fe fe-x"></i></span>
               </button>
@@ -3389,7 +3671,6 @@
           </div>
           <nav class="navbar fixed-bottom px-4">
             <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingSleep">Continue</button>
-            <button class="btn btn-link text-secondary vw-100" type="button" data-toggle="modal" data-target="#onboardingSleep">Skip</button>
           </nav>
         </div>
       </div>
@@ -3402,6 +3683,7 @@
           <div class="modal-body p-0 pb-6">
             <div class="d-flex justify-content-between align-items-center">
               <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
+              <button class="btn btn-link text-dark text-right vw-100" type="button" data-toggle="modal" data-target="#onboardingConnect">Skip</button>
               <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true"><i class="fe fe-x"></i></span>
               </button>
@@ -3424,7 +3706,6 @@
           </div>
           <nav class="navbar fixed-bottom px-4">
             <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingConnect">Continue</button>
-            <button class="btn btn-link text-secondary vw-100" type="button" data-toggle="modal" data-target="#onboardingConnect">Skip</button>
           </nav>
         </div>
       </div>
@@ -3658,6 +3939,16 @@
                   </div>
                 </li>
               </ul>
+
+            </div>
+            <div class="form-group">
+              <label for="discountCoupon">Discount coupon</label>
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control" placeholder="Enter your coupon code" aria-label="discountCoupon" id="discountCoupon">
+                <div class="input-group-append">
+                  <button class="btn btn-lg btn-secondary" type="button" name="button">Apply</button>
+                </div>
+              </div>
             </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
@@ -3723,31 +4014,13 @@
                 <li class="list-group-item border-bottom-0">
                   <div class="row">
                     <div class="col-12">
-                      <form>
-                        <div class="form-row">
-                          <div class="form-group col-12">
-                            <label for="cardNumber"><i class="fe fe-credit-card mr-2 align-baseline"></i>Card Number</label>
-                            <input type="number" class="form-control form-control-lg" id="cardNumber" placeholder="**** **** **** ****">
-                          </div>
-                          <div class="form-group col-12">
-                            <label>Expiration Date</label>
-                            <div class="input-group">
-                              <input type="number" class="form-control form-control-lg border-right-0" id="expDateMM" placeholder="MM">
-                              <input type="number" class="form-control form-control-lg" id="expDateYY" placeholder="YY">
-                            </div>
-                          </div>
-                        </div>
-                        <div class="form-row">
-                          <div class="form-group col-8">
-                            <label for="cardHolderName">Cardholder Name</label>
-                            <input type="number" class="form-control form-control-lg" id="cardHolderName" placeholder="Name as on card">
-                          </div>
-                          <div class="form-group col-4">
-                            <label for="cvc">CVC</label>
-                            <input type="number" class="form-control form-control-lg" id="cvc" placeholder="CVC number">
-                          </div>
-                        </div>
-                      </form>
+                      <div class="input-group">
+                        <input type="text" class="form-control w-50 border-right-0" placeholder="Card number" id="cardNumber">
+                        <input type="text" class="form-control w-25 border-left-0 border-right-0" placeholder="MM/YY">
+                        <input type="text" class="form-control w-25 border-left-0" placeholder="CVC">
+                      </div>
+                      <small id="cardNumber" class="form-text text-muted mt-2">Your credit card details are never stored on or even reach our servers. Payments and credit card data are handled by Stripe.</small>
+
                       <!-- Table -->
                       <div class="table-responsive">
                         <table class="table mb-0">
@@ -4437,20 +4710,17 @@
 
               <div class="col-12 col-lg-6">
                 <h3>How does the 30-day trial work?</h3>
-                <p class="text-muted mb-6">Cancel at any time in your account settings. You won't be charged if you cancel before 28 Apr 2019.</p>
+                <p class="text-muted mb-lg-6">Cancel at any time in your account settings. You won't be charged if you cancel before 28 Apr 2019.</p>
                 <h3>How do I pay for your service?</h3>
-                <p class="text-muted mb-6">At the end of your free trial, you will be charged automatically in order to continue to use the service. You can choose between Monthly and Yearly billing. We accept credit & debit cards, PayPal, Google Pay, and Apple Pay.</p>
+                <p class="text-muted mb-lg-6">At the end of your free trial, you will be charged automatically in order to continue to use the service. You can choose between Monthly and Yearly billing. We accept credit & debit cards, PayPal, Google Pay, and Apple Pay.</p>
                 <h3>How can I cancel my subscription?</h3>
                 <p class="text-muted">You can cancel your plan anytime. When your subscription period expires, you will lose access to your Nutrita account.</p>
               </div>
               <div class="col-12 col-lg-6">
                 <h3>I have a different question…</h3>
-                <p class="text-muted mb-6">Explore our <a href="#" target="_blank">Help Center</a>, or just ask via e-mail at hello@nutrita.app</p>
+                <p class="text-muted mb-lg-6">Explore our <a href="#" target="_blank">Help Center</a>, or just ask via e-mail at hello@nutrita.app</p>
                 <h3>Can I recover an expired account?</h3>
                 <p class="text-muted">You can recover an expired account by buying a plan and re-access everything you've been tracking. Your data will remain intact for 14 days.</p>
-              </div>
-              <div class="col-12 col-lg-6">
-
               </div>
             </div>
           </div>
@@ -4469,7 +4739,7 @@
           </div>
           <div class="col-12 col-lg-4 text-center text-lg-left">
             <a class="btn btn-lg btn-success mr-lg-4 mb-3" href="#" data-toggle="modal" data-target="#onboardingTuto">Create Nutrita account</a>
-            <a class="btn btn-lg btn-link" href="download.html">Contact us</a>
+            <a class="btn btn-lg btn-link mb-3" href="download.html">Contact us</a>
           </div>
         </div>
       </div>
