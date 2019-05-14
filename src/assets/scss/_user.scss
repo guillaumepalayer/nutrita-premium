@@ -18,6 +18,9 @@
 .bg-soft-ocre{
   background-color: rgba(252,232,179,1);
 }
+.bg-soft-gradient-green-grey{
+  background: linear-gradient(to right, #d3f4e8, #d0d4d9);
+}
 .chart-container{
   position: relative;
   margin: auto;
@@ -121,4 +124,7 @@
   fill: #95AAC9;
   font-size: 14px;
   font-weight: bold;
+}
+#chart-tooltip{
+  z-index: 1060;
 }

@@ -8,13 +8,13 @@
 //
 // Header card chart
 
-var Header = (function() {
+var HbA1c = (function() {
 
   //
   // Variables
   //
 
-  var $headerChart = $('#headerChart');
+  var $hba1cChart = $('#hba1cChart');
 
 
   //
@@ -24,19 +24,15 @@ var Header = (function() {
   function init($chart) {
 
     // Create chart
-    var headerChart = new Chart($chart, {
+    var hba1cChart = new Chart($chart, {
       type: 'line',
       options: {
         scales: {
           yAxes: [{
-            gridLines: {
-              color: ThemeCharts.colors.gray[900],
-              zeroLineColor: ThemeCharts.colors.gray[900]
-            },
             ticks: {
               callback: function(value) {
                 if ( !(value % 10) ) {
-                  return '$' + value + 'k';
+                  return + value + ' %'
                 }
               }
             }
@@ -53,23 +49,32 @@ var Header = (function() {
                 content += '<span class="popover-body-label mr-auto">' + label + '</span>';
               }
 
-              content += '<span class="popover-body-value">$' + yLabel + 'k</span>';
+              content += '<span class="popover-body-value">' + yLabel + '%</span>';
               return content;
             }
           }
         }
       },
       data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        datasets: [{
-          label: 'Performance',
-          data: [0,10,5,15,10,20,15,25,20,30,25,40]
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        datasets: [
+          {
+            label: 'HbA1c Target:',
+            data: [10,10,10,10,10,10,10],
+            borderWidth: 1,
+            borderDash: [2,5],
+            borderColor: '#22C88A',
+            backgroundColor: '#22C88A',
+            fill: false,
+          },{
+          label: 'HbA1c:',
+          data: [0,10,5,15,10,20,15]
         }]
       }
     });
 
     // Save to jQuery object
-    $chart.data('chart', headerChart);
+    $chart.data('chart', hba1cChart);
 
   };
 
@@ -78,8 +83,8 @@ var Header = (function() {
   // Events
   //
 
-  if ($headerChart.length) {
-    init($headerChart);
+  if ($hba1cChart.length) {
+    init($hba1cChart);
   }
 
 })();
@@ -87,7 +92,7 @@ var Header = (function() {
 //
 // macroNutrientsChart
 
-var Header = (function() {
+var MacroNutrients = (function() {
 
   //
   // Variables
@@ -108,17 +113,12 @@ var Header = (function() {
       options: {
         scales: {
           yAxes: [{
-            gridLines: {
-              color: ThemeCharts.colors.gray[900],
-              zeroLineColor: ThemeCharts.colors.gray[900]
-            },
             ticks: {
               callback: function(value) {
-                if ( !(value % 5) ) {
-                  return value + ' %';
+                if ( !(value % 10) ) {
+                  return + value + ' %'
                 }
-              },
-              beginAtZero: false,
+              }
             }
           }]
         },
@@ -133,7 +133,7 @@ var Header = (function() {
                 content += '<span class="popover-body-label mr-auto">' + label + '</span>';
               }
 
-              content += '<span class="popover-body-value">' + yLabel + ' %</span>';
+              content += '<span class="popover-body-value">' + yLabel + '%</span>';
               return content;
             }
           }
@@ -141,16 +141,18 @@ var Header = (function() {
       },
       data: {
         labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-        datasets: [{
-            label: 'Carbs limit',
+        datasets: [
+          {
+            label: 'Carbs limit:',
             data: [10,10,10,10,10,10,10],
-            borderDash: [10,5],
             borderWidth: 1,
-            borderColor: '#E63757'
-        },{
-          label: 'Carbs %',
-          data: [8,11,12,14,12,8,9]
-
+            borderDash: [2,5],
+            borderColor: '#E63757',
+            backgroundColor: 'rgb(255, 99, 132)',
+            fill: false,
+          },{
+          label: 'Net Carbs:',
+          data: [0,10,5,15,10,20,15]
         }]
       }
     });
@@ -200,7 +202,7 @@ var Performance = (function() {
             ticks: {
               callback: function(value) {
                 if ( !(value % 10) ) {
-                  return '$' + value + 'k'
+                  return + value + ' %'
                 }
               }
             }
@@ -217,17 +219,26 @@ var Performance = (function() {
                 content += '<span class="popover-body-label mr-auto">' + label + '</span>';
               }
 
-              content += '<span class="popover-body-value">$' + yLabel + 'k</span>';
+              content += '<span class="popover-body-value">' + yLabel + '%</span>';
               return content;
             }
           }
         }
       },
       data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        datasets: [{
-          label: 'Performance',
-          data: [0,10,5,15,10,20,15,25,20,30,25,40]
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        datasets: [
+          {
+            label: 'Carbs limit:',
+            data: [10,10,10,10,10,10,10],
+            borderWidth: 1,
+            borderDash: [2,5],
+            borderColor: '#E63757',
+            backgroundColor: 'rgb(255, 99, 132)',
+            fill: false,
+          },{
+          label: 'Net Carbs:',
+          data: [0,10,5,15,10,20,15]
         }]
       }
     });
@@ -247,414 +258,6 @@ var Performance = (function() {
 
 })();
 
-
-// Performance alias
-//
-// Performance alias card chart
-
-var PerformanceAlias = (function() {
-
-  //
-  // Variables
-  //
-
-  var $performanceChartAlias = $('#performanceChartAlias');
-
-
-  //
-  // Methods
-  //
-
-  function init($chart) {
-
-    // Create chart
-    var performanceChartAlias = new Chart($chart, {
-      type: 'line',
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              callback: function(value) {
-                if ( !(value % 10) ) {
-                  return '$' + value + 'k'
-                }
-              }
-            }
-          }]
-        },
-        tooltips: {
-          callbacks: {
-            label: function(item, data) {
-              var label = data.datasets[item.datasetIndex].label || '';
-              var yLabel = item.yLabel;
-              var content = '';
-
-              if (data.datasets.length > 1) {
-                content += '<span class="popover-body-label mr-auto">' + label + '</span>';
-              }
-
-              content += '<span class="popover-body-value">$' + yLabel + 'k</span>';
-              return content;
-            }
-          }
-        }
-      },
-      data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        datasets: [{
-          label: 'Performance',
-          data: [0,10,5,15,10,20,15,25,20,30,25,40]
-        }]
-      }
-    });
-
-    // Save to jQuery object
-    $chart.data('chart', performanceChartAlias);
-  }
-
-
-  //
-  // Events
-  //
-
-  if ($performanceChartAlias.length) {
-    init($performanceChartAlias);
-  }
-
-})();
-
-
-// Orders
-//
-// Orders card chart
-
-var Orders = (function() {
-
-  //
-  // Variables
-  //
-
-  var $ordersChart = $('#ordersChart');
-  var $ordersSelect = $('[name="ordersSelect"]');
-
-
-  //
-  // Methods
-  //
-
-  // Init chart
-  function initChart($chart) {
-
-    // Create chart
-    var ordersChart = new Chart($chart, {
-      type: 'bar',
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              callback: function(value) {
-                if ( !(value % 10) ) {
-                  return '$' + value + 'k'
-                }
-              }
-            }
-          }]
-        },
-        tooltips: {
-          callbacks: {
-            label: function(item, data) {
-              var label = data.datasets[item.datasetIndex].label || '';
-              var yLabel = item.yLabel;
-              var content = '';
-
-              if (data.datasets.length > 1) {
-                content += '<span class="popover-body-label mr-auto">' + label + '</span>';
-              }
-
-              content += '<span class="popover-body-value">$' + yLabel + 'k</span>';
-              return content;
-            }
-          }
-        }
-      },
-      data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        datasets: [{
-          label: 'Sales',
-          data: [25,20,30,22,17,10,18,26,28,26,20,32]
-        }]
-      }
-    });
-
-    // Save to jQuery object
-    $chart.data('chart', ordersChart);
-  }
-
-  // Toggle select
-  function toggleSelect($this) {
-
-    if ( $this.attr('id') == 'ordersSelectAll' ) {
-
-      if ( $this.is(':checked') ) {
-         $ordersSelect.prop('checked', true);
-       } else {
-         $ordersSelect.prop('checked', false)
-       }
-    }
-  }
-
-
-  //
-  // Events
-  //
-
-  // Init chart
-  if ($ordersChart.length) {
-    initChart($ordersChart);
-  }
-
-  // Toggle select
-  $ordersSelect.on('change', function() {
-    toggleSelect($(this));
-  });
-
-})();
-
-
-// Orders alias
-//
-// Orders alias card chart
-
-var OrdersAlias = (function() {
-
-  //
-  // Variables
-  //
-
-  var $ordersChartAlias = $('#ordersChartAlias');
-
-
-  //
-  // Methods
-  //
-
-  // Init chart
-  function init($chart) {
-
-    // Create chart
-    var ordersChartAlias = new Chart($chart, {
-      type: 'bar',
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              callback: function(value) {
-                if ( !(value % 10) ) {
-                  return '$' + value + 'k'
-                }
-              }
-            }
-          }]
-        },
-        tooltips: {
-          callbacks: {
-            label: function(item, data) {
-              var label = data.datasets[item.datasetIndex].label || '';
-              var yLabel = item.yLabel;
-              var content = '';
-
-              if (data.datasets.length > 1) {
-                content += '<span class="popover-body-label mr-auto">' + label + '</span>';
-              }
-
-              content += '<span class="popover-body-value">$' + yLabel + 'k</span>';
-              return content;
-            }
-          }
-        }
-      },
-      data: {
-        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-        datasets: [{
-          label: 'Sales',
-          data: [25,20,30,22,17,10,18,26,28,26,20,32]
-        }]
-      }
-    });
-
-    // Save to jQuery object
-    $chart.data('chart', ordersChartAlias);
-  }
-
-
-  //
-  // Events
-  //
-
-  if ($ordersChartAlias.length) {
-    init($ordersChartAlias);
-  }
-
-})();
-
-
-// Devices
-//
-// Devices card chart
-
-var Devices = (function() {
-
-  //
-  // Variables
-  //
-
-  var $devicesChart = $('#devicesChart');
-
-
-  //
-  // Methods
-  //
-
-  // Init chart
-  function init($chart) {
-
-    // Create chart
-    var devicesChart = new Chart($chart, {
-      type: 'doughnut',
-      options: {
-        tooltips: {
-          callbacks: {
-            title: function(item, data) {
-              var title = data.labels[item[0].index];
-              return title;
-            },
-            label: function(item, data) {
-              var value = data.datasets[0].data[item.index];
-              var content = '';
-
-              content += '<span class="popover-body-value">' + value + '%</span>';
-              return content;
-            }
-          }
-        }
-      },
-      data: {
-        labels: ['Fat', 'Protein', 'Carbs'],
-        datasets: [{
-          data: [70, 25, 5],
-          backgroundColor: [
-            ThemeCharts.colors.bgGreenLight,
-            ThemeCharts.colors.bgOrangeLight,
-            ThemeCharts.colors.bgRedLight
-          ],
-          hoverBorderColor: ( ThemeCharts.colorScheme == 'dark' ) ? ThemeCharts.colors.gray[800] : ThemeCharts.colors.white
-        }]
-      }
-    });
-
-    // Save to jQuery object
-    $chart.data('chart', devicesChart);
-  }
-
-  // Generate legend
-  function generateLegend($chart) {
-    var content = $chart.data('chart').generateLegend();
-    var legend = $chart.data('target');
-    var $legend = $(legend);
-
-    $legend.html(content);
-  }
-
-
-  //
-  // Events
-  //
-
-  if ($devicesChart.length) {
-
-    // Init chart
-    init($devicesChart);
-
-    // Generate legend
-    generateLegend($devicesChart);
-  }
-
-})();
-
-
-// Weekly hours
-//
-// Weekly hours card chart
-
-var WeeklyHours = (function() {
-
-  //
-  // Variables
-  //
-
-  var $weeklyHoursChart = $('#weeklyHoursChart');
-
-
-  //
-  // Methods
-  //
-
-  function init($chart) {
-
-    // Create chart
-    var weeklyHoursChart = new Chart($chart, {
-      type: 'bar',
-      options: {
-        scales: {
-          yAxes: [{
-            ticks: {
-              callback: function(value) {
-                if ( !(value % 10) ) {
-                  return value + 'hrs'
-                }
-              }
-            }
-          }]
-        },
-        tooltips: {
-          callbacks: {
-            label: function(item, data) {
-              var label = data.datasets[item.datasetIndex].label || '';
-              var yLabel = item.yLabel;
-              var content = '';
-
-              if (data.datasets.length > 1) {
-                content += '<span class="popover-body-label mr-auto">' + label + '</span>';
-              }
-
-              content += '<span class="popover-body-value">' + yLabel + 'hrs</span>';
-              return content;
-            }
-          }
-        }
-      },
-      data: {
-        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-        datasets: [{
-          data: [21, 12, 28, 15, 5, 12, 17, 2]
-        }]
-      }
-    });
-
-    // Save to jQuery object
-    $chart.data('chart', weeklyHoursChart);
-  }
-
-
-  //
-  // Events
-  //
-
-  if ($weeklyHoursChart.length) {
-    init($weeklyHoursChart);
-  }
-
-})();
 
 // D3 circular charts
 var data = [
@@ -767,42 +370,3 @@ var data = [
  }
 
  loop(10);
-
- var data = {
-    labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"],
-    datasets: [{
-        data: [12, 3, 2, 1, 8, 8, 2, 2, 3, 5, 7, 1]
-    }]
-};
-
-var ctx = document.getElementById("LineWithLine").getContext("2d");
-
-Chart.types.Line.extend({
-    name: "LineWithLine",
-    initialize: function () {
-        Chart.types.Line.prototype.initialize.apply(this, arguments);
-    },
-    draw: function () {
-        Chart.types.Line.prototype.draw.apply(this, arguments);
-
-        var point = this.datasets[0].points[this.options.lineAtIndex]
-        var scale = this.scale
-        console.log(this);
-
-        // draw line
-        this.chart.ctx.beginPath();
-        this.chart.ctx.moveTo(scale.startPoint+12, point.y);
-        this.chart.ctx.strokeStyle = '#ff0000';
-        this.chart.ctx.lineTo(this.chart.width, point.y);
-        this.chart.ctx.stroke();
-
-        // write TODAY
-        this.chart.ctx.textAlign = 'center';
-        this.chart.ctx.fillText("TODAY", scale.startPoint + 35, point.y+10);
-    }
-});
-
-new Chart(ctx).LineWithLine(data, {
-    datasetFill : false,
-    lineAtIndex: 2
-});

@@ -1,3 +1,560 @@
+<!-- IDEA: modal manageUnits -->
+<div class="modal fade fixed-right" id="manageUnits" tabindex="-1" role="dialog" aria-labelledby="manageUnits" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-block p-0 border-0 mb-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto pr-3">
+                  <i class="fe fe-arrow-left"></i>
+                </div>
+                <div class="col-auto">
+                  <h4 class="modal-title">Manage units</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-auto">
+            <div class="dropdown">
+              <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fe fe-more-vertical"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#!" class="dropdown-item">
+                  Help
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body pt-2 pb-6">
+        <div class="row">
+          <div class="col">
+            <p class="text-muted">Changes to your units measurement will be reflected across your Nutrita account.</p>
+            <div class="card px-0">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item border-bottom-0">
+                  <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label vw-100" for="customRadio1">
+                      <h4 class="mb-0 mt-1">Imperial</h4>
+                    </label>
+                  </div>
+                </li>
+                <li class="list-group-item border-bottom-0">
+                  <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                    <label class="custom-control-label vw-100" for="customRadio2">
+                      <h4 class="mb-0 mt-1">Metric</h4>
+                    </label>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar fixed-bottom px-4">
+        <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Done</button>
+      </nav>
+    </div>
+  </div>
+</div><!-- / modal manageUnits -->
+
+<!-- IDEA: modal deleteMyAccount -->
+<div class="modal fade fixed-right" id="deleteMyAccount" tabindex="-1" role="dialog" aria-labelledby="deleteMyAccount" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-block p-0 border-0 mb-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto pr-3">
+                  <i class="fe fe-arrow-left"></i>
+                </div>
+                <div class="col-auto">
+                  <h4 class="modal-title text-danger">Delete account</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-auto">
+            <div class="dropdown">
+              <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fe fe-more-vertical"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#!" class="dropdown-item">
+                  Help
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body pt-2 pb-6">
+        <div class="row">
+          <div class="col">
+            <p class="text-muted">Once you delete your account, there is no going back. Please be certain.</p>
+            <h4>Are you absolutely sure?</h4>
+            <div class="form-group mb-0">
+              <label for="deleteWord">Please type in DELETE to confirm.</label>
+              <input type="text" class="form-control" value="" aria-label="deleteWord" id="deleteWord">
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar fixed-bottom px-4 text-center">
+        <small class="mb-2 d-block w-100">I understand the consequences</small>
+        <button class="btn btn-danger vw-100" type="button" data-dismiss="modal" aria-label="Close">Delete this account</button>
+      </nav>
+    </div>
+  </div>
+</div><!-- / modal deleteMyAccount -->
+
+<!-- IDEA: modal changePaymentMethod -->
+<div class="modal fade fixed-right" id="changePaymentMethod" tabindex="-1" role="dialog" aria-labelledby="changePaymentMethod" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-block p-0 border-0 mb-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto pr-3">
+                  <i class="fe fe-arrow-left"></i>
+                </div>
+                <div class="col-auto">
+                  <h4 class="modal-title">Manage your payment methods</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-auto">
+            <div class="dropdown">
+              <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fe fe-more-vertical"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#!" class="dropdown-item">
+                  Help
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body pt-2 pb-6">
+        <div class="card bg-white border">
+          <div class="card-body pt-2 pb-0">
+            <img class="d-block mx-auto w-75" src="assets/img/avatars/profiles/mastercard.png" alt="mastercard">
+          </div>
+          <div class="card-footer border-top-0 bg-white text-right">
+            <button class="btn btn-sm text-primary" data-dismiss="modal" aria-label="Close" type="button">Remove</button>
+          </div>
+        </div>
+        <div class="card bg-primary border">
+          <div class="card-body py-5">
+            <img class="d-block mx-auto w-75" src="assets/img/avatars/profiles/ppcom-white.svg" alt="paypal">
+          </div>
+          <div class="card-footer border-top-0 text-right">
+            <button class="btn btn-sm text-white" data-dismiss="modal" aria-label="Close" type="button">Remove</button>
+          </div>
+        </div>
+        <a href="#" data-toggle="modal" data-target="#AddNewPaymentMethod">
+          <div class="card card-inactive">
+            <div class="card-body text-center">
+              <p class="mb-0"><i class="fe fe-plus mr-2"></i>Add payment method</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal changePaymentMethod -->
+
+<!-- IDEA: modal AddNewPaymentMethod -->
+<div class="modal fade fixed-right" id="AddNewPaymentMethod" tabindex="-1" role="dialog" aria-labelledby="AddNewPaymentMethod" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-block p-0 border-0 mb-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto pr-3">
+                  <i class="fe fe-arrow-left"></i>
+                </div>
+                <div class="col-auto">
+                  <h4 class="modal-title">Add a payment method</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-auto">
+            <div class="dropdown">
+              <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fe fe-more-vertical"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#!" class="dropdown-item">
+                  Help
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body pt-2 pb-6">
+        <div class="row">
+          <div class="col">
+            <p class="text-muted">Add credit or debit card</p>
+            <div class="input-group">
+              <input type="text" class="form-control w-50 border-right-0" placeholder="Card number" id="cardNumber">
+              <input type="text" class="form-control w-25 border-left-0 border-right-0" placeholder="MM/YY">
+              <input type="text" class="form-control w-25 border-left-0" placeholder="CVC">
+            </div>
+            <small id="cardNumber" class="form-text text-muted mt-2 mb-4">Your credit card details are never stored on or even reach our servers. Payments and credit card data are handled by Stripe.</small>
+            <!-- Title -->
+            <h6 class="text-uppercase">
+              Notes
+            </h6>
+
+            <!-- Text -->
+            <p class="text-muted small">
+              By continuing, you agree to the Nutrita Payments Privacy Notice & Terms of Service.
+            </p>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar fixed-bottom px-4">
+        <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Save</button>
+      </nav>
+    </div>
+  </div>
+</div><!-- / modal AddNewPaymentMethod -->
+
+<!-- IDEA: modal changeAvatar -->
+<div class="modal fade fixed-right" id="changeAvatar" tabindex="-1" role="dialog" aria-labelledby="changeAvatar" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-block p-0 border-0 mb-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto pr-3">
+                  <i class="fe fe-arrow-left"></i>
+                </div>
+                <div class="col-auto">
+                  <h4 class="modal-title">Change image profile</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-auto">
+            <div class="dropdown">
+              <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fe fe-more-vertical"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#!" class="dropdown-item">
+                  Help
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body pt-2 pb-6">
+        <div class="row">
+          <div class="col">
+            <p class="text-muted">Changes to your image profile will be reflected across your Nutrita account.</p>
+            <div class="dropzone dropzone-single mb-3" data-toggle="dropzone" data-dropzone-url="http://">
+
+              <div class="fallback">
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="projectCoverUploads">
+                  <label class="custom-file-label" for="projectCoverUploads">Choose file</label>
+                </div>
+              </div>
+
+              <div class="dz-preview dz-preview-single">
+                <div class="dz-preview-cover">
+                  <img class="dz-preview-img" src="..." alt="..." data-dz-thumbnail>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <nav class="navbar fixed-bottom px-4">
+        <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Done</button>
+      </nav>
+    </div>
+  </div>
+</div><!-- / modal changeAvatar -->
+
+<!-- IDEA: modal changeEmail -->
+<div class="modal fade fixed-right" id="changeEmail" tabindex="-1" role="dialog" aria-labelledby="changeEmail" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-block p-0 border-0 mb-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto pr-3">
+                  <i class="fe fe-arrow-left"></i>
+                </div>
+                <div class="col-auto">
+                  <h4 class="modal-title">Change email address</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-auto">
+            <div class="dropdown">
+              <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fe fe-more-vertical"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#!" class="dropdown-item">
+                  Help
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body pt-2 pb-6">
+        <div class="row">
+          <div class="col">
+            <p class="text-muted">Changes to your email will be reflected across your Nutrita account.</p>
+            <div class="form-group mb-0">
+              <label for="emailAddress">Email address</label>
+              <input type="text" class="form-control" value="guillaume.palayer@gmail.com" aria-label="emailAddress" id="emailAddress">
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar fixed-bottom px-4">
+        <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Done</button>
+      </nav>
+    </div>
+  </div>
+</div><!-- / modal changeEmail -->
+
+<!-- IDEA: modal changeName -->
+<div class="modal fade fixed-right" id="changeName" tabindex="-1" role="dialog" aria-labelledby="changeName" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-block p-0 border-0 mb-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto pr-3">
+                  <i class="fe fe-arrow-left"></i>
+                </div>
+                <div class="col-auto">
+                  <h4 class="modal-title">Change name</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-auto">
+            <div class="dropdown">
+              <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fe fe-more-vertical"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#!" class="dropdown-item">
+                  Help
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body pt-2 pb-6">
+        <div class="row">
+          <div class="col">
+            <p class="text-muted">Changes to your name will be reflected across your Nutrita account.</p>
+            <div class="form-group mb-4">
+              <label for="firstName">First name</label>
+              <input type="text" class="form-control" value="Guillaume" aria-label="firstName" id="firstName">
+            </div>
+            <div class="form-group mb-4">
+              <label for="lastName">Last name</label>
+              <input type="text" class="form-control" value="Palayer" aria-label="lastName" id="lastName">
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar fixed-bottom px-4">
+        <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Done</button>
+      </nav>
+    </div>
+  </div>
+</div><!-- / modal changeName -->
+
+<!-- IDEA: modal connectDevice -->
+<div class="modal fade fixed-right" id="connectDevice" tabindex="-1" role="dialog" aria-labelledby="connectDevice" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-block p-0 border-0 mb-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto pr-3">
+                  <i class="fe fe-arrow-left"></i>
+                </div>
+                <div class="col-auto">
+                  <h4 class="modal-title">Choose your device</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-auto">
+            <div class="dropdown">
+              <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fe fe-more-vertical"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#!" class="dropdown-item">
+                  Help
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body pt-2 pb-6">
+        <a href="#" data-toggle="modal" data-target="#connectDeviceCode">
+          <div class="card bg-white border">
+            <div class="card-body">
+              <img class="d-block mx-auto w-75" src="assets/img/avatars/profiles/ketonix.png" alt="ketonix">
+            </div>
+          </div>
+        </a>
+        <a href="#" data-toggle="modal" data-target="#connectDeviceCode">
+          <div class="card bg-white border">
+            <div class="card-body">
+              <img class="d-block mx-auto w-75" src="assets/img/avatars/profiles/keto-mojo.png" alt="keto-mojo">
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal connectDevice -->
+
+<!-- IDEA: modal connectDeviceCode -->
+<div class="modal fade fixed-right" id="connectDeviceCode" tabindex="-1" role="dialog" aria-labelledby="connectDeviceCode" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-block p-0 border-0 mb-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto pr-3">
+                  <i class="fe fe-arrow-left"></i>
+                </div>
+                <div class="col-auto">
+                  <h4 class="modal-title">Connect</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-auto">
+            <div class="dropdown">
+              <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fe fe-more-vertical"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#!" class="dropdown-item">
+                  Help
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body pt-2 pb-6">
+        <h2>Enter pairing code</h2>
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control border-right-0" placeholder="----" aria-label="pairingCode">
+          <div class="input-group-append">
+            <span class="input-group-text rounded-right border-left-0" id="basic-addon3"><i class="fe fe-lock"></i></span>
+          </div>
+        </div>
+        <div class="card bg-white border mt-4"><div class="card-body"><h4 class="mb-2">How to?</h4><p class="small text-muted mb-0">Lorem ipsum howTo.</p></div></div>
+      </div>
+      <nav class="navbar fixed-bottom px-4">
+        <a class="btn btn-success vw-100" href="dashboard-full.html">Continue</a>
+      </nav>
+    </div>
+  </div>
+</div><!-- / modal connectDeviceCode -->
+
+<!-- IDEA: modal howInvitationsWork -->
+<div class="modal fade fixed-right" id="howInvitationsWork" tabindex="-1" role="dialog" aria-labelledby="howInvitationsWork" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-header d-block p-0 border-0 mb-3">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-auto">
+            <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+              <div class="row align-items-center no-gutters">
+                <div class="col-auto pr-3">
+                  <i class="fe fe-arrow-left"></i>
+                </div>
+                <div class="col-auto">
+                  <h4 class="modal-title">Free months</h4>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-auto">
+            <div class="dropdown">
+              <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fe fe-more-vertical"></i>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#!" class="dropdown-item">
+                  Help
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body pt-2 pb-6">
+        <div class="row">
+          <div class="col">
+            <h4>How invitations work</h4>
+            <p class="text-muted">Every time a new Nutrita Premium user signs up with your invitation code, they'll get a discount on their first trip (value amounts vary by location).</p>
+            <p class="text-muted">Once they start their first month of premium subscription, you'll automatically get $US 5 off your next subscription payment.</p>
+            <p class="text-muted">Discounts register automatically and expire 90 days from their issue date.</p>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar fixed-bottom px-4">
+        <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Got it</button>
+      </nav>
+    </div>
+  </div>
+</div><!-- / modal howInvitationsWork -->
+
 <!-- IDEA: modal modalFilterNutrientDensity -->
 <div class="modal fade fixed-right" id="modalFilterNutrientDensity" tabindex="-1" role="dialog" aria-labelledby="modalFilterNutrientDensity" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -320,7 +877,7 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a href="" class="nav-link ">
+                      <a href="macro-calculator.html" class="nav-link ">
                          Macro calculator <span class="badge badge-soft-success ml-auto">New</span>
                       </a>
                     </li>
@@ -454,7 +1011,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">
+                <a class="nav-link" href="invite.html">
                   <i class="fe fe-gift"></i>Free months
                 </a>
               </li>
@@ -1042,13 +1599,13 @@
           <div class="col">
             <ul class="nav nav-tabs justify-content-between">
               <li class="nav-item pl-4">
-                <a class="nav-link small" href="#!">Week</a>
+                <a class="nav-link small" href="#" data-toggle="tab">Week</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link small font-weight-bold active" href="#!">Month</a>
+                <a class="nav-link small font-weight-bold active" href="#" data-toggle="tab">Month</a>
               </li>
               <li class="nav-item pr-4">
-                <a class="nav-link small" href="#!">Year</a>
+                <a class="nav-link small" href="#" data-toggle="tab">Year</a>
               </li>
             </ul>
           </div>
@@ -1400,13 +1957,13 @@
           <div class="col">
             <ul class="nav nav-tabs justify-content-between">
               <li class="nav-item pl-4">
-                <a class="nav-link small" href="#!">Week</a>
+                <a class="nav-link small" href="#" data-toggle="tab">Week</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link small font-weight-bold active" href="#!">Month</a>
+                <a class="nav-link small font-weight-bold active" href="#" data-toggle="tab">Month</a>
               </li>
               <li class="nav-item pr-4">
-                <a class="nav-link small" href="#!">Year</a>
+                <a class="nav-link small" href="#" data-toggle="tab">Year</a>
               </li>
             </ul>
           </div>
@@ -1427,9 +1984,9 @@
         </div>
         <div class="row align-items-center">
           <div class="col">
-            <div class="chart"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
-            <canvas id="headerChart" class="chart-canvas chartjs-render-monitor" width="284" height="125" style="display: block; height: 125px; width: 284px;"></canvas>
-          </div>
+            <div class="chart" style="height: 32vh">
+              <canvas id="hba1cChart" class="chart-canvas"></canvas>
+            </div>
           </div>
         </div>
         <hr class="my-4">
@@ -1541,7 +2098,7 @@
                   <i class="fe fe-arrow-left"></i>
                 </div>
                 <div class="col-auto">
-                  <h4 class="modal-title">Macro nutrients</h4>
+                  <h4 class="modal-title">Net carbs</h4>
                 </div>
               </div>
             </a>
@@ -1567,26 +2124,19 @@
           <div class="col">
             <ul class="nav nav-tabs justify-content-between">
               <li class="nav-item pl-4">
-                <a class="nav-link small font-weight-bold active" href="#!">Week</a>
+                <a class="nav-link small font-weight-bold active" href="#" data-toggle="tab">Week</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link small" href="#!">Month</a>
+                <a class="nav-link small" href="#" data-toggle="tab">Month</a>
               </li>
               <li class="nav-item pr-4">
-                <a class="nav-link small" href="#!">Year</a>
+                <a class="nav-link small" href="#" data-toggle="tab">Year</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
       <div class="modal-body pt-2 pb-5">
-        <div class="row align-items-center mb-4">
-          <div class="col">
-            <button class="btn btn-sm btn-success mr-2" type="button" name="button">Carbs limit</button>
-            <button class="btn btn-sm btn-white mr-2" type="button" name="button">Protein target</button>
-            <button class="btn btn-sm btn-white mr-2" type="button" name="button">Fat</button>
-          </div>
-        </div>
         <div class="row justify-content-between align-items-center mb-4">
           <div class="col-auto">
             <i class="fe fe-chevron-left text-dark"></i>
@@ -1601,8 +2151,8 @@
         </div>
         <div class="row align-items-center mb-4 no-gutters">
           <div class="col">
-            <div class="chart" style="height:36vh">
-              <canvas id="macroNutrientsChart" class="chart-canvas" width="284" height="125" style="display: block; height: 125px; width: 284px;"></canvas>
+            <div class="chart" style="height:32vh">
+              <canvas id="macroNutrientsChart" class="chart-canvas"></canvas>
             </div>
           </div>
         </div>
@@ -3853,7 +4403,7 @@
           <div class="input-group input-group-lg">
             <input type="text" class="form-control" placeholder="Enter your coupon code" aria-label="discountCoupon" id="discountCoupon">
             <div class="input-group-append">
-              <button class="btn btn-lg btn-secondary" type="button" name="button">Apply</button>
+              <button class="btn btn-lg btn-dark border-0" type="button" name="button">Apply</button>
             </div>
           </div>
         </div>
@@ -4034,410 +4584,3 @@
     </div>
   </div>
 </div><!-- / modal food -->
-
-
-<!-- Modal: Members -->
-<div class="modal fade" id="modalMembers" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-card card" data-toggle="lists" data-lists-values='["name"]'>
-        <div class="card-header">
-          <div class="row align-items-center">
-            <div class="col">
-
-              <!-- Title -->
-              <h4 class="card-header-title" id="exampleModalCenterTitle">
-                Add a member
-              </h4>
-
-            </div>
-            <div class="col-auto">
-
-              <!-- Close -->
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-
-            </div>
-          </div> <!-- / .row -->
-        </div>
-        <div class="card-header">
-
-          <!-- Form -->
-          <form>
-            <div class="input-group input-group-flush input-group-merge">
-              <input type="search" class="form-control form-control-prepended search" placeholder="Search">
-              <div class="input-group-prepend">
-                <div class="input-group-text">
-                  <span class="fe fe-search"></span>
-                </div>
-              </div>
-            </div>
-          </form>
-
-        </div>
-        <div class="card-body">
-
-          <!-- List group -->
-          <ul class="list-group list-group-flush list my-n3">
-            <li class="list-group-item px-0">
-
-              <div class="row align-items-center">
-                <div class="col-auto">
-
-                  <!-- Avatar -->
-                  <a href="profile-posts.html" class="avatar">
-                    <img src="assets/img/avatars/profiles/avatar-5.jpg" alt="..." class="avatar-img rounded-circle">
-                  </a>
-
-                </div>
-                <div class="col ml-n2">
-
-                  <!-- Title -->
-                  <h4 class="mb-1 name">
-                    <a href="profile-posts.html">Miyah Myles</a>
-                  </h4>
-
-                  <!-- Time -->
-                  <p class="small mb-0">
-                    <span class="text-success">●</span> Online
-                  </p>
-
-                </div>
-                <div class="col-auto">
-
-                  <!-- Button -->
-                  <a href="#!" class="btn btn-sm btn-white">
-                    Add
-                  </a>
-
-                </div>
-              </div> <!-- / .row -->
-
-            </li>
-            <li class="list-group-item px-0">
-
-              <div class="row align-items-center">
-                <div class="col-auto">
-
-                  <!-- Avatar -->
-                  <a href="profile-posts.html" class="avatar">
-                    <img src="assets/img/avatars/profiles/avatar-6.jpg" alt="..." class="avatar-img rounded-circle">
-                  </a>
-
-                </div>
-                <div class="col ml-n2">
-
-                  <!-- Title -->
-                  <h4 class="mb-1 name">
-                    <a href="profile-posts.html">Ryu Duke</a>
-                  </h4>
-
-                  <!-- Time -->
-                  <p class="small mb-0">
-                    <span class="text-success">●</span> Online
-                  </p>
-
-                </div>
-                <div class="col-auto">
-
-                  <!-- Button -->
-                  <a href="#!" class="btn btn-sm btn-white">
-                    Add
-                  </a>
-
-                </div>
-              </div> <!-- / .row -->
-
-            </li>
-            <li class="list-group-item px-0">
-
-              <div class="row align-items-center">
-                <div class="col-auto">
-
-                  <!-- Avatar -->
-                  <a href="profile-posts.html" class="avatar">
-                    <img src="assets/img/avatars/profiles/avatar-7.jpg" alt="..." class="avatar-img rounded-circle">
-                  </a>
-
-                </div>
-                <div class="col ml-n2">
-
-                  <!-- Title -->
-                  <h4 class="mb-1 name">
-                    <a href="profile-posts.html">Glen Rouse</a>
-                  </h4>
-
-                  <!-- Time -->
-                  <p class="small mb-0">
-                    <span class="text-warning">●</span> Busy
-                  </p>
-
-                </div>
-                <div class="col-auto">
-
-                  <!-- Button -->
-                  <a href="#!" class="btn btn-sm btn-white">
-                    Add
-                  </a>
-
-                </div>
-              </div> <!-- / .row -->
-
-            </li>
-            <li class="list-group-item px-0">
-
-              <div class="row align-items-center">
-                <div class="col-auto">
-
-                  <!-- Avatar -->
-                  <a href="profile-posts.html" class="avatar">
-                    <img src="assets/img/avatars/profiles/avatar-8.jpg" alt="..." class="avatar-img rounded-circle">
-                  </a>
-
-                </div>
-                <div class="col ml-n2">
-
-                  <!-- Title -->
-                  <h4 class="mb-1 name">
-                    <a href="profile-posts.html">Grace Gross</a>
-                  </h4>
-
-                  <!-- Time -->
-                  <p class="small mb-0">
-                    <span class="text-danger">●</span> Offline
-                  </p>
-
-                </div>
-                <div class="col-auto">
-
-                  <!-- Button -->
-                  <a href="#!" class="btn btn-sm btn-white">
-                    Add
-                  </a>
-
-                </div>
-              </div> <!-- / .row -->
-
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal: Search -->
-<div class="modal fade" id="sidebarModalSearch" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical" role="document">
-    <div class="modal-content">
-      <div class="modal-body" data-toggle="lists" data-lists-values='["name"]'>
-
-        <!-- Form -->
-        <form class="mb-4">
-          <div class="input-group input-group-merge">
-            <input type="search" class="form-control form-control-prepended search" placeholder="Search">
-            <div class="input-group-prepend">
-              <div class="input-group-text">
-                <span class="fe fe-search"></span>
-              </div>
-            </div>
-          </div>
-        </form>
-
-        <!-- List group -->
-        <div class="my-n3">
-          <div class="list-group list-group-flush list">
-            <a href="team-overview.html" class="list-group-item px-0">
-              <div class="row align-items-center">
-                <div class="col-auto">
-
-                  <!-- Avatar -->
-                  <div class="avatar">
-                    <img src="assets/img/avatars/teams/team-logo-1.jpg" alt="..." class="avatar-img rounded">
-                  </div>
-
-                </div>
-                <div class="col ml-n2">
-
-                  <!-- Title -->
-                  <h4 class="text-body mb-1 name">
-                    Airbnb
-                  </h4>
-
-                  <!-- Time -->
-                  <p class="small text-muted mb-0">
-                    <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 2hr ago</time>
-                  </p>
-
-                </div>
-              </div> <!-- / .row -->
-            </a>
-            <a href="team-overview.html" class="list-group-item px-0">
-              <div class="row align-items-center">
-                <div class="col-auto">
-
-                  <!-- Avatar -->
-                  <div class="avatar">
-                    <img src="assets/img/avatars/teams/team-logo-2.jpg" alt="..." class="avatar-img rounded">
-                  </div>
-
-                </div>
-                <div class="col ml-n2">
-
-                  <!-- Title -->
-                  <h4 class="text-body mb-1 name">
-                    Medium Corporation
-                  </h4>
-
-                  <!-- Time -->
-                  <p class="small text-muted mb-0">
-                    <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 2hr ago</time>
-                  </p>
-
-                </div>
-              </div> <!-- / .row -->
-            </a>
-            <a href="project-overview.html" class="list-group-item px-0">
-
-              <div class="row align-items-center">
-                <div class="col-auto">
-
-                  <!-- Avatar -->
-                  <div class="avatar avatar-4by3">
-                    <img src="assets/img/avatars/projects/project-1.jpg" alt="..." class="avatar-img rounded">
-                  </div>
-
-                </div>
-                <div class="col ml-n2">
-
-                  <!-- Title -->
-                  <h4 class="text-body mb-1 name">
-                    Homepage Redesign
-                  </h4>
-
-                  <!-- Time -->
-                  <p class="small text-muted mb-0">
-                    <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 4hr ago</time>
-                  </p>
-
-                </div>
-              </div> <!-- / .row -->
-
-            </a>
-            <a href="project-overview.html" class="list-group-item px-0">
-
-              <div class="row align-items-center">
-                <div class="col-auto">
-
-                  <!-- Avatar -->
-                  <div class="avatar avatar-4by3">
-                    <img src="assets/img/avatars/projects/project-2.jpg" alt="..." class="avatar-img rounded">
-                  </div>
-
-                </div>
-                <div class="col ml-n2">
-
-                  <!-- Title -->
-                  <h4 class="text-body mb-1 name">
-                    Travels & Time
-                  </h4>
-
-                  <!-- Time -->
-                  <p class="small text-muted mb-0">
-                    <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 4hr ago</time>
-                  </p>
-
-                </div>
-              </div> <!-- / .row -->
-
-            </a>
-            <a href="project-overview.html" class="list-group-item px-0">
-
-              <div class="row align-items-center">
-                <div class="col-auto">
-
-                  <!-- Avatar -->
-                  <div class="avatar avatar-4by3">
-                    <img src="assets/img/avatars/projects/project-3.jpg" alt="..." class="avatar-img rounded">
-                  </div>
-
-                </div>
-                <div class="col ml-n2">
-
-                  <!-- Title -->
-                  <h4 class="text-body mb-1 name">
-                    Safari Exploration
-                  </h4>
-
-                  <!-- Time -->
-                  <p class="small text-muted mb-0">
-                    <span class="fe fe-clock"></span> <time datetime="2018-05-24">Updated 4hr ago</time>
-                  </p>
-
-                </div>
-              </div> <!-- / .row -->
-
-            </a>
-            <a href="profile-posts.html" class="list-group-item px-0">
-
-              <div class="row align-items-center">
-                <div class="col-auto">
-
-                  <!-- Avatar -->
-                  <div class="avatar">
-                    <img src="assets/img/avatars/profiles/avatar-1.jpg" alt="..." class="avatar-img rounded-circle">
-                  </div>
-
-                </div>
-                <div class="col ml-n2">
-
-                  <!-- Title -->
-                  <h4 class="text-body mb-1 name">
-                    Dianna Smiley
-                  </h4>
-
-                  <!-- Status -->
-                  <p class="text-body small mb-0">
-                    <span class="text-success">●</span> Online
-                  </p>
-
-                </div>
-              </div> <!-- / .row -->
-
-            </a>
-            <a href="profile-posts.html" class="list-group-item px-0">
-
-              <div class="row align-items-center">
-                <div class="col-auto">
-
-                  <!-- Avatar -->
-                  <div class="avatar">
-                    <img src="assets/img/avatars/profiles/avatar-2.jpg" alt="..." class="avatar-img rounded-circle">
-                  </div>
-
-                </div>
-                <div class="col ml-n2">
-
-                  <!-- Title -->
-                  <h4 class="text-body mb-1 name">
-                    Ab Hadley
-                  </h4>
-
-                  <!-- Status -->
-                  <p class="text-body small mb-0">
-                    <span class="text-danger">●</span> Offline
-                  </p>
-
-                </div>
-              </div> <!-- / .row -->
-
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</div>
