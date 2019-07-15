@@ -272,23 +272,31 @@ var data = [
   var dateFormatter = d3.time.format("%A, %B %d, %Y");
   var mainChart = new RadialProgressChart('.main-radial-progress-chart', {
         diameter: 500,
-        max: 100,
         round: true,
         shadow: {
             width: 0
         },
         series: [
           {
-            value: 24,
-            color: '#FDC2CC',
+            value: 5,
+            color: {
+                solid: '#E63757',
+                background: 'white'
+            }
           },
           {
-            value: 42,
-            color: '#fce8b3',
+            value: 20,
+            color: {
+                solid: '#fce8b3',
+                background: 'white'
+            }
           },
           {
-            value: 74,
-            color: '#47E6B1',
+            value: 70,
+            color: {
+                solid: '#47E6B1',
+                background: 'white'
+            }
           }
         ]}
   );
