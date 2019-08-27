@@ -116,7 +116,7 @@ var MacroNutrients = (function() {
             ticks: {
               callback: function(value) {
                 if ( !(value % 10) ) {
-                  return + value + ' %'
+                  return + value + ' g'
                 }
               }
             }
@@ -133,7 +133,7 @@ var MacroNutrients = (function() {
                 content += '<span class="popover-body-label mr-auto">' + label + '</span>';
               }
 
-              content += '<span class="popover-body-value">' + yLabel + '%</span>';
+              content += '<span class="popover-body-value">' + yLabel + 'g</span>';
               return content;
             }
           }
@@ -202,7 +202,7 @@ var Performance = (function() {
             ticks: {
               callback: function(value) {
                 if ( !(value % 10) ) {
-                  return + value + ' %'
+                  return + value + ' g'
                 }
               }
             }
@@ -219,7 +219,7 @@ var Performance = (function() {
                 content += '<span class="popover-body-label mr-auto">' + label + '</span>';
               }
 
-              content += '<span class="popover-body-value">' + yLabel + '%</span>';
+              content += '<span class="popover-body-value">' + yLabel + 'g</span>';
               return content;
             }
           }

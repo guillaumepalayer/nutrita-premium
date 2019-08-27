@@ -1705,19 +1705,19 @@
             <h6 class="header-pretitle mb-0">27 August - 2 September</h6>
             <ul class="list-group list-group-flush mb-4">
               <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <small class="text-dark">-3 kg</small>
+                <small class="text-dark"><strong class="text-dark">000.0 kg</strong> (-000.0 %)</small>
               </li>
             </ul>
             <h6 class="header-pretitle mb-0">3 - 9 September</h6>
             <ul class="list-group list-group-flush mb-4">
               <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <small class="text-dark">+1 kg</small>
+                <small class="text-dark"><strong class="text-dark">000.0 kg</strong> (+000.0 %)</small>
               </li>
             </ul>
             <h6 class="header-pretitle mb-0">10 - 16 September</h6>
             <ul class="list-group list-group-flush mb-4">
               <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <small class="text-dark">+1 kg</small>
+                <small class="text-dark"><strong class="text-dark">000.0 kg</strong> (-000.0 %)</small>
               </li>
             </ul>
             <h6 class="header-pretitle mb-0">17 - 23 September</h6>
@@ -2027,15 +2027,9 @@
             </div>
             <div class="row">
               <div class="col">
-                <ul class="nav nav-tabs justify-content-between">
-                  <li class="nav-item pl-4">
-                    <a class="nav-link small" href="#" data-toggle="tab">Week</a>
-                  </li>
+                <ul class="nav nav-tabs justify-content-center">
                   <li class="nav-item">
-                    <a class="nav-link small font-weight-bold active" href="#" data-toggle="tab">Month</a>
-                  </li>
-                  <li class="nav-item pr-4">
-                    <a class="nav-link small" href="#" data-toggle="tab">Year</a>
+                    <a class="nav-link small font-weight-bold active" href="#" data-toggle="tab">Year</a>
                   </li>
                 </ul>
               </div>
@@ -2064,25 +2058,25 @@
             <hr class="my-4">
             <h6 class="header-pretitle mb-0">27 August - 2 September</h6>
             <ul class="list-group list-group-flush mb-4">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <small class="text-dark">-0.1 %</small>
+              <li class="list-group-item d-flex px-0 border-0">
+                <small class="text-dark"><strong class="text-dark">7 %</strong> (-0.1 %)</small>
               </li>
             </ul>
             <h6 class="header-pretitle mb-0">3 - 9 September</h6>
             <ul class="list-group list-group-flush mb-4">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <small class="text-dark">+0.32 %</small>
+              <li class="list-group-item d-flex px-0 border-0">
+                <small class="text-dark"><strong class="text-dark">7 %</strong> (-0.1 %)</small>
               </li>
             </ul>
             <h6 class="header-pretitle mb-0">10 - 16 September</h6>
             <ul class="list-group list-group-flush mb-4">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <small class="text-dark">-0.4 kg</small>
+              <li class="list-group-item d-flex px-0 border-0">
+                <small class="text-dark"><strong class="text-dark">7 %</strong> (-0.1 %)</small>
               </li>
             </ul>
             <h6 class="header-pretitle mb-0">17 - 23 September</h6>
             <ul class="list-group list-group-flush mb-4">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
+              <li class="list-group-item d-flex px-0 border-0">
                 <small class="text-dark">No data</small>
               </li>
             </ul>
@@ -2215,7 +2209,7 @@
               </div>
               <div class="col-auto text-center">
                 <h4 class="font-weight-normal mb-0">3 - 9 September</h4>
-                <small class="text-secondary">9 / 10 % Carbs limit</small>
+                <small class="text-secondary">21g / day</small>
               </div>
               <div class="col-auto">
                 <i class="fe fe-chevron-right text-muted"></i>
@@ -2235,7 +2229,7 @@
             </div>
             <hr class="my-3">
             <ul class="list-group list-group-lg list-group-flush list">
-              <h5 class="pt-4 mt-1 mb-0 font-weight-normal">Today</h5>
+              <h5 class="pt-4 mt-1 mb-0 font-weight-normal">Today • 12.6 g carbs (12.6 NET)</h5>
               <a data-toggle="modal" href="#modalFood">
                 <li class="list-group-item px-0 py-4 border-0 pl-0">
                   <div class="row align-items-start">
@@ -2284,9 +2278,11 @@
                   </div>
                 </li>
               </a>
+              <!-- IDEA: if more than 3 foods listed by time frame, then display see more and load all the following food items -->
+              <a href="#!" class="d-block text-center font-weight-bold">See more</a>
             </ul>
             <ul class="list-group list-group-lg list-group-flush list">
-              <h5 class="pt-4 mt-1 mb-0 font-weight-normal">Yesterday</h5>
+              <h5 class="pt-4 mt-1 mb-0 font-weight-normal">Yesterday • 12.6 g carbs (12.6 NET)</h5>
               <a data-toggle="modal" href="#modalFood">
                 <li class="list-group-item px-0 py-4 border-0 pl-0">
                   <div class="row align-items-start">
@@ -2335,9 +2331,10 @@
                   </div>
                 </li>
               </a>
+              <a href="#!" class="d-block text-center font-weight-bold">See more</a>
             </ul>
             <ul class="list-group list-group-lg list-group-flush list">
-              <h5 class="pt-4 mt-1 mb-0 font-weight-normal">Thursday 28 March</h5>
+              <h5 class="pt-4 mt-1 mb-0 font-weight-normal">Thursday 28 March • 12.6 g carbs (12.6 NET)</h5>
               <a data-toggle="modal" href="#modalFood">
                 <li class="list-group-item px-0 py-4 border-0 pl-0">
                   <div class="row align-items-start">
