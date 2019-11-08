@@ -1752,30 +1752,66 @@
               </div>
             </div>
             <hr class="my-4">
-            <h6 class="header-pretitle mb-0">27 August - 2 September</h6>
-            <ul class="list-group list-group-flush mb-4">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <small class="text-dark"><strong class="text-dark">000.0 kg</strong> (-000.0 %)</small>
-              </li>
-            </ul>
-            <h6 class="header-pretitle mb-0">3 - 9 September</h6>
-            <ul class="list-group list-group-flush mb-4">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <small class="text-dark"><strong class="text-dark">000.0 kg</strong> (+000.0 %)</small>
-              </li>
-            </ul>
-            <h6 class="header-pretitle mb-0">10 - 16 September</h6>
-            <ul class="list-group list-group-flush mb-4">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <small class="text-dark"><strong class="text-dark">000.0 kg</strong> (-000.0 %)</small>
-              </li>
-            </ul>
-            <h6 class="header-pretitle mb-0">17 - 23 September</h6>
-            <ul class="list-group list-group-flush mb-4">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <small class="text-dark">No data</small>
-              </li>
-            </ul>
+            <div class="row">
+              <div class="col">
+                <h6 class="header-pretitle mb-0">27 August - 2 September</h6>
+                <ul class="list-group list-group-flush mb-4">
+                  <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
+                    <small class="text-dark"><strong class="text-dark">000.0 kg</strong> (-000.0 %)</small>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <a class="btn btn-link text-secondary" href="#">
+                  <i class="fe fe-trash-2"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h6 class="header-pretitle mb-0">27 August - 2 September</h6>
+                <ul class="list-group list-group-flush mb-4">
+                  <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
+                    <small class="text-dark"><strong class="text-dark">000.0 kg</strong> (-000.0 %)</small>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <a class="btn btn-link text-secondary" href="#">
+                  <i class="fe fe-trash-2"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h6 class="header-pretitle mb-0">27 August - 2 September</h6>
+                <ul class="list-group list-group-flush mb-4">
+                  <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
+                    <small class="text-dark"><strong class="text-dark">000.0 kg</strong> (-000.0 %)</small>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <a class="btn btn-link text-secondary" href="#">
+                  <i class="fe fe-trash-2"></i>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <h6 class="header-pretitle mb-0">27 August - 2 September</h6>
+                <ul class="list-group list-group-flush mb-4">
+                  <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
+                    <small class="text-dark"><strong class="text-dark">000.0 kg</strong> (-000.0 %)</small>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-auto">
+                <a class="btn btn-link text-secondary" href="#">
+                  <i class="fe fe-trash-2"></i>
+                </a>
+              </div>
+            </div>
           </div>
           <nav class="navbar fixed-bottom px-4">
             <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#NewWeight">Add new weight</button>
@@ -3696,7 +3732,24 @@
             </div>
           </div>
           <nav class="navbar fixed-bottom">
-            <a class="btn btn-success vw-100 mb-2" href="dashboard-full.html">Add to my day</a>
+            <nav class="navbar fixed-bottom px-4">
+              <div class="btn-group vw-100" role="group" aria-label="Button group with nested dropdown" style="z-index: 2">
+                <button type="button" class="btn btn-success" data-dismiss="modal" aria-label="Close">Add to my day</button>
+                <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#collapseTime" aria-expanded="false" aria-controls="collapseTime"><i class="fe fe-clock"></i></button>
+              </div>
+              <div class="collapse" id="collapseTime">
+                <div class="card card-body mt-n2" style="z-index:1; border-top-right-radius: 0; border-top-left-radius: 0;">
+                  <div class="form-row">
+                    <div class="form-group col-6 mb-0">
+                      <input type="text" class="form-control form-control-lg flatpickr-input" placeholder="Date" data-toggle="flatpickr" readonly="readonly">
+                    </div>
+                    <div class="form-group col-6 mb-0">
+                      <input type="text" class="form-control form-control-lg" placeholder="00:00 pm" aria-label="hours/minutes">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
           </nav>
         </div>
       </div>
