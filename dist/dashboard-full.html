@@ -4453,7 +4453,7 @@
                   </div>
 
                 </div>
-                <small class="form-text text-muted pt-2 mb-0"><a class="text-secondary"  data-toggle="modal" href="#resetPassword">Forget your password?</a></small>
+                <small class="form-text text-muted pt-2 mb-0"><a class="text-secondary" href="forget-password.html">Forget your password?</a></small>
 
               </div>
               <a class="btn btn-success btn-block mb-2" href="dashboard-full.html">Sign In</a>
@@ -4483,103 +4483,6 @@
             </div>
             <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingSubscriptionPeriod">Accept</button>
           </nav>
-        </div>
-      </div>
-    </div><!-- / modal -->
-
-    <!-- IDEA: modal reset password -->
-    <div class="modal fade fixed-right" id="resetPassword" tabindex="1" role="dialog" aria-labelledby="resetPassword" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-        <div class="modal-content">
-          <div class="d-flex justify-content-between align-items-center">
-            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
-          </div>
-          <div class="modal-body">
-            <h2>Password reset </h2>
-            <!-- Form -->
-            <form class="mb-4">
-
-              <!-- Email address -->
-              <div class="form-group">
-
-                <!-- Label -->
-                <label>
-                  Enter your email address
-                </label>
-
-                <!-- Input -->
-                <input type="email" class="form-control" placeholder="email@address.com">
-
-              </div>
-              <button class="btn btn-success btn-block mb-2" type="button" data-toggle="modal" data-target="#resetPasswordEmailSent">Reset password</button>
-              <button class="btn btn-link btn-block text-success btn-sm" type="button" data-toggle="modal" data-target="#onboardingConnect">Cancel</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div><!-- / modal -->
-
-    <!-- IDEA: modal resetPasswordEmailSent -->
-    <div class="modal fade fixed-right" id="resetPasswordEmailSent" tabindex="1" role="dialog" aria-labelledby="resetPasswordEmailSent" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-        <div class="modal-content">
-          <div class="d-flex justify-content-between align-items-center">
-            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
-          </div>
-          <div class="modal-body">
-            <h2>Check your inbox</h2>
-            <p class="text-secondary mb-4 small">Click the link we sent by email to reset your password.</p>
-            <!-- Form -->
-            <form class="mb-4">
-              <button class="btn btn-success btn-block mb-2" type="button" data-toggle="modal" data-target="#resetPasswordEmailSent">Send again</button>
-              <button class="btn btn-link btn-block text-success btn-sm" type="button" data-dismiss="modal" aria-label="Close">Close</button>
-              <button class="btn btn-link btn-block text-success btn-sm" type="button" data-toggle="modal" data-target="#newPassword">Access new password modal [DEV]</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div><!-- / modal -->
-
-    <!-- IDEA: modal newPassword -->
-    <div class="modal fade fixed-right" id="newPassword" tabindex="1" role="dialog" aria-labelledby="newPassword" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-        <div class="modal-content">
-          <div class="d-flex justify-content-between align-items-center">
-            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
-          </div>
-          <div class="modal-body">
-            <h2>Create a new password</h2>
-            <!-- Form -->
-            <form class="mb-4">
-
-              <!-- new password -->
-              <div class="form-group">
-
-                <!-- Label -->
-                <label>
-                  New password
-                </label>
-
-                <!-- Input -->
-                <input type="text" class="form-control" placeholder="">
-
-              </div>
-              <!-- confirm new Password -->
-              <div class="form-group">
-
-                <!-- Label -->
-                <label>
-                  Confirm new password
-                </label>
-
-                <!-- Input -->
-                <input type="text" class="form-control" placeholder="">
-
-              </div>
-              <button class="btn btn-success btn-block mb-2" type="button" data-toggle="modal" data-target="#resetPasswordEmailSent">Save</button>
-              <button class="btn btn-link btn-block text-success btn-sm" type="button" data-toggle="modal" data-target="#onboardingConnect">Cancel</button>
-            </form>
-          </div>
         </div>
       </div>
     </div><!-- / modal -->
