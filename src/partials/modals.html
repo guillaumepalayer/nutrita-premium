@@ -4414,6 +4414,8 @@
           </div>
           <a class="btn btn-success btn-block mb-2" href="dashboard-full.html">Sign In</a>
           <button class="btn btn-link btn-block text-success btn-sm" type="button" data-toggle="modal" data-target="#onboardingConnect">Create an account</button>
+          <button class="btn btn-link btn-block text-success btn-sm" type="button" data-toggle="modal" data-target="#onboardingTrialEndedSubscriptionPeriod">Trial Ended user signing up again</button>
+
         </form>
       </div>
     </div>
@@ -4524,6 +4526,77 @@
                     <div class="col-auto">
                       <small class="d-block">After free trial</small>
                       <span class="h6 font-weight-normal text-muted mt-n1 d-block">Starting 05 Apr 2019</span>
+                    </div>
+                    <div class="col text-right">
+                      <small class="d-block">12 x $ 7.41</small>
+                      <span class="h6 font-weight-normal text-muted mt-n1 d-block mb-1">or $ 89 <strike>$ 125</strike></span>
+                      <span class="h6 font-weight-normal text-muted mt-n1 d-block">per month</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        <div class="form-group">
+          <label for="discountCoupon">Discount coupon</label>
+          <div class="input-group input-group-lg">
+            <input type="text" class="form-control" placeholder="Enter your coupon code" aria-label="discountCoupon" id="discountCoupon">
+            <div class="input-group-append">
+              <button class="btn btn-lg btn-dark border-0" type="button" name="button">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar fixed-bottom px-4">
+        <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingPaymentOptions">Go to Payment Options</button>
+      </nav>
+    </div>
+  </div>
+</div><!-- / modal -->
+
+<!-- IDEA: modal onboardingTrialEndedSubscriptionPeriod -->
+<div class="modal fade fixed-right" id="onboardingTrialEndedSubscriptionPeriod" tabindex="-17" role="dialog" aria-labelledby="onboardingTrialEndedSubscriptionPeriod" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="d-flex justify-content-between align-items-center">
+        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
+      </div>
+      <div class="modal-body pb-6">
+        <h2>Your trial period ended</h2>
+        <p class="text-secondary small">To continue using Nutrita, select a plan below.</p>
+        <p class="small text-muted small mb-4"><i class="fe fe-check-circle text-success mr-2"></i>Cancel at any time in your account settings.</p>
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-header-title">
+              Early bird offer
+            </h3>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item border-bottom-0">
+              <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label vw-100" for="customRadio1">
+                  <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                      <h4 class="mb-0">Monthly <span class="badge badge-soft-primary">Save 29%</span></h4>
+                    </div>
+                    <div class="col text-right">
+                      <small class="d-block">$ 9 <strike>$ 14.99</strike></small>
+                      <span class="h6 font-weight-normal text-muted mt-n1 d-block">per month</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </li>
+            <li class="list-group-item border-bottom-0">
+              <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" checked>
+                <label class="custom-control-label vw-100" for="customRadio2">
+                  <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                      <h4 class="mt-n2">Annually <span class="badge badge-soft-primary">Save 40%</span></h4>
                     </div>
                     <div class="col text-right">
                       <small class="d-block">12 x $ 7.41</small>
