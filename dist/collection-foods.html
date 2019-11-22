@@ -1694,6 +1694,269 @@
       </div>
     </div>
 
+    <!-- IDEA: modal nutrientScoreMicroBreakdown -->
+    <div class="modal fade fixed-right" id="nutrientScoreMicroBreakdown" tabindex="-1" role="dialog" aria-labelledby="nutrientScoreMicroBreakdown" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-block p-0 border-0 mb-3">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto">
+                <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+                  <div class="row align-items-center no-gutters">
+                    <div class="col-auto pr-3">
+                      <i class="fe fe-arrow-left"></i>
+                    </div>
+                    <div class="col-auto">
+                      <h4 class="modal-title">Nutrient score</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body pt-2 pb-5">
+            <div class="row justify-content-center align-items-center mb-4">
+              <div class="col">
+                <img class="d-block mx-auto mb-3" src="https://nutrita.app/static/media/outline-donut_small-24px.b9ebba38.svg" alt="" class="" style="width: 64px;">
+                <div class="row align-items-center justify-content-center">
+                  <span class="h1 d-inline-block mb-0 mr-2">7/10</span>
+                  <span class="badge badge-soft-success">Good</span>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="accordionExample">
+              <div class="card border border-0 shadow-none mb-0">
+                <div class="card-header border-0 p-0">
+                  <div class="text-secondary">
+                    <p class="card-text small text-secondary mb-0">
+                      <img src="https://nutrita.app/static/media/outline-blur_on-24px.e2fe8338.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">
+                       Protein Score <span class="badge badge-soft-success">Good</span>
+                    </p>
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <div class="card-text small text-secondary mr-2">9/10</div>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-sm">
+                          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-2">
+              <div class="card border border-0 shadow-none mb-0">
+                <div class="card-header border-0 p-0">
+                  <div class="text-secondary">
+                    <p class="card-text small text-secondary mb-0">
+                      <img src="https://nutrita.app/static/media/outline-bubble_chart-24px.029887c4.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">
+                        Fatty Acids Score  <span class="badge badge-soft-danger">Bad</span>
+                    </p>
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <div class="card-text small text-secondary mr-2">1/10</div>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-sm">
+                          <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-2">
+              <!-- Vitamins Score -->
+              <div class="card border border-0 shadow-none mb-0">
+                <div class="card-header border-0 p-0" id="headingOne">
+                  <a class="text-secondary" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <p class="card-text small text-secondary mb-0">
+                      <img src="https://nutrita.app/static/media/outline-flash_on-24px.078c7f0c.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">Vitamins Score
+                      <span class="badge badge-soft-warning">Ok</span>
+                    </p>
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <div class="card-text small text-secondary mr-2">5/10</div>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-sm">
+                          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Vitamins Sub Score -->
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body pl-3 pt-3 pr-0 pb-0 mb-0">
+                    <!-- Vitamin item -->
+                    <div class="d-flex justify-content-between no-gutters">
+                      <p class="card-text small text-secondary mb-0">
+                        Vitamin A
+                      </p>
+                      <div class="d-flex justify-content-end">
+                        <p class="card-text small text-secondary mb-0">
+                          13µg
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <div class="card-text small text-secondary mr-2">24% DV</div>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-sm">
+                          <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-3">
+                    <!-- Vitamin item -->
+                    <div class="d-flex justify-content-between no-gutters">
+                      <p class="card-text small text-secondary mb-0">
+                        Vitamin A
+                      </p>
+                      <div class="d-flex justify-content-end">
+                        <p class="card-text small text-secondary mb-0">
+                          13µg
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <div class="card-text small text-secondary mr-2">24% DV</div>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-sm">
+                          <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-3">
+                    <!-- Vitamin item -->
+                    <div class="d-flex justify-content-between no-gutters">
+                      <p class="card-text small text-secondary mb-0">
+                        Vitamin A
+                      </p>
+                      <div class="d-flex justify-content-end">
+                        <p class="card-text small text-secondary mb-0">
+                          13µg
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <div class="card-text small text-secondary mr-2">24% DV</div>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-sm">
+                          <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-3">
+                  </div>
+                </div>
+              </div>
+              <!-- Minerals Score -->
+              <div class="card border border-0 shadow-none mb-3">
+                <div class="card-header p-0" id="headingTwo">
+                  <a class="text-secondary collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <p class="card-text small text-secondary mb-0">
+                    <img src="https://nutrita.app/static/media/outline-scatter_plot-24px.aa719f00.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">Minerals Score <span class="badge badge-soft-success">Good</span>
+                    </p>
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <div class="card-text small text-secondary mr-2">9/10</div>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-sm">
+                          <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- Minerals Sub Score -->
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body pl-3 pt-3 pr-0 pb-0 mb-0">
+                    <!-- Mineral item -->
+                    <div class="d-flex justify-content-between no-gutters">
+                      <p class="card-text small text-secondary mb-0">
+                        Calcium
+                      </p>
+                      <div class="d-flex justify-content-end">
+                        <p class="card-text small text-secondary mb-0">
+                          13µg
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <div class="card-text small text-secondary mr-2">24% DV</div>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-sm">
+                          <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-3">
+                    <!-- Vitamin item -->
+                    <div class="d-flex justify-content-between no-gutters">
+                      <p class="card-text small text-secondary mb-0">
+                        Zinc
+                      </p>
+                      <div class="d-flex justify-content-end">
+                        <p class="card-text small text-secondary mb-0">
+                          13µg
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <div class="card-text small text-secondary mr-2">24% DV</div>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-sm">
+                          <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-3">
+                    <!-- Vitamin item -->
+                    <div class="d-flex justify-content-between no-gutters">
+                      <p class="card-text small text-secondary mb-0">
+                        Selenium
+                      </p>
+                      <div class="d-flex justify-content-end">
+                        <p class="card-text small text-secondary mb-0">
+                          13µg
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row align-items-center no-gutters">
+                      <div class="col-auto">
+                        <div class="card-text small text-secondary mr-2">24% DV</div>
+                      </div>
+                      <div class="col">
+                        <div class="progress progress-sm">
+                          <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <hr class="my-3">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- / modal nutrientdensityMicroBreakdown -->
+
     <!-- IDEA: modal reportDetailsWeight -->
     <div class="modal fade fixed-right" id="reportDetailsWeight" tabindex="-1" role="dialog" aria-labelledby="reportDetailsWeight" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -3449,35 +3712,11 @@
             <!-- Keto Score -->
             <div class="d-flex justify-content-between no-gutters mt-5">
               <p class="card-text small text-secondary mb-0">
-              <img src="https://nutrita.app/static/media/outline-score-24px.54069296.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;"> Keto Score <span class="badge badge-soft-success">Good</span>
+              <img src="https://nutrita.app/static/media/outline-score-24px.bc45c207.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;"> Keto Score <span class="badge badge-soft-success">Good</span>
               </p>
               <div class="d-flex justify-content-end">
                 <p class="card-text small text-secondary mb-0">
                   <a class="text-secondary" data-toggle="tooltip" data-placement="top" title="The Keto score tells you if a food is likely to lower or increase ketone levels. However choosing the best foods for your keto diet depends on other factors, like nutrient density.">
-                    <span class="fe fe-info"></span>
-                  </a>
-                </p>
-              </div>
-            </div>
-            <div class="row align-items-center no-gutters">
-              <div class="col-auto">
-                <div class="card-text small text-secondary mr-2">6/10</div>
-              </div>
-              <div class="col">
-                <div class="progress progress-sm">
-                  <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-            </div>
-            <hr class="my-3">
-            <!-- Nutrient Score -->
-            <div class="d-flex justify-content-between no-gutters">
-              <p class="card-text small text-secondary mb-0">
-              <img src="https://nutrita.app/static/media/outline-score-24px.54069296.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">Nutrient Score <span class="badge badge-soft-success">Good</span>
-              </p>
-              <div class="d-flex justify-content-end">
-                <p class="card-text small text-secondary mb-0">
-                  <a class="text-secondary" data-toggle="tooltip" data-placement="top" title="It scores food out of 10 according to how nutritious it is.">
                     <span class="fe fe-info"></span>
                   </a>
                 </p>
@@ -3514,6 +3753,30 @@
               <div class="col">
                 <div class="progress progress-sm">
                   <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+            <hr class="my-3">
+            <!-- Nutrient Score -->
+            <div class="d-flex justify-content-between no-gutters">
+              <p class="card-text small text-secondary mb-0">
+              <img src="https://nutrita.app/static/media/outline-donut_small-24px.b9ebba38.svg" alt="" class="d-inline-block mr-2" style="max-width: 20px;">Nutrient Score <span class="badge badge-soft-success">Good</span>
+              </p>
+              <div class="d-flex justify-content-end">
+                <p class="card-text small text-secondary mb-0">
+                  <a class="text-secondary" data-toggle="tooltip" data-placement="top" title="It scores food out of 10 according to how nutritious it is.">
+                    <span class="fe fe-info"></span>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="row align-items-center no-gutters">
+              <div class="col-auto">
+                <div class="card-text small text-secondary mr-2">6/10</div>
+              </div>
+              <div class="col">
+                <div class="progress progress-sm">
+                  <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
               </div>
             </div>
