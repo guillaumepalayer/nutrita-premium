@@ -173,6 +173,52 @@ var MacroNutrients = (function() {
 
 })();
 
+// Devices
+//
+// Devices card chart
+
+(function() {
+
+  //
+  // Variables
+  //
+
+  var chart = document.getElementById('devicesChart');
+
+
+  //
+  // Functions
+  //
+
+  function init(chart) {
+    new Chart(chart, {
+      type: 'doughnut',
+      options: {
+        tooltips: false,
+      },
+      data: {
+        datasets: [{
+          data: [50, 25, 25],
+          backgroundColor: [
+            '#47E6B1',
+            '#fce8b3',
+            '#FDC2CC'
+          ]
+        }]
+      }
+    });
+  }
+
+
+  //
+  // Events
+  //
+
+  if (typeof Chart !== 'undefined' && chart) {
+    init(chart);
+  }
+
+})();
 
 // Performance
 //

@@ -10493,6 +10493,11 @@ a:focus, button:focus {
     height: 8rem;
     font-size: 2.66667rem; } }
 
+.doughnut-chart {
+  height: 256px !important;
+  min-height: 256px;
+  min-width: 256px; }
+
 .main-radial-progress-chart {
   min-height: 260px;
   min-width: 260px; }
