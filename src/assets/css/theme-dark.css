@@ -10460,6 +10460,26 @@ a:focus, button:focus {
 .select2-container--default .select2-search--dropdown .select2-search__field {
   border-color: #1E3A5C; }
 
+.animated-under-text {
+  color: white;
+  background: linear-gradient(45deg, #E63757 50%, #22C88A 60%);
+  background-size: 400% 400%;
+  animation: gradientBG 4s ease;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: center center;
+  animation-duration: 12s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite; }
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
 .navbar-brand-img,
 .navbar-brand > img {
   max-height: 36px; }
@@ -10471,6 +10491,12 @@ a:focus, button:focus {
 .nav-tabs .nav-item.show .nav-link {
   border-bottom-width: 2px;
   border-color: #22C88A; }
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #FFFFFF;
+  background-color: #2C7BE5;
+  background: #22c88a1a; }
 
 .bg-soft-red {
   background-color: #f3a39a; }
