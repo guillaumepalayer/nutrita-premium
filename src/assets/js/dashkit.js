@@ -326,7 +326,7 @@ var data = [
           {
             value: 5,
             color: {
-                solid: '#E63757',
+                solid: '#f3a39a',
                 background: 'white'
             }
           },
