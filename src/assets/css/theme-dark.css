@@ -10462,7 +10462,7 @@ a:focus, button:focus {
 
 .animated-under-text {
   color: white;
-  background: linear-gradient(45deg, #FD616C 50%, #22C88A 60%);
+  background: linear-gradient(45deg, #E34444 50%, #22C88A 60%);
   background-size: 400% 400%;
   animation: gradientBG 4s ease;
   -webkit-background-clip: text;
