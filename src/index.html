@@ -13,20 +13,9 @@
 
     <!-- NAVIGATION
     ================================================== -->
-    @@if (navPosition == 'sidenav' || navPosition == 'combo' || demoMode) {
-      @@include("partials/sidebar.html", {
-        "category": "dashboards",
-        "subcategory": "",
-        "page": "index.html"
-      })
-    }
-    @@if (navPosition == 'topnav' || demoMode) {
-      @@include("partials/topnav.html", {
-        "category": "dashboards",
-        "subcategory": "",
-        "page": "index.html"
-      })
-    }
+    <!-- NAVIGATION
+    ================================================== -->
+    @@include("partials/topnav.html")
 
     <!-- MAIN CONTENT
     ================================================== -->
