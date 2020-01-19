@@ -849,6 +849,56 @@
       </div>
     </div><!-- / modal changeName -->
 
+    <!-- IDEA: modal CustomRecipe -->
+    <div class="modal fade fixed-right" id="modalCustomRecipe" tabindex="-1" role="dialog" aria-labelledby="modalCustomRecipe" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-block p-0 border-0 mb-3">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto">
+                <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+                  <div class="row align-items-center no-gutters">
+                    <div class="col-auto pr-3">
+                      <i class="fe fe-arrow-left"></i>
+                    </div>
+                    <div class="col-auto">
+                      <h4 class="modal-title">New recipe</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <div class="dropdown">
+                  <a href="#!" class="dropdown-ellipses dropdown-toggle btn btn-link text-dark" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fe fe-more-vertical"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a href="#!" class="dropdown-item">
+                      Help
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body pt-2 pb-6">
+            <div class="row">
+              <div class="col">
+                <p class="text-muted">Let's create your custom recipe and add it to your day.</p>
+                <div class="form-group mb-4">
+                  <label for="recipeTitle">Recipe title</label>
+                  <input type="text" class="form-control" value="Guillaume" aria-label="firstName" id="firstName">
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar fixed-bottom px-4">
+            <button class="btn btn-success vw-100" type="button" data-dismiss="modal" aria-label="Close">Add to my day</button>
+          </nav>
+        </div>
+      </div>
+    </div><!-- / modal CustomRecipe -->
+
     <!-- IDEA: modal connectDevice -->
     <div class="modal fade fixed-right" id="connectDevice" tabindex="-1" role="dialog" aria-labelledby="connectDevice" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -5596,7 +5646,7 @@
             </div>
             <div class="card mb-0">
               <div class="header-body px-4">
-                <div class="row align-items-end">
+                <div class="row align-items-end mr-n4">
                   <div class="col">
 
                     <!-- Pretitle -->
@@ -5610,7 +5660,7 @@
                     </h1>
 
                   </div>
-                  <div class="col-auto">
+                  <div class="col-auto pr-0">
 
                     <!-- Nav -->
                     <ul class="nav nav-tabs header-tabs nav-overflow">
@@ -5621,7 +5671,12 @@
                       </li>
                       <li class="nav-item">
                         <a href="#" data-toggle="tab" class="nav-link">
-                          Favorites
+                          My&nbsp;recipes
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a href="#" data-toggle="tab" class="nav-link">
+                          My&nbsp;favorites
                         </a>
                       </li>
                       <li class="nav-item">
@@ -5687,17 +5742,40 @@
                   <a data-toggle="modal" href="#modalFood">
                     <li class="list-group-item px-0 py-4 border-0 pl-3">
                       <div class="row align-items-start">
-                        <div class="col-auto pl-3">
-                          <span class="avatar avatar-lg">
-                            <img src="https://d3n85fzfv5z2vw.cloudfront.net/liver.jpg" alt="..." class="avatar-img rounded">
-                          </span>
+                        <div class="col-auto pr-0">
+                          <div class="custom-control custom-checkbox table-checkbox">
+                          <input type="checkbox" class="custom-control-input" name="ordersSelect" id="ordersSelectOne">
+                          <label class="custom-control-label" for="ordersSelectOne">
+                            &nbsp;
+                          </label>
                         </div>
-                        <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                        </div>
+                        <div class="col-3 pl-0 text-center">
+                          <span class="avatar avatar-lg">
+                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                          </span>
+                          <div class="row mt-n3">
+                            <div class="col-12 text-center">
+                              <div class="avatar-group">
+                                <div class="avatar avatar-xs">
+                                  <span class="avatar-title rounded-circle bg-primary"><i class="fe fe-award"></i></span>
+                                </div>
+                                <div class="avatar avatar-xs">
+                                  <span class="avatar-title rounded-circle bg-danger"><i class="fe fe-heart"></i></span>
+                                </div>
+                                <div class="avatar avatar-xs">
+                                  <span class="avatar-title rounded-circle bg-success"><i class="fe fe-list"></i></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-7 col-md-10 px-0">
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title</h4>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
-                              <div style="min-width: 164px;">
+                              <div style="width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Keto score
@@ -5720,11 +5798,11 @@
                               </div>
                             </li>
                             <li class="nav-item mr-auto">
-                              <div style="min-width: 164px;">
+                              <div style="width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Nutrient Density
-                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="badge bg-soft-gradient-green-grey">Partial data</span>
                                     <span class="card-text small text-secondary mb-0"></span>
                                     </span>
                                   </p>
@@ -5743,7 +5821,7 @@
                               </div>
                             </li>
                             <li class="nav-item mr-auto">
-                              <div style="min-width: 164px;">
+                              <div style="width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Insulin Index
@@ -5773,17 +5851,40 @@
                   <a data-toggle="modal" href="#modalFood">
                     <li class="list-group-item px-0 py-4 border-0 pl-3">
                       <div class="row align-items-start">
-                        <div class="col-auto pl-3">
-                          <span class="avatar avatar-lg">
-                            <img src="https://d3n85fzfv5z2vw.cloudfront.net/salmon.jpg" alt="..." class="avatar-img rounded">
-                          </span>
+                        <div class="col-auto pr-0">
+                          <div class="custom-control custom-checkbox table-checkbox">
+                          <input type="checkbox" class="custom-control-input" name="ordersSelect" id="ordersSelectOne">
+                          <label class="custom-control-label" for="ordersSelectOne">
+                            &nbsp;
+                          </label>
                         </div>
-                        <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
+                        </div>
+                        <div class="col-3 pl-0 text-center">
+                          <span class="avatar avatar-lg">
+                            <img src="https://via.placeholder.com/64x64.png" alt="..." class="avatar-img rounded">
+                          </span>
+                          <div class="row mt-n3">
+                            <div class="col-12 text-center">
+                              <div class="avatar-group">
+                                <div class="avatar avatar-xs">
+                                  <span class="avatar-title rounded-circle bg-primary"><i class="fe fe-award"></i></span>
+                                </div>
+                                <div class="avatar avatar-xs">
+                                  <span class="avatar-title rounded-circle bg-danger"><i class="fe fe-heart"></i></span>
+                                </div>
+                                <div class="avatar avatar-xs">
+                                  <span class="avatar-title rounded-circle bg-success"><i class="fe fe-list"></i></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-7 col-md-10 px-0">
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title</h4>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
-                              <div style="min-width: 164px;">
+                              <div style="width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Keto score
@@ -5806,11 +5907,11 @@
                               </div>
                             </li>
                             <li class="nav-item mr-auto">
-                              <div style="min-width: 164px;">
+                              <div style="width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Nutrient Density
-                                    <span class="badge badge-soft-success">Moderate</span>
+                                    <span class="badge bg-soft-gradient-green-grey">Partial data</span>
                                     <span class="card-text small text-secondary mb-0"></span>
                                     </span>
                                   </p>
@@ -5829,93 +5930,7 @@
                               </div>
                             </li>
                             <li class="nav-item mr-auto">
-                              <div style="min-width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Insulin Index
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                  </a>
-                  <a data-toggle="modal" href="#modalFood">
-                    <li class="list-group-item px-0 py-4 border-0 pl-3">
-                      <div class="row align-items-start">
-                        <div class="col-auto pl-3">
-                          <span class="avatar avatar-lg">
-                            <img src="https://d3n85fzfv5z2vw.cloudfront.net/avocado.jpg" alt="..." class="avatar-img rounded">
-                          </span>
-                        </div>
-                        <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
-                          <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
-                          <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
-                            <li class="nav-item mr-auto">
-                              <div style="min-width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Keto score
-                                    <span class="badge badge-soft-success">Good</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="nav-item mr-auto">
-                              <div style="min-width: 164px;">
-                                <div class="d-flex justify-content-left no-gutters align-content-center">
-                                  <p class="card-text small text-secondary mb-0">
-                                    Nutrient Density
-                                    <span class="badge badge-soft-success">Moderate</span>
-                                    <span class="card-text small text-secondary mb-0"></span>
-                                    </span>
-                                  </p>
-                                </div>
-                                <div class="row align-items-center no-gutters">
-                                  <div class="col-auto">
-                                    <div class="card-text small text-secondary mr-2">7/10</div>
-                                  </div>
-                                  <div class="col">
-                                    <div class="progress progress-sm">
-                                      <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                            <li class="nav-item mr-auto">
-                              <div style="min-width: 164px;">
+                              <div style="width: 164px;">
                                 <div class="d-flex justify-content-left no-gutters align-content-center">
                                   <p class="card-text small text-secondary mb-0">
                                     Insulin Index
@@ -6001,7 +6016,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -6087,7 +6102,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -6173,7 +6188,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -6309,7 +6324,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -6395,7 +6410,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -6481,7 +6496,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -6617,7 +6632,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -6703,7 +6718,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -6789,7 +6804,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -6925,7 +6940,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -7011,7 +7026,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -7097,7 +7112,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -7233,7 +7248,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -7319,7 +7334,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -7405,7 +7420,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -7541,7 +7556,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -7627,7 +7642,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -7713,7 +7728,7 @@
                           </span>
                         </div>
                         <div class="col-8 col-md-10 pl-1 pr-0">
-                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food title on one single line</h4>
+                          <h4 class="card-title mb-1 name text-dark text-truncate pr-3">Food titlee single line</h4>
                           <h6 class="text-uppercase text-muted my-2 pr-2">133 KCAL • 3.6 g carbs (3.6 NET)</h6>
                           <ul class="nav nav-tabs nav-tabs-sm nav-overflow pl-0 border-0">
                             <li class="nav-item mr-auto">
@@ -7819,11 +7834,9 @@
       </div><!-- / .fixed bottom -->
     </div> <!-- / .main-content -->
     <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
-      <a class="nav-link text-dark h5 py-0 text-center mb-0 px-1" href="dashboard-full.html"><i class="fe fe-home text-success d-block mb-2"></i>Home</a>
-      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="journal.html"><i class="fe fe-activity d-block mb-2"></i>Journal</a>
-      <a class="nav-link btn btn-lg btn-rounded-circle btn-success text-secondary text-center mb-0 mt-n4 font-weight-normal" href="search-zero-state.html"><i class="fe fe-plus d-block text-white"></i></a>
-      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="profile.html"><i class="fe fe-user d-block mb-2"></i>Profile</a>
-      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="settings.html"><i class="fe fe-settings d-block mb-2"></i>Settings</a>
+      <a class="nav-link text-dark h5 py-0 text-center mb-0" data-toggle="modal" href="#modalCustomRecipe"><i class="fe fe-list text-success d-block mb-2"></i>Create recipe</a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1"><i class="fe fe-trash d-block mb-2"></i>Delete</a>
+      <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1"><i class="fe fe-x d-block mb-2"></i>Clear Selection</a>
     </nav>
 
 
