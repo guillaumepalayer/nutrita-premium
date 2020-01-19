@@ -10479,6 +10479,9 @@ a:focus, button:focus {
 .bg-blue-light {
   background-color: #d5e5fa; }
 
+.bg-white-light {
+  background-color: #F9FBFD; }
+
 .bg-img-right {
   background-position: 110% 50%;
   background-size: 88px;
@@ -10517,12 +10520,6 @@ a:focus, button:focus {
   top: 50% !important;
   transform: translateY(-50%) !important;
   z-index: 1 !important; }
-
-@media (max-width: 768px) {
-  .avatar-xxl {
-    width: 8rem;
-    height: 8rem;
-    font-size: 2.66667rem; } }
 
 .doughnut-chart {
   height: 256px !important;
@@ -10573,3 +10570,39 @@ a:focus, button:focus {
 
 #chart-tooltip {
   z-index: 1060; }
+
+.animated-under-text {
+  color: white;
+  background: linear-gradient(244.71deg, #FFE600 -35.32%, #FAAD14 10.66%, #F7169C 54.29%, #3435F5 94.81%);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: center center; }
+
+.animated-background {
+  background: linear-gradient(-45deg, #FFE600, #FAAD14, #F7169C, #3435F5);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite; }
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+.rounded-xl {
+  border-radius: 24px; }
+
+.mt-n10 {
+  margin-top: -21.5rem; }
+
+@media (max-width: 768px) {
+  .avatar-xxl {
+    width: 8rem;
+    height: 8rem;
+    font-size: 2.66667rem; }
+  .mt-n10 {
+    margin-top: 0; } }
