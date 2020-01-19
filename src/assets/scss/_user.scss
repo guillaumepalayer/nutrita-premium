@@ -198,6 +198,12 @@
   margin-top: -21.5rem;
 }
 
+.content-paint{
+  contain: paint;
+}
+.bg-cover.content-paint{
+  background-image: url(https://storage.appsforfit.com/files/7U3QwfIyOJF7nPIx56cslhd64HSshEFeKoEVY7Wa.jpeg);
+}
 @media (max-width: 768px) {
   .avatar-xxl {
       width: 8rem;
@@ -206,5 +212,9 @@
   }
   .mt-n10{
     margin-top: 0;
+  }
+  .bg-cover.content-paint{
+    background-image: url(https://storage.appsforfit.com/files/7U3QwfIyOJF7nPIx56cslhd64HSshEFeKoEVY7Wa.jpeg);
+    background-position: -1570px -490px;
   }
 }
