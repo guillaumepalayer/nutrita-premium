@@ -20,7 +20,7 @@
       })
     }
     @@if (navPosition == 'topnav' || demoMode) {
-      @@include("partials/topnav-b.html", {
+      @@include("partials/topnav-a.html", {
         "category": "dashboards",
         "subcategory": "",
         "page": "index.html"
@@ -30,7 +30,7 @@
 
     <!-- MAIN CONTENT
     ================================================== -->
-    <div class="main-content bg-cover content-paint">
+    <div class="main-content">
       <div class="container mt-7">
           <div class="row justify-content-center mb-5">
             <div class="col-12 col-lg-7 text-center text-lg-left pt-lg-6">
@@ -38,14 +38,14 @@
                 <img src="assets/img/logo.svg" alt="..." class="image-fluide mx-auto mb-3">
               </a>
               <!-- Title -->
-              <h1 class="text-white display-1 d-none d-lg-block mb-5">
+              <h1 class="display-1 d-none d-lg-block mb-5">
                 Track your nutrition & get life-long results
               </h1>
-              <h1 class="text-white display-4 d-block d-lg-none mb-5">
+              <h1 class="display-4 d-block d-lg-none mb-5">
                 Track your nutrition & get life-long results
               </h1>
-              <p class="h1 text-white d-none d-lg-block">Browse custom recipes supporting your goals and explore+20,000 foods in our curated database.</p>
-              <p class="lead text-white d-block d-lg-none">Browse custom recipes supporting your goals and explore +20,000 foods in our curated database.</p>
+              <p class="h1 text-muted d-none d-lg-block">Browse <span class="text-dark">custom recipes</span> supporting your goals and explore <span class="text-dark">+20,000 foods</span> in our curated database.</p>
+              <p class="lead text-muted d-block d-lg-none">Browse <span class="text-dark">custom recipes</span> supporting your goals and explore <span class="text-dark">+20,000 foods</span> in our curated database.</p>
 
               <!-- Subtitle -->
               <h6 class="header-pretitle text-muted mb-5 mb-lg-4">✔️Free 7-day trial  ✔️No payment required</h6>
@@ -201,7 +201,7 @@
                   </a>
                 </div>
               </div>
-              <p class="small mb-4 text-center text-lg-right text-white">Already using Nutrita? <a class="text-dark" href="#" data-toggle="modal" data-target="#signIn">Sign in</a></p>
+              <p class="small mb-4 text-right text-white">Already using Nutrita? <a class="text-dark" href="#" data-toggle="modal" data-target="#signIn">Sign in</a>.</p>
             </div>
           </div> <!-- / .row -->
           <div class="row justify-content-center">
