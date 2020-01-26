@@ -10654,8 +10654,8 @@ a:focus, button:focus {
   contain: paint; }
 
 .bg-cover.content-paint {
-  background-image: url(../../assets/img/covers/caroline-attwood-bpPTlXWTOvg-unsplash.jpg);
-  background-position: 0px -180px; }
+  background-image: url(../../assets/img/covers/home-bg.jpg);
+  background-position: center -140px; }
 
 @media (max-width: 768px) {
   .avatar-xxl {
@@ -10665,5 +10665,6 @@ a:focus, button:focus {
   .mt-n10 {
     margin-top: 0; }
   .bg-cover.content-paint {
-    background-image: url(../../assets/img/covers/caroline-attwood-bpPTlXWTOvg-unsplash.jpg);
-    background-position: -340px -530px; } }
+    background-image: url(../../assets/img/covers/home-bg-mobile.jpg);
+    background-position: left top;
+    background-size: 180% auto; } }
