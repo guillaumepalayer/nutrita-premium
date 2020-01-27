@@ -10438,7 +10438,7 @@ a:focus, button:focus {
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  border-bottom-width: 2px;
+  border-bottom-width: 3px;
   border-color: #22C88A; }
 
 .nav-pills .nav-link.active,
@@ -10599,6 +10599,9 @@ a:focus, button:focus {
 .mt-n10 {
   margin-top: -21.5rem; }
 
+.mt-n64 {
+  margin-top: -64px; }
+
 .content-paint {
   contain: paint; }
 
@@ -10606,6 +10609,52 @@ a:focus, button:focus {
   background-image: url(../../assets/img/covers/home-bg.jpg);
   background-position: right -140px;
   background-size: 120% auto; }
+
+ul.week {
+  margin: 0;
+  padding: 0; }
+
+ul.week li {
+  display: inline-block;
+  margin: 2px 10px; }
+
+.week {
+  text-align: center; }
+
+ul.week li svg {
+  width: 8vw;
+  max-width: 80px; }
+
+.date {
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+  text-align: center;
+  margin-bottom: 15px; }
+
+.circle {
+  margin: 3px auto;
+  border-radius: 50%;
+  width: 27px;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 300; }
+
+li:hover .circle {
+  color: white;
+  background-color: #565656; }
+
+.circle.active {
+  color: white;
+  background-color: #22C88A !important; }
+
+.rbc-label-start {
+  font-family: fontawesome;
+  font-weight: bold;
+  font-size: 30px; }
 
 @media (max-width: 768px) {
   .avatar-xxl {

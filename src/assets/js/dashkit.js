@@ -364,11 +364,37 @@ var data = [
         d.series = [getRandom(), getRandom(), getRandom()];
         new RadialProgressChart(this.parentNode, {
           diameter: 10,
+          round: true,
+          shadow: {
+              width: 0
+          },
           stroke: {
             width: 6,
             gap: 1
           },
-          series: d.series
+          series: [
+            {
+              value: 30,
+              color: {
+                  solid: '#f3a39a',
+                  background: 'white'
+              }
+            },
+            {
+              value: 70,
+              color: {
+                  solid: '#fce8b3',
+                  background: 'white'
+              }
+            },
+            {
+              value: 60,
+              color: {
+                  solid: '#47E6B1',
+                  background: 'white'
+              }
+            }
+          ]
         });
       });
 

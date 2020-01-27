@@ -6,18 +6,49 @@
     })
   </head>
   <body>
-    @@include("partials/topnav-connected.html")
+    @@include("partials/topnav-b.html")
     @@include("partials/modals.html")
 
     <!-- MAIN CONTENT
     ================================================== -->
-    <div class="main-content my-5 my-lg-6">
-      <div class="container container pt-5">
+    <div class="main-content bg-dark py-6">
+      <div class="container mb-3">
+        <div class="row">
+          <div class="col">
+            <!-- IDEA: UX research notification -->
+            <div class="alert alert-light bg-white alert-dismissible border fade show pr-4 py-4 mb-4 d-none" role="alert">
+              <div class="row d-flex align-items-start">
+                <div class="col-auto">
+                  <div class="avatar">
+                    <span class="avatar-title rounded-circle border bg-white h2 mb-0"><i class="fe fe-zap text-primary"></i></span>
+                  </div>
+                </div>
+                <div class="col ml-n2">
+
+                  <p class="card-text small text-muted mb-3">
+                    Please, answer 1 short question to make Nutrita better for you!
+                  </p>
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScwxkEzBlkFFJ5YWR2gz0xXSK6sBmjK0j60DlCg3Z5ds0YtcA/viewform?usp=sf_link" class="btn btn-sm text-primary pl-0" target="_blank">Sure thing!</a>
+
+                </div>
+                <div class="col-auto">
+                  <a href="#!" data-dismiss="alert" aria-label="Close">
+                    <i class="fe fe-x h2 mb-0 text-dark"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- / .row -->
+      </div>
+    </div>
+    <div class="main-content mt-n64">
+      <div class="container">
         <div class="row justify-content-start">
           <div class="col-12 col-lg-2 d-none d-lg-flex">
             <nav class="nav flex-column">
-              <a class="btn btn-lg btn-success mb-3 btn-block" href="search-zero-state.html"><i class="fe fe-plus"></i> Add foods</a>
-              <a class="nav-link pl-0 py-3 text-dark" href="dashboard-full.html">
+              <a class="btn btn-lg btn-success mb-4 btn-block" href="search-zero-state.html"><i class="fe fe-plus"></i> Add foods</a>
+              <a class="nav-link pl-0 py-3 text-dark" href="dashboard-full_2.html">
                 <i class="fe fe-home h3 mr-2"></i>Home
               </a>
               <a class="nav-link pl-0 py-3 text-secondary" href="journal.html">
@@ -32,33 +63,6 @@
             </nav>
           </div>
           <div class="col-12 col-lg-8">
-
-            <div class="alert alert-light bg-white alert-dismissible border fade show pr-4 py-4" role="alert">
-              <a href="#" data-toggle="modal" data-target="#newReminder">
-                <div class="row d-flex align-items-start">
-                  <div class="col-auto">
-                    <div class="avatar">
-                      <span class="avatar-title rounded-circle border bg-white h2 mb-0">👏</span>
-                    </div>
-                  </div>
-                  <div class="col ml-n2">
-
-                    <h4 class="card-title mb-1 text-dark">You did it! No seed oil today.</h4>
-
-                    <p class="card-text small text-muted mb-3">
-                      You successfuly avoided eating foods containing <strong>seed oil</strong>.
-                    </p>
-                    <a href="#!" class="btn btn-link btn-sm font-weight-bold pl-0" data-dismiss="alert" aria-label="Close">Dismiss</a>
-
-                  </div>
-                  <div class="col-auto">
-                    <a href="#!" data-dismiss="alert" aria-label="Close">
-                      <i class="fe fe-x h2 mb-0 text-dark"></i>
-                    </a>
-                  </div>
-                </div>
-              </a>
-            </div>
             <div class="card mb-0">
               <div class="header-body px-4">
                 <div class="row align-items-end mr-n4">
