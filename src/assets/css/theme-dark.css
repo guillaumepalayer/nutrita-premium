@@ -10715,6 +10715,4 @@ li:hover .circle {
   .mt-n10 {
     margin-top: 0; }
   .bg-cover.content-paint {
-    background-image: url(../../assets/img/covers/home-bg-mobile.jpg);
-    background-position: right -20px;
-    background-size: 130% auto; } }
+    background-image: url(../../assets/img/covers/home-bg-mobile.jpg); } }
