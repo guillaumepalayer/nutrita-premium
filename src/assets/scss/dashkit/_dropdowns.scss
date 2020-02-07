@@ -13,8 +13,9 @@
 
 .dropdown-toggle {
 
-  &::before, &::after {
-    width: auto; height: auto;
+  &::after {
+    width: auto;
+    height: auto;
     border: none !important;
     vertical-align: middle;
     font-family: 'Feather';
@@ -43,10 +44,11 @@
 
   &::before {
     content: '\e92f';
-  }
-
-  &::after {
-    display: none;
+    width: auto;
+    height: auto;
+    border: none !important;
+    vertical-align: middle;
+    font-family: 'Feather';
   }
 }
 
@@ -73,6 +75,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }

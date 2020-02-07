@@ -15,7 +15,50 @@
     <!-- MAIN CONTENT
     ================================================== -->
     <div class="main-content bg-dark py-6">
-      <div class="container mb-3">
+      <div class="container mb-4 mt-5">
+
+        <div class="row align-items-center justify-content-center mb-4">
+          <div class="col-12 col-lg-8">
+            <div class="row">
+              <div class="col">
+
+                <!-- Title -->
+                <h6 class="text-uppercase text-white text-center mb-2">
+                  Goal weight completeness
+                </h6>
+                <div class="row align-items-center mb-1">
+                  <div class="col-auto">
+
+                    <!-- Value -->
+                    <div class="small text-white mr-2">128kg</div>
+
+                  </div>
+                  <div class="col">
+
+                    <!-- Progress -->
+                    <div class="progress progress-sm" style="height: 12px;">
+                      <div class="progress-bar text-right text-dark" role="progressbar" style="width: 88%; background: linear-gradient(90deg, rgb(230, 55, 87), rgb(246, 195, 67), rgb(0, 217, 126));" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"><span class="mr-2 h6 mb-0">76 kg</span> </div>
+                    </div>
+
+                  </div>
+                  <div class="col-auto">
+
+                    <!-- Value -->
+                    <div class="small text-white mr-2">72kg</div>
+
+                  </div>
+                </div>
+                <a href="#" data-toggle="modal" data-target="#NewWeight">
+                  <h6 class="text-muted text-center mb-0 h5 font-weight-normal">
+                    <i class="fe fe-activity mr-1"></i>Next: log your weight
+                  </H6>
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="row">
           <div class="col">
             <!-- IDEA: UX research notification -->
@@ -41,7 +84,15 @@
                 </div>
               </div>
             </div>
-            <ul class="week nav-overflow justify-content-start justify-content-lg-center"></ul>
+            <div class="row justify-content-center align-items-center ">
+              <div class="col-1 col-lg-auto">
+                <a class="btn btn-sm btn-rounded-circle btn-light" href="#" data-toggle="modal" data-target="#modalCalendar"><i class="fe fe-calendar"></i></a>
+              </div>
+              <div class="col-11 col-lg-auto">
+                <ul class="week nav-overflow mr-n3"></ul>
+              </div>
+            </div>
+
           </div>
         </div> <!-- / .row -->
       </div>
@@ -51,7 +102,7 @@
         <div class="row">
           <div class="col-12 col-lg-2 d-none d-lg-flex">
             <nav class="nav flex-column">
-              <a class="btn btn-lg btn-success mb-4 btn-block" href="search-zero-state.html"><i class="fe fe-plus"></i> Add foods</a>
+              <a class="btn btn-lg btn-success mb-4 btn-block" href="search-zero-state.html"><i class="fe fe-plus"></i> Log your meals</a>
               <a class="nav-link pl-0 py-3 text-dark" href="dashboard-full.html">
                 <i class="fe fe-home h3 mr-2"></i>Home
               </a>
@@ -66,17 +117,17 @@
               </a>
             </nav>
           </div>
-          <div class="col-12 col-lg-8">
+          <div class="col-12 col-lg-8 px-lg-0">
             <div class="card mb-5">
               <div class="card-header">
                 <h4 class="card-header-title">
-                  Daily macros
+                  Macros • <span class="text-muted">Today</span>
                 </h4>
                 <ul class="nav nav-tabs nav-tabs-sm card-header-tabs justify-content-end" id="nav-tab" role="tablist">
-                  <li class="nav-item">
+                  <li class="nav-item mx-lg-3">
                     <a class="nav-link active" id="nav-daily-recap-tab" data-toggle="tab" href="#tab-daily-progress" role="tab" aria-controls="tab-daily-progress" aria-selected="true">Progress</a>
                   </li>
-                  <li class="nav-item">
+                  <li class="nav-item mx-lg-3">
                     <a class="nav-link" id="nav-daily-recap-tab" data-toggle="tab" href="#tab-daily-recap" role="tab" aria-controls="tab-daily-recap" aria-selected="false">Recap</a>
                   </li>
                 </ul>
@@ -185,17 +236,23 @@
                     <h6 class="header-pretitle text-center">Your recommended macros</h4>
                   </div>
                 </div>
-                <div class="row justify-content-center mb-3 mx-n4 mx-lg-0">
-                  <div class="col-auto col-lg-12 col-xl-auto mb-lg-3 mb-xl-0">
-                    <h5 class="m-0"><i class="chart-legend-indicator bg-green-light mr-2"></i>70%</h5>
-                    <p class="small text-muted mb-0">Fat • 000g</p>
+                <div class="row align-items-end justify-content-center mb-3 mx-n4 mx-lg-0 no-gutters">
+                  <div class="col-auto col-lg-12 col-xl-auto mb-lg-3 mb-xl-0 mr-3">
+                    <h5 class="m-0 mb-2"><i class="chart-legend-indicator bg-green-light mr-"></i>70%</h5>
+                    <p class="small text-muted mb-0 pt-1">Fat • 000g</p>
                   </div>
-                  <div class="col-auto col-lg-12 col-xl-auto mb-lg-3 mb-xl-0">
-                    <h5 class="m-0"><i class="chart-legend-indicator bg-orange-light mr-2"></i>25%</h5>
+                  <div class="col-auto col-lg-12 col-xl-auto mb-lg-3 mb-xl-0 mr-3">
+                    <h5 class="m-0 mr-2 d-inline-block"><i class="chart-legend-indicator bg-orange-light mr-2"></i>25%</h5>
+                    <a href="#" class="btn btn-sm btn-white" data-toggle="modal" data-target="#foodEquivalent">
+                        🥩 3
+                    </a>
                     <p class="small text-muted mb-0">Protein • 000g</p>
                   </div>
                   <div class="col-auto col-lg-12 col-xl-auto">
-                    <h5 class="m-0"><i class="chart-legend-indicator bg-red-light"></i>5%</h5>
+                    <h5 class="m-0 mr-2 d-inline-block"><i class="chart-legend-indicator bg-red-light"></i>5%</h5>
+                    <a href="#" class="btn btn-sm btn-white" data-toggle="modal" data-target="#foodEquivalent">
+                        🥑 3
+                    </a>
                     <p class="small text-muted mb-0">Carbs • 000g</p>
                   </div>
                 </div>
@@ -203,26 +260,6 @@
                   <div class="progress-bar bg-green-light" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                   <div class="progress-bar bg-orange-light" role="progressbar" style="width: 3%" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100"></div>
                   <div class="progress-bar bg-red-light" role="progressbar" style="width: 7%" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <div class="row no-gutters border-bottom">
-                  <a class="col-6 py-4 text-center" href="#" data-toggle="modal" data-target="#reportDetailsWeight">
-                    <!-- Heading -->
-                    <h6 class="text-uppercase text-muted">
-                      Insulin Index
-                    </h6>
-
-                    <!-- Value -->
-                    <h2 class="mb-0 text-dark">24%</h2> <span class="badge badge-soft-success">Good</span>
-                  </a>
-                  <a class="col-6 py-4 text-center border-left" href="#" data-toggle="modal" data-target="#reportDetailsWeight">
-                    <!-- Heading -->
-                    <h6 class="text-uppercase text-muted">
-                      Keto Score
-                    </h6>
-
-                    <!-- Value -->
-                    <h2 class="mb-0 text-dark">6/10</h2> <span class="badge badge-soft-success">Good</span>
-                  </a>
                 </div>
                 <div class="row no-gutters border-bottom">
                   <a class="col-6 py-4 text-center" href="#" data-toggle="modal" data-target="#reportDetailsWeight">
@@ -237,14 +274,14 @@
                   <a class="col-6 py-4 text-center border-left" href="#" data-toggle="modal" data-target="#reportDetailsWeight">
                     <!-- Heading -->
                     <h6 class="text-uppercase text-muted">
-                      Amino Acid Completness
+                      Keto Score
                     </h6>
 
                     <!-- Value -->
                     <h2 class="mb-0 text-dark">6/10</h2> <span class="badge badge-soft-success">Good</span>
                   </a>
                 </div>
-                <div class="row no-gutters border-bottom">
+                <div class="row no-gutters">
                   <a class="col-6 py-4 text-center" href="#" data-toggle="modal" data-target="#reportDetailsWeight">
                     <!-- Heading -->
                     <h6 class="text-uppercase text-muted">
@@ -252,7 +289,11 @@
                     </h6>
 
                     <!-- Value -->
-                    <h2 class="mb-0 text-dark">0.00 / 70 g</h2><span class="badge badge-soft-danger">-2.53%</span>
+                    <h2 class="mb-0 text-dark mb-2">0.00 / 70 g</h2>
+                    <!-- Heading -->
+                    <h6 class="text-uppercase text-muted mb-0">
+                      Net • 0.00 / 00 g
+                    </h6>
                   </a>
                   <a class="col-6 py-4 text-center border-left" href="#" data-toggle="modal" data-target="#reportDetailsWeight">
                     <!-- Heading -->
@@ -261,27 +302,7 @@
                     </h6>
 
                     <!-- Value -->
-                    <h2 class="mb-0 text-dark">0.00 / 140 g</h2><span class="badge badge-soft-success">+2.53%</span>
-                  </a>
-                </div>
-                <div class="row no-gutters">
-                  <a class="col-6 py-4 text-center" href="#" data-toggle="modal" data-target="#reportDetailsWeight">
-                    <!-- Heading -->
-                    <h6 class="text-uppercase text-muted">
-                      Fat
-                    </h6>
-
-                    <!-- Value -->
-                    <h2 class="mb-0 text-dark">0.00 / 140 g</h2><span class="badge badge-soft-danger">-2.53%</span>
-                  </a>
-                  <a class="col-6 py-4 text-center border-left" href="#" data-toggle="modal" data-target="#reportDetailsWeight">
-                    <!-- Heading -->
-                    <h6 class="text-uppercase text-muted">
-                      Weight
-                    </h6>
-
-                    <!-- Value -->
-                    <h2 class="mb-0 text-dark">74.0 kg</h2><span class="badge badge-soft-danger">-2.53%</span>
+                    <h2 class="mb-0 text-dark">0.00 / 140 g</h2>
                   </a>
                 </div>
               </div>
@@ -292,7 +313,403 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-12 col-lg-8">
+          <div class="col-12 col-lg-8 px-lg-0">
+            <h2 class="header-title text-dark mb-4">
+              Nutrients breakdown
+            </h2>
+            <div class="card mb-5">
+              <div class="card-body pb-2">
+                <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 pl-4 mx-n4">
+                  <li class="nav-item mx-lg-3">
+                    <a class="d-block" style="width: 88px" href="collection-foods.html">
+                      <div class="chart-container chart-appended">
+                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                          <path class="CircularProgressbar-trail" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                          <path class="CircularProgressbar-path" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                        </svg>
+                      </div>
+                      <div class="gauge-value-align-center">
+                        <p class="text-center text-muted">5% DV</p>
+                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                          Vitamin X
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item mx-lg-3">
+                    <a class="d-block" style="width: 88px" href="collection-foods.html">
+                      <div class="chart-container chart-appended">
+                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                          <path class="CircularProgressbar-trail" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                          <path class="CircularProgressbar-path" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                        </svg>
+                      </div>
+                      <div class="gauge-value-align-center">
+                        <p class="text-center text-muted">5% DV</p>
+                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                          Vitamin X
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item mx-lg-3">
+                    <a class="d-block" style="width: 88px" href="collection-foods.html">
+                      <div class="chart-container chart-appended">
+                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                          <path class="CircularProgressbar-trail" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                          <path class="CircularProgressbar-path" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                        </svg>
+                      </div>
+                      <div class="gauge-value-align-center">
+                        <p class="text-center text-muted">5% DV</p>
+                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                          Vitamin X
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item mx-lg-3">
+                    <a class="d-block" style="width: 88px" href="collection-foods.html">
+                      <div class="chart-container chart-appended">
+                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                          <path class="CircularProgressbar-trail" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                          <path class="CircularProgressbar-path" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                        </svg>
+                      </div>
+                      <div class="gauge-value-align-center">
+                        <p class="text-center text-muted">5% DV</p>
+                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                          Vitamin X
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item mx-lg-3">
+                    <a class="d-block" style="width: 88px" href="collection-foods.html">
+                      <div class="chart-container chart-appended">
+                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                          <path class="CircularProgressbar-trail" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                          <path class="CircularProgressbar-path" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                        </svg>
+                      </div>
+                      <div class="gauge-value-align-center">
+                        <p class="text-center text-muted">5% DV</p>
+                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                          Vitamin X
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item mx-lg-3">
+                    <a class="d-block" style="width: 88px" href="collection-foods.html">
+                      <div class="chart-container chart-appended">
+                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                          <path class="CircularProgressbar-trail" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                          <path class="CircularProgressbar-path" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                        </svg>
+                      </div>
+                      <div class="gauge-value-align-center">
+                        <p class="text-center text-muted">5% DV</p>
+                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                          Vitamin X
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item mx-lg-3">
+                    <a class="d-block" style="width: 88px" href="collection-foods.html">
+                      <div class="chart-container chart-appended">
+                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                          <path class="CircularProgressbar-trail" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                          <path class="CircularProgressbar-path" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                        </svg>
+                      </div>
+                      <div class="gauge-value-align-center">
+                        <p class="text-center text-muted">5% DV</p>
+                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                          Vitamin X
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item mx-lg-3">
+                    <a class="d-block" style="width: 88px" href="collection-foods.html">
+                      <div class="chart-container chart-appended">
+                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                          <path class="CircularProgressbar-trail" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                          <path class="CircularProgressbar-path" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                        </svg>
+                      </div>
+                      <div class="gauge-value-align-center">
+                        <p class="text-center text-muted">5% DV</p>
+                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                          Vitamin X
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item mx-lg-3 pr-4">
+                    <a class="d-block" style="width: 88px" href="collection-foods.html">
+                      <div class="chart-container chart-appended">
+                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                          <path class="CircularProgressbar-trail" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                          <path class="CircularProgressbar-path" d="
+                            M 50,50
+                            m 0,-47.5
+                            a 47.5,47.5 0 1 1 0,95
+                            a 47.5,47.5 0 1 1 0,-95
+                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                        </svg>
+                      </div>
+                      <div class="gauge-value-align-center">
+                        <p class="text-center text-muted">5% DV</p>
+                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                          Vitamin X
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 px-lg-0">
+            <div class="mb-4">
+              <a href="#">
+                <div class="row align-items-end">
+                  <div class="col">
+                    <h6 class="header-pretitle text-secondary">
+                      You're low in Zinc
+                    </h6>
+                    <h2 class="header-title text-dark">
+                      We recommend you to eat...
+                    </h2>
+                  </div>
+                  <div class="col-auto">
+                    <i class="fe fe-arrow-right text-dark"></i>
+                  </div>
+                </div> <!-- / .row -->
+              </a>
+            </div>
+            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-5 pl-3 mx-n3 mr-lg-0">
+              <li class="nav-item">
+                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                  <!-- Image -->
+                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
+                  <!-- Title -->
+                  <!-- IDEA: two lines max -->
+                  <h4 class="mb-2 text-truncate name text-dark">
+                    Oyster lorem ipsum dolor sit amete
+                  </h4>
+                  <p class="card-text small text-secondary mb-0">Zinc</p>
+                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                  <!-- Image -->
+                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
+                  <!-- Title -->
+                  <!-- IDEA: two lines max -->
+                  <h4 class="mb-2 text-truncate name text-dark">
+                    Oyster lorem ipsum dolor sit amete
+                  </h4>
+                  <p class="card-text small text-secondary mb-0">Zinc</p>
+                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                  <!-- Image -->
+                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
+                  <!-- Title -->
+                  <!-- IDEA: two lines max -->
+                  <h4 class="mb-2 text-truncate name text-dark">
+                    Oyster lorem ipsum dolor sit amete
+                  </h4>
+                  <p class="card-text small text-secondary mb-0">Zinc</p>
+                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                  <!-- Image -->
+                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
+                  <!-- Title -->
+                  <!-- IDEA: two lines max -->
+                  <h4 class="mb-2 text-truncate name text-dark">
+                    Oyster lorem ipsum dolor sit amete
+                  </h4>
+                  <p class="card-text small text-secondary mb-0">Zinc</p>
+                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                  <!-- Image -->
+                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
+                  <!-- Title -->
+                  <!-- IDEA: two lines max -->
+                  <h4 class="mb-2 text-truncate name text-dark">
+                    Oyster lorem ipsum dolor sit amete
+                  </h4>
+                  <p class="card-text small text-secondary mb-0">Zinc</p>
+                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                  <!-- Image -->
+                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
+                  <!-- Title -->
+                  <!-- IDEA: two lines max -->
+                  <h4 class="mb-2 text-truncate name text-dark">
+                    Oyster lorem ipsum dolor sit amete
+                  </h4>
+                  <p class="card-text small text-secondary mb-0">Zinc</p>
+                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                  <!-- Image -->
+                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
+                  <!-- Title -->
+                  <!-- IDEA: two lines max -->
+                  <h4 class="mb-2 text-truncate name text-dark">
+                    Oyster lorem ipsum dolor sit amete
+                  </h4>
+                  <p class="card-text small text-secondary mb-0">Zinc</p>
+                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                  <!-- Image -->
+                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
+                  <!-- Title -->
+                  <!-- IDEA: two lines max -->
+                  <h4 class="mb-2 text-truncate name text-dark">
+                    Oyster lorem ipsum dolor sit amete
+                  </h4>
+                  <p class="card-text small text-secondary mb-0">Zinc</p>
+                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                  <!-- Image -->
+                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
+                  <!-- Title -->
+                  <!-- IDEA: two lines max -->
+                  <h4 class="mb-2 text-truncate name text-dark">
+                    Oyster lorem ipsum dolor sit amete
+                  </h4>
+                  <p class="card-text small text-secondary mb-0">Zinc</p>
+                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
+                </a>
+              </li>
+              <li class="nav-item pr-3">
+                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                  <!-- Image -->
+                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
+                  <!-- Title -->
+                  <!-- IDEA: two lines max -->
+                  <h4 class="mb-2 text-truncate name text-dark">
+                    Oyster lorem ipsum dolor sit amete
+                  </h4>
+                  <p class="card-text small text-secondary mb-0">Zinc</p>
+                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
+                </a>
+              </li>
+            </ul>
             <div class="mb-4">
               <a href="#">
                 <div class="row align-items-end">
@@ -560,152 +977,6 @@
                 <div class="row align-items-end">
                   <div class="col">
                     <h2 class="header-title text-dark">
-                      Best sources of Zinc
-                    </h2>
-                  </div>
-                  <div class="col-auto">
-                    <i class="fe fe-arrow-right text-dark"></i>
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-            </div>
-            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-5 pl-3 mx-n3 mr-lg-0">
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item pr-3">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-            </ul>
-            <div class="mb-4">
-              <a href="#">
-                <div class="row align-items-end">
-                  <div class="col">
-                    <h2 class="header-title text-dark">
                       Lunch recipe suggestions
                     </h2>
                   </div>
@@ -960,152 +1231,6 @@
                       </div>
                     </div>
                   </div>
-                </a>
-              </li>
-            </ul>
-            <div class="mb-4">
-              <a href="#">
-                <div class="row align-items-end">
-                  <div class="col">
-                    <h2 class="header-title text-dark">
-                      Best sources of magnesium
-                    </h2>
-                  </div>
-                  <div class="col-auto">
-                    <i class="fe fe-arrow-right text-dark"></i>
-                  </div>
-                </div> <!-- / .row -->
-              </a>
-            </div>
-            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-5 pl-3 mx-n3 mr-lg-0">
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
-                </a>
-              </li>
-              <li class="nav-item pr-3">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
-                  <!-- Image -->
-                  <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
-                  <!-- Title -->
-                  <!-- IDEA: two lines max -->
-                  <h4 class="mb-2 text-truncate name text-dark">
-                    Oyster lorem ipsum dolor sit amete
-                  </h4>
-                  <p class="card-text small text-secondary mb-0">Zinc</p>
-                  <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
               </li>
             </ul>
@@ -1680,7 +1805,7 @@
       <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
         <a class="nav-link text-dark h5 py-0 text-center mb-0 px-1" href="dashboard-full.html"><i class="fe fe-home text-success d-block mb-2"></i>Home</a>
         <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="journal.html"><i class="fe fe-activity d-block mb-2"></i>Journal</a>
-        <a class="nav-link btn btn-lg btn-rounded-circle btn-success text-secondary text-center mb-0 mt-n4 font-weight-normal" href="search-zero-state.html"><i class="fe fe-plus d-block text-white"></i></a>
+        <a class="nav-link btn btn-rounded-circle btn-success text-secondary text-center mb-0 mt-n4 font-weight-normal" href="search-zero-state.html"><i class="fe fe-plus d-block text-white"></i></a>
         <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="profile.html"><i class="fe fe-user d-block mb-2"></i>Profile</a>
         <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="settings.html"><i class="fe fe-settings d-block mb-2"></i>Settings</a>
       </nav>

@@ -1,4 +1,4 @@
- LICENSE #
+# LICENSE #
 
 ### Theme License ###
 
@@ -9,7 +9,7 @@ Use of this theme is governed by the license terms of the Bootstrap Themes plat
 
 ### Font License ###
 
-Cerebri Sans is included with the Dashkit theme, though it is subject to a different license.
+Cerebri Sans is included with the Dashkit theme, though it is subject to a different license. 
 
 The license summary is "You, the purchaser of Dashkit, may use Cerebri Sans in the context of this theme to build and publish your own site, but cannot redistribute the font source". To read the entire license agreement, check it out here: https://www.dropbox.com/s/9a2u5naja7xlo90/AMP_Bootstrap_Font%20License_29062018-signed.pdf?dl=0
 

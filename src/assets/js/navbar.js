@@ -1,36 +1,40 @@
 //
-// Navbar ==================================
+// navbar.js
+// Theme module
 //
 
 'use strict';
 
-var Navbar = (function() {
+(function() {
 
   //
   // Variables
   //
 
-  var $nav = $('.navbar-nav, .navbar-nav .nav');
-  var $navCollapse = $('.navbar-nav .collapse');
-
+  var navbarToggle = document.querySelectorAll('.navbar-nav [data-toggle="collapse"]');
 
   //
-  // Methods
+  // Functions
   //
 
-  function accordion($this) {
-    $this.closest($nav).find($navCollapse).not($this).collapse('hide');
+  function toggleAccordion(el) {
+    var collapses = el.closest('.collapse').querySelectorAll('.collapse');
+
+    [].forEach.call(collapses, function(currentEl) {
+      if (currentEl !== el) {
+        $(currentEl).collapse('hide');
+      }
+    });
   }
-
 
   //
   // Events
   //
 
-  $navCollapse.on({
-    'show.bs.collapse': function() {
-      accordion( $(this) );
-    }
-  })
-  
+  [].forEach.call(navbarToggle, function(el) {
+    el.addEventListener('click', function() {
+      toggleAccordion(el);
+    });
+  });
+
 })();

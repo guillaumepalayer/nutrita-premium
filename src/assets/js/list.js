@@ -1,53 +1,49 @@
 //
-// List.js ==================================
+// list.js
+// Theme module
 //
 
 'use strict';
 
-var Lists = (function() {
+(function() {
 
   //
   // Variables
   //
 
-  var $lists = $('[data-toggle="lists"]');
-  var $listsSort = $('[data-sort]');
-
+  var toggle = document.querySelectorAll('[data-toggle="lists"]');
+  var toggleSort = document.querySelectorAll('[data-toggle="lists"] [data-sort]');
 
   //
-  // Methods
+  // Functions
   //
 
-  // Init
-  function init($list) {
-    new List($list.get(0), getOptions($list));
+  function init(el) {
+    var options = el.dataset.options ? JSON.parse(el.dataset.options) : {};
+
+    // Init
+    new List(el, options);
   }
-
-  // Get options
-  function getOptions($list) {
-    var options = {
-      valueNames: $list.data('lists-values'),
-      listClass: $list.data('lists-class') ? $list.data('lists-class') : 'list'
-    }
-
-    return options;
-  }
-
 
   //
   // Events
   //
 
-  // Init
-  if ($lists.length) {
-    $lists.each(function() {
-      init($(this));
-    });
-  }
+  if (typeof List !== 'undefined') {
 
-  // Sort
-  $listsSort.on('click', function() {
-    return false;
-  });
+    if (toggle) {
+      [].forEach.call(toggle, function(el) {
+        init(el);
+      });
+    }
+
+    if (toggleSort) {
+      [].forEach.call(toggleSort, function(el) {
+        el.addEventListener('click', function(e) {
+          e.preventDefault();
+        });
+      });
+    }
+  }
 
 })();

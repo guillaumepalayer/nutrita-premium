@@ -1,46 +1,53 @@
 //
-// Quill.js ==================================
+// quill.js
+// Theme module
 //
 
 'use strict';
 
-var Quill = (function() {
+(function() {
 
   //
   // Variables
   //
 
-  var $quill = $('[data-toggle="quill"]');
-
+  var toggle = document.querySelectorAll('[data-toggle="quill"]');
 
   //
-  // Methods
+  // Functions
   //
 
-  function init($this) {
+  function init(el) {
+    var elementOptions = el.dataset.options;
+    elementOptions = elementOptions ? JSON.parse(elementOptions) : {};
 
-    // Get placeholder
-    var placeholder = $this.data('quill-placeholder');
-
-    // Init editor
-    var quill = new Quill($this.get(0), {
+    var defaultOptions = {
       modules: {
-        toolbar: [['bold', 'italic'], ['link', 'blockquote', 'code', 'image'], [{'list': 'ordered'}, {'list': 'bullet'}]]
+        toolbar: [
+          ['bold', 'italic'],
+          ['link', 'blockquote', 'code', 'image'],
+          [{
+            'list': 'ordered'
+          }, {
+            'list': 'bullet'
+          }]
+        ]
       },
-      placeholder: placeholder,
       theme: 'snow'
-    });
+    };
 
+    var options = Object.assign(defaultOptions, elementOptions);
+
+    new Quill(el, options);
   }
-
 
   //
   // Events
   //
 
-  if ( $quill.length ) {
-    $quill.each(function() {
-      init( $(this) );
+  if (typeof Quill !== 'undefined' && toggle) {
+    [].forEach.call(toggle, function(el) {
+      init(el);
     });
   }
 

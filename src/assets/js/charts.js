@@ -1,24 +1,16 @@
 //
-// Charts global ==================================
+// charts.js
+// Theme module
 //
 
 'use strict';
 
-var ThemeCharts = (function() {
+(function() {
 
   //
   // Variables
   //
 
-  // Selectors
-
-  var $toggle = $('[data-toggle="chart"]');
-
-  // Config
-
-  var fonts = {
-    base: 'Cerebri Sans'
-  }
   var colors = {
     gray: {
       300: '#E3EBF6',
@@ -32,216 +24,215 @@ var ThemeCharts = (function() {
       300: '#A6C5F7',
       700: '#2C7BE5',
     },
-    bgGreenLight:'#47E6B1',
-    bgOrangeLight:'#FFE1C5',
-    bgRedLight:'#FDC2CC',
     black: '#12263F',
     white: '#FFFFFF',
     transparent: 'transparent',
   };
 
-  var colorScheme = ( getComputedStyle(document.body).backgroundColor == 'rgb(249, 251, 253)' ) ? 'light' : 'dark';
+  var fonts = {
+    base: 'Cerebri Sans'
+  };
 
+  var toggles = document.querySelectorAll('[data-toggle="chart"]');
+  var legends = document.querySelectorAll('[data-toggle="legend"]');
 
   //
-  // Methods
+  // Functions
   //
 
-  // Chart.js global options
-  function chartOptions() {
+  function globalOptions() {
 
-    // Options
-    var options = {
-      defaults: {
-        global: {
-          responsive: true,
-          maintainAspectRatio: false,
-          defaultColor: ( colorScheme == 'dark' ) ? colors.gray[700] : colors.gray[600],
-          defaultFontColor: ( colorScheme == 'dark' ) ? colors.gray[700] : colors.gray[600],
-          defaultFontFamily: fonts.base,
-          defaultFontSize: 12,
-          layout: {
-            padding: 0
-          },
-          legend: {
-            display: false,
-            position: 'bottom',
-            labels: {
-              usePointStyle: true,
-              padding: 16
-            }
-          },
-          elements: {
-            point: {
-              radius: 0,
-              backgroundColor: colors.primary[700]
-            },
-            line: {
-              tension: .4,
-              borderWidth: 3,
-              borderColor: colors.primary[700],
-              backgroundColor: colors.transparent,
-              borderCapStyle: 'rounded'
-            },
-            rectangle: {
-              backgroundColor: colors.primary[700]
-            },
-            arc: {
-              backgroundColor: colors.primary[700],
-              borderColor: ( colorScheme == 'dark' ) ? colors.gray[800] : colors.white,
-              borderWidth: 4
-            }
-          },
-          tooltips: {
-            enabled: false,
-            mode: 'index',
-            intersect: false,
-            custom: function(model) {
+    // Global
+    Chart.defaults.global.responsive = true;
+    Chart.defaults.global.maintainAspectRatio = false;
 
-              // Get tooltip
-              var $tooltip = $('#chart-tooltip');
+    // Default
+    Chart.defaults.global.defaultColor = colors.gray[600];
+    Chart.defaults.global.defaultFontColor = colors.gray[600];
+    Chart.defaults.global.defaultFontFamily = fonts.base;
+    Chart.defaults.global.defaultFontSize = 13;
 
-              // Create tooltip on first render
-              if (!$tooltip.length) {
-                $tooltip = $('<div id="chart-tooltip" class="popover bs-popover-top" role="tooltip"></div>');
+    // Layout
+    Chart.defaults.global.layout.padding = 0;
 
-                // Append to body
-                $('body').append($tooltip);
-              }
+    // Legend
+    Chart.defaults.global.legend.display = false;
+    Chart.defaults.global.legend.position = 'bottom';
+    Chart.defaults.global.legend.labels.usePointStyle = true;
+    Chart.defaults.global.legend.labels.padding = 16;
 
-              // Hide if no tooltip
-              if (model.opacity === 0) {
-                $tooltip.css('display', 'none');
-                return;
-              }
+    // Point
+    Chart.defaults.global.elements.point.radius = 0;
+    Chart.defaults.global.elements.point.backgroundColor = colors.primary[700];
 
-              function getBody(bodyItem) {
-                return bodyItem.lines;
-              }
+    // Line
+    Chart.defaults.global.elements.line.tension = .4;
+    Chart.defaults.global.elements.line.borderWidth = 3;
+    Chart.defaults.global.elements.line.borderColor = colors.primary[700];
+    Chart.defaults.global.elements.line.backgroundColor = colors.transparent;
+    Chart.defaults.global.elements.line.borderCapStyle = 'rounded';
 
-              // Fill with content
-              if (model.body) {
-                var titleLines = model.title || [];
-                var bodyLines = model.body.map(getBody);
-                var html = '';
+    // Rectangle
+    Chart.defaults.global.elements.rectangle.backgroundColor = colors.primary[700];
+    Chart.defaults.global.elements.rectangle.maxBarThickness = 10;
 
-                // Add arrow
-                html += '<div class="arrow"></div>';
+    // Arc
+    Chart.defaults.global.elements.arc.backgroundColor = colors.primary[700];
+    Chart.defaults.global.elements.arc.borderColor = colors.white;
+    Chart.defaults.global.elements.arc.borderWidth = 4;
+    Chart.defaults.global.elements.arc.hoverBorderColor = colors.white;
 
-                // Add header
-                titleLines.forEach(function(title) {
-                  html += '<h3 class="popover-header text-center">' + title + '</h3>';
-                });
+    // Tooltips
+    Chart.defaults.global.tooltips.enabled = false;
+    Chart.defaults.global.tooltips.mode = 'index';
+    Chart.defaults.global.tooltips.intersect = false;
+    Chart.defaults.global.tooltips.custom = function(model) {
+      var tooltip = document.getElementById('chart-tooltip');
+      var chartType = this._chart.config.type;
 
-                // Add body
-                bodyLines.forEach(function(body, i) {
-                  var colors = model.labelColors[i];
-                  var styles = 'background-color: ' + colors.backgroundColor;
-                  var indicator = '<span class="popover-body-indicator" style="' + styles + '"></span>';
-                  var align = (bodyLines.length > 1) ? 'justify-content-left' : 'justify-content-center';
-                  html += '<div class="popover-body d-flex align-items-center ' + align + '">' + indicator + body + '</div>';
-                });
+      // Create tooltip if doesn't exist
+      if (!tooltip) {
+        tooltip = document.createElement('div');
 
-                $tooltip.html(html);
-              }
+        tooltip.setAttribute('id', 'chart-tooltip');
+        tooltip.setAttribute('role', 'tooltip');
+        tooltip.classList.add('popover');
+        tooltip.classList.add('bs-popover-top');
 
-              // Get tooltip position
-              var $canvas = $(this._chart.canvas);
-
-              var canvasWidth = $canvas.outerWidth();
-              var canvasHeight = $canvas.outerHeight();
-
-              var canvasTop = $canvas.offset().top;
-              var canvasLeft = $canvas.offset().left;
-
-              var tooltipWidth = $tooltip.outerWidth();
-              var tooltipHeight = $tooltip.outerHeight();
-
-              var top = canvasTop + model.caretY - tooltipHeight - 16;
-              var left = canvasLeft + model.caretX - tooltipWidth / 2;
-
-              // Display tooltip
-              $tooltip.css({
-                'top': top + 'px',
-                'left':  left + 'px',
-                'display': 'block',
-              });
-
-            },
-            callbacks: {
-              label: function(item, data) {
-                var label = data.datasets[item.datasetIndex].label || '';
-                var yLabel = item.yLabel;
-                var content = '';
-
-                if (data.datasets.length > 1) {
-                  content += '<span class="popover-body-label mr-auto">' + label + '</span>';
-                }
-
-                content += '<span class="popover-body-value">' + yLabel + '</span>';
-                return content;
-              }
-            }
-          }
-        },
-        doughnut: {
-          cutoutPercentage: 92,
-          tooltips: {
-            callbacks: {
-              title: function(item, data) {
-                var title = data.labels[item[0].index];
-                return title;
-              },
-              label: function(item, data) {
-                var value = data.datasets[0].data[item.index];
-                var content = '';
-
-                content += '<span class="popover-body-value">' + value + '</span>';
-                return content;
-              }
-            }
-          },
-          legendCallback: function(chart) {
-            var data = chart.data;
-            var content = '';
-
-            data.labels.forEach(function(label, index) {
-              var bgColor = data.datasets[0].backgroundColor[index];
-
-              content += '<span class="chart-legend-item">';
-              content += '<i class="chart-legend-indicator" style="background-color: ' + bgColor + '"></i>';
-              content += label;
-              content += '</span>';
-            });
-
-            return content;
-          }
-        }
+        document.body.appendChild(tooltip);
       }
-    }
+
+      // Hide tooltip if not visible
+      if (model.opacity === 0) {
+        tooltip.style.visibility = 'hidden';
+
+        return;
+      }
+
+      if (model.body) {
+        var title = model.title || [];
+        var body = model.body.map(function(body) {
+          return body.lines;
+        });
+
+        // Add arrow
+        var content = '<div class="arrow"></div>';
+
+        // Add title
+        title.forEach(function(title) {
+          content += '<h3 class="popover-header text-center">' + title + '</h3>';
+        });
+
+        // Add content
+        body.forEach(function(body, i) {
+          var colors = model.labelColors[i];
+          var indicatorColor = (chartType === 'line' && colors.borderColor !== 'rgba(0,0,0,0.1)') ? colors.borderColor : colors.backgroundColor;
+          var indicator = '<span class="popover-body-indicator" style="background-color: ' + indicatorColor + '"></span>';
+          var justifyContent = (body.length > 1) ? 'justify-content-left' : 'justify-content-center';
+
+          content += '<div class="popover-body d-flex align-items-center ' + justifyContent + '">' + indicator + body + '</div>';
+        });
+
+        tooltip.innerHTML = content;
+      }
+
+      var canvas = this._chart.canvas;
+      var canvasRect = canvas.getBoundingClientRect();
+
+      var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      var scrollLeft = window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0;
+
+      var canvasTop = canvasRect.top + scrollTop;
+      var canvasLeft = canvasRect.left + scrollLeft;
+
+      var tooltipWidth = tooltip.offsetWidth;
+      var tooltipHeight = tooltip.offsetHeight;
+
+      var top = canvasTop + model.caretY - tooltipHeight - 16;
+      var left = canvasLeft + model.caretX - tooltipWidth / 2;
+
+      tooltip.style.top = top + 'px';
+      tooltip.style.left = left + 'px';
+      tooltip.style.visibility = 'visible';
+    };
+
+    Chart.defaults.global.tooltips.callbacks.label = function(item, data) {
+      var content = '';
+
+      var value = item.yLabel;
+      var dataset = data.datasets[item.datasetIndex]
+      var label = dataset.label;
+
+      var yAxisID = dataset.yAxisID ? dataset.yAxisID : 0;
+      var yAxes = this._chart.options.scales.yAxes;
+      var yAxis = yAxes[0];
+
+      if (yAxisID) {
+        var yAxis = yAxes.filter(function(item) {
+          return item.id == yAxisID;
+        })[0];
+      }
+
+      var callback = yAxis.ticks.callback;
+
+      var activeDatasets = data.datasets.filter(function(dataset) {
+        return !dataset.hidden;
+      });
+
+      if (activeDatasets.length > 1) {
+        content = '<span class="popover-body-label mr-auto">' + label + '</span>';
+      }
+
+      content += '<span class="popover-body-value">' + callback(value) + '</span>';
+
+      return content;
+    };
+
+    // Doughnut
+    Chart.defaults.doughnut.cutoutPercentage = 83;
+    Chart.defaults.doughnut.tooltips.callbacks.title = function(item, data) {
+      return data.labels[item[0].index];
+    };
+    Chart.defaults.doughnut.tooltips.callbacks.label = function(item, data) {
+      var value = data.datasets[0].data[item.index];
+      var callbacks = this._chart.options.tooltips.callbacks;
+      var afterLabel = callbacks.afterLabel() ? callbacks.afterLabel() : '';
+      var beforeLabel = callbacks.beforeLabel() ? callbacks.beforeLabel() : '';
+
+      return '<span class="popover-body-value">' + beforeLabel + value + afterLabel + '</span>';
+    };
+    Chart.defaults.doughnut.legendCallback = function(chart) {
+      var data = chart.data;
+      var content = '';
+
+      data.labels.forEach(function(label, index) {
+        var bgColor = data.datasets[0].backgroundColor[index];
+
+        content += '<span class="chart-legend-item">';
+        content += '<i class="chart-legend-indicator" style="background-color: ' + bgColor + '"></i>';
+        content += label;
+        content += '</span>';
+      });
+
+      return content;
+    };
 
     // yAxes
     Chart.scaleService.updateScaleDefaults('linear', {
       gridLines: {
         borderDash: [2],
         borderDashOffset: [2],
-        color: (colorScheme == 'dark') ? colors.gray[900] : colors.gray[300],
+        color: colors.gray[300],
         drawBorder: false,
         drawTicks: false,
-        lineWidth: 0,
-        zeroLineWidth: 0,
-        zeroLineColor: (colorScheme == 'dark') ? colors.gray[900] : colors.gray[300],
+        zeroLineColor: colors.gray[300],
         zeroLineBorderDash: [2],
         zeroLineBorderDashOffset: [2]
       },
       ticks: {
         beginAtZero: true,
         padding: 10,
-        callback: function(value) {
-          if ( !(value % 10) ) {
-            return value
-          }
-        }
+        stepSize: 10
       }
     });
 
@@ -254,158 +245,123 @@ var ThemeCharts = (function() {
       },
       ticks: {
         padding: 20
-      },
-      maxBarThickness: 10
+      }
+    });
+  }
+
+  function getChartInstance(chart) {
+    var chartInstance = undefined;
+
+    Chart.helpers.each(Chart.instances, function(instance) {
+      if (chart == instance.chart.canvas) {
+        chartInstance = instance;
+      }
     });
 
-    return options;
-
+    return chartInstance;
   }
 
-  // Parse global options
-  function parseOptions(parent, options) {
-    for (var item in options) {
-      if (typeof options[item] !== 'object') {
-        parent[item] = options[item];
-      } else {
-        parseOptions(parent[item], options[item]);
+  function toggleDataset(toggle) {
+    var id = toggle.dataset.target;
+    var action = toggle.dataset.action;
+    var index = parseInt(toggle.dataset.dataset);
+
+    var chart = document.querySelector(id);
+    var chartInstance = getChartInstance(chart);
+
+    // Action: Toggle
+    if (action === 'toggle') {
+      var datasets = chartInstance.data.datasets;
+
+      var activeDataset = datasets.filter(function(dataset) {
+        return !dataset.hidden;
+      })[0];
+
+      var backupDataset = datasets.filter(function(dataset) {
+        return dataset.order === 1000;
+      })[0];
+
+      // Backup active dataset
+      if (!backupDataset) {
+        backupDataset = {};
+
+        for (var prop in activeDataset) {
+          if (prop !== '_meta') {
+            backupDataset[prop] = activeDataset[prop];
+          }
+        }
+
+        backupDataset.order = 1000;
+        backupDataset.hidden = true;
+
+        // Push to the dataset list
+        datasets.push(backupDataset);
       }
-    }
-  }
 
-  // Push options
-  function pushOptions(parent, options) {
-    for (var item in options) {
-      if (Array.isArray(options[item])) {
-        options[item].forEach(function(data) {
-          parent[item].push(data);
-        });
-      } else {
-        pushOptions(parent[item], options[item]);
+      // Toggle dataset
+      var sourceDataset = (datasets[index] === activeDataset) ? backupDataset : datasets[index];
+
+      for (var prop in activeDataset) {
+        if (prop !== '_meta') {
+          activeDataset[prop] = sourceDataset[prop];
+        }
       }
-    }
-  }
-
-  // Pop options
-  function popOptions(parent, options) {
-    for (var item in options) {
-      if (Array.isArray(options[item])) {
-        options[item].forEach(function(data) {
-          parent[item].pop();
-        });
-      } else {
-        popOptions(parent[item], options[item]);
-      }
-    }
-  }
-
-  // Toggle options
-  function toggleOptions(elem) {
-    var options = elem.data('add');
-    var $target = $(elem.data('target'));
-    var $chart = $target.data('chart');
-
-    if (elem.is(':checked')) {
-
-      // Add options
-      pushOptions($chart, options);
 
       // Update chart
-      $chart.update();
-    } else {
-
-      // Remove options
-      popOptions($chart, options);
-
-      // Update chart
-      $chart.update();
+      chartInstance.update();
     }
-  }
 
-  // Update options
-  function updateOptions(elem) {
-    var options = elem.data('update');
-    var $target = $(elem.data('target'));
-    var $chart = $target.data('chart');
+    // Action: Add
+    if (action === 'add') {
+      var dataset = chartInstance.data.datasets[index];
+      var isHidden = dataset.hidden;
 
-    // Parse options
-    parseOptions($chart, options);
-
-    // Toggle ticks
-    toggleTicks(elem, $chart);
+      // Toggle dataset
+      dataset.hidden = !isHidden;
+    }
 
     // Update chart
-    $chart.update();
+    chartInstance.update();
   }
 
-  // Toggle ticks
-  function toggleTicks(elem, $chart) {
+  function toggleLegend(legend) {
+    var chart = getChartInstance(legend);
+    var content = chart.generateLegend();
 
-    if (elem.data('prefix') !== undefined || elem.data('prefix') !== undefined) {
-      var prefix = elem.data('prefix') ? elem.data('prefix') : '';
-      var suffix = elem.data('suffix') ? elem.data('suffix') : '';
+    var id = legend.dataset.target;
+    var container = document.querySelector(id);
 
-      // Update ticks
-      $chart.options.scales.yAxes[0].ticks.callback = function(value) {
-        if ( !(value % 10) ) {
-          return prefix + value + suffix;
-        }
-      }
-
-      // Update tooltips
-      $chart.options.tooltips.callbacks.label = function(item, data) {
-        var label = data.datasets[item.datasetIndex].label || '';
-        var yLabel = item.yLabel;
-        var content = '';
-
-        if (data.datasets.length > 1) {
-          content += '<span class="popover-body-label mr-auto">' + label + '</span>';
-        }
-
-        content += '<span class="popover-body-value">' + prefix + yLabel + suffix + '</span>';
-        return content;
-      }
-
-    }
+    container.innerHTML = content;
   }
-
 
   //
   // Events
   //
 
-  // Parse global options
-  if (window.Chart) {
-    parseOptions(Chart, chartOptions());
-  }
+  if (typeof Chart !== 'undefined') {
 
-  // Toggle options
-  $toggle.on({
-    'change': function() {
-      var $this = $(this);
+    // Global options
+    globalOptions();
 
-      if ($this.is('[data-add]')) {
-        toggleOptions($this);
-      }
-    },
-    'click': function() {
-      var $this = $(this);
+    // Toggle dataset
+    if (toggles) {
+      [].forEach.call(toggles, function(toggle) {
+        var event = toggle.dataset.trigger;
 
-      if ($this.is('[data-update]')) {
-        updateOptions($this);
-      }
+        toggle.addEventListener(event, function() {
+          toggleDataset(toggle);
+        });
+
+      });
     }
-  });
 
-
-  //
-  // Return
-  //
-
-  return {
-    colors: colors,
-    fonts: fonts,
-    colorScheme: colorScheme
-  };
-
+    // Toggle legend
+    if (legends) {
+      document.addEventListener('DOMContentLoaded', function() {
+        [].forEach.call(legends, function(legend) {
+          toggleLegend(legend);
+        });
+      });
+    }
+  }
 })();

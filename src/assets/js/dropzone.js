@@ -1,72 +1,66 @@
 //
-// Dropzone.js  ==================================
+// dropzone.js
+// Theme module
 //
 
 'use strict';
 
-var Dropzones = (function() {
+(function() {
 
   //
   // Variables
   //
 
-  var $dropzone = $('[data-toggle="dropzone"]');
-  var $dropzonePreview = $('.dz-preview');
+  var toggle = document.querySelectorAll('[data-toggle="dropzone"]');
 
   //
-  // Methods
+  // Functions
   //
-
-  function init($this) {
-    var multiple = ( $this.data('dropzone-multiple') !== undefined ) ? true : false;
-    var preview = $this.find($dropzonePreview);
-    var currentFile = undefined;
-
-    // Init options
-    var options = {
-      url: $this.data('dropzone-url'),
-      thumbnailWidth: null,
-      thumbnailHeight: null,
-      previewsContainer: preview.get(0),
-      previewTemplate: preview.html(),
-      maxFiles: ( !multiple ) ? 1: null,
-      acceptedFiles: ( !multiple ) ? 'image/*' : null,
-      init: function() {
-        this.on("addedfile", function(file) {
-          if ( !multiple && currentFile) {
-            this.removeFile(currentFile);
-          }
-          currentFile = file;
-        })
-      }
-    }
-
-    // Clear preview html
-    preview.html('');
-
-    // Init dropzone
-    $this.dropzone(options)
-  }
 
   function globalOptions() {
     Dropzone.autoDiscover = false;
+    Dropzone.thumbnailWidth = null;
+    Dropzone.thumbnailHeight = null;
   }
 
+  function init(el) {
+    var currentFile = undefined;
+
+    var elementOptions = el.dataset.options;
+    elementOptions = elementOptions ? JSON.parse(elementOptions) : {};
+
+    var defaultOptions = {
+      previewsContainer: el.querySelector('.dz-preview'),
+      previewTemplate: el.querySelector('.dz-preview').innerHTML,
+      init: function() {
+        this.on('addedfile', function(file) {
+          var maxFiles = elementOptions.maxFiles;
+          if (maxFiles == 1 && currentFile) {
+            this.removeFile(currentFile);
+          }
+          currentFile = file;
+        });
+      }
+    }
+    var options = Object.assign(defaultOptions, elementOptions);
+
+    // Clear preview
+    el.querySelector('.dz-preview').innerHTML = '';
+
+    // Init dropzone
+    new Dropzone(el, options);
+  }
 
   //
   // Events
   //
 
-  if( $dropzone.length ) {
-
-    // Set global options
+  if (typeof Dropzone !== 'undefined' && toggle) {
     globalOptions();
 
-    // Init dropzones
-    $dropzone.each(function() {
-      init( $(this) );
+    [].forEach.call(toggle, function(el) {
+      init(el);
     });
   }
-
 
 })();

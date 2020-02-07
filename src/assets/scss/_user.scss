@@ -55,16 +55,19 @@
   height: 128px
 }
 .bg-green-light{
+  background-color: #00d97e
+}
+.bg-mint{
   background-color: #47E6B1
 }
 .bg-green{
   background-color: #22C88A
 }
 .bg-orange-light{
-  background-color: #FFE1C5
+  background-color: #f6c343
 }
 .bg-red-light{
-  background-color: #FDC2CC
+  background-color: #e63757
 }
 .bg-pink-light{
   background-color: #f8bbd0
@@ -202,6 +205,13 @@
 .mt-n64{
   margin-top: -64px
 }
+.gauge-value-align-center{
+  margin-top:-5.7rem;
+  margin-bottom: 13px;
+}
+.week.nav-overflow > li:last-child{
+  padding-right: 16px
+}
 
 .content-paint{
   contain: paint;
@@ -279,5 +289,6 @@ li:hover .circle {
   }
   .bg-cover.content-paint{
     background-image: url(../../assets/img/covers/home-bg-mobile.jpg);
+    background-size: 140% auto;
   }
 }

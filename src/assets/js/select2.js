@@ -1,60 +1,60 @@
 //
-// Select2.js ==================================
+// select2.js
+// Theme module
 //
 
 'use strict';
 
-var Select2 = (function() {
+(function() {
 
   //
   // Variables
   //
 
-  var $select = $('[data-toggle="select"]');
-
+  var toggle = document.querySelectorAll('[data-toggle="select"]');
 
   //
-  // Methods
+  // Functions
   //
 
-  function init($this) {
-    var options = {
-      dropdownParent: $this.closest('.modal').length ? $this.closest('.modal') : $(document.body),
-      minimumResultsForSearch: $this.data('minimum-results-for-search'),
-      templateResult: formatAvatar
+  function init(el) {
+    var elementOptions = el.dataset.options ? JSON.parse(el.dataset.options) : {};
+
+    var defaultOptions = {
+      containerCssClass: el.getAttribute('class'),
+      dropdownCssClass: 'dropdown-menu show',
+      dropdownParent: el.closest('.modal') ? el.closest('.modal') : document.body,
+      templateResult: formatTemplate
     };
 
-    $this.select2(options);
+    var options = Object.assign(defaultOptions, elementOptions);
+
+    // Init
+    $(el).select2(options);
   }
 
-  function formatAvatar(avatar) {
-    if ( !avatar.id ) {
-      return avatar.text;
+  function formatTemplate(item) {
+
+    // Quit if there's no avatar to display
+    if (!item.id || !item.element || !item.element.dataset.avatarSrc) {
+      return item.text;
     }
 
-    var $option = $(avatar.element);
-    var optionAvatar = $option.data('avatar-src');
-    var output;
+    var avatar = item.element.dataset.avatarSrc;
+    var content = document.createElement('div');
 
-    if ( optionAvatar ) {
-      output = $('<span class="avatar avatar-xs mr-3"><img class="avatar-img rounded-circle" src="' + optionAvatar + '" alt="' + avatar.text + '"></span><span>' + avatar.text + '</span>');
-    } else {
-      output = avatar.text;
-    }
+    content.innerHTML = '<span class="avatar avatar-xs mr-3"><img class="avatar-img rounded-circle" src="' + avatar + '" alt="' + item.text + '"></span><span>' + item.text + '</span>';
 
-    return output;
+    return content;
   }
-
 
   //
   // Events
   //
 
-  if ( $select.length ) {
-
-    // Init selects
-    $select.each(function() {
-      init( $(this) );
+  if (jQuery().select2 && toggle) {
+    [].forEach.call(toggle, function(el) {
+      init(el);
     });
   }
 
