@@ -112,10 +112,10 @@
           </div>
           <div class="modal-body pt-2 pb-6">
             <h2 class="header-title text-dark">
-              Your 142g protein target is like eating...
+              Your 142g protein daily target is like eating...
             </h2>
             <ul class="list-group list-group-lg list-group-flush list mt-0 mb-0 mr-n3 ml-n3">
-              <a> 
+              <a>
                 <li class="list-group-item px-0 pb-0 border-0 pl-3">
                   <div class="row align-items-start">
                     <div class="col-auto">
@@ -5620,8 +5620,8 @@
                   <div class="col">
 
                     <!-- Progress -->
-                    <div class="progress progress-sm" style="height: 12px;">
-                      <div class="progress-bar text-right text-dark" role="progressbar" style="width: 88%; background: linear-gradient(90deg, rgb(230, 55, 87), rgb(246, 195, 67), rgb(0, 217, 126));" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"><span class="mr-2 h6 mb-0">76 kg</span> </div>
+                    <div class="progress progress-sm" style="height: 12px;background-color: rgba(255, 255, 255, 0.5);">
+                      <div class="progress-bar text-right text-dark bg-white" role="progressbar" style="width: 88%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"><span class="mr-2 h6 mb-0">76 kg</span> </div>
                     </div>
 
                   </div>
@@ -5828,14 +5828,14 @@
                   <div class="col-auto col-lg-12 col-xl-auto mb-lg-3 mb-xl-0 mr-3">
                     <h5 class="m-0 mr-2 d-inline-block"><i class="chart-legend-indicator bg-orange-light mr-2"></i>25%</h5>
                     <a href="#" class="btn btn-sm btn-white" data-toggle="modal" data-target="#foodEquivalent">
-                        🥩 3
+                        🥩
                     </a>
                     <p class="small text-muted mb-0">Protein • 000g</p>
                   </div>
                   <div class="col-auto col-lg-12 col-xl-auto">
                     <h5 class="m-0 mr-2 d-inline-block"><i class="chart-legend-indicator bg-red-light"></i>5%</h5>
                     <a href="#" class="btn btn-sm btn-white" data-toggle="modal" data-target="#foodEquivalent">
-                        🥑 3
+                        🥑
                     </a>
                     <p class="small text-muted mb-0">Carbs • 000g</p>
                   </div>
@@ -5901,259 +5901,385 @@
             <h2 class="header-title text-dark mb-4">
               Nutrients breakdown
             </h2>
-            <div class="card mb-5">
-              <div class="card-body pb-2">
-                <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 pl-4 mx-n4">
-                  <li class="nav-item mx-lg-3">
-                    <a class="d-block" style="width: 88px" href="collection-foods.html">
-                      <div class="chart-container chart-appended">
-                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
-                          <path class="CircularProgressbar-trail" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
-                          <path class="CircularProgressbar-path" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
-                        </svg>
+            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-5 pl-3 mx-n3 mr-lg-0">
+              <li class="nav-item">
+                <a class="card" style="width: 128px" href="collection-foods.html">
+                  <div class="card-body pb-3">
+                    <div class="chart-container chart-appended">
+                      <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                        <path class="CircularProgressbar-trail" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                        <path class="CircularProgressbar-path" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                      </svg>
+                    </div>
+                    <div class="gauge-value-align-center">
+                      <p class="text-center text-muted">5% DV</p>
+                      <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                        Vitamin X
                       </div>
-                      <div class="gauge-value-align-center">
-                        <p class="text-center text-muted">5% DV</p>
-                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
-                          Vitamin X
-                        </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="card" style="width: 128px" href="collection-foods.html">
+                  <div class="card-body pb-3">
+                    <div class="chart-container chart-appended">
+                      <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                        <path class="CircularProgressbar-trail" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                        <path class="CircularProgressbar-path" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                      </svg>
+                    </div>
+                    <div class="gauge-value-align-center">
+                      <p class="text-center text-muted">5% DV</p>
+                      <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                        Vitamin X
                       </div>
-                    </a>
-                  </li>
-                  <li class="nav-item mx-lg-3">
-                    <a class="d-block" style="width: 88px" href="collection-foods.html">
-                      <div class="chart-container chart-appended">
-                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
-                          <path class="CircularProgressbar-trail" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
-                          <path class="CircularProgressbar-path" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
-                        </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="card" style="width: 128px" href="collection-foods.html">
+                  <div class="card-body pb-3">
+                    <div class="chart-container chart-appended">
+                      <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                        <path class="CircularProgressbar-trail" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                        <path class="CircularProgressbar-path" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                      </svg>
+                    </div>
+                    <div class="gauge-value-align-center">
+                      <p class="text-center text-muted">5% DV</p>
+                      <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                        Vitamin X
                       </div>
-                      <div class="gauge-value-align-center">
-                        <p class="text-center text-muted">5% DV</p>
-                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
-                          Vitamin X
-                        </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="card" style="width: 128px" href="collection-foods.html">
+                  <div class="card-body pb-3">
+                    <div class="chart-container chart-appended">
+                      <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                        <path class="CircularProgressbar-trail" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                        <path class="CircularProgressbar-path" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                      </svg>
+                    </div>
+                    <div class="gauge-value-align-center">
+                      <p class="text-center text-muted">5% DV</p>
+                      <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                        Vitamin X
                       </div>
-                    </a>
-                  </li>
-                  <li class="nav-item mx-lg-3">
-                    <a class="d-block" style="width: 88px" href="collection-foods.html">
-                      <div class="chart-container chart-appended">
-                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
-                          <path class="CircularProgressbar-trail" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
-                          <path class="CircularProgressbar-path" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
-                        </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="card" style="width: 128px" href="collection-foods.html">
+                  <div class="card-body pb-3">
+                    <div class="chart-container chart-appended">
+                      <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                        <path class="CircularProgressbar-trail" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                        <path class="CircularProgressbar-path" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                      </svg>
+                    </div>
+                    <div class="gauge-value-align-center">
+                      <p class="text-center text-muted">5% DV</p>
+                      <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                        Vitamin X
                       </div>
-                      <div class="gauge-value-align-center">
-                        <p class="text-center text-muted">5% DV</p>
-                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
-                          Vitamin X
-                        </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="card" style="width: 128px" href="collection-foods.html">
+                  <div class="card-body pb-3">
+                    <div class="chart-container chart-appended">
+                      <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                        <path class="CircularProgressbar-trail" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                        <path class="CircularProgressbar-path" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                      </svg>
+                    </div>
+                    <div class="gauge-value-align-center">
+                      <p class="text-center text-muted">5% DV</p>
+                      <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                        Vitamin X
                       </div>
-                    </a>
-                  </li>
-                  <li class="nav-item mx-lg-3">
-                    <a class="d-block" style="width: 88px" href="collection-foods.html">
-                      <div class="chart-container chart-appended">
-                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
-                          <path class="CircularProgressbar-trail" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
-                          <path class="CircularProgressbar-path" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
-                        </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="card" style="width: 128px" href="collection-foods.html">
+                  <div class="card-body pb-3">
+                    <div class="chart-container chart-appended">
+                      <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                        <path class="CircularProgressbar-trail" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                        <path class="CircularProgressbar-path" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                      </svg>
+                    </div>
+                    <div class="gauge-value-align-center">
+                      <p class="text-center text-muted">5% DV</p>
+                      <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                        Vitamin X
                       </div>
-                      <div class="gauge-value-align-center">
-                        <p class="text-center text-muted">5% DV</p>
-                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
-                          Vitamin X
-                        </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="card" style="width: 128px" href="collection-foods.html">
+                  <div class="card-body pb-3">
+                    <div class="chart-container chart-appended">
+                      <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                        <path class="CircularProgressbar-trail" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                        <path class="CircularProgressbar-path" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                      </svg>
+                    </div>
+                    <div class="gauge-value-align-center">
+                      <p class="text-center text-muted">5% DV</p>
+                      <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                        Vitamin X
                       </div>
-                    </a>
-                  </li>
-                  <li class="nav-item mx-lg-3">
-                    <a class="d-block" style="width: 88px" href="collection-foods.html">
-                      <div class="chart-container chart-appended">
-                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
-                          <path class="CircularProgressbar-trail" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
-                          <path class="CircularProgressbar-path" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
-                        </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="card" style="width: 128px" href="collection-foods.html">
+                  <div class="card-body pb-3">
+                    <div class="chart-container chart-appended">
+                      <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                        <path class="CircularProgressbar-trail" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                        <path class="CircularProgressbar-path" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                      </svg>
+                    </div>
+                    <div class="gauge-value-align-center">
+                      <p class="text-center text-muted">5% DV</p>
+                      <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                        Vitamin X
                       </div>
-                      <div class="gauge-value-align-center">
-                        <p class="text-center text-muted">5% DV</p>
-                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
-                          Vitamin X
-                        </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="card" style="width: 128px" href="collection-foods.html">
+                  <div class="card-body pb-3">
+                    <div class="chart-container chart-appended">
+                      <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                        <path class="CircularProgressbar-trail" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                        <path class="CircularProgressbar-path" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                      </svg>
+                    </div>
+                    <div class="gauge-value-align-center">
+                      <p class="text-center text-muted">5% DV</p>
+                      <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                        Vitamin X
                       </div>
-                    </a>
-                  </li>
-                  <li class="nav-item mx-lg-3">
-                    <a class="d-block" style="width: 88px" href="collection-foods.html">
-                      <div class="chart-container chart-appended">
-                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
-                          <path class="CircularProgressbar-trail" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
-                          <path class="CircularProgressbar-path" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
-                        </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="card" style="width: 128px" href="collection-foods.html">
+                  <div class="card-body pb-3">
+                    <div class="chart-container chart-appended">
+                      <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                        <path class="CircularProgressbar-trail" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                        <path class="CircularProgressbar-path" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                      </svg>
+                    </div>
+                    <div class="gauge-value-align-center">
+                      <p class="text-center text-muted">5% DV</p>
+                      <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                        Vitamin X
                       </div>
-                      <div class="gauge-value-align-center">
-                        <p class="text-center text-muted">5% DV</p>
-                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
-                          Vitamin X
-                        </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="card" style="width: 128px" href="collection-foods.html">
+                  <div class="card-body pb-3">
+                    <div class="chart-container chart-appended">
+                      <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                        <path class="CircularProgressbar-trail" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                        <path class="CircularProgressbar-path" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                      </svg>
+                    </div>
+                    <div class="gauge-value-align-center">
+                      <p class="text-center text-muted">5% DV</p>
+                      <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                        Vitamin X
                       </div>
-                    </a>
-                  </li>
-                  <li class="nav-item mx-lg-3">
-                    <a class="d-block" style="width: 88px" href="collection-foods.html">
-                      <div class="chart-container chart-appended">
-                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
-                          <path class="CircularProgressbar-trail" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
-                          <path class="CircularProgressbar-path" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
-                        </svg>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item pr-4">
+                <a class="card" style="width: 128px" href="collection-foods.html">
+                  <div class="card-body pb-3">
+                    <div class="chart-container chart-appended">
+                      <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
+                        <path class="CircularProgressbar-trail" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
+                        <path class="CircularProgressbar-path" d="
+                          M 50,50
+                          m 0,-47.5
+                          a 47.5,47.5 0 1 1 0,95
+                          a 47.5,47.5 0 1 1 0,-95
+                        " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
+                      </svg>
+                    </div>
+                    <div class="gauge-value-align-center">
+                      <p class="text-center text-muted">5% DV</p>
+                      <div id="insulineChartLegend" class="text-dark text-center pt-4">
+                        Vitamin X
                       </div>
-                      <div class="gauge-value-align-center">
-                        <p class="text-center text-muted">5% DV</p>
-                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
-                          Vitamin X
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="nav-item mx-lg-3">
-                    <a class="d-block" style="width: 88px" href="collection-foods.html">
-                      <div class="chart-container chart-appended">
-                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
-                          <path class="CircularProgressbar-trail" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
-                          <path class="CircularProgressbar-path" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
-                        </svg>
-                      </div>
-                      <div class="gauge-value-align-center">
-                        <p class="text-center text-muted">5% DV</p>
-                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
-                          Vitamin X
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="nav-item mx-lg-3 pr-4">
-                    <a class="d-block" style="width: 88px" href="collection-foods.html">
-                      <div class="chart-container chart-appended">
-                        <svg class="CircularProgressbar " viewBox="0 0 100 100" style="width: 100%;">
-                          <path class="CircularProgressbar-trail" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(227, 235, 246);"></path>
-                          <path class="CircularProgressbar-path" d="
-                            M 50,50
-                            m 0,-47.5
-                            a 47.5,47.5 0 1 1 0,95
-                            a 47.5,47.5 0 1 1 0,-95
-                          " stroke-width="5" fill-opacity="0" style="stroke: rgb(44, 123, 229); stroke-dasharray: 298.451px, 298.451px; stroke-dashoffset: 283.529px;"></path>
-                        </svg>
-                      </div>
-                      <div class="gauge-value-align-center">
-                        <p class="text-center text-muted">5% DV</p>
-                        <div id="insulineChartLegend" class="text-dark text-center pt-4">
-                          Vitamin X
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="row justify-content-center">
           <div class="col-12 col-lg-8 px-lg-0">
             <div class="mb-4">
-              <a href="#">
+              <a href="collection-foods.html">
                 <div class="row align-items-end">
                   <div class="col">
                     <h6 class="header-pretitle text-secondary">
-                      You're low in Zinc
+                      Recommendation
                     </h6>
                     <h2 class="header-title text-dark">
-                      We recommend you to eat...
+                      You're low in Zinc
                     </h2>
                   </div>
                   <div class="col-auto">
@@ -6172,6 +6298,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -6185,6 +6312,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -6198,6 +6326,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -6211,6 +6340,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -6224,6 +6354,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -6237,6 +6368,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -6250,6 +6382,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -6263,6 +6396,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -6276,6 +6410,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -6289,13 +6424,14 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
               </li>
             </ul>
             <div class="mb-4">
-              <a href="#">
+              <a href="collection-recipes.html">
                 <div class="row align-items-end">
                   <div class="col">
                     <h2 class="header-title text-dark">
@@ -6325,6 +6461,92 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+                    <div class="card-footer border-top-0 pt-0">
+                      <div class="row">
+                        <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 pl-4 mx-n3 mr-lg-0 ">
+                          <li class="nav-item">
+                            <p class="card-text small text-secondary mb-0">Nutrient&nbsp;density</p>
+                            <div class="card-text small text-secondary mr-2 d-inline-flex">9/10 <span class="badge badge-soft-success ml-2">Good</span></div>
+                          </li>
+                          <li class="nav-item">
+                            <p class="card-text small text-secondary mb-0">Keto&nbsp;score</p>
+                            <div class="card-text small text-secondary mr-2 d-inline-flex">9/10 <span class="badge badge-soft-success ml-2">Good</span></div>
+                          </li>
+                          <li class="nav-item">
+                            <p class="card-text small text-secondary mb-0">Insulin&nbsp;index</p>
+                            <div class="card-text small text-secondary mr-4 d-inline-flex">9/10 <span class="badge badge-soft-success ml-2">Good</span></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a data-toggle="modal" href="#modalRecipe">
+                  <div class="card mb-0" style="width: 256px">
+
+                    <!-- Image -->
+                    <img src="https://www.ditchthecarbs.com/wp-content/uploads/2014/06/rsz_low_carb_zucchini_and_bacon_slice_9.jpg" alt="..." class="card-img-top">
+
+                    <!-- Body -->
+                    <div class="card-body pb-2">
+                      <div class="row align-items-center">
+                        <div class="col">
+
+                          <!-- Title -->
+                          <h4 class="mb-0 name text-dark">
+                            Recipe's title on maximum two lines...
+                          </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
+                        </div>
+                      </div> <!-- / .row -->
+                    </div>
+                    <div class="card-footer border-top-0 pt-0">
+                      <div class="row">
+                        <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 pl-4 mx-n3 mr-lg-0 ">
+                          <li class="nav-item">
+                            <p class="card-text small text-secondary mb-0">Nutrient&nbsp;density</p>
+                            <div class="card-text small text-secondary mr-2 d-inline-flex">9/10 <span class="badge badge-soft-success ml-2">Good</span></div>
+                          </li>
+                          <li class="nav-item">
+                            <p class="card-text small text-secondary mb-0">Keto&nbsp;score</p>
+                            <div class="card-text small text-secondary mr-2 d-inline-flex">9/10 <span class="badge badge-soft-success ml-2">Good</span></div>
+                          </li>
+                          <li class="nav-item">
+                            <p class="card-text small text-secondary mb-0">Insulin&nbsp;index</p>
+                            <div class="card-text small text-secondary mr-4 d-inline-flex">9/10 <span class="badge badge-soft-success ml-2">Good</span></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a data-toggle="modal" href="#modalRecipe">
+                  <div class="card mb-0" style="width: 256px">
+
+                    <!-- Image -->
+                    <img src="https://www.ditchthecarbs.com/wp-content/uploads/2014/06/rsz_low_carb_zucchini_and_bacon_slice_9.jpg" alt="..." class="card-img-top">
+
+                    <!-- Body -->
+                    <div class="card-body pb-2">
+                      <div class="row align-items-center">
+                        <div class="col">
+
+                          <!-- Title -->
+                          <h4 class="mb-0 name text-dark">
+                            Recipe's title on maximum two lines...
+                          </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
 
                         </div>
                       </div> <!-- / .row -->
@@ -6366,7 +6588,8 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
-
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
                         </div>
                       </div> <!-- / .row -->
                     </div>
@@ -6407,88 +6630,8 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
-
-                        </div>
-                      </div> <!-- / .row -->
-                    </div>
-                    <div class="card-footer border-top-0 pt-0">
-                      <div class="row">
-                        <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 pl-4 mx-n3 mr-lg-0 ">
-                          <li class="nav-item">
-                            <p class="card-text small text-secondary mb-0">Nutrient&nbsp;density</p>
-                            <div class="card-text small text-secondary mr-2 d-inline-flex">9/10 <span class="badge badge-soft-success ml-2">Good</span></div>
-                          </li>
-                          <li class="nav-item">
-                            <p class="card-text small text-secondary mb-0">Keto&nbsp;score</p>
-                            <div class="card-text small text-secondary mr-2 d-inline-flex">9/10 <span class="badge badge-soft-success ml-2">Good</span></div>
-                          </li>
-                          <li class="nav-item">
-                            <p class="card-text small text-secondary mb-0">Insulin&nbsp;index</p>
-                            <div class="card-text small text-secondary mr-4 d-inline-flex">9/10 <span class="badge badge-soft-success ml-2">Good</span></div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a data-toggle="modal" href="#modalRecipe">
-                  <div class="card mb-0" style="width: 256px">
-
-                    <!-- Image -->
-                    <img src="https://www.ditchthecarbs.com/wp-content/uploads/2014/06/rsz_low_carb_zucchini_and_bacon_slice_9.jpg" alt="..." class="card-img-top">
-
-                    <!-- Body -->
-                    <div class="card-body pb-2">
-                      <div class="row align-items-center">
-                        <div class="col">
-
-                          <!-- Title -->
-                          <h4 class="mb-0 name text-dark">
-                            Recipe's title on maximum two lines...
-                          </h4>
-
-                        </div>
-                      </div> <!-- / .row -->
-                    </div>
-                    <div class="card-footer border-top-0 pt-0">
-                      <div class="row">
-                        <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 pl-4 mx-n3 mr-lg-0 ">
-                          <li class="nav-item">
-                            <p class="card-text small text-secondary mb-0">Nutrient&nbsp;density</p>
-                            <div class="card-text small text-secondary mr-2 d-inline-flex">9/10 <span class="badge badge-soft-success ml-2">Good</span></div>
-                          </li>
-                          <li class="nav-item">
-                            <p class="card-text small text-secondary mb-0">Keto&nbsp;score</p>
-                            <div class="card-text small text-secondary mr-2 d-inline-flex">9/10 <span class="badge badge-soft-success ml-2">Good</span></div>
-                          </li>
-                          <li class="nav-item">
-                            <p class="card-text small text-secondary mb-0">Insulin&nbsp;index</p>
-                            <div class="card-text small text-secondary mr-4 d-inline-flex">9/10 <span class="badge badge-soft-success ml-2">Good</span></div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a data-toggle="modal" href="#modalRecipe">
-                  <div class="card mb-0" style="width: 256px">
-
-                    <!-- Image -->
-                    <img src="https://www.ditchthecarbs.com/wp-content/uploads/2014/06/rsz_low_carb_zucchini_and_bacon_slice_9.jpg" alt="..." class="card-img-top">
-
-                    <!-- Body -->
-                    <div class="card-body pb-2">
-                      <div class="row align-items-center">
-                        <div class="col">
-
-                          <!-- Title -->
-                          <h4 class="mb-0 name text-dark">
-                            Recipe's title on maximum two lines...
-                          </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
 
                         </div>
                       </div> <!-- / .row -->
@@ -6530,6 +6673,8 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
 
                         </div>
                       </div> <!-- / .row -->
@@ -6587,6 +6732,8 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
 
                         </div>
                       </div> <!-- / .row -->
@@ -6628,6 +6775,8 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
 
                         </div>
                       </div> <!-- / .row -->
@@ -6669,6 +6818,8 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
 
                         </div>
                       </div> <!-- / .row -->
@@ -6710,6 +6861,8 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
 
                         </div>
                       </div> <!-- / .row -->
@@ -6751,6 +6904,8 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
 
                         </div>
                       </div> <!-- / .row -->
@@ -6792,6 +6947,8 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
 
                         </div>
                       </div> <!-- / .row -->
@@ -6849,6 +7006,8 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
 
                         </div>
                       </div> <!-- / .row -->
@@ -6890,6 +7049,8 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
 
                         </div>
                       </div> <!-- / .row -->
@@ -6931,6 +7092,8 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
 
                         </div>
                       </div> <!-- / .row -->
@@ -6972,6 +7135,8 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
 
                         </div>
                       </div> <!-- / .row -->
@@ -7013,6 +7178,8 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
 
                         </div>
                       </div> <!-- / .row -->
@@ -7054,6 +7221,8 @@
                           <h4 class="mb-0 name text-dark">
                             Recipe's title on maximum two lines...
                           </h4>
+                          <h6 class="text-uppercase text-muted text-truncate my-2 pr-2">ripe bananas, eggs - medium, coconut cream, granulated sweetener , desiccated/shredded coconut, baking powder, coconut flour, cinnamon</h6>
+                          <h6 class="text-uppercase text-muted my-2 pr-2 align-items-center d-flex">3.6 g carbs (3.6 NET)</h6>
 
                         </div>
                       </div> <!-- / .row -->
@@ -7104,6 +7273,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -7117,6 +7287,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -7130,6 +7301,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -7143,6 +7315,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -7156,6 +7329,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -7169,6 +7343,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -7182,6 +7357,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -7195,6 +7371,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -7208,6 +7385,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -7221,6 +7399,7 @@
                   <h4 class="mb-2 text-truncate name text-dark">
                     Oyster lorem ipsum dolor sit amete
                   </h4>
+                  <h6 class="text-uppercase text-muted my-2">1.9 x cup. Chopped</h6>
                   <p class="card-text small text-secondary mb-0">Zinc</p>
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV</div>
                 </a>
@@ -7387,7 +7566,7 @@
       </div><!-- / .fixed bottom -->
 
       <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
-        <a class="nav-link text-dark h5 py-0 text-center mb-0 px-1" href="dashboard-full.html"><i class="fe fe-home text-success d-block mb-2"></i>Home</a>
+        <a class="nav-link text-dark h5 py-0 text-center mb-0 px-1" href="dashboard-full_2.html"><i class="fe fe-home text-success d-block mb-2"></i>Home</a>
         <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="journal.html"><i class="fe fe-activity d-block mb-2"></i>Journal</a>
         <a class="nav-link btn btn-rounded-circle btn-success text-secondary text-center mb-0 mt-n4 font-weight-normal" href="search-zero-state.html"><i class="fe fe-plus d-block text-white"></i></a>
         <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="profile.html"><i class="fe fe-user d-block mb-2"></i>Profile</a>
