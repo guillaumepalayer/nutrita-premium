@@ -112,7 +112,7 @@
           </div>
           <div class="modal-body pt-2 pb-6">
             <h2>
-              What is your ideal weight that you want to reach?
+              What is your current and target weight you want to reach?
             </h2>
             <div class="row align-items-center mb-4">
               <div class="col small text-muted">
@@ -121,8 +121,16 @@
             </div>
             <div class="form-row">
               <div class="form-group col">
+                <label for="currentWeight">Current weight</label>
+                <div class="input-group input-group-lg mb-4">
+                  <input id="currentWeight" type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Weight">
+                  <div class="input-group-append">
+                    <span class="input-group-text rounded-right border-left-0" id="basic-addon3">Kg</span>
+                  </div>
+                </div>
+                <label for="targetWeight">Target weight</label>
                 <div class="input-group input-group-lg">
-                  <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Weight">
+                  <input id="targetWeight" type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Weight">
                   <div class="input-group-append">
                     <span class="input-group-text rounded-right border-left-0" id="basic-addon3">Kg</span>
                   </div>
@@ -4674,23 +4682,12 @@
                   <input type="text" class="form-control form-control-lg" placeholder="MM/DD/YYYY" data-mask="00/00/0000" id="birthday">
                 </div>
               </div>
-              <div class="form-row mb-4">
-                <div class="form-group col-6 mb-0">
-                  <label for="weight">Weight</label>
-                  <div class="input-group input-group-lg">
-                    <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Weight" id="weight">
-                    <div class="input-group-append">
-                      <span class="input-group-text rounded-right border-left-0" id="basic-addon3">Kg</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group col-6 mb-0">
-                  <label for="height">Height</label>
-                  <div class="input-group input-group-lg">
-                    <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Height" id="height">
-                    <div class="input-group-append">
-                      <span class="input-group-text rounded-right border-left-0" id="basic-addon2">cm</span>
-                    </div>
+              <div class="form-group mb-4">
+                <label for="height">Height</label>
+                <div class="input-group input-group-lg">
+                  <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Height" id="height">
+                  <div class="input-group-append">
+                    <span class="input-group-text rounded-right border-left-0" id="basic-addon2">cm</span>
                   </div>
                 </div>
               </div>
@@ -5675,7 +5672,17 @@
               <p class="lead text-white d-block d-lg-none">Explore +20,000 foods and +150 professionally curated recipes to support your health and performance goals.</p>
 
               <!-- Subtitle -->
-              <h6 class="header-pretitle text-white mb-5 mb-lg-4">✔️ FREE 7-DAY TRIAL  ✔️ NO CREDIT CARD REQUIRED</h6>
+              <h6 class="header-pretitle text-white mb-5">✔️ FREE 7-DAY TRIAL  ✔️ NO CREDIT CARD REQUIRED</h6>
+              <div class="row mb-4">
+                 <div class="col-12 col-lg-auto">
+                   <h4 class="text-white">Medically Reviewed</h4>
+                   <p class="text-white">by <a href="about-nutrita.html">MDs, PhDs, PharmDs</a></p>
+                 </div>
+                 <div class="col-12 col-lg-auto">
+                   <h4 class="text-white">Comprehensive set of food data</h4>
+                   <a href="http://www.ncc.umn.edu/food-and-nutrient-database/" target="_blank">NCCDB</a>
+                 </div>
+              </div>
 
             </div>
             <div class="col-12 col-lg-4 offset-lg-1 bg-mint rounded-xl pr-lg-6 pb-lg-5 mb-5 mb-lg-0 px-n3 px-lg-3">
