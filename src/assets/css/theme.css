@@ -11911,6 +11911,10 @@ a:focus, button:focus {
 .select2-selection__placeholder {
   color: #B1C2D9; }
 
+.blur {
+  -webkit-filter: blur(2px);
+          filter: blur(2px); }
+
 .animated-under-text {
   color: white;
   background: linear-gradient(45deg, #E34444 50%, #22C88A 60%);

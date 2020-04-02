@@ -156,6 +156,93 @@
         </div>
       </div>
     </div>
+    <!-- IDEA: addMissingFood -->
+    <div class="modal fade fixed-right" id="addMissingFood" tabindex="-1" role="dialog" aria-labelledby="addMissingFood" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-block p-0 border-0 mb-3">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-auto pl-4">
+                <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+                  <div class="row align-items-center no-gutters">
+                    <div class="col-auto">
+                      <h4 class="modal-title">Add a new food</h4>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-auto">
+                <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
+                  <i class="fe fe-x text-secondary"></i>
+                </a>
+              </div>
+            </div>
+            <img class="mt-n6 float-right img-fluid" alt="Chart line illustration" src="assets/img/illustrations/undraw_add_file_4gfw.svg" data-holder-rendered="true" width="250">
+          </div>
+          <div class="modal-body pt-2 pb-6">
+            <h2>
+              Add your own food and ingredients' nutrition facts to your Nutrita account.
+            </h2>
+            <div class="row align-items-center mb-4">
+              <div class="col small text-muted">
+                <button type="button" class="btn btn-sm btn-link text-muted pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="addProductTitle">Title</label>
+                <input id="addProductTitle" type="text" class="form-control form-control-lg mb-4" placeholder="Title" aria-label="addProductTitle">
+                <label for="addProductPortion">Portion</label>
+                <div class="input-group mb-4">
+                  <input type="text" class="form-control form-control-lg" placeholder="100.00" aria-label="addProductPortion">
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">g</button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">unit</a>
+                      <a class="dropdown-item" href="#">Another unit</a>
+                      <a class="dropdown-item" href="#">Another unit</a>
+                      <a class="dropdown-item" href="#">Another unit</a>
+                      <a class="dropdown-item" href="#">Another unit</a>
+                    </div>
+                  </div>
+                </div>
+                <label for="addProductCarbs">Carbs</label>
+                <div class="input-group input-group-lg mb-4">
+                  <input id="addProductCarbs" type="text" class="form-control border-right-0" placeholder="0.00" aria-label="addProductCarbs">
+                  <div class="input-group-append">
+                    <span class="input-group-text rounded-right border-left-0" id="basic-addon3">g</span>
+                  </div>
+                </div>
+                <label for="addProductFibre">Fibre</label>
+                <div class="input-group input-group-lg mb-4">
+                  <input id="addProductFibre" type="text" class="form-control border-right-0" placeholder="0.00" aria-label="addProductFibre">
+                  <div class="input-group-append">
+                    <span class="input-group-text rounded-right border-left-0" id="basic-addon3">g</span>
+                  </div>
+                </div>
+                <label for="addProductProtein">Protein</label>
+                <div class="input-group input-group-lg mb-4">
+                  <input id="addProductProtein" type="text" class="form-control border-right-0" placeholder="0.00" aria-label="addProductProtein">
+                  <div class="input-group-append">
+                    <span class="input-group-text rounded-right border-left-0" id="basic-addon3">g</span>
+                  </div>
+                </div>
+                <label for="addProductFat">Fat</label>
+                <div class="input-group input-group-lg mb-4">
+                  <input id="addProductFat" type="text" class="form-control border-right-0" placeholder="0.00" aria-label="addProductFat">
+                  <div class="input-group-append">
+                    <span class="input-group-text rounded-right border-left-0" id="basic-addon3">g</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="navbar fixed-bottom px-4 justify-content-center">
+            <button class="btn btn-success vw-100" type="button">Save</button>
+          </nav>
+        </div>
+      </div>
+    </div><!-- / modal addMissingFood -->
     <!-- IDEA: ideal weight -->
     <div class="modal fade fixed-right" id="idealWeight" tabindex="-1" role="dialog" aria-labelledby="idealWeight" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">

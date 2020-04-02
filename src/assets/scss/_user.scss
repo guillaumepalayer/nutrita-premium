@@ -2,6 +2,9 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+.blur{
+  filter: blur(2px);
+}
 .animated-under-text {
   color: white;
 	background: linear-gradient(45deg, #E34444 50%, #22C88A 60%);

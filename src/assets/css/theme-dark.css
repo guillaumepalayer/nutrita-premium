@@ -11959,6 +11959,10 @@ a:focus, button:focus {
   border-right-color: #1E3A5C;
   border-bottom-color: #1E3A5C; }
 
+.blur {
+  -webkit-filter: blur(2px);
+          filter: blur(2px); }
+
 .animated-under-text {
   color: white;
   background: linear-gradient(45deg, #E34444 50%, #22C88A 60%);
