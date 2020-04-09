@@ -124,6 +124,8 @@
               <div class="form-group col">
                 <label for="addProductName">Name</label>
                 <input id="addProductName" type="text" class="form-control form-control-lg mb-4" placeholder="Name" aria-label="addProductName">
+                <label for="addProductBrand">Brand (optional)</label>
+                <input id="addProductBrand" type="text" class="form-control form-control-lg mb-4" placeholder="Name" aria-label="addProductBrand">
                 <label for="addProductServingSize">Serving size</label>
                 <div class="input-group mb-4">
                   <input type="text" class="form-control form-control-lg" placeholder="100.00" aria-label="addProductServingSize">
@@ -5968,22 +5970,20 @@
                 </div>
                 <div class="row align-items-end justify-content-center mb-3 mx-n4 mx-lg-0 no-gutters">
                   <div class="col-auto col-lg-12 col-xl-auto mb-lg-3 mb-xl-0 mr-3">
-                    <h5 class="m-0 mb-2"><i class="chart-legend-indicator bg-green-light mr-"></i>70%</h5>
-                    <p class="small text-muted mb-0 pt-1">Fat • 000g</p>
+                    <h5 class="m-0"><i class="chart-legend-indicator bg-green-light"></i>70%</h5>
+                    <p class="small text-muted mb-0">Fat • 000g</p>
                   </div>
                   <div class="col-auto col-lg-12 col-xl-auto mb-lg-3 mb-xl-0 mr-3">
-                    <h5 class="m-0 mr-2 d-inline-block"><i class="chart-legend-indicator bg-orange-light mr-2"></i>25%</h5>
-                    <a href="#" class="btn btn-sm btn-white" data-toggle="modal" data-target="#foodEquivalent">
-                        🥩
+                    <a href="#" class="text-dark" data-toggle="modal" data-target="#foodEquivalent">
+                      <h5 class="m-0 mr-2"><i class="chart-legend-indicator bg-orange-light mr-2"></i>25% <i class="fe fe-chevron-right"></i></h5>
+                      <p class="small text-muted mb-0">Protein • 000g</p>
                     </a>
-                    <p class="small text-muted mb-0">Protein • 000g</p>
                   </div>
                   <div class="col-auto col-lg-12 col-xl-auto">
-                    <h5 class="m-0 mr-2 d-inline-block"><i class="chart-legend-indicator bg-red-light"></i>5%</h5>
-                    <a href="#" class="btn btn-sm btn-white" data-toggle="modal" data-target="#foodEquivalent">
-                        🥑
+                    <a href="#" class="text-dark" data-toggle="modal" data-target="#foodEquivalent">
+                      <h5 class="m-0 mr-2"><i class="chart-legend-indicator bg-red-light"></i>5% <i class="fe fe-chevron-right"></i></h5>
+                      <p class="small text-muted mb-0">Carbs • 000g</p>
                     </a>
-                    <p class="small text-muted mb-0">Carbs • 000g</p>
                   </div>
                 </div>
                 <div class="progress progress-sm">
@@ -6392,7 +6392,7 @@
                   </div>
                 </a>
               </li>
-              <li class="nav-item pr-4">
+              <li class="nav-item">
                 <a class="card" style="width: 128px" href="collection-foods.html">
                   <div class="card-body pb-0">
                     <div class="chart-container chart-appended">
@@ -6430,11 +6430,12 @@
           <div class="col-12 col-lg-8 px-lg-0">
             <div class="mb-4">
               <a href="collection-recipes.html">
-                <div class="row align-items-end">
+                <div class="row align-items-center">
                   <div class="col">
-                    <h2 class="header-title text-dark">
+                    <h2 class="header-title text-dark mb-2">
                       Breakfast recipes for you
                     </h2>
+                    <h4 class="text-secondary mb-0">Tailored to your macros</h4>
                   </div>
                   <div class="col-auto">
                     <i class="fe fe-arrow-right text-dark"></i>
@@ -6760,7 +6761,7 @@
                   </div>
                 </a>
               </li>
-              <li class="nav-item pr-3">
+              <li class="nav-item">
                 <a data-toggle="modal" href="#modalRecipe">
                   <div class="card mb-0" style="width: 256px">
 
@@ -6827,11 +6828,12 @@
             </ul>
             <div class="mb-4">
               <a href="#">
-                <div class="row align-items-end">
+                <div class="row align-items-center">
                   <div class="col">
-                    <h2 class="header-title text-dark">
+                    <h2 class="header-title text-dark mb-2">
                       Lunch recipes for you
                     </h2>
+                    <h4 class="text-secondary mb-0">Tailored to your macros</h4>
                   </div>
                   <div class="col-auto">
                     <i class="fe fe-arrow-right text-dark"></i>
@@ -7160,7 +7162,7 @@
                   </div>
                 </a>
               </li>
-              <li class="nav-item pr-3">
+              <li class="nav-item">
                 <a data-toggle="modal" href="#modalRecipe">
                   <div class="card mb-0" style="width: 256px">
 
@@ -7227,11 +7229,12 @@
             </ul>
             <div class="mb-4">
               <a href="#">
-                <div class="row align-items-end">
+                <div class="row align-items-center">
                   <div class="col">
-                    <h2 class="header-title text-dark">
+                    <h2 class="header-title text-dark mb-2">
                       Dinner recipes for you
                     </h2>
+                    <h4 class="text-secondary mb-0">Tailored to your macros</h4>
                   </div>
                   <div class="col-auto">
                     <i class="fe fe-arrow-right text-dark"></i>
@@ -7560,7 +7563,7 @@
                   </div>
                 </a>
               </li>
-              <li class="nav-item pr-3">
+              <li class="nav-item">
                 <a data-toggle="modal" href="#modalRecipe">
                   <div class="card mb-0" style="width: 256px">
 
@@ -7766,7 +7769,7 @@
                   <div class="card-text small text-secondary mr-2 d-inline-flex">71% DV • NCCDB</div>
                 </a>
               </li>
-              <li class="nav-item pr-3">
+              <li class="nav-item">
                 <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
                   <!-- Image -->
                   <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
@@ -7895,7 +7898,7 @@
                         <h2 class="h4 text-dark">3 ways to measure ketone levels: which is the best?  </h2>
                       </a>
                     </li>
-                    <li class="nav-item pr-3" style="min-width: 192px">
+                    <li class="nav-item" style="min-width: 192px">
                       <a href="#" target="_blank">
                         <img style="min-height: 128px; max-height: 128px" class="rounded img-fluid img-thumbnail mb-3 bg-white shadow-sm" src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2018/11/ketosis-blog-featured-img-400x250.png" alt="">
                         <h2 class="h4 text-dark">The Ultimate Guide to Ketosis</h2>

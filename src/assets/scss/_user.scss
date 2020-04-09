@@ -294,4 +294,7 @@ li:hover .circle {
     background-image: url(../../assets/img/covers/home-bg-mobile.jpg);
     background-size: 180% auto;
   }
+  .nav-tabs .nav-item:last-child {
+    padding-right: 16px
+  }
 }

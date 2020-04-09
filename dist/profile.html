@@ -142,6 +142,8 @@
               <div class="form-group col">
                 <label for="addProductName">Name</label>
                 <input id="addProductName" type="text" class="form-control form-control-lg mb-4" placeholder="Name" aria-label="addProductName">
+                <label for="addProductBrand">Brand (optional)</label>
+                <input id="addProductBrand" type="text" class="form-control form-control-lg mb-4" placeholder="Name" aria-label="addProductBrand">
                 <label for="addProductServingSize">Serving size</label>
                 <div class="input-group mb-4">
                   <input type="text" class="form-control form-control-lg" placeholder="100.00" aria-label="addProductServingSize">
@@ -5696,18 +5698,22 @@
                 <h2 class="card-title text-center">
                   Hi Guillaume palayer
                 </h2>
-                <a class="d-block w-100 text-center mb-4" href="settings.html">Edit profile</a>
+                <a class="d-block w-100 text-center mb-4" href="settings.html">Edit settings</a>
                 <p class="card-text text-center mb-4">
                   This is where your goal, biometrics and adjustable macronutrient sliders live. This information allows us to calculate your progress and provide accurate scores.
                 </p>
+                <div class="row justify-content-between">
+                  <div class="col">
+                    <h2 class="mb-4">Your recommended macro</h2>
+                  </div>
+                  <div class="col-auto">
+                    <a href="#">Reset</a>
+                  </div>
+                </div>
+
                 <div class="table-responsive">
                   <table class="table mb-0">
                     <tbody>
-                      <tr>
-                        <td colspan="2" class="p-0 border-top-0 pt-0">
-                          <h2 class="mb-4">Your recommended macro</h2>
-                        </td>
-                      </tr>
                       <tr class="small">
                         <td colspan="2" class="px-0 text-secondary border-top-0 pt-2">
                           <div class="row no-gutters">
