@@ -5823,9 +5823,23 @@
     <div class="main-content mt-n64">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-lg-2 d-none d-lg-flex">
-            <nav class="nav flex-column">
-              <a class="btn btn-lg btn-success mb-4 btn-block" href="search-zero-state.html"><i class="fe fe-plus"></i> Log your meals</a>
+          <div class="col-12 col-lg-2 d-none d-lg-block">
+            <nav class="nav">
+              <a class="btn btn-lg btn-success mb-4 btn-block text-white" data-toggle="collapse" data-target="#collapseDesktopAddFoodRecipe" aria-expanded="false" aria-controls="collapseDesktopAddFoodRecipe"><i class="fe fe-plus"></i> Add</a>
+              <div class="collapse" id="collapseDesktopAddFoodRecipe">
+                <nav class="nav">
+                  <a class="nav-link pl-0 py-3 text-secondary" data-toggle="modal" href="#addMissingFood">
+                    <i class="fe fe-file-plus h3 mr-2"></i>Custom food
+                  </a>
+                  <a class="nav-link pl-0 py-3 text-secondary" data-toggle="modal" href="#addMissingFood">
+                    <i class="fe fe-airplay h3 mr-2"></i>Weight
+                  </a>
+                  <a class="nav-link pl-0 py-3 text-secondary" data-toggle="modal" href="#addMissingFood">
+                    <i class="fe fe-droplet h3 mr-2"></i>blood glucose
+                  </a>
+                </nav>
+                <hr>
+              </div>
               <a class="nav-link pl-0 py-3 text-dark" href="dashboard-full.html">
                 <i class="fe fe-home h3 mr-2"></i>Home
               </a>
@@ -7945,12 +7959,17 @@
       </div><!-- / .fixed bottom -->
 
       <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
-        <div class="collapse w-100 mt-4 mb-5" id="collapseAddFoodRecipe">
-          <nav class="nav flex-column text-right">
-            <a class="nav-link text-dark" href="#">Add custom recipe <i class="fe fe-plus"></i></a>
-            <a class="nav-link text-dark" data-toggle="modal" href="#addMissingFood">Add custom food <i class="fe fe-plus"></i></a>
-            <a class="nav-link text-dark" data-toggle="modal" href="#NewWeight">Add weight <i class="fe fe-plus"></i></a>
-            <a class="nav-link text-dark" href="#">Add blood glucose <i class="fe fe-plus"></i></a>
+        <div class="collapse w-100 mb-5" id="collapseAddFoodRecipe">
+          <nav class="nav flex-column">
+            <a class="nav-link pl-0 py-3 text-secondary" data-toggle="modal" href="#addMissingFood">
+              <i class="fe fe-file-plus h3 mr-2"></i>Custom food
+            </a>
+            <a class="nav-link pl-0 py-3 text-secondary" data-toggle="modal" href="#addMissingFood">
+              <i class="fe fe-airplay h3 mr-2"></i>Weight
+            </a>
+            <a class="nav-link pl-0 py-3 text-secondary" data-toggle="modal" href="#addMissingFood">
+              <i class="fe fe-droplet h3 mr-2"></i>blood glucose
+            </a>
           </nav>
         </div>
         <a class="nav-link text-dark h5 py-0 text-center mb-0 px-1" href="dashboard-full_2.html"><i class="fe fe-home text-success d-block mb-2"></i>Home</a>
