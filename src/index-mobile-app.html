@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      @@include("partials/head.html", {
+        "title": "Nutrita Premium"
+      })
+    </head>
+  <body class="bg-success">
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- NAVIGATION
+    ================================================== -->
+    @@if (navPosition == 'topnav' || demoMode) {
+      @@include("partials/topnav-b.html", {
+        "category": "dashboards",
+        "subcategory": "",
+        "page": "index.html"
+      })
+    }
+
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content pt-7">
+      <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-12 text-center">
+              <a class="navbar-brand mr-auto d-flex d-lg-none align-items-center" href="index.html">
+                <img src="assets/img/logo-white.svg" alt="Nutrita logo white" class="image-fluide mx-auto mb-3">
+              </a>
+              <!-- Title -->
+              <h1 class="display-4 text-light mb-3">
+                Nutrita
+              </h1>
+              <p class="text-white">Track your food and enjoy nutrient dense personalized recipes</p>
+            </div>
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-header-title">Select your goal</h3>
+                </div>
+                <div class="list-group border-0">
+                  <a href="#" data-toggle="modal" data-target="#idealWeight" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <div class="btn btn-rounded-circle bg-soft-ocre">
+                          👍
+                        </div>
+                      </div>
+                      <div class="col">
+                        <h2 class="h4 mb-0 text-dark">
+                          Lose fat
+                        </h2>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fe fe-arrow-right text-secondary"></i>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" data-toggle="modal" data-target="#idealWeight" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <div class="btn btn-rounded-circle bg-blue-light">
+                          💪
+                        </div>
+                      </div>
+                      <div class="col">
+                        <h2 class="h4 mb-0 text-dark">
+                          Gain muscle
+                        </h2>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fe fe-arrow-right text-secondary"></i>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" data-toggle="modal" data-target="#idealWeight" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <div class="btn btn-rounded-circle bg-soft-red">
+                          💉
+                        </div>
+                      </div>
+                      <div class="col">
+                        <h2 class="h4 mb-0 text-dark">
+                          Control blood sugar
+                        </h2>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fe fe-arrow-right text-secondary"></i>
+                      </div>
+                    </div>
+                  </a>
+                  <a href="#" data-toggle="modal" data-target="#idealWeight" class="list-group-item list-group-item-action">
+                    <div class="row align-items-center">
+                      <div class="col-auto">
+                        <div class="btn btn-rounded-circle bg-green-light">
+                          🤸‍
+                        </div>
+                      </div>
+                      <div class="col">
+                        <h2 class="h4 mb-0 text-dark">
+                          Eat nutrient dense
+                        </h2>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fe fe-arrow-right text-secondary"></i>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <p class="text-white text-center">or</p>
+              <a class="btn btn-white btn-block" href="#">Sign in</a>
+            </div>
+          </div> <!-- / .row -->
+
+      </div> <!-- / .container -->
+    </div> <!-- / .main-content -->
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+  </body>
+</html>
