@@ -17,6 +17,7 @@ const gulpif = require('gulp-if');
 const npmdist = require('gulp-npm-dist');
 const replace = require('gulp-replace');
 const sass = require('gulp-sass');
+const uglify = require('gulp-uglify');
 const useref = require('gulp-useref');
 
 // Define paths
@@ -175,6 +176,7 @@ gulp.task('html', function() {
     .pipe(replace(/src="(.{0,10})node_modules/g, 'src="$1assets/libs'))
     .pipe(useref())
     .pipe(cached())
+    .pipe(gulpif('*.js', uglify()))
     .pipe(gulpif('*.css', cleancss()))
     .pipe(gulp.dest(paths.dist.base.dir));
 });
@@ -197,6 +199,7 @@ gulp.task('html-preview', function() {
     .pipe(replace(/src="(.{0,10})node_modules/g, 'src="$1assets/libs'))
     .pipe(useref())
     .pipe(cached())
+    .pipe(gulpif('*.js', uglify()))
     .pipe(gulpif('*.css', cleancss()))
     .pipe(gulp.dest(paths.dist.base.dir));
 });
