@@ -11913,7 +11913,7 @@ a:focus, button:focus {
 
 #content {
   position: relative;
-  overflow-x: hidden; }
+  overflow: hidden; }
 
 .particle {
   position: absolute;
