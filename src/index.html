@@ -2,10 +2,10 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
       @@include("partials/head.html", {
-        "title": "Nutrita Premium"
+        "title": "Nutrita"
       })
     </head>
-  <body>
+  <body id="content">
     <!-- MODALS
     ================================================== -->
     @@include("partials/modals.html")
@@ -23,195 +23,107 @@
 
     <!-- MAIN CONTENT
     ================================================== -->
-    <div class="main-content bg-cover content-paint pt-7">
+    <div class="main-content pt-7">
       <div class="container">
           <div class="row justify-content-center mb-5">
-            <div class="col-12 col-lg-7 text-center text-lg-left pt-lg-6">
+            <div class="col-11 col-lg-9 text-center">
               <a class="navbar-brand mr-auto d-flex d-lg-none align-items-center" href="index.html">
-                <img src="assets/img/logo.svg" alt="..." class="image-fluide mx-auto mb-3">
+                <img src="assets/img/logo.svg" alt="Nutrita logo white" class="image-fluide mx-auto mb-3">
               </a>
               <!-- Title -->
-              <h1 class="text-white display-1 d-none d-lg-block mb-5">
-                Track your food and enjoy nutrient dense personalized recipes
+              <h1 class="text-dark mb-5 d-block d-lg-none h3">
+                Nutrita
               </h1>
-              <h1 class="text-white display-4 d-block d-lg-none mb-5">
+              <h2 class="display-2 d-none d-lg-block mb-5 font-weight-bold">
                 Track your food and enjoy nutrient dense personalized recipes
-              </h1>
-              <p class="h1 text-white d-none d-lg-block">Explore +20,000 foods and +150 professionally curated recipes to support your health and performance goals.</p>
-              <p class="lead text-white d-block d-lg-none">Explore +20,000 foods and +150 professionally curated recipes to support your health and performance goals.</p>
-
-              <!-- Subtitle -->
-              <h6 class="header-pretitle text-white mb-5">✔️ FREE 7-DAY TRIAL  ✔️ NO CREDIT CARD REQUIRED</h6>
-              <div class="row mb-4">
-                 <div class="col-12 col-lg-auto">
-                   <h4 class="text-white">Medically Reviewed</h4>
-                   <p class="text-white">by <a class="text-white" href="about-nutrita.html">MDs, PhDs</a></p>
-                 </div>
-                 <div class="col-12 col-lg-auto">
-                   <h4 class="text-white">Comprehensive set of food data</h4>
-                   <a class="text-white" href="http://www.ncc.umn.edu/food-and-nutrient-database/" target="_blank">NCCDB,</a> <a class="text-white" href="https://www.usda.gov/" target="_parent">USDA</a>
-                 </div>
+              </h2>
+              <h2 class="display-4 d-block d-lg-none mb-5 font-weight-bold">
+                Track your food and enjoy nutrient dense personalized recipes
+              </h2>
+              <p class="text-secondary text-center small">Get the app</p>
+              <div class="row align-items-center justify-content-center mb-5">
+                <div class="col-12 col-lg-auto mb-3 mb-lg-0">
+                  <a href="#">
+                    <img class="lift d-none d-lg-block" src="assets/img/google-play-badge.png" alt="" height="64">
+                    <img class="lift d-block d-lg-none mx-auto" src="assets/img/google-play-badge.png" alt="" height="48">
+                  </a>
+                </div>
+                <div class="col-12 col-lg-auto">
+                  <a href="#">
+                    <img class="lift d-none d-lg-block" src="assets/img/Download_on_the_App_Store_Badge_FR_RGB_blk_100517.svg" alt="" height="64">
+                    <img class="lift d-block d-lg-none mx-auto" src="assets/img/Download_on_the_App_Store_Badge_FR_RGB_blk_100517.svg" alt="" height="48">
+                  </a>
+                </div>
               </div>
-
-            </div>
-            <div class="col-12 col-lg-4 offset-lg-1 bg-mint rounded-xl pr-lg-6 pb-lg-5 mb-5 mb-lg-0 px-n3 px-lg-3">
-              <div class="row justify-content-start">
-                <div class="col-12" style="z-index:99">
-                  <h2 class="mt-lg-5 ml-lg-3 mt-4 text-white display-4 text-center text-lg-left">I want to</h2>
-                  <a class="ml-lg-n6 d-block" href="#" data-toggle="modal" data-target="#idealWeight">
-                    <div class="card">
-                      <div class="card-body">
-
-                        <div class="row align-items-center">
-                          <div class="col-auto">
-
-                            <div class="btn btn-rounded-circle bg-soft-ocre">
-                              👍
-                            </div>
-
-                          </div>
-                          <div class="col ml-lg-n2">
-
-                            <h2 class="card-title mb-1 text-dark d-none d-lg-block">
-                              Lose fat
-                            </h2>
-                            <h2 class="card-title mb-1 h4 text-dark d-block d-lg-none">
-                              Lose fat
-                            </h2>
-
-                            <p class="card-text small text-muted mb-1">
-                              ...for good.
-                            </p>
-
-                          </div>
-                          <div class="col-auto">
-
-                            <span class="h2 fe fe-arrow-right text-dark mb-0"></span>
-
-                          </div>
+              <div class="app-preview mb-5">
+                <img class="img-fluid" src="assets/img/iPhoneX-nutrita-mobile-app.png" alt="Nutrita app preview">
+              </div>
+              <h2 class="font-weight-bold">
+                No phone? No problem!
+              </h2>
+              <p class="text-secondary text-center small">Choose a goal to sign up on our Web app</p>
+              <div class="row justify-content-center">
+                <div class="col-6 col-lg-3">
+                  <a href="#" data-toggle="modal" data-target="#idealWeight">
+                    <div class="card" style="min-height: 104px">
+                      <div class="card-body text-center p-3">
+                        <div class="btn btn-rounded-circle bg-soft-ocre mb-2">
+                          👍
                         </div>
-
+                        <h2 class="h4 mb-0 text-dark">
+                          Lose fat
+                        </h2>
                       </div>
                     </div>
                   </a>
-                  <a class="ml-lg-n6 d-block" href="#" data-toggle="modal" data-target="#reminderEndTrial">
-                    <div class="card">
-                      <div class="card-body">
-
-                        <div class="row align-items-center">
-                          <div class="col-auto">
-
-                            <div class="btn btn-rounded-circle bg-soft-red">
-                              💉
-                            </div>
-
-                          </div>
-                          <div class="col ml-n2">
-
-                            <h2 class="card-title mb-1 text-dark d-none d-lg-block">
-                              Control my blood sugar
-                            </h2>
-                            <h2 class="card-title mb-1 h4 text-dark d-block d-lg-none">
-                              Control my blood sugar
-                            </h2>
-
-                            <p class="card-text small text-muted mb-1">
-                              ...for good.
-                            </p>
-
-                          </div>
-                          <div class="col-auto">
-
-                            <span class="h2 fe fe-arrow-right text-dark mb-0"></span>
-
-                          </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <a href="#" data-toggle="modal" data-target="#idealWeight">
+                    <div class="card" style="min-height: 104px">
+                      <div class="card-body p-3 text-center">
+                        <div class="btn btn-rounded-circle bg-soft-red mb-2">
+                          💉
                         </div>
-
-                      </div>
-                    </div>
-                  </a>
-                  <a class="ml-lg-n6 d-block" href="#" data-toggle="modal" data-target="#onboardingConnect">
-                    <div class="card">
-                      <div class="card-body">
-
-                        <div class="row align-items-center">
-                          <div class="col-auto">
-
-                            <div class="btn btn-rounded-circle bg-blue-light">
-                              💪
-                            </div>
-
-                          </div>
-                          <div class="col ml-lg-n2">
-
-                            <h2 class="card-title mb-1 text-dark d-none d-lg-block">
-                              Gain muscle
-                            </h2>
-                            <h2 class="card-title mb-1 h4 text-dark d-block d-lg-none">
-                              Gain muscle
-                            </h2>
-
-                            <p class="card-text small text-muted mb-1">
-                              ...for good.
-                            </p>
-
-                          </div>
-                          <div class="col-auto">
-
-                            <span class="h2 fe fe-arrow-right text-dark mb-0"></span>
-
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                  </a>
-                  <a class="ml-lg-n6 d-block" href="#" data-toggle="modal" data-target="#onboardingConnect">
-                    <div class="card">
-                      <div class="card-body">
-
-                        <div class="row align-items-center">
-                          <div class="col-auto">
-
-                            <div class="btn btn-rounded-circle bg-green-light">
-                              🤸‍
-                            </div>
-
-                          </div>
-                          <div class="col ml-lg-n2">
-
-                            <h2 class="card-title mb-1 text-dark d-none d-lg-block">
-                              Eat more nutrient dense
-                            </h2>
-                            <h2 class="card-title mb-1 h4 text-dark d-block d-lg-none">
-                              Eat more nutrient dense
-                            </h2>
-
-                            <p class="card-text small text-muted mb-1">
-                              ...for good.
-                            </p>
-
-                          </div>
-                          <div class="col-auto">
-
-                            <span class="h2 fe fe-arrow-right text-dark mb-0"></span>
-
-                          </div>
-                        </div>
-
+                        <h2 class="h4 mb-0 text-dark">
+                          Control blood sugar
+                        </h2>
                       </div>
                     </div>
                   </a>
                 </div>
               </div>
-              <p class="small mb-4 text-center text-lg-right text-white">Already using Nutrita? <a class="text-dark" href="#" data-toggle="modal" data-target="#signIn">Sign in</a></p>
+              <div class="row justify-content-center">
+                <div class="col-6 col-lg-3">
+                  <a href="#" data-toggle="modal" data-target="#idealWeight">
+                    <div class="card" style="min-height: 104px">
+                      <div class="card-body p-3 text-center">
+                        <div class="btn btn-rounded-circle bg-blue-light mb-2">
+                          💪
+                        </div>
+                        <h2 class="h4 mb-0 text-dark">
+                          Gain muscle
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <a href="#" data-toggle="modal" data-target="#idealWeight">
+                    <div class="card" style="min-height: 104px">
+                      <div class="card-body p-3 text-center">
+                        <div class="btn btn-rounded-circle bg-green-light mb-2">
+                          🤸‍
+                        </div>
+                        <h2 class="h4 mb-0 text-dark">
+                          Eat nutrient dense
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div> <!-- / .row -->
-          <div class="row justify-content-center">
-            <div class="col-auto">
-              <img class="ml-lg-n6 img-fluid mt-lg-n7 mt-xl-n8" src="assets\img\Iso-Phone.png" alt="" width="800">
-            </div>
-          </div>
       </div> <!-- / .container -->
     </div> <!-- / .main-content -->
     @@include("partials/footer-2.html")

@@ -2,6 +2,22 @@
 // user.scss
 // Use this to write your custom SCSS
 //
+#content {
+  position: relative;
+  overflow-x: hidden;
+}
+.particle {
+  position: absolute;
+  will-change: transform;
+  pointer-events: none;
+}
+.app-preview {
+    width: 420px;
+    max-width: 100%;
+    margin: 0 auto;
+    pointer-events: none;
+    -webkit-user-select: none;
+}
 .blur{
   filter: blur(2px);
 }

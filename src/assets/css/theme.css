@@ -11911,6 +11911,22 @@ a:focus, button:focus {
 .select2-selection__placeholder {
   color: #B1C2D9; }
 
+#content {
+  position: relative;
+  overflow-x: hidden; }
+
+.particle {
+  position: absolute;
+  will-change: transform;
+  pointer-events: none; }
+
+.app-preview {
+  width: 420px;
+  max-width: 100%;
+  margin: 0 auto;
+  pointer-events: none;
+  -webkit-user-select: none; }
+
 .blur {
   -webkit-filter: blur(2px);
           filter: blur(2px); }
