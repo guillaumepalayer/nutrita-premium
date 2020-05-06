@@ -12093,6 +12093,9 @@ a:focus, button:focus {
 .modal-dialog-vertical.modal-sidebar-nav {
   max-width: 250px; }
 
+.modal-dialog-vertical {
+  max-width: 50%; }
+
 .btn-slide-right {
   position: absolute !important;
   right: -8px;
@@ -12254,6 +12257,8 @@ li:hover .circle {
   font-size: 30px; }
 
 @media (max-width: 768px) {
+  .modal-dialog-vertical {
+    max-width: 350px; }
   .avatar-xxl {
     width: 8rem;
     height: 8rem;
