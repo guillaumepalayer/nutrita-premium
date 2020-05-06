@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      @@include("partials/head.html", {
+        "title": "Finish signup"
+      })
+    </head>
+  <body>
+    <!-- MODALS
+    ================================================== -->
+    @@include("partials/modals.html")
+
+    <!-- NAVIGATION
+    ================================================== -->
+    @@if (navPosition == 'topnav' || demoMode) {
+      @@include("partials/topnav-b.html", {
+        "category": "dashboards",
+        "subcategory": "",
+        "page": "index.html"
+      })
+    }
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content pt-7">
+      <div class="container">
+          <div class="row justify-content-center mb-5">
+            <div class="col-11 col-lg-6 text-center">
+              <a class="navbar-brand mr-auto d-flex d-lg-none align-items-center" href="index.html">
+                <img src="assets/img/logo.svg" alt="Nutrita logo white" class="image-fluide mx-auto mb-3">
+              </a>
+              <h1>
+                Check your inbox to verify your email
+              </h1>
+              <h2>
+                We've sent an email to guillaume@nutrita.app. Follow the instructions to verify your email address.
+              </h2>
+              <p class="text-secondary text-center">Didn't receive the verification email?</p>
+              <button class="btn btn-lg btn-success btn-block" type="button" name="button">Send it again</button>
+              <a class="btn btn-link btn-block" href="#">Sign up with another email</a>
+              <small>Email verification helps us to ensure your data will always be safe.</small>
+            </div>
+          </div> <!-- / .row -->
+      </div> <!-- / .container -->
+      <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
+        <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="profile.html"><i class="fe fe-user d-block mb-2"></i>Profile</a>
+        <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="settings.html"><i class="fe fe-settings d-block mb-2"></i>Settings</a>
+      </nav>
+    </div> <!-- / .main-content -->
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+  </body>
+</html>
