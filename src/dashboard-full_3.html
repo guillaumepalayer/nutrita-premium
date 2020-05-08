@@ -100,7 +100,7 @@
     </div>
     <div class="main-content mt-n64">
       <div class="container">
-        <div class="row">
+        <div class="row mb-4">
           <div class="col-12 col-lg-2 d-none d-lg-block">
             <nav class="nav">
               <a class="btn btn-lg btn-success mb-4 btn-block text-white" data-toggle="collapse" data-target="#collapseDesktopAddFoodRecipe" aria-expanded="false" aria-controls="collapseDesktopAddFoodRecipe"><i class="fe fe-plus"></i> Add</a>
@@ -143,24 +143,24 @@
                 </h4>
               </div>
               <div class="card-body py-0">
-                <div class="row justify-content-center mb-5 mx-n4 mx-lg-0">
-                  <div class="col-auto col-lg-12 col-xl-2 mb-lg-3 mb-xl-0">
-                    <span class="chart-legend-item align-self-center"><i class="chart-legend-indicator bg-green-light"></i></span>
-                    <p class="small text-secondary mb-2">Fat cal.</p>
-                    <h5 class="mb-1">10/100g <span class="text-secondary">(10%)</span></h5>
-                    <h6 class="m-0 text-secondary">10% kcal</h6>
+                <div class="row justify-content-center mb-4 mx-n4">
+                  <div class="col-auto col-lg-2 pr-1 text-center">
+                    <span class="d-block chart-legend-item mb-2"><i class="chart-legend-indicator bg-green-light"></i><span class="small text-secondary">Fat cal.</span></span>
+                    <span class="d-block text-dark h2 mb-2">10%</span>
+                    <span class="d-block h5 text-secondary mb-0">000/000g</span>
+                    <span class="h5 text-secondary mb-0">10% kcal</span>
                   </div>
-                  <div class="col-auto col-lg-12 col-xl-2 mb-lg-3 mb-xl-0">
-                    <span class="chart-legend-item align-self-center"><i class="chart-legend-indicator bg-orange-light"></i></span>
-                    <p class="small text-muted mb-2">Protein target</p>
-                    <h5 class="mb-1">10/100g <span class="text-secondary">(10%)</span></h5>
-                    <h6 class="m-0 text-secondary">10% kcal</h6>
+                  <div class="col-auto col-lg-2 pr-1 text-center">
+                    <span class="d-block chart-legend-item mb-2"><i class="chart-legend-indicator bg-orange-light"></i><span class="small text-secondary">Protein target</span></span>
+                    <span class="d-block text-dark h2 mb-2">10%</span>
+                    <span class="d-block h5 text-secondary mb-0">000/000g</span>
+                    <span class="h5 text-secondary mb-0">10% kcal</span>
                   </div>
-                  <div class="col-auto col-lg-12 col-xl-2">
-                    <span class="chart-legend-item align-self-center"><i class="chart-legend-indicator bg-danger"></i></span>
-                    <p class="small text-secondary mb-2">Carb limit</p>
-                    <h5 class="mb-1">10/100g <span class="text-secondary">(10%)</span></h5>
-                    <h6 class="m-0 text-secondary">10% kcal</h6>
+                  <div class="col-auto col-lg-2 pr-0 text-center">
+                    <span class="d-block chart-legend-item mb-2"><i class="chart-legend-indicator bg-danger"></i><span class="small text-secondary">Carbs limit</span></span>
+                    <span class="d-block text-dark h2 mb-2">10%</span>
+                    <span class="d-block h5 text-secondary mb-0">000/000g</span>
+                    <span class="h5 text-secondary mb-0">10% kcal</span>
                   </div>
                 </div>
                 <div class="row justify-content-center">
@@ -204,11 +204,11 @@
                   <a class="col-6 py-4 text-center lift" href="#" data-toggle="modal" data-target="#reportDetailsWeight">
                     <!-- Heading -->
                     <h6 class="text-uppercase text-muted">
-                      Calorie estimate (not a target)
+                      Calorie estimate <br> (not a target)
                     </h6>
 
                     <!-- Value -->
-                    <h2 class="mb-0 text-dark">0/2,840 Kcal</h2>
+                    <h2 class="mb-0 text-dark">0/2,840 <small>Kcal</small></h2>
                   </a>
                   <a class="col-6 py-4 text-center border-left lift" href="#" data-toggle="modal" data-target="#reportDetailsWeight">
                     <!-- Heading -->
@@ -227,12 +227,61 @@
             </div>
           </div>
         </div>
+        <div class="row justify-content-center mb-4">
+          <div class="col-12 col-lg-8 px-lg-0">
+            <div class="row mb-4">
+              <div class="col">
+                <h2 class="header-title text-dark mb-2">
+                  Food equivalents
+                </h2>
+                <h3 class="h4 text-secondary mb-0">Tailored to your macros</h3>
+              </div>
+              <div class="col-auto">
+                <a href="profile.html"><i class="fe fe-settings text-dark"></i></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6">
+                <a data-toggle="modal" href="#foodEquivalent">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-auto mb-3 mb-lg-0">
+                          <span class="d-block display-3">🍖</span>
+                        </div>
+                        <div class="col">
+                          <h4 class="text-dark mb-0">Protein food equivalents</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-6">
+                <a data-toggle="modal" href="#foodEquivalent">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-auto mb-3 mb-lg-0">
+                          <span class="d-block display-3">🥑</span>
+                        </div>
+                        <div class="col">
+                          <h4 class="text-dark mb-0">Carb food equivalents</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row justify-content-center">
           <div class="col-12 col-lg-8 px-lg-0">
             <h2 class="header-title text-dark mb-4">
               Micronutrient intake
             </h2>
-            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-5 pl-3 mx-n3 mr-lg-0">
+            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-4 pl-3 mx-n3 mr-lg-0">
               <li class="nav-item">
                 <a class="card" style="width: 128px" href="collection-foods.html">
                   <div class="card-body pb-0">
@@ -617,7 +666,7 @@
                     <h2 class="header-title text-dark mb-2">
                       Breakfast recipes for you
                     </h2>
-                    <h4 class="text-secondary mb-0">Tailored to your macros</h4>
+                    <h3 class="h4 text-secondary mb-0">Tailored to your macros</h3>
                   </div>
                   <div class="col-auto">
                     <i class="fe fe-arrow-right text-dark"></i>
