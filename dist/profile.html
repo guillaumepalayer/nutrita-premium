@@ -201,26 +201,15 @@
     <div class="modal fade fixed-right" id="idealWeight" tabindex="-1" role="dialog" aria-labelledby="idealWeight" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="modal-header d-block p-0 border-0 mb-3">
-            <div class="row justify-content-between align-items-center">
-              <div class="col-auto pl-4">
-                <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
-                  <div class="row align-items-center no-gutters">
-                    <div class="col-auto">
-                      <h4 class="modal-title">Your goal</h4>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-auto">
-                <a class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
-                  <i class="fe fe-x text-secondary"></i>
-                </a>
-              </div>
-            </div>
-            <img class="mt-n6 float-right img-fluid" alt="Chart line illustration" src="assets/img/illustrations/tuto-3.svg" data-holder-rendered="true" height="320">
+          <div class="modal-header py-2">
+            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+              <i class="fe fe-arrow-left h2"></i>
+            </button>
+            <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+            </button>
           </div>
-          <div class="modal-body pt-2 pb-6">
+          <div class="modal-body pt-2 pb-6 px-lg-8">
             <h2>
               What is your current and target weight you want to reach?
             </h2>
@@ -4749,50 +4738,43 @@
     <div class="modal fade fixed-right" id="onboardingAboutYou" tabindex="-5" role="dialog" aria-labelledby="onboardingAboutYou" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="modal-body p-0 pb-6">
-            <div class="d-flex justify-content-between align-items-center">
-              <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
-              <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><i class="fe fe-x"></i></span>
-              </button>
-            </div>
-            <div class="clearfix mb-4">
-              <img class="mt-n6 float-right img-fluid" alt="onboarding-gender" src="assets/img/illustrations/onboarding-gender.svg" data-holder-rendered="true" height="320">
-            </div>
-            <div class="px-4">
-              <h2>About you</h2>
-              <div class="row align-items-center mb-4">
-                <div class="col small text-muted">
-                  <button type="button" class="btn btn-sm btn-link text-muted pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
-                </div>
-              </div>
-              <div class="form-row mb-4">
-                <div class="form-group col-6 mb-0">
-                  <label for="gender">Gender</label>
-                  <select class="custom-select custom-select-lg" id="gender">
-                    <option selected>Female</option>
-                    <option value="1">Male</option>
-                    <option value="2">Rather not say</option>
-                  </select>
-                </div>
-                <div class="form-group col-6 mb-0">
-                  <label for="birthday">Birthday</label>
-                  <input type="text" class="form-control form-control-lg" placeholder="MM/DD/YYYY" data-mask="00/00/0000" id="birthday">
-                </div>
-              </div>
-              <div class="form-group mb-4">
-                <label for="height">Height</label>
-                <div class="input-group input-group-lg">
-                  <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Height" id="height">
-                  <div class="input-group-append">
-                    <span class="input-group-text rounded-right border-left-0" id="basic-addon2">cm</span>
-                  </div>
-                </div>
-              </div>
-              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
-            </div>
+          <div class="modal-header py-2">
+            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+              <i class="fe fe-arrow-left h2"></i>
+            </button>
+            <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+            </button>
           </div>
-          <nav class="navbar fixed-bottom px-4">
+          <div class="modal-body pb-6 px-lg-8">
+            <h2>About you</h2>
+            <div class="form-row mb-4">
+              <div class="form-group col-6 mb-0">
+                <label for="gender">Gender</label>
+                <select class="custom-select custom-select-lg" id="gender">
+                  <option selected>Female</option>
+                  <option value="1">Male</option>
+                  <option value="2">Rather not say</option>
+                </select>
+              </div>
+              <div class="form-group col-6 mb-0">
+                <label for="birthday">Birthday</label>
+                <input type="text" class="form-control form-control-lg" placeholder="MM/DD/YYYY" data-mask="00/00/0000" id="birthday">
+              </div>
+            </div>
+            <div class="form-group mb-4">
+              <label for="height">Height</label>
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Height" id="height">
+                <div class="input-group-append">
+                  <span class="input-group-text rounded-right border-left-0" id="basic-addon2">cm</span>
+                </div>
+              </div>
+            </div>
+            <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+
+          </div>
+          <nav class="navbar fixed-bottom px-4 px-lg-8">
             <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingActivity">Continue</button>
           </nav>
         </div>
@@ -4803,47 +4785,45 @@
     <div class="modal fade fixed-right" id="onboardingActivity" tabindex="-9" role="dialog" aria-labelledby="onboardingActivity" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="modal-body p-0 pb-6">
-            <div class="d-flex justify-content-between align-items-center">
-              <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
-              <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><i class="fe fe-x"></i></span>
-              </button>
-            </div>
-            <div class="clearfix mb-4">
-              <img class="mt-n6 float-right img-fluid" alt="onboarding-goal-description" src="assets/img/illustrations/onboarding-goal-description.svg" data-holder-rendered="true" height="320">
-            </div>
-            <div class="px-4">
-              <h2>Activity levels</h2>
-              <form class="mb-2">
-                <select class="custom-select custom-select-lg mb-3">
-                  <option selected>Sedentary</option>
-                  <option>Lightly Active</option>
-                  <option>Moderately Active</option>
-                  <option>Very Active</option>
-                  <option>Extremely Active</option>
-                </select>
-              </form>
-              <div class="my-4">
-
-                <dl>
-                  <dt>Sedentary</dt>
-                  <dd>Desk job and little to no exercise</dd>
-                  <dt>Lightly Active</dt>
-                  <dd>Light exercise 1–3 days/week</dd>
-                  <dt>Moderately Active</dt>
-                  <dd>Moderate exercise 3–5 days/week</dd>
-                  <dt>Very Active</dt>
-                  <dd>Hard exercise 6–7 days/week</dd>
-                  <dt>Extremely Active</dt>
-                  <dd>Hard daily exercise and physical job or training</dd>
-                </dl>
-
-              </div>
-              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
-            </div>
+          <div class="modal-header py-2">
+            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+              <i class="fe fe-arrow-left h2"></i>
+            </button>
+            <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+            </button>
           </div>
-          <nav class="navbar fixed-bottom px-4">
+          <div class="modal-body pb-6 px-lg-8">
+            <h2>Activity levels</h2>
+            <form class="mb-2">
+              <select class="custom-select custom-select-lg mb-3">
+                <option selected>Sedentary</option>
+                <option>Lightly Active</option>
+                <option>Moderately Active</option>
+                <option>Very Active</option>
+                <option>Extremely Active</option>
+              </select>
+            </form>
+            <div class="my-4">
+
+              <dl>
+                <dt>Sedentary</dt>
+                <dd>Desk job and little to no exercise</dd>
+                <dt>Lightly Active</dt>
+                <dd>Light exercise 1–3 days/week</dd>
+                <dt>Moderately Active</dt>
+                <dd>Moderate exercise 3–5 days/week</dd>
+                <dt>Very Active</dt>
+                <dd>Hard exercise 6–7 days/week</dd>
+                <dt>Extremely Active</dt>
+                <dd>Hard daily exercise and physical job or training</dd>
+              </dl>
+
+            </div>
+            <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+
+          </div>
+          <nav class="navbar fixed-bottom px-4 px-lg-8">
             <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingWaist">Continue</button>
           </nav>
         </div>
@@ -4854,39 +4834,36 @@
     <div class="modal fade fixed-right" id="onboardingWaist" tabindex="-9" role="dialog" aria-labelledby="onboardingWaist" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="modal-body p-0 pb-6">
-            <div class="d-flex justify-content-between align-items-center">
-              <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
-              <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><i class="fe fe-x"></i></span>
-              </button>
-            </div>
-            <div class="clearfix mb-4">
-              <img class="mt-n6 float-right img-fluid" alt="onboarding-waist" src="assets/img/illustrations/onboarding-waist.svg" data-holder-rendered="true" height="320">
-            </div>
-            <div class="px-4">
-              <h2>Your Waist</h2>
-              <div class="row align-items-center mb-4">
-                <div class="col small text-muted">
-                  <button type="button" class="btn btn-sm btn-link text-muted pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
-                </div>
-              </div>
-              <form class="mb-4">
-                <div class="input-group input-group-lg mb-3">
-                  <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Weight" aria-describedby="waisttHelp">
-                  <div class="input-group-append">
-                    <span class="input-group-text rounded-right" id="basic-addon2">cm</span>
-                  </div>
-                  <small id="waisttHelp" class="form-text text-muted mt-2">If you don’t know your exact waist, enter your best guess.</small>
-                </div>
-              </form>
-              <h6 class="header-pretitle">How-To</h6>
-              <p class="text-secondary mb-0 small">Your waist is situated just after the top of your hip bone. If you don’t have a tape measure at home, use your earbuds cable and wrap your waist with it. Compare the lenght measured with a A4 paper sheet. A A4 measures 21.0 × 29.7 centimeters.</p>
-              <img class="img-fluid my-4" src="assets/img/illustrations/waist-woman.svg" alt="how to measure your waist - Woman">
-              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
-            </div>
+          <div class="modal-header py-2">
+            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+              <i class="fe fe-arrow-left h2"></i>
+            </button>
+            <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+            </button>
           </div>
-          <nav class="navbar fixed-bottom px-4">
+          <div class="modal-body pb-6 px-lg-8">
+            <h2>Your Waist</h2>
+            <div class="row align-items-center mb-4">
+              <div class="col small text-muted">
+                <button type="button" class="btn btn-sm btn-link text-muted pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
+              </div>
+            </div>
+            <form class="mb-4">
+              <div class="input-group input-group-lg mb-3">
+                <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Weight" aria-describedby="waisttHelp">
+                <div class="input-group-append">
+                  <span class="input-group-text rounded-right" id="basic-addon2">cm</span>
+                </div>
+                <small id="waisttHelp" class="form-text text-muted mt-2">If you don’t know your exact waist, enter your best guess.</small>
+              </div>
+            </form>
+            <h6 class="header-pretitle">How-To</h6>
+            <p class="text-secondary mb-0 small">Your waist is situated just after the top of your hip bone. If you don’t have a tape measure at home, use your earbuds cable and wrap your waist with it. Compare the lenght measured with a A4 paper sheet. A A4 measures 21.0 × 29.7 centimeters.</p>
+            <img class="img-fluid my-4" src="assets/img/illustrations/waist-woman.svg" alt="how to measure your waist - Woman">
+            <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+          </div>
+          <nav class="navbar fixed-bottom px-4 px-lg-8">
             <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingBodyFat">Continue</button>
           </nav>
         </div>
@@ -4897,81 +4874,79 @@
     <div class="modal fade fixed-right" id="onboardingBodyFat" tabindex="-1O" role="dialog" aria-labelledby="onboardingBodyFat" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="modal-body p-0 pb-6">
-            <div class="d-flex justify-content-between align-items-center">
-              <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
-              <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><i class="fe fe-x"></i></span>
-              </button>
-            </div>
-            <div class="clearfix mb-4">
-              <img class="mt-n6 float-right img-fluid" alt="onboarding-bodyfat" src="assets/img/illustrations/onboarding-bodyfat.svg" data-holder-rendered="true" height="320">
-            </div>
-            <div class="px-4">
-              <h2>Your Body Fat %</h2>
-              <form class="mb-4">
-                <div class="input-group input-group-lg mb-3">
-                  <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="bodyfat">
-                  <div class="input-group-append">
-                    <span class="input-group-text rounded-right" id="basic-addon2">%</span>
-                  </div>
-                </div>
-              </form>
-              <h6 class="header-pretitle mb-3">How to guesstimate your body fat %</h6>
-              <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-5">
-                <li class="nav-item">
-                  <a href="#!">
-                    <div class="card mb-3 p-4">
-                      <img class="rounded" src="assets/img/illustrations/body-fat-1-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
-                    </div>
-                    <h2 class="h4 text-dark">0 - 0%</h2>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#!">
-                    <div class="card mb-3 p-4">
-                      <img class="rounded" src="assets/img/illustrations/body-fat-2-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
-                    </div>
-                    <h2 class="h4 text-dark">0 - 0%</h2>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#!">
-                    <div class="card mb-3 p-4">
-                      <img class="rounded" src="assets/img/illustrations/body-fat-3-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
-                    </div>
-                    <h2 class="h4 text-dark">0 - 0%</h2>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#!">
-                    <div class="card mb-3 p-4">
-                      <img class="rounded" src="assets/img/illustrations/body-fat-4-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
-                    </div>
-                    <h2 class="h4 text-dark">0 - 0%</h2>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#!">
-                    <div class="card mb-3 p-4">
-                      <img class="rounded" src="assets/img/illustrations/body-fat-5-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
-                    </div>
-                    <h2 class="h4 text-dark">0 - 0%</h2>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#!">
-                    <div class="card mb-3 p-4">
-                      <img class="rounded" src="assets/img/illustrations/body-fat-6-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
-                    </div>
-                    <h2 class="h4 text-dark">0 - 0%</h2>
-                  </a>
-                </li>
-              </ul>
-              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
-            </div>
+          <div class="modal-header py-2">
+            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+              <i class="fe fe-arrow-left h2"></i>
+            </button>
+            <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+            </button>
           </div>
-          <nav class="navbar fixed-bottom px-4">
+          <div class="modal-body pb-6 px-lg-8">
+            <h2>Your Body Fat %</h2>
+            <form class="mb-4">
+              <div class="input-group input-group-lg mb-3">
+                <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="bodyfat">
+                <div class="input-group-append">
+                  <span class="input-group-text rounded-right" id="basic-addon2">%</span>
+                </div>
+              </div>
+            </form>
+            <h6 class="header-pretitle mb-3">How to guesstimate your body fat %</h6>
+            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-5">
+              <li class="nav-item">
+                <a href="#!">
+                  <div class="card mb-3 p-4">
+                    <img class="rounded" src="assets/img/illustrations/body-fat-1-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
+                  </div>
+                  <h2 class="h4 text-dark">0 - 0%</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#!">
+                  <div class="card mb-3 p-4">
+                    <img class="rounded" src="assets/img/illustrations/body-fat-2-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
+                  </div>
+                  <h2 class="h4 text-dark">0 - 0%</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#!">
+                  <div class="card mb-3 p-4">
+                    <img class="rounded" src="assets/img/illustrations/body-fat-3-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
+                  </div>
+                  <h2 class="h4 text-dark">0 - 0%</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#!">
+                  <div class="card mb-3 p-4">
+                    <img class="rounded" src="assets/img/illustrations/body-fat-4-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
+                  </div>
+                  <h2 class="h4 text-dark">0 - 0%</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#!">
+                  <div class="card mb-3 p-4">
+                    <img class="rounded" src="assets/img/illustrations/body-fat-5-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
+                  </div>
+                  <h2 class="h4 text-dark">0 - 0%</h2>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#!">
+                  <div class="card mb-3 p-4">
+                    <img class="rounded" src="assets/img/illustrations/body-fat-6-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
+                  </div>
+                  <h2 class="h4 text-dark">0 - 0%</h2>
+                </a>
+              </li>
+            </ul>
+            <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+
+          </div>
+          <nav class="navbar fixed-bottom px-4 px-lg-4">
             <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingHbA1c">Continue</button>
           </nav>
         </div>
@@ -4982,68 +4957,64 @@
     <div class="modal fade fixed-right" id="onboardingHbA1c" tabindex="-1O" role="dialog" aria-labelledby="onboardingHbA1c" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="modal-body p-0 pb-6">
-            <div class="d-flex justify-content-between align-items-center">
-              <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
-              <button class="btn btn-link text-dark text-right vw-100" type="button" data-toggle="modal" data-target="#onboardingCraving">Skip</button>
-              <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><i class="fe fe-x"></i></span>
-              </button>
-            </div>
-            <div class="clearfix mb-4">
-              <img class="mt-n6 float-right img-fluid" alt="onboarding-bodyfat" src="assets/img/illustrations/tuto-3.svg" data-holder-rendered="true" height="320">
-            </div>
-            <div class="px-4 pb-4">
-              <h2>Blood metrics</h2>
-              <div class="row align-items-center mb-4">
-                <div class="col small text-muted">
-                  <button type="button" class="btn btn-sm btn-link text-muted pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="HbA1c">HbA1c</label>
-                <div class="input-group input-group-lg">
-                  <input type="text" class="form-control border-right-0" placeholder="0" aria-label="HbA1c" id="HbA1c">
-                  <div class="input-group-append">
-                    <span class="input-group-text rounded-right border-left-0" id="basic-addon3">%</span>
-                  </div>
-                </div>
-                <small id="hba1c" class="form-text text-muted pt-2 mb-0">Optional</small>
-              </div>
-              <div class="form-group">
-                <label for="FastingBloodGlucose">Fasting blood glucose</label>
-                <div class="input-group input-group-lg">
-                  <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="FastingBloodGlucose" id="FastingBloodGlucose">
-                  <div class="input-group-append">
-                    <span class="input-group-text rounded-right border-left-0" id="basic-addon3">mmol/L</span>
-                  </div>
-                </div>
-                <small id="FastingBloodGlucose" class="form-text text-muted pt-2 mb-0">Optional</small>
-              </div>
-              <div class="form-group">
-                <label for="FastingTriglycerides">Fasting triglycerides</label>
-                <div class="input-group input-group-lg">
-                  <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="FastingTriglycerides" id="FastingTriglycerides">
-                  <div class="input-group-append">
-                    <span class="input-group-text rounded-right border-left-0" id="basic-addon3">mmol/L</span>
-                  </div>
-                </div>
-                <small id="FastingTriglycerides" class="form-text text-muted pt-2 mb-0">Optional</small>
-              </div>
-              <div class="form-group">
-                <label for="FastingInsulin">Fasting insulin</label>
-                <div class="input-group input-group-lg">
-                  <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="FastingInsulin" id="FastingInsulin">
-                  <div class="input-group-append">
-                    <span class="input-group-text rounded-right border-left-0" id="basic-addon3">pmol/L</span>
-                  </div>
-                </div>
-                <small id="FastingInsulin" class="form-text text-muted pt-2 mb-0">Optional</small>
-              </div>
-              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
-            </div>
+          <div class="modal-header py-2">
+            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+              <i class="fe fe-arrow-left h2"></i>
+            </button>
+            <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+            </button>
           </div>
-          <nav class="navbar fixed-bottom px-4">
+          <div class="modal-body pb-6 px-lg-8">
+            <h2>Blood metrics</h2>
+            <div class="row align-items-center mb-4">
+              <div class="col small text-muted">
+                <button type="button" class="btn btn-sm btn-link text-muted pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="HbA1c">HbA1c</label>
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control border-right-0" placeholder="0" aria-label="HbA1c" id="HbA1c">
+                <div class="input-group-append">
+                  <span class="input-group-text rounded-right border-left-0" id="basic-addon3">%</span>
+                </div>
+              </div>
+              <small id="hba1c" class="form-text text-muted pt-2 mb-0">Optional</small>
+            </div>
+            <div class="form-group">
+              <label for="FastingBloodGlucose">Fasting blood glucose</label>
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="FastingBloodGlucose" id="FastingBloodGlucose">
+                <div class="input-group-append">
+                  <span class="input-group-text rounded-right border-left-0" id="basic-addon3">mmol/L</span>
+                </div>
+              </div>
+              <small id="FastingBloodGlucose" class="form-text text-muted pt-2 mb-0">Optional</small>
+            </div>
+            <div class="form-group">
+              <label for="FastingTriglycerides">Fasting triglycerides</label>
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="FastingTriglycerides" id="FastingTriglycerides">
+                <div class="input-group-append">
+                  <span class="input-group-text rounded-right border-left-0" id="basic-addon3">mmol/L</span>
+                </div>
+              </div>
+              <small id="FastingTriglycerides" class="form-text text-muted pt-2 mb-0">Optional</small>
+            </div>
+            <div class="form-group">
+              <label for="FastingInsulin">Fasting insulin</label>
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="FastingInsulin" id="FastingInsulin">
+                <div class="input-group-append">
+                  <span class="input-group-text rounded-right border-left-0" id="basic-addon3">pmol/L</span>
+                </div>
+              </div>
+              <small id="FastingInsulin" class="form-text text-muted pt-2 mb-0">Optional</small>
+            </div>
+            <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+          </div>
+          <nav class="navbar fixed-bottom px-4 px-lg-8">
             <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingCraving">Continue</button>
           </nav>
         </div>
@@ -5054,49 +5025,46 @@
     <div class="modal fade fixed-right" id="onboardingCraving" tabindex="-11" role="dialog" aria-labelledby="onboardingCraving" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="modal-body p-0 pb-6">
-            <div class="d-flex justify-content-between align-items-center">
-              <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
-              <button class="btn btn-link text-dark text-right vw-100" type="button" data-toggle="modal" data-target="#onboardingSleep">Skip</button>
-              <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><i class="fe fe-x"></i></span>
-              </button>
-            </div>
-            <div class="clearfix mb-4">
-              <img class="mt-n6 float-right img-fluid" alt="onboarding-craving" src="assets/img/illustrations/onboarding-craving.svg" data-holder-rendered="true" height="320">
-            </div>
-            <div class="p-4">
-              <h2>Your craving & meals frequency</h2>
-              <form class="mb-2">
-                <select class="custom-select custom-select-lg mb-3">
-                  <option selected>Normal craving</option>
-                  <option value="1">No craving</option>
-                  <option value="2">Moderate craving</option>
-                  <option value="3">Strong craving</option>
-                </select>
-              </form>
-              <div class="form-row mb-4">
-                <div class="form-group col-6">
-                  <div class="input-group input-group-lg">
-                    <input type="text" class="form-control border-right-0" placeholder="0" aria-label="meals frequency">
-                    <div class="input-group-append">
-                      <span class="input-group-text rounded-right border-left-0" id="Meals">Meals</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group col-6">
-                  <div class="input-group input-group-lg">
-                    <input type="text" class="form-control border-right-0" placeholder="0" aria-label="Snacks frequency">
-                    <div class="input-group-append">
-                      <span class="input-group-text rounded-right border-left-0" id="Snacks">Snacks</span>
-                    </div>
+          <div class="modal-header py-2">
+            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+              <i class="fe fe-arrow-left h2"></i>
+            </button>
+            <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+            </button>
+          </div>
+          <div class="modal-body pb-6 px-lg-8">
+            <h2>Your craving & meals frequency</h2>
+            <form class="mb-2">
+              <select class="custom-select custom-select-lg mb-3">
+                <option selected>Normal craving</option>
+                <option value="1">No craving</option>
+                <option value="2">Moderate craving</option>
+                <option value="3">Strong craving</option>
+              </select>
+            </form>
+            <div class="form-row mb-4">
+              <div class="form-group col-6">
+                <div class="input-group input-group-lg">
+                  <input type="text" class="form-control border-right-0" placeholder="0" aria-label="meals frequency">
+                  <div class="input-group-append">
+                    <span class="input-group-text rounded-right border-left-0" id="Meals">Meals</span>
                   </div>
                 </div>
               </div>
-              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+              <div class="form-group col-6">
+                <div class="input-group input-group-lg">
+                  <input type="text" class="form-control border-right-0" placeholder="0" aria-label="Snacks frequency">
+                  <div class="input-group-append">
+                    <span class="input-group-text rounded-right border-left-0" id="Snacks">Snacks</span>
+                  </div>
+                </div>
+              </div>
             </div>
+            <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+
           </div>
-          <nav class="navbar fixed-bottom px-4">
+          <nav class="navbar fixed-bottom px-4 px-lg-8">
             <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingSleep">Continue</button>
           </nav>
         </div>
@@ -5107,31 +5075,28 @@
     <div class="modal fade fixed-right" id="onboardingSleep" tabindex="-13" role="dialog" aria-labelledby="onboardingSleep" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="modal-body p-0 pb-6">
-            <div class="d-flex justify-content-between align-items-center">
-              <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
-              <button class="btn btn-link text-dark text-right vw-100" type="button" data-toggle="modal" data-target="#onboardingConnect">Skip</button>
-              <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"><i class="fe fe-x"></i></span>
-              </button>
-            </div>
-            <div class="clearfix mb-4">
-              <img class="mt-n6 float-right img-fluid" alt="onboarding-sleep" src="assets/img/illustrations/onboarding-sleep.svg" data-holder-rendered="true" height="320">
-            </div>
-            <div class="px-4">
-              <h2>Your sleep</h2>
-              <form class="mb-4">
-                <select class="custom-select custom-select-lg mb-3">
-                  <option selected>Normal sleeper</option>
-                  <option value="1">Very light sleeper</option>
-                  <option value="2">Moderate sleeper</option>
-                  <option value="3">Sound sleeper</option>
-                </select>
-              </form>
-              <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
-            </div>
+          <div class="modal-header py-2">
+            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+              <i class="fe fe-arrow-left h2"></i>
+            </button>
+            <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+            </button>
           </div>
-          <nav class="navbar fixed-bottom px-4">
+          <div class="modal-body px-lg-8 pb-6">
+            <h2>Your sleep</h2>
+            <form class="mb-4">
+              <select class="custom-select custom-select-lg mb-3">
+                <option selected>Normal sleeper</option>
+                <option value="1">Very light sleeper</option>
+                <option value="2">Moderate sleeper</option>
+                <option value="3">Sound sleeper</option>
+              </select>
+            </form>
+            <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+
+          </div>
+          <nav class="navbar fixed-bottom px-4 px-lg-8">
             <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingConnect">Continue</button>
           </nav>
         </div>
@@ -5142,10 +5107,15 @@
     <div class="modal fade fixed-right" id="onboardingConnect" tabindex="-14" role="dialog" aria-labelledby="onboardingConnect" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="d-flex justify-content-between align-items-center">
-            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
+          <div class="modal-header py-2">
+            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+              <i class="fe fe-arrow-left h2"></i>
+            </button>
+            <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+            </button>
           </div>
-          <div class="modal-body pb-6">
+          <div class="modal-body pb-6 px-lg-8">
             <h2 class="text-center">Join Nutrita today</h2>
             <p class="text-secondary mb-4 small text-center">Create an account to reach your goals.</p>
             <button class="btn btn-white btn-block" type="button" data-toggle="modal" data-target="#onboardingLegal">Continue with Google</button>
@@ -5201,10 +5171,15 @@
     <div class="modal fade fixed-right" id="signIn" tabindex="-14" role="dialog" aria-labelledby="signIn" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="d-flex justify-content-between align-items-center">
-            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
+          <div class="modal-header py-2">
+            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+              <i class="fe fe-arrow-left h2"></i>
+            </button>
+            <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+            </button>
           </div>
-          <div class="modal-body pb-6">
+          <div class="modal-body pb-6 px-lg-8">
             <h2 class="text-center">Hello, welcome back!</h2>
             <p class="text-secondary mb-4 small text-center">Sin in to your Nutrita account to get back to your health goals. Or <a href="#">Sign up</a> instead.</p>
             <button class="btn btn-white btn-block" type="button" data-toggle="modal" data-target="dashboard-full.html">Continue with Google</button>
@@ -5266,19 +5241,24 @@
     <div class="modal fade fixed-right" id="onboardingLegal" tabindex="-15" role="dialog" aria-labelledby="onboardingLegal" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="d-flex justify-content-between align-items-center">
-            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
+          <div class="modal-header py-2">
+            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+              <i class="fe fe-arrow-left h2"></i>
+            </button>
+            <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+            </button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body px-lg-8">
             <h2>Legal</h2>
             <p class="text-secondary mb-4 small">Please review the Nutrita Terms of Service and Privacy Policy.</p>
           </div>
-          <nav class="navbar fixed-bottom px-4">
+          <nav class="navbar fixed-bottom px-lg-8">
             <div class="btn-group-vertical mb-4 vw-100">
               <button class="btn btn-white border-bottom-0 d-flex justify-content-between " type="button" data-toggle="modal" data-target="#onboardingLegalTOS"><span>Terms of service</span> <i class="fe fe-chevron-right text-secondary"></i></button>
               <button class="btn btn-white d-flex justify-content-between " type="button" data-toggle="modal" data-target="#onboardingLegalTOS"><span>Privacy policy</span> <i class="fe fe-chevron-right text-secondary"></i></button>
             </div>
-            <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingSubscriptionPeriod">Accept</button>
+            <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingAboutYou">Accept</button>
           </nav>
         </div>
       </div>
@@ -5287,9 +5267,14 @@
     <!-- IDEA: modal onboardingLegalTOS -->
     <div class="modal fade fixed-right" id="onboardingLegalTOS" tabindex="-16" role="dialog" aria-labelledby="onboardingLegalTOS" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-        <div class="modal-content">
-          <div class="d-flex justify-content-between align-items-center">
-            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
+        <div class="modal-content px-lg-8">
+          <div class="modal-header py-2">
+            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+              <i class="fe fe-arrow-left h2"></i>
+            </button>
+            <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+            </button>
           </div>
           <div class="modal-body">
             <h2>Terms of service</h2>
@@ -5306,8 +5291,13 @@
     <div class="modal fade fixed-right" id="onboardingSubscriptionPeriod" tabindex="-17" role="dialog" aria-labelledby="onboardingSubscriptionPeriod" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="d-flex justify-content-between align-items-center">
-            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
+          <div class="modal-header py-2">
+            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+              <i class="fe fe-arrow-left h2"></i>
+            </button>
+            <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+            </button>
           </div>
           <div class="modal-body pb-6">
             <h2>Meet your Nutrition Coach</h2>
@@ -5400,8 +5390,13 @@
     <div class="modal fade fixed-right" id="onboardingTrialEndedSubscriptionPeriod" tabindex="-17" role="dialog" aria-labelledby="onboardingTrialEndedSubscriptionPeriod" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="d-flex justify-content-between align-items-center">
-            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
+          <div class="modal-header py-2">
+            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+              <i class="fe fe-arrow-left h2"></i>
+            </button>
+            <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+            </button>
           </div>
           <div class="modal-body pb-6">
             <h2>Your trial period ended</h2>
@@ -5471,8 +5466,13 @@
     <div class="modal fade fixed-right" id="onboardingPaymentOptions" tabindex="-17" role="dialog" aria-labelledby="onboardingPaymentOptions" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
         <div class="modal-content">
-          <div class="d-flex justify-content-between align-items-center">
-            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
+          <div class="modal-header py-2">
+            <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+              <i class="fe fe-arrow-left h2"></i>
+            </button>
+            <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+            </button>
           </div>
           <div class="modal-body pb-6">
             <h2>Express checkout</h2>
