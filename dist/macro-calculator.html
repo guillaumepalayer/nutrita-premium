@@ -5168,11 +5168,8 @@
           <div class="modal-body pb-6 px-lg-8">
             <h2 class="text-center">Join Nutrita today</h2>
             <p class="text-secondary mb-4 small text-center">Create an account to reach your goals.</p>
-            <button class="btn btn-white btn-block" type="button" data-toggle="modal" data-target="#onboardingLegal">Continue with Google</button>
-            <button class="btn btn-primary btn-block" type="button" data-toggle="modal" data-target="#onboardingLegal">Continue with Facebook</button>
-            <p class="text-center text-muted my-4 small">OR</p>
             <!-- Form -->
-            <form class="mb-4">
+            <form>
 
               <!-- Email address -->
               <div class="form-group">
@@ -5210,9 +5207,15 @@
 
                 </div>
               </div>
+              <div class="custom-control custom-checkbox mb-4">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">I agree with TOS</label>
+              </div>
               <button class="btn btn-success btn-block mb-2" type="button" data-toggle="modal" data-target="#onboardingLegal">Sign up</button>
-              <button class="btn btn-link btn-block text-success btn-sm" type="button" data-toggle="modal" data-target="#onboardingConnect">I already have an account</button>
             </form>
+            <p class="text-center text-muted my-3 small">OR</p>
+            <button class="btn btn-primary mb-4 py-0 pl-0 btn-block text-left" type="button" data-toggle="modal" data-target="#onboardingLegal"><img class="mr-2 rounded" src="assets/img/btn_google_dark_normal_ios.svg" alt="btn google sign in" width="40px">Continue with Google</button>
+            <button class="btn btn-link btn-block text-success btn-sm" type="button" data-toggle="modal" data-target="#onboardingConnect">I already have an account</button>
           </div>
         </div>
       </div>
@@ -5231,19 +5234,16 @@
           </div>
           <div class="modal-body pb-6 px-lg-8">
             <h2 class="text-center">Hello, welcome back!</h2>
-            <p class="text-secondary mb-4 small text-center">Sin in to your Nutrita account to get back to your health goals. Or <a href="#">Sign up</a> instead.</p>
-            <button class="btn btn-white btn-block" type="button" data-toggle="modal" data-target="dashboard-full.html">Continue with Google</button>
-            <button class="btn btn-primary btn-block" type="button" data-toggle="modal" data-target="dashboard-full.html">Continue with Facebook</button>
-            <p class="text-center text-muted my-4 small">OR</p>
+            <p class="text-secondary mb-4 small text-center">Sin in to your Nutrita account to get back to your health goals.</p>
             <!-- Form -->
-            <form class="mb-4">
+            <form>
 
               <!-- Email address -->
               <div class="form-group">
 
                 <!-- Label -->
                 <label>
-                  Your Email Address
+                  Email Address
                 </label>
 
                 <!-- Input -->
@@ -5256,14 +5256,14 @@
 
                 <!-- Label -->
                 <label>
-                  Your Password
+                  Password
                 </label>
 
                 <!-- Input group -->
                 <div class="input-group input-group-merge">
 
                   <!-- Input -->
-                  <input type="password" class="form-control form-control-appended" placeholder="Your password">
+                  <input type="password" class="form-control form-control-appended" placeholder="Create your password">
 
                   <!-- Icon -->
                   <div class="input-group-append">
@@ -5274,13 +5274,13 @@
 
                 </div>
                 <small class="form-text text-muted pt-2 mb-0"><a class="text-secondary" href="forget-password.html">Forget your password?</a></small>
-
               </div>
-              <a class="btn btn-success btn-block mb-2" href="dashboard-full.html">Sign In</a>
-              <button class="btn btn-link btn-block text-success btn-sm" type="button" data-toggle="modal" data-target="#onboardingConnect">Create an account</button>
-              <button class="btn btn-link btn-block text-success btn-sm" type="button" data-toggle="modal" data-target="#onboardingTrialEndedSubscriptionPeriod">Trial Ended user signing up again</button>
-
+              <button class="btn btn-success btn-block mb-2" type="button" data-toggle="modal" data-target="#onboardingLegal">Sign in</button>
             </form>
+            <p class="text-center text-muted my-3 small">OR</p>
+            <button class="btn btn-primary mb-4 py-0 pl-0 btn-block text-left" type="button" data-toggle="modal" data-target="#dashboard-full_3.html"><img class="mr-2 rounded" src="assets/img/btn_google_dark_normal_ios.svg" alt="btn google sign in" width="40px">Continue with Google</button>
+            <button class="btn btn-link btn-block text-success btn-sm" type="button" data-toggle="modal" data-target="#onboardingConnect">Create an account</button>
+
           </div>
         </div>
       </div>
