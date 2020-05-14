@@ -33,6 +33,1329 @@
     </div>
   </div>
 </div>
+<!-- IDEA: modal onboarding-connect-option -->
+<div class="modal fade fixed-right" id="onboardingConnect" tabindex="-1" role="dialog" aria-labelledby="onboardingConnect" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <div class="row justify-content-center no-gutters">
+            <div class="col px-lg-5">
+              <button class="btn btn-link text-dark position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <!-- Heading -->
+              <h1 class="display-4 text-center mb-3 mt-5 mt-lg-6">
+                Try the Nutrita App free for 7 days
+              </h1>
+
+              <!-- Subheading -->
+              <p class="text-secondary text-center mb-5 px-lg-6">
+                Create an account to reach your goals.
+              </p>
+
+              <div class="px-lg-7">
+                <!-- Form -->
+                <form>
+
+                  <!-- Email address -->
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <label>Email Address</label>
+
+                    <!-- Input -->
+                    <input type="email" class="form-control form-control-lg" placeholder="name@address.com">
+
+                  </div>
+
+                  <!-- Password -->
+                  <div class="form-group">
+
+                    <div class="row">
+                      <div class="col">
+
+                        <!-- Label -->
+                        <label>Password</label>
+
+                      </div>
+                    </div> <!-- / .row -->
+
+                    <!-- Input group -->
+                    <div class="input-group input-group-merge input-group-lg">
+
+                      <!-- Input -->
+                      <input type="password" class="form-control form-control-appended" placeholder="Enter your password">
+
+                      <!-- Icon -->
+                      <div class="input-group-append">
+                        <span class="input-group-text">
+                          <i class="fe fe-eye"></i>
+                        </span>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="custom-control custom-checkbox mb-4">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">I have read and agree to the<a href="https://www.iubenda.com/privacy-policy/56741265/legal" target="_blank" rel="noopener noreferrer"> Privacy Policy</a> and <a target="_blank" rel="noopener noreferrer" href="https://nutrita.app/terms-of-service">Terms of service</a></label>
+                  </div>
+                  <!-- Submit -->
+                  <button class="btn btn-block btn-lg btn-success mb-3" type="button" data-toggle="modal" data-target="#onboardingGoalsSelection">
+                    Sign up
+                  </button>
+                  <p class="text-center text-muted my-3 small">OR</p>
+                  <button class="btn btn-primary mb-4 py-0 pl-0 btn-block text-left" type="button" data-toggle="modal" data-target="#onboardingGoalsSelection"><img class="mr-2 rounded" src="assets/img/btn_google_dark_normal_ios.svg" alt="btn google sign in" width="40px">Continue with Google</button>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-cover vh-100 p-4" style="background-image: url(assets/img/covers/nutrita-pro-cover.jpg);">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button class="btn btn-outline-white btn-sm align-self-right" type="button" data-toggle="modal" data-target="#signIn">Sign in</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal -->
+
+<!-- IDEA: modal sign-in -->
+<div class="modal fade fixed-right" id="signIn" tabindex="-1" role="dialog" aria-labelledby="signIn" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <div class="row justify-content-center no-gutters">
+            <div class="col px-lg-5">
+              <button class="btn btn-link text-dark position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <!-- Heading -->
+              <h1 class="display-4 text-center mb-3 mt-5 mt-lg-6">
+                Welcome back to Nutrita Pro!
+              </h1>
+
+              <!-- Subheading -->
+              <p class="text-secondary text-center mb-5 px-lg-6">
+                Sign in to your Nutrita account to get back to your health goals.
+              </p>
+
+              <div class="px-lg-7">
+                <!-- Form -->
+                <form>
+
+                  <!-- Email address -->
+                  <div class="form-group">
+
+                    <!-- Label -->
+                    <label>Email Address</label>
+
+                    <!-- Input -->
+                    <input type="email" class="form-control form-control-lg" placeholder="name@address.com">
+
+                  </div>
+
+                  <!-- Password -->
+                  <div class="form-group">
+
+                    <div class="row">
+                      <div class="col">
+
+                        <!-- Label -->
+                        <label>Password</label>
+
+                      </div>
+                      <div class="col-auto">
+
+                        <!-- Help text -->
+                        <a href="password-reset-cover.html" class="form-text small text-secondary">
+                          Forgot password?
+                        </a>
+
+                      </div>
+                    </div> <!-- / .row -->
+
+                    <!-- Input group -->
+                    <div class="input-group input-group-merge input-group-lg">
+
+                      <!-- Input -->
+                      <input type="password" class="form-control form-control-appended" placeholder="Enter your password">
+
+                      <!-- Icon -->
+                      <div class="input-group-append">
+                        <span class="input-group-text">
+                          <i class="fe fe-eye"></i>
+                        </span>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!-- Submit -->
+                  <a class="btn btn-block btn-lg btn-success mb-3" href="dashboard-full_3.html">
+                    Sign in
+                  </a>
+                  <p class="text-center text-muted my-3 small">OR</p>
+                  <a class="btn btn-primary mb-4 py-0 pl-0 btn-block text-left" href="dashboard-full_3.html"><img class="mr-2 rounded" src="assets/img/btn_google_dark_normal_ios.svg" alt="btn google sign in" width="40px">Continue with Google</a>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-cover vh-100 p-4" style="background-image: url(assets/img/covers/nutrita-pro-cover.jpg);">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button class="btn btn-outline-white btn-sm align-self-right" type="button" data-toggle="modal" data-target="#onboardingConnect">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- / modal sign in -->
+
+<!-- IDEA: modal onboarding-goals-selection -->
+<div class="modal fade fixed-right" id="onboardingGoalsSelection" tabindex="-1" role="dialog" aria-labelledby="onboardingGoalsSelection" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <div class="row justify-content-center no-gutters">
+            <div class="col px-lg-5">
+              <button class="btn btn-link text-dark position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <!-- Heading -->
+              <h1 class="display-4 text-center my-5 mt-lg-6">
+                Choose a goal
+              </h1>
+
+              <div class="row justify-content-center">
+                <div class="col-6 col-lg-4">
+                  <a href="#" data-toggle="modal" data-target="#idealWeight">
+                    <div class="card" style="min-height: 104px">
+                      <div class="card-body text-center p-3">
+                        <div class="btn btn-rounded-circle bg-soft-ocre mb-2">
+                          👍
+                        </div>
+                        <h2 class="h4 mb-0 text-dark">
+                          Lose fat
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <a href="#" data-toggle="modal" data-target="#idealWeight">
+                    <div class="card" style="min-height: 104px">
+                      <div class="card-body p-3 text-center">
+                        <div class="btn btn-rounded-circle bg-soft-red mb-2">
+                          💉
+                        </div>
+                        <h2 class="h4 mb-0 text-dark">
+                          Control blood sugar
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-6 col-lg-4">
+                  <a href="#" data-toggle="modal" data-target="#idealWeight">
+                    <div class="card" style="min-height: 104px">
+                      <div class="card-body p-3 text-center">
+                        <div class="btn btn-rounded-circle bg-blue-light mb-2">
+                          💪
+                        </div>
+                        <h2 class="h4 mb-0 text-dark">
+                          Gain muscle
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <a href="#" data-toggle="modal" data-target="#idealWeight">
+                    <div class="card" style="min-height: 104px">
+                      <div class="card-body p-3 text-center">
+                        <div class="btn btn-rounded-circle bg-green-light mb-2">
+                          🤸‍
+                        </div>
+                        <h2 class="h4 mb-0 text-dark">
+                          Eat nutrient dense
+                        </h2>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-cover vh-100 p-4" style="background-image: url(assets/img/covers/nutrita-pro-cover.jpg);">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button class="btn btn-outline-white btn-sm align-self-right" type="button" data-toggle="modal" data-target="#onboardingConnect">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal onboarding-goals-selection -->
+<!-- IDEA: ideal weight -->
+<div class="modal fade fixed-right" id="idealWeight" tabindex="-1" role="dialog" aria-labelledby="idealWeight" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <div class="row justify-content-center no-gutters">
+            <div class="col px-lg-5">
+              <button class="btn btn-link text-dark position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <!-- Heading -->
+              <h1 class="display-4 text-center my-5 mt-lg-6">
+                What is your current and target weight you want to reach?
+              </h1>
+
+              <div class="px-lg-7">
+                <div class="row mb-4">
+                  <div class="col small d-flex align-items-center justify-content-center">
+                    <button type="button" class="btn btn-sm btn-link text-secondary pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col">
+                    <label for="currentWeight">Current weight</label>
+                    <div class="input-group input-group-lg mb-4">
+                      <input id="currentWeight" type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Weight">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-right border-left-0" id="basic-addon3">Kg</span>
+                      </div>
+                    </div>
+                    <label for="targetWeight">Target weight</label>
+                    <div class="input-group input-group-lg">
+                      <input id="targetWeight" type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Weight">
+                      <div class="input-group-append">
+                        <span class="input-group-text rounded-right border-left-0" id="basic-addon3">Kg</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-success btn-block btn-lg mb-3" type="button" data-toggle="modal" data-target="#onboardingAboutYou">Continue</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-cover vh-100 p-4" style="background-image: url(assets/img/covers/nutrita-pro-cover.jpg);">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button class="btn btn-outline-white btn-sm align-self-right" type="button" data-toggle="modal" data-target="#onboardingConnect">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal idealWeight -->
+<!-- IDEA: modal onboardingAboutYou -->
+<div class="modal fade fixed-right" id="onboardingAboutYou" tabindex="-1" role="dialog" aria-labelledby="onboardingAboutYou" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <div class="row justify-content-center no-gutters">
+            <div class="col px-lg-5">
+              <button class="btn btn-link text-dark position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <!-- Heading -->
+              <h1 class="display-4 text-center my-5 mt-lg-6">
+                About you
+              </h1>
+
+              <div class="px-lg-7">
+                <div class="form-row mb-4">
+                  <div class="form-group col-6 mb-0">
+                    <label for="gender">Gender</label>
+                    <select class="custom-select custom-select-lg" id="gender">
+                      <option selected>Female</option>
+                      <option value="1">Male</option>
+                      <option value="2">Rather not say</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-6 mb-0">
+                    <label for="birthday">Birthday</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="MM/DD/YYYY" data-mask="00/00/0000" id="birthday">
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="height">Height</label>
+                  <div class="input-group input-group-lg">
+                    <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Height" id="height">
+                    <div class="input-group-append">
+                      <span class="input-group-text rounded-right border-left-0" id="basic-addon2">cm</span>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-block btn-lg btn-success mb-5" type="button" data-toggle="modal" data-target="#onboardingActivity">Continue</button>
+                <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-cover vh-100 p-4" style="background-image: url(assets/img/covers/nutrita-pro-cover.jpg);">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button class="btn btn-outline-white btn-sm align-self-right" type="button" data-toggle="modal" data-target="#onboardingConnect">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal -->
+
+<!-- IDEA: modal onboarding-activity -->
+<div class="modal fade fixed-right" id="onboardingActivity" tabindex="-1" role="dialog" aria-labelledby="onboardingActivity" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <div class="row justify-content-center no-gutters">
+            <div class="col px-lg-5">
+              <button class="btn btn-link text-dark position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <!-- Heading -->
+              <h1 class="display-4 text-center my-5 mt-lg-6">
+                Activity level
+              </h1>
+
+              <div class="px-lg-7">
+                <form class="mb-2">
+                  <select class="custom-select custom-select-lg mb-3">
+                    <option selected>Sedentary</option>
+                    <option>Lightly Active</option>
+                    <option>Moderately Active</option>
+                    <option>Very Active</option>
+                    <option>Extremely Active</option>
+                  </select>
+                </form>
+                <div class="my-4">
+
+                  <dl>
+                    <dt>Sedentary</dt>
+                    <dd>Desk job and little to no exercise</dd>
+                    <dt>Lightly Active</dt>
+                    <dd>Light exercise 1–3 days/week</dd>
+                    <dt>Moderately Active</dt>
+                    <dd>Moderate exercise 3–5 days/week</dd>
+                    <dt>Very Active</dt>
+                    <dd>Hard exercise 6–7 days/week</dd>
+                    <dt>Extremely Active</dt>
+                    <dd>Hard daily exercise and physical job or training</dd>
+                  </dl>
+
+                </div>
+                <button class="btn btn-block btn-lg btn-success mb-5" type="button" data-toggle="modal" data-target="#onboardingBodyFat">Continue</button>
+                <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-cover vh-100 p-4" style="background-image: url(assets/img/covers/nutrita-pro-cover.jpg);">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button class="btn btn-outline-white btn-sm align-self-right" type="button" data-toggle="modal" data-target="#onboardingConnect">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal -->
+
+<!-- IDEA: modal onboarding-waist -->
+<div class="modal fade fixed-right" id="onboardingWaist" tabindex="-1" role="dialog" aria-labelledby="onboardingWaist" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <div class="row justify-content-center no-gutters">
+            <div class="col px-lg-5">
+              <button class="btn btn-link text-dark position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <!-- Heading -->
+              <h1 class="display-4 text-center my-5 mt-lg-6">
+                Waist
+              </h1>
+
+              <div class="px-lg-7">
+                <div class="row mb-4">
+                  <div class="col small d-flex align-items-center justify-content-center">
+                    <button type="button" class="btn btn-sm btn-link text-secondary pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="waist">Your waist</label>
+                  <div class="input-group input-group-lg">
+                    <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="waist" id="waist">
+                    <div class="input-group-append">
+                      <span class="input-group-text rounded-right border-left-0" id="basic-addon2">cm</span>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-block btn-lg btn-success mb-5" type="button" data-toggle="modal" data-target="#onboardingBodyFat">Continue</button>
+                <h2>How-To</h2>
+                <p class="text-secondary mb-0 small">Your waist is situated just after the top of your hip bone. If you don’t have a tape measure at home, use your earbuds cable and wrap your waist with it. Compare the lenght measured with a A4 paper sheet. A A4 measures 21.0 × 29.7 centimeters.</p>
+                <img class="img-fluid my-4" src="assets/img/illustrations/waist-woman.svg" alt="how to measure your waist - Woman">
+
+                <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-cover vh-100 p-4" style="background-image: url(assets/img/covers/nutrita-pro-cover.jpg);">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button class="btn btn-outline-white btn-sm align-self-right" type="button" data-toggle="modal" data-target="#onboardingConnect">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal -->
+
+<!-- IDEA: modal onboarding-body-fat -->
+<div class="modal fade fixed-right" id="onboardingBodyFat" tabindex="-1" role="dialog" aria-labelledby="onboardingBodyFat" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <div class="row justify-content-center no-gutters">
+            <div class="col px-lg-5">
+              <button class="btn btn-link text-dark position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <!-- Heading -->
+              <h1 class="display-4 text-center my-5 mt-lg-6">
+                Body Fat %
+              </h1>
+
+              <div class="px-lg-7">
+                <div class="row mb-4">
+                  <div class="col small d-flex align-items-center justify-content-center">
+                    <button type="button" class="btn btn-sm btn-link text-secondary pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
+                  </div>
+                </div>
+                <div class="form-group mb-4">
+                  <label for="body-fat">Body Fat %</label>
+                  <div class="input-group input-group-lg">
+                    <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="body-fat" id="body-fat">
+                    <div class="input-group-append">
+                      <span class="input-group-text rounded-right border-left-0" id="basic-addon2">%</span>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-block btn-lg btn-success mb-5" type="button" data-toggle="modal" data-target="#onboardingPaymentOptions">Continue</button>
+                <h2>How to guesstimate your body fat %</h2>
+                <p class="text-secondary mb-0 small">Your waist is situated just after the top of your hip bone. If you don’t have a tape measure at home, use your earbuds cable and wrap your waist with it. Compare the lenght measured with a A4 paper sheet. A A4 measures 21.0 × 29.7 centimeters.</p>
+                <img class="img-fluid my-4" src="assets/img/illustrations/waist-woman.svg" alt="how to measure your waist - Woman">
+                <div class="d-block">
+                  <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-5">
+                    <li class="nav-item">
+                      <a href="#!">
+                        <div class="card mb-3 p-4">
+                          <img class="rounded" src="assets/img/illustrations/body-fat-1-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
+                        </div>
+                        <h2 class="h4 text-dark">0 - 0%</h2>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#!">
+                        <div class="card mb-3 p-4">
+                          <img class="rounded" src="assets/img/illustrations/body-fat-2-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
+                        </div>
+                        <h2 class="h4 text-dark">0 - 0%</h2>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#!">
+                        <div class="card mb-3 p-4">
+                          <img class="rounded" src="assets/img/illustrations/body-fat-3-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
+                        </div>
+                        <h2 class="h4 text-dark">0 - 0%</h2>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#!">
+                        <div class="card mb-3 p-4">
+                          <img class="rounded" src="assets/img/illustrations/body-fat-4-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
+                        </div>
+                        <h2 class="h4 text-dark">0 - 0%</h2>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#!">
+                        <div class="card mb-3 p-4">
+                          <img class="rounded" src="assets/img/illustrations/body-fat-5-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
+                        </div>
+                        <h2 class="h4 text-dark">0 - 0%</h2>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#!">
+                        <div class="card mb-3 p-4">
+                          <img class="rounded" src="assets/img/illustrations/body-fat-6-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
+                        </div>
+                        <h2 class="h4 text-dark">0 - 0%</h2>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-cover vh-100 p-4" style="background-image: url(assets/img/covers/nutrita-pro-cover.jpg);">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button class="btn btn-outline-white btn-sm align-self-right" type="button" data-toggle="modal" data-target="#onboardingConnect">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal -->
+
+<!-- IDEA: modal onboardingHbA1c -->
+<div class="modal fade fixed-right" id="onboardingHbA1c" tabindex="-1" role="dialog" aria-labelledby="onboardingHbA1c" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <div class="row justify-content-center no-gutters">
+            <div class="col px-lg-5">
+              <button class="btn btn-link text-dark position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <!-- Heading -->
+              <h1 class="display-4 text-center my-5 mt-lg-6">
+                Blood metrics
+              </h1>
+
+              <div class="px-lg-7">
+                <div class="row mb-4">
+                  <div class="col small d-flex align-items-center justify-content-center">
+                    <button type="button" class="btn btn-sm btn-link text-secondary pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="HbA1c">HbA1c</label>
+                  <div class="input-group input-group-lg">
+                    <input type="text" class="form-control border-right-0" placeholder="0" aria-label="HbA1c" id="HbA1c">
+                    <div class="input-group-append">
+                      <span class="input-group-text rounded-right border-left-0" id="basic-addon3">%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="FastingBloodGlucose">Fasting blood glucose</label>
+                  <div class="input-group input-group-lg">
+                    <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="FastingBloodGlucose" id="FastingBloodGlucose">
+                    <div class="input-group-append">
+                      <span class="input-group-text rounded-right border-left-0" id="basic-addon3">mmol/L</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="FastingTriglycerides">Fasting triglycerides</label>
+                  <div class="input-group input-group-lg">
+                    <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="FastingTriglycerides" id="FastingTriglycerides">
+                    <div class="input-group-append">
+                      <span class="input-group-text rounded-right border-left-0" id="basic-addon3">mmol/L</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="FastingInsulin">Fasting insulin</label>
+                  <div class="input-group input-group-lg">
+                    <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="FastingInsulin" id="FastingInsulin">
+                    <div class="input-group-append">
+                      <span class="input-group-text rounded-right border-left-0" id="basic-addon3">pmol/L</span>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="btn btn-block btn-lg btn-success mb-5" type="button" data-toggle="modal" data-target="#onboardingCraving">Continue</button>
+                <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-cover vh-100 p-4" style="background-image: url(assets/img/covers/nutrita-pro-cover.jpg);">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button class="btn btn-outline-white btn-sm align-self-right" type="button" data-toggle="modal" data-target="#onboardingConnect">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal -->
+
+<!-- IDEA: modal onboarding-craving -->
+<div class="modal fade fixed-right" id="onboardingCraving" tabindex="-1" role="dialog" aria-labelledby="onboardingCraving" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <div class="row justify-content-center no-gutters">
+            <div class="col px-lg-5">
+              <button class="btn btn-link text-dark position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <!-- Heading -->
+              <h1 class="display-4 text-center my-5 mt-lg-6">
+                Your craving & meals frequency
+              </h1>
+
+              <div class="px-lg-7">
+                <form class="mb-2">
+                  <label for="craving">Your craving</label>
+                  <select id="craving" class="custom-select custom-select-lg mb-3">
+                    <option selected>Normal craving</option>
+                    <option value="1">No craving</option>
+                    <option value="2">Moderate craving</option>
+                    <option value="3">Strong craving</option>
+                  </select>
+                </form>
+                <div class="form-group">
+                  <label for="Meals">Meal</label>
+                  <input type="text" class="form-control form-control-lg" placeholder="0" aria-label="Meals" id="Meals">
+                </div>
+                <div class="form-group">
+                  <label for="Snack">Snack</label>
+                  <input type="text" class="form-control form-control-lg" placeholder="0" aria-label="Snack" id="Snack">
+                </div>
+
+                <button class="btn btn-block btn-lg btn-success mb-5" type="button" data-toggle="modal" data-target="#onboardingSleep">Continue</button>
+                <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-cover vh-100 p-4" style="background-image: url(assets/img/covers/nutrita-pro-cover.jpg);">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button class="btn btn-outline-white btn-sm align-self-right" type="button" data-toggle="modal" data-target="#onboardingConnect">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal -->
+
+<!-- IDEA: modal onboarding-sleep -->
+<div class="modal fade fixed-right" id="onboardingSleep" tabindex="-1" role="dialog" aria-labelledby="onboardingSleep" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <div class="row justify-content-center no-gutters">
+            <div class="col px-lg-5">
+              <button class="btn btn-link text-dark position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <!-- Heading -->
+              <h1 class="display-4 text-center my-5 mt-lg-6">
+                Your sleep quality
+              </h1>
+
+              <div class="px-lg-7">
+                <form class="mb-4">
+                  <label for="sleep">Your craving</label>
+                  <select id="sleep" class="custom-select custom-select-lg mb-3">
+                    <option selected>Normal sleeper</option>
+                    <option value="1">Very light sleeper</option>
+                    <option value="2">Moderate sleeper</option>
+                    <option value="3">Sound sleeper</option>
+                  </select>
+                </form>
+                <button class="btn btn-block btn-lg btn-success mb-5" type="button" data-toggle="modal" data-target="#onboardingSubscriptionPeriod">Continue</button>
+                <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-cover vh-100 p-4" style="background-image: url(assets/img/covers/nutrita-pro-cover.jpg);">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button class="btn btn-outline-white btn-sm align-self-right" type="button" data-toggle="modal" data-target="#onboardingConnect">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal -->
+
+<!-- IDEA: modal onboardingSubscriptionPeriod -->
+<div class="modal fade fixed-right" id="onboardingSubscriptionPeriod" tabindex="-1" role="dialog" aria-labelledby="onboardingSubscriptionPeriod" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <div class="row justify-content-center no-gutters">
+            <div class="col px-lg-5">
+              <button class="btn btn-link text-dark position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <!-- Heading -->
+              <h1 class="display-4 text-center my-5 mt-lg-6">
+                Meet your Nutrition Coach
+              </h1>
+
+              <div class="px-lg-7">
+                <p class="text-secondary mb-4 small">The right food tailored to you and your goals.</p>
+                <p class="small text-muted small mb-1"><i class="fe fe-check-circle text-success mr-2"></i>Cancel at any time in your account settings.</p>
+                <p class="small text-muted small"><i class="fe fe-check-circle text-success mr-2"></i>You won't be charged if you cancel before 28 Apr 2019.</p>
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="card-header-title">
+                      Early bird offer
+                    </h3>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-bottom-0">
+                        <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                          <label class="custom-control-label vw-100" for="customRadio1">
+                            <div class="row justify-content-between align-items-center">
+                              <div class="col">
+                                <h4 class="mt-n2">Monthly <span class="badge badge-soft-primary">Save 29%</span></h4>
+                              </div>
+                              <div class="col-auto text-right">
+                                <strong>Free</strong><br>
+                                <span class="h6 font-weight-normal text-muted mt-n1 d-block">30-day trial</span>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between align-items-center">
+                              <div class="col-auto">
+                                <small class="d-block">After free trial</small>
+                                <span class="h6 font-weight-normal text-muted mt-n1 d-block">Starting 28 Apr 2019</span>
+                              </div>
+                              <div class="col text-right">
+                                <small class="d-block">$ 9 <strike>$ 14.99</strike></small>
+                                <span class="h6 font-weight-normal text-muted mt-n1 d-block">per month</span>
+
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-bottom-0">
+                        <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" checked>
+                          <label class="custom-control-label vw-100" for="customRadio2">
+                            <div class="row justify-content-between align-items-center">
+                              <div class="col">
+                                <h4 class="mt-n2">Annually <span class="badge badge-soft-primary">Save 40%</span></h4>
+                              </div>
+                              <div class="col-auto text-right">
+                                <strong>Free</strong><br>
+                                <span class="h6 font-weight-normal text-muted mt-n1 d-block">30-day trial</span>
+                              </div>
+                            </div>
+                            <div class="row justify-content-between align-items-center">
+                              <div class="col-auto">
+                                <small class="d-block">After free trial</small>
+                                <span class="h6 font-weight-normal text-muted mt-n1 d-block">Starting 05 Apr 2019</span>
+                              </div>
+                              <div class="col text-right">
+                                <small class="d-block">12 x $ 7.41</small>
+                                <span class="h6 font-weight-normal text-muted mt-n1 d-block mb-1">or $ 89 <strike>$ 125</strike></span>
+                                <span class="h6 font-weight-normal text-muted mt-n1 d-block">per month</span>
+                              </div>
+                            </div>
+                          </label>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="discountCoupon">Discount coupon</label>
+                  <div class="input-group input-group-lg mb-2">
+                    <input type="text" class="form-control" placeholder="Enter your coupon code" aria-label="discountCoupon" id="discountCoupon">
+                    <div class="input-group-append">
+                      <button class="btn btn-lg btn-dark border-0" type="button" name="button">Apply</button>
+                    </div>
+                  </div>
+                  <small id="discountCouponHelp" class="form-text text-muted">Input and apply coupon code if you have.</small>
+                </div>
+                <button class="btn btn-block btn-lg btn-success mb-5" type="button" data-toggle="modal" data-target="#onboardingPaymentOptions">Continue</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-cover vh-100 p-4" style="background-image: url(assets/img/covers/nutrita-pro-cover.jpg);">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button class="btn btn-outline-white btn-sm align-self-right" type="button" data-toggle="modal" data-target="#onboardingConnect">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal -->
+
+<!-- IDEA: modal onboardingTrialEndedSubscriptionPeriod -->
+<div class="modal fade fixed-right" id="onboardingTrialEndedSubscriptionPeriod" tabindex="-1" role="dialog" aria-labelledby="onboardingTrialEndedSubscriptionPeriod" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-header py-2">
+        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
+          <i class="fe fe-arrow-left h2"></i>
+        </button>
+        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
+        </button>
+      </div>
+      <div class="modal-body pb-6">
+        <h2>Your trial period ended</h2>
+        <p class="text-secondary small">To continue using Nutrita, select a plan below.</p>
+        <p class="small text-muted small mb-4"><i class="fe fe-check-circle text-success mr-2"></i>Cancel at any time in your account settings.</p>
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-header-title">
+              Early bird offer
+            </h3>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item border-bottom-0">
+              <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label vw-100" for="customRadio1">
+                  <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                      <h4 class="mb-0">Monthly <span class="badge badge-soft-primary">Save 29%</span></h4>
+                    </div>
+                    <div class="col text-right">
+                      <small class="d-block">$ 9 <strike>$ 14.99</strike></small>
+                      <span class="h6 font-weight-normal text-muted mt-n1 d-block">per month</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </li>
+            <li class="list-group-item border-bottom-0">
+              <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" checked>
+                <label class="custom-control-label vw-100" for="customRadio2">
+                  <div class="row justify-content-between align-items-center">
+                    <div class="col">
+                      <h4 class="mt-n2">Annually <span class="badge badge-soft-primary">Save 40%</span></h4>
+                    </div>
+                    <div class="col text-right">
+                      <small class="d-block">12 x $ 7.41</small>
+                      <span class="h6 font-weight-normal text-muted mt-n1 d-block mb-1">or $ 89 <strike>$ 125</strike></span>
+                      <span class="h6 font-weight-normal text-muted mt-n1 d-block">per month</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+        <div class="form-group">
+          <label for="discountCoupon">Discount coupon</label>
+          <div class="input-group input-group-lg">
+            <input type="text" class="form-control" placeholder="Enter your coupon code" aria-label="discountCoupon" id="discountCoupon">
+            <div class="input-group-append">
+              <button class="btn btn-lg btn-dark border-0" type="button" name="button">Apply</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar fixed-bottom px-4 px-lg-8">
+        <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingPaymentOptions">Go to Payment Options</button>
+      </nav>
+    </div>
+  </div>
+</div><!-- / modal -->
+
+<!-- IDEA: modal onboardingPaymentOptions -->
+<div class="modal fade fixed-right" id="onboardingPaymentOptions" tabindex="-1" role="dialog" aria-labelledby="onboardingPaymentOptions" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <div class="row justify-content-center no-gutters">
+            <div class="col px-lg-5">
+              <button class="btn btn-link text-dark position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <!-- Heading -->
+              <h1 class="display-4 text-center my-5 mt-lg-6">
+                Payment options
+              </h1>
+
+              <!-- Subheading -->
+              <p class="text-secondary text-center mb-4 px-lg-6">
+                We’ll remind you two days before your trial ends so you won’t be accidentally billed and you can cancel anytime.
+              </p>
+              <div class="px-lg-7">
+                <div class="card mb-5">
+                  <div class="card-body">
+                    <div class="form-row">
+                      <div class="form-group col-12 col-lg-6 mb-0">
+                        <label class="mt-1">Full name</label>
+                        <input class="form-control mb-4" type="text" name="name" id="mce-name" placeholder="John Smith" required="">
+                      </div>
+                      <div class="form-group col-12 col-lg-6 mb-0">
+                        <label class="mt-1">Country of residence</label>
+                        <div class="input-group mb-4">
+                          <select class="custom-select custom-select">
+                            <option value="AF">Afghanistan</option>
+                            <option value="AX">Åland Islands</option>
+                            <option value="AL">Albania</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 col-lg-6 mb-3 mb-lg-0 pr-lg-2">
+                        <a class="btn btn-block btn-lg btn-primary" href="#">
+                          <div class="row align-items-center">
+                            <div class="col">
+                              <h4 class="mb-0 "><img class="mr-2" src="assets/img/google-pay-mark_800_gray.svg" alt="Google pay" height="20">Google Pay</h4>
+                            </div>
+                            <div class="col-auto text-right">
+                              <i class="fe fe-chevron-right"></i>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-12 col-lg-6 pl-lg-2">
+                        <a class="btn btn-block btn-lg btn-dark" href="#">
+                          <div class="row align-items-center">
+                            <div class="col">
+                              <h4 class="mb-0"><img class="mr-2" src="assets/img/Apple_Pay_Mark_RGB_041619.svg" alt="Apple pay" height="20">Apple Pay</h4>
+                            </div>
+                            <div class="col-auto text-right">
+                              <i class="fe fe-chevron-right"></i>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h2>Credit card</h2>
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="col-12">
+                        <label>Card number</label>
+                        <div class="form-control StripeElement StripeElement--empty mb-4">
+                          <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;">
+                            <iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame5" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-62412839f1e5453068d5f8d48eb85168.html#componentName=cardNumber&amp;wait=false&amp;rtl=false&amp;keyMode=live&amp;apiKey=pk_live_rf5nfmaLdCmW7cAlSuuOFcre00K297kQKU&amp;origin=https%3A%2F%2Fnutrita.app&amp;referrer=https%3A%2F%2Fnutrita.app%2F&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; height: 16.8px;"></iframe>
+                            <input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;">
+                          </div>
+                        </div>
+                        <label class="mt-1">Expiry / CVC</label>
+                        <div class="input-group mb-4">
+                          <div class="form-control w-50 border-right-0 StripeElement StripeElement--empty">
+                            <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame6" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-62412839f1e5453068d5f8d48eb85168.html#componentName=cardExpiry&amp;wait=false&amp;rtl=false&amp;keyMode=live&amp;apiKey=pk_live_rf5nfmaLdCmW7cAlSuuOFcre00K297kQKU&amp;origin=https%3A%2F%2Fnutrita.app&amp;referrer=https%3A%2F%2Fnutrita.app%2F&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; height: 16.8px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;"></div>
+                          </div>
+                          <div class="form-control w-50 border-left-0 StripeElement StripeElement--empty">
+                            <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame7" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-62412839f1e5453068d5f8d48eb85168.html#componentName=cardCvc&amp;wait=false&amp;rtl=false&amp;keyMode=live&amp;apiKey=pk_live_rf5nfmaLdCmW7cAlSuuOFcre00K297kQKU&amp;origin=https%3A%2F%2Fnutrita.app&amp;referrer=https%3A%2F%2Fnutrita.app%2F&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; height: 16.8px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;"></div>
+                          </div>
+                        </div>
+                        <label class="mt-1">Name on the card</label>
+                        <input class="form-control mb-4" type="text" name="name" id="mce-name" placeholder="John Smith" required="">
+                        <label class="mt-1">Country</label>
+                        <div class="input-group mb-4">
+                          <select class="custom-select custom-select">
+                            <option value="AF">Afghanistan</option>
+                            <option value="AX">Åland Islands</option>
+                            <option value="AL">Albania</option>
+                          </select>
+                        </div>
+
+                        <a class="mt-2 justify-content-center" href="https://stripe.com" target="_blank" rel="noopener noreferrer"><img src="https://d2jp17o0xc32jv.cloudfront.net/img/powered_by_stripe@2x.png" alt="stripe logo" style="max-width: 100px;"></a>
+
+                        <small id="cardNumber" class="form-text text-muted mt-2">Your credit card details are never stored on or even reach our servers. Payments and credit card data are handled by Stripe.</small>
+                        <div class="table-responsive d-block d-lg-none">
+                          <table class="table mb-0">
+                            <thead>
+                              <tr>
+                                <th class="px-0 bg-transparent border-0">Plan</th>
+                                <th class="px-0 bg-transparent text-right border-0">Cost</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="px-0 border-0">
+                                  <strong>Nutrita Pro membership</strong><br>
+                                  <span class="small">Starting May 13, 2020</span>
+                                </td>
+                                <td class="px-0 text-right border-0">
+                                  <span class="badge badge-soft-success mb-2">7-day free trial</span><br>
+                                  $89.00/yearly
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-0 border-0"><strong>Coupon code</strong><br>
+                                  <span class="small">0xCCCCC</span>
+                                </td>
+                                <td class="px-0 text-right border-0">-$20.00</td>
+                              </tr>
+                              <tr>
+                                <td class="px-0 border-0">
+                                  <strong>Value added tax</strong>
+                                </td>
+                                <td colspan="2" class="px-0 text-right border-0">
+                                  <span>$17.8</span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td class="px-0 border-top border-top-1 border-dark"><strong>Total</strong></td>
+                                <td colspan="2" class="px-0 text-right border-top border-top-1 border-dark">
+                                  <span class="h3">$106.8</span>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a class="btn btn-success btn-lg btn-block mb-6" href="dashboard-full_3.html">Start your membership</a>
+
+                <h2>FAQ</h2>
+                <div class="card card-inactive mb-5">
+                  <div class="card-body">
+                    <h3>How does the 7-day trial work?</h3>
+                    <p class="text-secondary mb-4">Cancel at any time in your account settings. You won't be charged if you cancel before 28 Apr 2019.</p>
+                    <h3>How do I pay for your service?</h3>
+                    <p class="text-secondary mb-4">At the end of your free trial, you will be charged automatically in order to continue to use the service. You can choose between Monthly and Yearly billing. We accept credit &amp; debit cards, PayPal, Google Pay, and Apple Pay.</p>
+                    <h3>How can I cancel my subscription?</h3>
+                    <p class="text-secondary mb-4">You can cancel your plan anytime. When your subscription period expires, you will lose access to your Nutrita account.</p>
+                    <h3>I have a different question…</h3>
+                    <p class="text-secondary mb-4">Explore our <a href="#" target="_blank">Help Center</a>, or just ask via e-mail at hello@nutrita.app</p>
+                    <h3>Can I recover an expired account?</h3>
+                    <p class="text-secondary">You can recover an expired account by buying a plan and re-access everything you've been tracking. Your data will remain intact for 14 days.</p>
+                  </div>
+                </div>
+                <!-- Text -->
+                <p class="text-secondary small">
+                  By tapping or clicking 'Start your membership', you accept the following terms of service. You also agree that your purchase will be available immediately and that (except for services) you waive your statuory right to withdrawal. Check our refund policy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-light vh-100 p-4">
+            <div class="row justify-content-center">
+              <div class="col-10">
+                <div class="table-responsive">
+                  <table class="table mb-0">
+                    <thead>
+                      <tr>
+                        <th class="px-0 bg-transparent border-0 text-dark">Plan</th>
+                        <th class="px-0 bg-transparent text-right border-0 text-dark">Cost</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="px-0 border-0">
+                          <strong>Nutrita Pro membership</strong><br>
+                          <span class="small">Starting May 13, 2020</span>
+                        </td>
+                        <td class="px-0 text-right border-0">
+                          <span class="badge badge-soft-success mb-2">7-day free trial</span><br>
+                          $89.00/yearly
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-0 border-0"><strong>Coupon code</strong><br>
+                          <span class="small">0xCCCCC</span>
+                        </td>
+                        <td class="px-0 text-right border-0">-$20.00</td>
+                      </tr>
+                      <tr>
+                        <td class="px-0 border-0">
+                          <strong>Value added tax</strong>
+                        </td>
+                        <td colspan="2" class="px-0 text-right border-0">
+                          <span>$17.8</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="px-0 border-top border-top-1 border-dark"><strong>Total</strong></td>
+                        <td colspan="2" class="px-0 text-right border-top border-top-1 border-dark">
+                          <span class="h3">$106.8</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal -->
+
+<!-- IDEA: modal onboardingLegal -->
+<div class="modal fade fixed-right" id="onboardingLegal" tabindex="-1" role="dialog" aria-labelledby="onboardingLegal" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <div class="row justify-content-center no-gutters">
+            <div class="col align-items-center">
+              <button class="btn btn-link text-dark position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <!-- Heading -->
+              <h1 class="display-4 text-center mb-3 mt-5 mt-lg-6">
+                Legal
+              </h1>
+
+              <!-- Subheading -->
+              <p class="text-secondary text-center mb-5 px-lg-6">
+                Please review the Nutrita Terms of Service and Privacy Policy.
+              </p>
+
+              <div class="px-lg-8">
+                <div class="btn-group-vertical mb-4 w-100">
+                  <button class="btn btn-white border-bottom-0 d-flex justify-content-between " type="button" data-toggle="modal" data-target="#onboardingLegalTOS"><span>Terms of service</span> <i class="fe fe-chevron-right text-secondary"></i></button>
+                  <button class="btn btn-white d-flex justify-content-between " type="button" data-toggle="modal" data-target="#onboardingLegalTOS"><span>Privacy policy</span> <i class="fe fe-chevron-right text-secondary"></i></button>
+                </div>
+                <button class="btn btn-success btn-block" type="button" data-toggle="modal" data-target="#onboardingAboutYou">Accept</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-cover vh-100 p-4" style="background-image: url(assets/img/covers/nutrita-pro-cover.jpg);">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button class="btn btn-outline-white btn-sm align-self-right" type="button" data-toggle="modal" data-target="#signIn">Sign in</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal -->
+
+<!-- IDEA: modal onboardingLegalTOS -->
+<div class="modal fade fixed-right" id="onboardingLegalTOS" tabindex="-1" role="dialog" aria-labelledby="onboardingLegalTOS" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body p-lg-0">
+        <div class="d-inline-block w-lg-60">
+          <div class="row justify-content-center no-gutters">
+            <div class="col align-items-center">
+              <button class="btn btn-link text-dark position-absolute mt-n4 ml-n4 ml-lg-0 mt-lg-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                <i class="fe fe-arrow-left h2"></i>
+              </button>
+              <!-- Heading -->
+              <h1 class="display-4 mb-3 mt-5 mt-lg-6">
+                Terms of service
+              </h1>
+
+              <!-- Subheading -->
+              <p class="text-secondary mb-5 px-lg-6">
+                Pellentesque sed cursus massa, ut scelerisque nisl. Nullam ut elit vel odio fringilla lacinia. Praesent ac massa in leo facilisis sollicitudin. Quisque congue finibus odio et mollis. Pellentesque tincidunt lectus ut metus efficitur ultricies. Aenean a leo felis. Etiam enim velit, dignissim sed ornare et, porta a dui. Quisque et augue sed massa consequat consequat in eget ipsum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="d-lg-inline-block w-lg-40 position-fixed d-none">
+          <div class="bg-cover vh-100 p-4" style="background-image: url(assets/img/covers/nutrita-pro-cover.jpg);">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <button class="btn btn-outline-white btn-sm align-self-right" type="button" data-toggle="modal" data-target="#signIn">Sign in</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal -->
+
 <!-- IDEA: addMissingFood -->
 <div class="modal fade fixed-right" id="addMissingFood" tabindex="-1" role="dialog" aria-labelledby="addMissingFood" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -62,7 +1385,7 @@
         </h2>
         <div class="row align-items-center mb-4">
           <div class="col small text-muted">
-            <button type="button" class="btn btn-sm btn-link text-muted pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
+            <button type="button" class="btn btn-sm btn-link text-secondary pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
           </div>
         </div>
         <div class="form-row">
@@ -122,52 +1445,7 @@
     </div>
   </div>
 </div><!-- / modal addMissingFood -->
-<!-- IDEA: ideal weight -->
-<div class="modal fade fixed-right" id="idealWeight" tabindex="-1" role="dialog" aria-labelledby="idealWeight" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-header py-2">
-        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
-          <i class="fe fe-arrow-left h2"></i>
-        </button>
-        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
-        </button>
-      </div>
-      <div class="modal-body pt-2 pb-6 px-lg-8">
-        <h2>
-          What is your current and target weight you want to reach?
-        </h2>
-        <div class="row align-items-center mb-4">
-          <div class="col small text-muted">
-            <button type="button" class="btn btn-sm btn-link text-muted pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group col">
-            <label for="currentWeight">Current weight</label>
-            <div class="input-group input-group-lg mb-4">
-              <input id="currentWeight" type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Weight">
-              <div class="input-group-append">
-                <span class="input-group-text rounded-right border-left-0" id="basic-addon3">Kg</span>
-              </div>
-            </div>
-            <label for="targetWeight">Target weight</label>
-            <div class="input-group input-group-lg">
-              <input id="targetWeight" type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Weight">
-              <div class="input-group-append">
-                <span class="input-group-text rounded-right border-left-0" id="basic-addon3">Kg</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav class="navbar fixed-bottom px-4 justify-content-center">
-        <button class="btn btn-success vw-100" type="button">Next</button>
-      </nav>
-    </div>
-  </div>
-</div><!-- / modal idealWeight -->
+
 <!-- IDEA: modal foodequivalent -->
 <div class="modal fade fixed-right" id="foodEquivalent" tabindex="-1" role="dialog" aria-labelledby="foodEquivalent" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -407,7 +1685,6 @@
     </div>
   </div>
 </div><!-- / modal reminderEndTrial -->
-
 <!-- IDEA: modal manageUnits -->
 <div class="modal fade fixed-right" id="manageUnits" tabindex="-1" role="dialog" aria-labelledby="manageUnits" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -473,7 +1750,6 @@
     </div>
   </div>
 </div><!-- / modal manageUnits -->
-
 <!-- IDEA: modal deleteMyAccount -->
 <div class="modal fade fixed-right" id="deleteMyAccount" tabindex="-1" role="dialog" aria-labelledby="deleteMyAccount" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -525,7 +1801,6 @@
     </div>
   </div>
 </div><!-- / modal deleteMyAccount -->
-
 <!-- IDEA: modal cancelMySubscription -->
 <div class="modal fade fixed-right" id="cancelMySubscription" tabindex="-1" role="dialog" aria-labelledby="cancelMySubscription" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -572,7 +1847,6 @@
     </div>
   </div>
 </div><!-- / modal cancelMySubscription -->
-
 <!-- IDEA: modal changePaymentMethod -->
 <div class="modal fade fixed-right" id="changePaymentMethod" tabindex="-1" role="dialog" aria-labelledby="changePaymentMethod" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -636,7 +1910,6 @@
     </div>
   </div>
 </div><!-- / modal changePaymentMethod -->
-
 <!-- IDEA: modal AddNewPaymentMethod -->
 <div class="modal fade fixed-right" id="AddNewPaymentMethod" tabindex="-1" role="dialog" aria-labelledby="AddNewPaymentMethod" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -697,7 +1970,6 @@
     </div>
   </div>
 </div><!-- / modal AddNewPaymentMethod -->
-
 <!-- IDEA: modal changeAvatar -->
 <div class="modal fade fixed-right" id="changeAvatar" tabindex="-1" role="dialog" aria-labelledby="changeAvatar" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -760,7 +2032,6 @@
     </div>
   </div>
 </div><!-- / modal changeAvatar -->
-
 <!-- IDEA: modal changeEmail -->
 <div class="modal fade fixed-right" id="changeEmail" tabindex="-1" role="dialog" aria-labelledby="changeEmail" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -810,7 +2081,6 @@
     </div>
   </div>
 </div><!-- / modal changeEmail -->
-
 <!-- IDEA: modal changeName -->
 <div class="modal fade fixed-right" id="changeName" tabindex="-1" role="dialog" aria-labelledby="changeName" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -864,7 +2134,6 @@
     </div>
   </div>
 </div><!-- / modal changeName -->
-
 <!-- IDEA: modal CustomRecipe -->
 <div class="modal fade fixed-right" id="modalCustomRecipe" tabindex="-1" role="dialog" aria-labelledby="modalCustomRecipe" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -914,7 +2183,6 @@
     </div>
   </div>
 </div><!-- / modal CustomRecipe -->
-
 <!-- IDEA: modal connectDevice -->
 <div class="modal fade fixed-right" id="connectDevice" tabindex="-1" role="dialog" aria-labelledby="connectDevice" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -966,7 +2234,6 @@
     </div>
   </div>
 </div><!-- / modal connectDevice -->
-
 <!-- IDEA: modal connectDeviceCode -->
 <div class="modal fade fixed-right" id="connectDeviceCode" tabindex="-1" role="dialog" aria-labelledby="connectDeviceCode" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -1015,7 +2282,6 @@
     </div>
   </div>
 </div><!-- / modal connectDeviceCode -->
-
 <!-- IDEA: modal howInvitationsWork -->
 <div class="modal fade fixed-right" id="howInvitationsWork" tabindex="-1" role="dialog" aria-labelledby="howInvitationsWork" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -1064,7 +2330,6 @@
     </div>
   </div>
 </div><!-- / modal howInvitationsWork -->
-
 <!-- IDEA: modal modalFilterNutrientDensity -->
 <div class="modal fade fixed-right" id="modalFilterNutrientDensity" tabindex="-1" role="dialog" aria-labelledby="modalFilterNutrientDensity" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -1222,7 +2487,6 @@
     </div>
   </div>
 </div><!-- / modal modalFilterNutrientDensity -->
-
 <!-- IDEA: modal modalFilterKetoScore -->
 <div class="modal fade fixed-right" id="modalFilterKetoScore" tabindex="-1" role="dialog" aria-labelledby="modalFilterKetoScore" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -2509,7 +3773,7 @@
         <h2>Add new weight</h2>
         <div class="row align-items-center mb-4">
           <div class="col small text-muted">
-            <button type="button" class="btn btn-sm btn-link text-muted pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
+            <button type="button" class="btn btn-sm btn-link text-secondary pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
           </div>
         </div>
         <div class="form-row">
@@ -3126,7 +4390,7 @@
 </div><!-- / modal macroNutrients -->
 
 <!-- IDEA: modal recipes -->
-<div class="modal fade fixed-right" id="modalRecipe" tabindex="-3" role="dialog" aria-labelledby="modalRecipe" aria-hidden="true">
+<div class="modal fade fixed-right" id="modalRecipe" tabindex="-1" role="dialog" aria-labelledby="modalRecipe" aria-hidden="true">
   <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
     <div class="modal-content">
       <div class="modal-body p-0 pb-5">
@@ -4507,1077 +5771,6 @@
     </div>
   </div>
 </div><!-- / modal onboarding-tuto -->
-
-<!-- IDEA: modal onboarding-goals-selection -->
-<div class="modal fade fixed-right" id="onboardingGoalsSelection" tabindex="-1" role="dialog" aria-labelledby="onboardingGoalsSelection" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-body p-0 pb-5">
-        <div class="d-flex justify-content-between align-items-center">
-          <button class="btn btn-link text-dark" type="button" name="button" data-toggle="modal" data-target="#onboardingTuto"><i class="fe fe-arrow-left"></i></button>
-          <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true"><i class="fe fe-x"></i></span>
-          </button>
-        </div>
-        <div class="clearfix mb-4">
-          <img class="mt-n6 float-right img-fluid" alt="onboarding-goals-selection" src="assets/img/illustrations/onboarding-goals-selection.svg" data-holder-rendered="true" height="320">
-        </div>
-        <div class="px-4">
-          <h2>Choose a goal</h2>
-          <ul class="list-group list-group-flush">
-            <a data-toggle="modal" href="#onboardingAboutYou">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <small class="text-secondary">Lose fat</small> <i class="fe fe-chevron-right text-secondary"></i>
-              </li>
-            </a>
-            <a data-toggle="modal" href="#onboardingAboutYou">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <small class="text-secondary">Control blood sugar</small> <i class="fe fe-chevron-right text-secondary"></i>
-              </li>
-            </a>
-            <a data-toggle="modal" href="#onboardingAboutYou">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <small class="text-secondary">Build muscles</small> <i class="fe fe-chevron-right text-secondary"></i>
-              </li>
-            </a>
-            <a data-toggle="modal" href="#onboardingAboutYou">
-              <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-                <small class="text-secondary">Maintain body weight</small> <i class="fe fe-chevron-right text-secondary"></i>
-              </li>
-            </a>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div><!-- / modal onboarding-goals-selection -->
-
-<!-- IDEA: modal onboarding-goal-Description -->
-<div class="modal fade fixed-right" id="onboardingNutritaDesc" tabindex="-4" role="dialog" aria-labelledby="onboardingNutritaDesc" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-body p-0 pb-5">
-        <div class="d-flex justify-content-between align-items-center">
-          <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
-          <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true"><i class="fe fe-x"></i></span>
-          </button>
-        </div>
-        <div class="clearfix mb-4">
-          <img class="mt-n6 float-right img-fluid" alt="onboarding-goal-description" src="assets/img/illustrations/onboarding-goal-description.svg" data-holder-rendered="true" height="320">
-        </div>
-        <div class="px-4">
-          <h2>Goal Title</h2>
-          <p class="text-secondary mb-5">A high-fat diet (~70%) with a generous amount of protein (~25%), preferably from animal sourced foods, and very low in carbs (~5%).</p>
-          <h6 class="header-pretitle">Data to watch</h6>
-          <ul class="list-group list-group-flush mb-4">
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <small class="text-secondary">Submetric title (%)</small> <i class="fe fe-info text-secondary"></i>
-            </li>
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <small class="text-secondary">Submetric title (%)</small> <i class="fe fe-info text-secondary"></i>
-            </li>
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <small class="text-secondary">Submetric title (%)</small> <i class="fe fe-info text-secondary"></i>
-            </li>
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <small class="text-secondary">Submetric title (%)</small> <i class="fe fe-info text-secondary"></i>
-            </li>
-          </ul>
-          <h6 class="header-pretitle">Ingredients to avoid</h6>
-          <ul class="list-group list-group-flush mb-4">
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <small class="text-secondary">Ingredient title</small> <i class="fe fe-info text-secondary"></i>
-            </li>
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <small class="text-secondary">Ingredient title</small> <i class="fe fe-info text-secondary"></i>
-            </li>
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <small class="text-secondary">Ingredient title</small> <i class="fe fe-info text-secondary"></i>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <nav class="navbar fixed-bottom px-4">
-        <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingAboutYou">Continue</button>
-      </nav>
-    </div>
-  </div>
-</div>
-
-<!-- IDEA: modal onboarding-goal-Description
-<div class="modal fade fixed-right" id="onboardingGoalDescription" tabindex="-4" role="dialog" aria-labelledby="onboardingGoalDescription" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-body p-0 pb-5">
-        <div class="d-flex justify-content-between align-items-center">
-          <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close"><i class="fe fe-arrow-left"></i></button>
-          <button type="button" class="btn btn-link text-dark" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true"><i class="fe fe-x"></i></span>
-          </button>
-        </div>
-        <div class="clearfix mb-4">
-          <img class="mt-n6 float-right img-fluid" alt="onboarding-goal-description" src="assets/img/illustrations/onboarding-goal-description.svg" data-holder-rendered="true" height="320">
-        </div>
-        <div class="px-4">
-          <h2>Goal Title</h2>
-          <p class="text-secondary mb-5">A high-fat diet (~70%) with a generous amount of protein (~25%), preferably from animal sourced foods, and very low in carbs (~5%).</p>
-          <h6 class="header-pretitle">Data to watch</h6>
-          <ul class="list-group list-group-flush mb-4">
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <small class="text-secondary">Submetric title (%)</small> <i class="fe fe-info text-secondary"></i>
-            </li>
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <small class="text-secondary">Submetric title (%)</small> <i class="fe fe-info text-secondary"></i>
-            </li>
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <small class="text-secondary">Submetric title (%)</small> <i class="fe fe-info text-secondary"></i>
-            </li>
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <small class="text-secondary">Submetric title (%)</small> <i class="fe fe-info text-secondary"></i>
-            </li>
-          </ul>
-          <h6 class="header-pretitle">Ingredients to avoid</h6>
-          <ul class="list-group list-group-flush mb-4">
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <small class="text-secondary">Ingredient title</small> <i class="fe fe-info text-secondary"></i>
-            </li>
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <small class="text-secondary">Ingredient title</small> <i class="fe fe-info text-secondary"></i>
-            </li>
-            <li class="list-group-item d-flex align-items-center justify-content-between px-0 border-0">
-              <small class="text-secondary">Ingredient title</small> <i class="fe fe-info text-secondary"></i>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <nav class="navbar fixed-bottom px-4">
-        <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingAboutYou">Continue</button>
-      </nav>
-    </div>
-  </div>
-</div>
-/ modal goal description -->
-
-<!-- IDEA: modal onboardingAboutYou -->
-<div class="modal fade fixed-right" id="onboardingAboutYou" tabindex="-5" role="dialog" aria-labelledby="onboardingAboutYou" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-header py-2">
-        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
-          <i class="fe fe-arrow-left h2"></i>
-        </button>
-        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
-        </button>
-      </div>
-      <div class="modal-body pb-6 px-lg-8">
-        <h2>About you</h2>
-        <div class="form-row mb-4">
-          <div class="form-group col-6 mb-0">
-            <label for="gender">Gender</label>
-            <select class="custom-select custom-select-lg" id="gender">
-              <option selected>Female</option>
-              <option value="1">Male</option>
-              <option value="2">Rather not say</option>
-            </select>
-          </div>
-          <div class="form-group col-6 mb-0">
-            <label for="birthday">Birthday</label>
-            <input type="text" class="form-control form-control-lg" placeholder="MM/DD/YYYY" data-mask="00/00/0000" id="birthday">
-          </div>
-        </div>
-        <div class="form-group mb-4">
-          <label for="height">Height</label>
-          <div class="input-group input-group-lg">
-            <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Height" id="height">
-            <div class="input-group-append">
-              <span class="input-group-text rounded-right border-left-0" id="basic-addon2">cm</span>
-            </div>
-          </div>
-        </div>
-        <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
-
-      </div>
-      <nav class="navbar fixed-bottom px-4 px-lg-8">
-        <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingActivity">Continue</button>
-      </nav>
-    </div>
-  </div>
-</div><!-- / modal -->
-
-<!-- IDEA: modal onboarding-activity -->
-<div class="modal fade fixed-right" id="onboardingActivity" tabindex="-9" role="dialog" aria-labelledby="onboardingActivity" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-header py-2">
-        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
-          <i class="fe fe-arrow-left h2"></i>
-        </button>
-        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
-        </button>
-      </div>
-      <div class="modal-body pb-6 px-lg-8">
-        <h2>Activity levels</h2>
-        <form class="mb-2">
-          <select class="custom-select custom-select-lg mb-3">
-            <option selected>Sedentary</option>
-            <option>Lightly Active</option>
-            <option>Moderately Active</option>
-            <option>Very Active</option>
-            <option>Extremely Active</option>
-          </select>
-        </form>
-        <div class="my-4">
-
-          <dl>
-            <dt>Sedentary</dt>
-            <dd>Desk job and little to no exercise</dd>
-            <dt>Lightly Active</dt>
-            <dd>Light exercise 1–3 days/week</dd>
-            <dt>Moderately Active</dt>
-            <dd>Moderate exercise 3–5 days/week</dd>
-            <dt>Very Active</dt>
-            <dd>Hard exercise 6–7 days/week</dd>
-            <dt>Extremely Active</dt>
-            <dd>Hard daily exercise and physical job or training</dd>
-          </dl>
-
-        </div>
-        <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
-
-      </div>
-      <nav class="navbar fixed-bottom px-4 px-lg-8">
-        <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingWaist">Continue</button>
-      </nav>
-    </div>
-  </div>
-</div><!-- / modal -->
-
-<!-- IDEA: modal onboarding-waist -->
-<div class="modal fade fixed-right" id="onboardingWaist" tabindex="-9" role="dialog" aria-labelledby="onboardingWaist" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-header py-2">
-        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
-          <i class="fe fe-arrow-left h2"></i>
-        </button>
-        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
-        </button>
-      </div>
-      <div class="modal-body pb-6 px-lg-8">
-        <h2>Your Waist</h2>
-        <div class="row align-items-center mb-4">
-          <div class="col small text-muted">
-            <button type="button" class="btn btn-sm btn-link text-muted pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
-          </div>
-        </div>
-        <form class="mb-4">
-          <div class="input-group input-group-lg mb-3">
-            <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="Weight" aria-describedby="waisttHelp">
-            <div class="input-group-append">
-              <span class="input-group-text rounded-right" id="basic-addon2">cm</span>
-            </div>
-            <small id="waisttHelp" class="form-text text-muted mt-2">If you don’t know your exact waist, enter your best guess.</small>
-          </div>
-        </form>
-        <h6 class="header-pretitle">How-To</h6>
-        <p class="text-secondary mb-0 small">Your waist is situated just after the top of your hip bone. If you don’t have a tape measure at home, use your earbuds cable and wrap your waist with it. Compare the lenght measured with a A4 paper sheet. A A4 measures 21.0 × 29.7 centimeters.</p>
-        <img class="img-fluid my-4" src="assets/img/illustrations/waist-woman.svg" alt="how to measure your waist - Woman">
-        <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
-      </div>
-      <nav class="navbar fixed-bottom px-4 px-lg-8">
-        <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingBodyFat">Continue</button>
-      </nav>
-    </div>
-  </div>
-</div><!-- / modal -->
-
-<!-- IDEA: modal onboarding-body-fat -->
-<div class="modal fade fixed-right" id="onboardingBodyFat" tabindex="-1O" role="dialog" aria-labelledby="onboardingBodyFat" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-header py-2">
-        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
-          <i class="fe fe-arrow-left h2"></i>
-        </button>
-        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
-        </button>
-      </div>
-      <div class="modal-body pb-6 px-lg-8">
-        <h2>Your Body Fat %</h2>
-        <form class="mb-4">
-          <div class="input-group input-group-lg mb-3">
-            <input type="text" class="form-control border-right-0" placeholder="0.00" aria-label="bodyfat">
-            <div class="input-group-append">
-              <span class="input-group-text rounded-right" id="basic-addon2">%</span>
-            </div>
-          </div>
-        </form>
-        <h6 class="header-pretitle mb-3">How to guesstimate your body fat %</h6>
-        <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-5">
-          <li class="nav-item">
-            <a href="#!">
-              <div class="card mb-3 p-4">
-                <img class="rounded" src="assets/img/illustrations/body-fat-1-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
-              </div>
-              <h2 class="h4 text-dark">0 - 0%</h2>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#!">
-              <div class="card mb-3 p-4">
-                <img class="rounded" src="assets/img/illustrations/body-fat-2-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
-              </div>
-              <h2 class="h4 text-dark">0 - 0%</h2>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#!">
-              <div class="card mb-3 p-4">
-                <img class="rounded" src="assets/img/illustrations/body-fat-3-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
-              </div>
-              <h2 class="h4 text-dark">0 - 0%</h2>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#!">
-              <div class="card mb-3 p-4">
-                <img class="rounded" src="assets/img/illustrations/body-fat-4-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
-              </div>
-              <h2 class="h4 text-dark">0 - 0%</h2>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#!">
-              <div class="card mb-3 p-4">
-                <img class="rounded" src="assets/img/illustrations/body-fat-5-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
-              </div>
-              <h2 class="h4 text-dark">0 - 0%</h2>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#!">
-              <div class="card mb-3 p-4">
-                <img class="rounded" src="assets/img/illustrations/body-fat-6-woman.svg" alt="woman body fat between 0 - 0 %" height="128">
-              </div>
-              <h2 class="h4 text-dark">0 - 0%</h2>
-            </a>
-          </li>
-        </ul>
-        <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
-
-      </div>
-      <nav class="navbar fixed-bottom px-4 px-lg-4">
-        <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingHbA1c">Continue</button>
-      </nav>
-    </div>
-  </div>
-</div><!-- / modal -->
-
-<!-- IDEA: modal onboarding-body-fat -->
-<div class="modal fade fixed-right" id="onboardingHbA1c" tabindex="-1O" role="dialog" aria-labelledby="onboardingHbA1c" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-header py-2">
-        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
-          <i class="fe fe-arrow-left h2"></i>
-        </button>
-        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
-        </button>
-      </div>
-      <div class="modal-body pb-6 px-lg-8">
-        <h2>Blood metrics</h2>
-        <div class="row align-items-center mb-4">
-          <div class="col small text-muted">
-            <button type="button" class="btn btn-sm btn-link text-muted pl-0">Imperial</button> | <button type="button" class="btn btn-sm btn-link text-success">Metric</button>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="HbA1c">HbA1c</label>
-          <div class="input-group input-group-lg">
-            <input type="text" class="form-control border-right-0" placeholder="0" aria-label="HbA1c" id="HbA1c">
-            <div class="input-group-append">
-              <span class="input-group-text rounded-right border-left-0" id="basic-addon3">%</span>
-            </div>
-          </div>
-          <small id="hba1c" class="form-text text-muted pt-2 mb-0">Optional</small>
-        </div>
-        <div class="form-group">
-          <label for="FastingBloodGlucose">Fasting blood glucose</label>
-          <div class="input-group input-group-lg">
-            <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="FastingBloodGlucose" id="FastingBloodGlucose">
-            <div class="input-group-append">
-              <span class="input-group-text rounded-right border-left-0" id="basic-addon3">mmol/L</span>
-            </div>
-          </div>
-          <small id="FastingBloodGlucose" class="form-text text-muted pt-2 mb-0">Optional</small>
-        </div>
-        <div class="form-group">
-          <label for="FastingTriglycerides">Fasting triglycerides</label>
-          <div class="input-group input-group-lg">
-            <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="FastingTriglycerides" id="FastingTriglycerides">
-            <div class="input-group-append">
-              <span class="input-group-text rounded-right border-left-0" id="basic-addon3">mmol/L</span>
-            </div>
-          </div>
-          <small id="FastingTriglycerides" class="form-text text-muted pt-2 mb-0">Optional</small>
-        </div>
-        <div class="form-group">
-          <label for="FastingInsulin">Fasting insulin</label>
-          <div class="input-group input-group-lg">
-            <input type="text" class="form-control border-right-0 pr-0" placeholder="0" aria-label="FastingInsulin" id="FastingInsulin">
-            <div class="input-group-append">
-              <span class="input-group-text rounded-right border-left-0" id="basic-addon3">pmol/L</span>
-            </div>
-          </div>
-          <small id="FastingInsulin" class="form-text text-muted pt-2 mb-0">Optional</small>
-        </div>
-        <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
-      </div>
-      <nav class="navbar fixed-bottom px-4 px-lg-8">
-        <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingCraving">Continue</button>
-      </nav>
-    </div>
-  </div>
-</div><!-- / modal -->
-
-<!-- IDEA: modal onboarding-craving -->
-<div class="modal fade fixed-right" id="onboardingCraving" tabindex="-11" role="dialog" aria-labelledby="onboardingCraving" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-header py-2">
-        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
-          <i class="fe fe-arrow-left h2"></i>
-        </button>
-        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
-        </button>
-      </div>
-      <div class="modal-body pb-6 px-lg-8">
-        <h2>Your craving & meals frequency</h2>
-        <form class="mb-2">
-          <select class="custom-select custom-select-lg mb-3">
-            <option selected>Normal craving</option>
-            <option value="1">No craving</option>
-            <option value="2">Moderate craving</option>
-            <option value="3">Strong craving</option>
-          </select>
-        </form>
-        <div class="form-row mb-4">
-          <div class="form-group col-6">
-            <div class="input-group input-group-lg">
-              <input type="text" class="form-control border-right-0" placeholder="0" aria-label="meals frequency">
-              <div class="input-group-append">
-                <span class="input-group-text rounded-right border-left-0" id="Meals">Meals</span>
-              </div>
-            </div>
-          </div>
-          <div class="form-group col-6">
-            <div class="input-group input-group-lg">
-              <input type="text" class="form-control border-right-0" placeholder="0" aria-label="Snacks frequency">
-              <div class="input-group-append">
-                <span class="input-group-text rounded-right border-left-0" id="Snacks">Snacks</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
-
-      </div>
-      <nav class="navbar fixed-bottom px-4 px-lg-8">
-        <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingSleep">Continue</button>
-      </nav>
-    </div>
-  </div>
-</div><!-- / modal -->
-
-<!-- IDEA: modal onboarding-sleep -->
-<div class="modal fade fixed-right" id="onboardingSleep" tabindex="-13" role="dialog" aria-labelledby="onboardingSleep" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-header py-2">
-        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
-          <i class="fe fe-arrow-left h2"></i>
-        </button>
-        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
-        </button>
-      </div>
-      <div class="modal-body px-lg-8 pb-6">
-        <h2>Your sleep</h2>
-        <form class="mb-4">
-          <select class="custom-select custom-select-lg mb-3">
-            <option selected>Normal sleeper</option>
-            <option value="1">Very light sleeper</option>
-            <option value="2">Moderate sleeper</option>
-            <option value="3">Sound sleeper</option>
-          </select>
-        </form>
-        <p class="text-secondary mb-4 small">Your physical settings are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
-
-      </div>
-      <nav class="navbar fixed-bottom px-4 px-lg-8">
-        <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingConnect">Continue</button>
-      </nav>
-    </div>
-  </div>
-</div><!-- / modal -->
-
-<!-- IDEA: modal onboarding-connect-option -->
-<div class="modal fade fixed-right" id="onboardingConnect" tabindex="-14" role="dialog" aria-labelledby="onboardingConnect" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-header py-2">
-        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
-          <i class="fe fe-arrow-left h2"></i>
-        </button>
-        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
-        </button>
-      </div>
-      <div class="modal-body pb-6 px-lg-8">
-        <h2 class="text-center">Try the Nutrita App free for 7 days</h2>
-        <p class="text-secondary mb-4 small text-center">Create an account to reach your goals. We’ll remind you two days before your trial  ends so you won’t be accidentally billed and you can cancel anytime.</p>
-        <!-- Form -->
-        <form>
-
-          <!-- Email address -->
-          <div class="form-group">
-
-            <!-- Label -->
-            <label>
-              Your Email Address
-            </label>
-
-            <!-- Input -->
-            <input type="email" class="form-control" placeholder="email@address.com">
-
-          </div>
-
-          <!-- Password -->
-          <div class="form-group">
-
-            <!-- Label -->
-            <label>
-              Create Your Password
-            </label>
-
-            <!-- Input group -->
-            <div class="input-group input-group-merge">
-
-              <!-- Input -->
-              <input type="password" class="form-control form-control-appended" placeholder="Create your password">
-
-              <!-- Icon -->
-              <div class="input-group-append">
-                <span class="input-group-text">
-                  <i class="fe fe-eye"></i>
-                </span>
-              </div>
-
-            </div>
-          </div>
-          <div class="custom-control custom-checkbox mb-4">
-            <input type="checkbox" class="custom-control-input" id="customCheck1">
-            <label class="custom-control-label" for="customCheck1">I have read and agree to the<a href="https://www.iubenda.com/privacy-policy/56741265/legal" target="_blank" rel="noopener noreferrer"> Privacy Policy</a> and <a target="_blank" rel="noopener noreferrer" href="https://nutrita.app/terms-of-service">Terms of service</a></label>
-          </div>
-          <button class="btn btn-success btn-block mb-2" type="button" data-toggle="modal" data-target="#onboardingLegal">Sign up</button>
-        </form>
-        <p class="text-center text-muted my-3 small">OR</p>
-        <button class="btn btn-primary mb-4 py-0 pl-0 btn-block text-left" type="button" data-toggle="modal" data-target="#onboardingLegal"><img class="mr-2 rounded" src="assets/img/btn_google_dark_normal_ios.svg" alt="btn google sign in" width="40px">Continue with Google</button>
-        <button class="btn btn-link btn-block text-success btn-sm" type="button" data-toggle="modal" data-target="#onboardingConnect">I already have an account</button>
-      </div>
-    </div>
-  </div>
-</div><!-- / modal -->
-<!-- IDEA: modal sign-in -->
-<div class="modal fade fixed-right" id="signIn" tabindex="-14" role="dialog" aria-labelledby="signIn" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-header py-2">
-        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
-          <i class="fe fe-arrow-left h2"></i>
-        </button>
-        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
-        </button>
-      </div>
-      <div class="modal-body pb-6 px-lg-8">
-        <h2 class="text-center">Hello, welcome back!</h2>
-        <p class="text-secondary mb-4 small text-center">Sin in to your Nutrita account to get back to your health goals.</p>
-        <!-- Form -->
-        <form>
-
-          <!-- Email address -->
-          <div class="form-group">
-
-            <!-- Label -->
-            <label>
-              Email Address
-            </label>
-
-            <!-- Input -->
-            <input type="email" class="form-control" placeholder="email@address.com">
-
-          </div>
-
-          <!-- Password -->
-          <div class="form-group">
-
-            <!-- Label -->
-            <label>
-              Password
-            </label>
-
-            <!-- Input group -->
-            <div class="input-group input-group-merge">
-
-              <!-- Input -->
-              <input type="password" class="form-control form-control-appended" placeholder="Create your password">
-
-              <!-- Icon -->
-              <div class="input-group-append">
-                <span class="input-group-text">
-                  <i class="fe fe-eye"></i>
-                </span>
-              </div>
-
-            </div>
-            <small class="form-text text-muted pt-2 mb-0"><a class="text-secondary" href="forget-password.html">Forget your password?</a></small>
-          </div>
-          <button class="btn btn-success btn-block mb-2" type="button" data-toggle="modal" data-target="#onboardingLegal">Sign in</button>
-        </form>
-        <p class="text-center text-muted my-3 small">OR</p>
-        <button class="btn btn-primary mb-4 py-0 pl-0 btn-block text-left" type="button" data-toggle="modal" data-target="#dashboard-full_3.html"><img class="mr-2 rounded" src="assets/img/btn_google_dark_normal_ios.svg" alt="btn google sign in" width="40px">Continue with Google</button>
-        <button class="btn btn-link btn-block text-success btn-sm" type="button" data-toggle="modal" data-target="#onboardingConnect">Create an account</button>
-
-      </div>
-    </div>
-  </div>
-</div><!-- / modal sign in -->
-
-
-<!-- IDEA: modal onboardingLegal -->
-<div class="modal fade fixed-right" id="onboardingLegal" tabindex="-15" role="dialog" aria-labelledby="onboardingLegal" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-header py-2">
-        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
-          <i class="fe fe-arrow-left h2"></i>
-        </button>
-        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
-        </button>
-      </div>
-      <div class="modal-body px-lg-8">
-        <h2>Legal</h2>
-        <p class="text-secondary mb-4 small">Please review the Nutrita Terms of Service and Privacy Policy.</p>
-      </div>
-      <nav class="navbar fixed-bottom px-lg-8">
-        <div class="btn-group-vertical mb-4 vw-100">
-          <button class="btn btn-white border-bottom-0 d-flex justify-content-between " type="button" data-toggle="modal" data-target="#onboardingLegalTOS"><span>Terms of service</span> <i class="fe fe-chevron-right text-secondary"></i></button>
-          <button class="btn btn-white d-flex justify-content-between " type="button" data-toggle="modal" data-target="#onboardingLegalTOS"><span>Privacy policy</span> <i class="fe fe-chevron-right text-secondary"></i></button>
-        </div>
-        <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingAboutYou">Accept</button>
-      </nav>
-    </div>
-  </div>
-</div><!-- / modal -->
-
-<!-- IDEA: modal onboardingLegalTOS -->
-<div class="modal fade fixed-right" id="onboardingLegalTOS" tabindex="-16" role="dialog" aria-labelledby="onboardingLegalTOS" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content px-lg-8">
-      <div class="modal-header py-2">
-        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
-          <i class="fe fe-arrow-left h2"></i>
-        </button>
-        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <h2>Terms of service</h2>
-        <p class="text-secondary mb-4">Pellentesque sed cursus massa, ut scelerisque nisl. Nullam ut elit vel odio fringilla lacinia. Praesent ac massa in leo facilisis sollicitudin. Quisque congue finibus odio et mollis. Pellentesque tincidunt lectus ut metus efficitur ultricies. Aenean a leo felis. Etiam enim velit, dignissim sed ornare et, porta a dui. Quisque et augue sed massa consequat consequat in eget ipsum.</p>
-      </div>
-      <nav class="navbar fixed-bottom px-4">
-        <button class="btn btn-link text-secondary vw-100" type="button" data-dismiss="modal" aria-label="Close">Close</button>
-      </nav>
-    </div>
-  </div>
-</div><!-- / modal -->
-
-<!-- IDEA: modal onboardingSubscriptionPeriod -->
-<div class="modal fade fixed-right" id="onboardingSubscriptionPeriod" tabindex="-17" role="dialog" aria-labelledby="onboardingSubscriptionPeriod" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-header py-2">
-        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
-          <i class="fe fe-arrow-left h2"></i>
-        </button>
-        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
-        </button>
-      </div>
-      <div class="modal-body pb-6">
-        <h2>Meet your Nutrition Coach</h2>
-        <p class="text-secondary mb-4 small">The right food tailored to you and your goals.</p>
-        <p class="small text-muted small mb-1"><i class="fe fe-check-circle text-success mr-2"></i>Cancel at any time in your account settings.</p>
-        <p class="small text-muted small"><i class="fe fe-check-circle text-success mr-2"></i>You won't be charged if you cancel before 28 Apr 2019.</p>
-        <div class="card">
-          <div class="card-header">
-            <h3 class="card-header-title">
-              Early bird offer
-            </h3>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item border-bottom-0">
-              <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
-                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                <label class="custom-control-label vw-100" for="customRadio1">
-                  <div class="row justify-content-between align-items-center">
-                    <div class="col">
-                      <h4 class="mt-n2">Monthly <span class="badge badge-soft-primary">Save 29%</span></h4>
-                    </div>
-                    <div class="col-auto text-right">
-                      <strong>Free</strong><br>
-                      <span class="h6 font-weight-normal text-muted mt-n1 d-block">30-day trial</span>
-                    </div>
-                  </div>
-                  <div class="row justify-content-between align-items-center">
-                    <div class="col-auto">
-                      <small class="d-block">After free trial</small>
-                      <span class="h6 font-weight-normal text-muted mt-n1 d-block">Starting 28 Apr 2019</span>
-                    </div>
-                    <div class="col text-right">
-                      <small class="d-block">$ 9 <strike>$ 14.99</strike></small>
-                      <span class="h6 font-weight-normal text-muted mt-n1 d-block">per month</span>
-
-                    </div>
-                  </div>
-                </label>
-              </div>
-            </li>
-            <li class="list-group-item border-bottom-0">
-              <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
-                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" checked>
-                <label class="custom-control-label vw-100" for="customRadio2">
-                  <div class="row justify-content-between align-items-center">
-                    <div class="col">
-                      <h4 class="mt-n2">Annually <span class="badge badge-soft-primary">Save 40%</span></h4>
-                    </div>
-                    <div class="col-auto text-right">
-                      <strong>Free</strong><br>
-                      <span class="h6 font-weight-normal text-muted mt-n1 d-block">30-day trial</span>
-                    </div>
-                  </div>
-                  <div class="row justify-content-between align-items-center">
-                    <div class="col-auto">
-                      <small class="d-block">After free trial</small>
-                      <span class="h6 font-weight-normal text-muted mt-n1 d-block">Starting 05 Apr 2019</span>
-                    </div>
-                    <div class="col text-right">
-                      <small class="d-block">12 x $ 7.41</small>
-                      <span class="h6 font-weight-normal text-muted mt-n1 d-block mb-1">or $ 89 <strike>$ 125</strike></span>
-                      <span class="h6 font-weight-normal text-muted mt-n1 d-block">per month</span>
-                    </div>
-                  </div>
-                </label>
-              </div>
-            </li>
-          </ul>
-
-        </div>
-        <div class="form-group">
-          <label for="discountCoupon">Discount coupon</label>
-          <div class="input-group input-group-lg mb-2">
-            <input type="text" class="form-control" placeholder="Enter your coupon code" aria-label="discountCoupon" id="discountCoupon">
-            <div class="input-group-append">
-              <button class="btn btn-lg btn-dark border-0" type="button" name="button">Apply</button>
-            </div>
-          </div>
-          <small id="discountCouponHelp" class="form-text text-muted">Input and apply coupon code if you have.</small>
-        </div>
-      </div>
-      <nav class="navbar fixed-bottom px-4">
-        <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingPaymentOptions">Go to Payment Options</button>
-      </nav>
-    </div>
-  </div>
-</div><!-- / modal -->
-
-<!-- IDEA: modal onboardingTrialEndedSubscriptionPeriod -->
-<div class="modal fade fixed-right" id="onboardingTrialEndedSubscriptionPeriod" tabindex="-17" role="dialog" aria-labelledby="onboardingTrialEndedSubscriptionPeriod" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-header py-2">
-        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
-          <i class="fe fe-arrow-left h2"></i>
-        </button>
-        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
-        </button>
-      </div>
-      <div class="modal-body pb-6">
-        <h2>Your trial period ended</h2>
-        <p class="text-secondary small">To continue using Nutrita, select a plan below.</p>
-        <p class="small text-muted small mb-4"><i class="fe fe-check-circle text-success mr-2"></i>Cancel at any time in your account settings.</p>
-        <div class="card">
-          <div class="card-header">
-            <h3 class="card-header-title">
-              Early bird offer
-            </h3>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item border-bottom-0">
-              <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
-                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-                <label class="custom-control-label vw-100" for="customRadio1">
-                  <div class="row justify-content-between align-items-center">
-                    <div class="col">
-                      <h4 class="mb-0">Monthly <span class="badge badge-soft-primary">Save 29%</span></h4>
-                    </div>
-                    <div class="col text-right">
-                      <small class="d-block">$ 9 <strike>$ 14.99</strike></small>
-                      <span class="h6 font-weight-normal text-muted mt-n1 d-block">per month</span>
-                    </div>
-                  </div>
-                </label>
-              </div>
-            </li>
-            <li class="list-group-item border-bottom-0">
-              <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
-                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" checked>
-                <label class="custom-control-label vw-100" for="customRadio2">
-                  <div class="row justify-content-between align-items-center">
-                    <div class="col">
-                      <h4 class="mt-n2">Annually <span class="badge badge-soft-primary">Save 40%</span></h4>
-                    </div>
-                    <div class="col text-right">
-                      <small class="d-block">12 x $ 7.41</small>
-                      <span class="h6 font-weight-normal text-muted mt-n1 d-block mb-1">or $ 89 <strike>$ 125</strike></span>
-                      <span class="h6 font-weight-normal text-muted mt-n1 d-block">per month</span>
-                    </div>
-                  </div>
-                </label>
-              </div>
-            </li>
-          </ul>
-
-        </div>
-        <div class="form-group">
-          <label for="discountCoupon">Discount coupon</label>
-          <div class="input-group input-group-lg">
-            <input type="text" class="form-control" placeholder="Enter your coupon code" aria-label="discountCoupon" id="discountCoupon">
-            <div class="input-group-append">
-              <button class="btn btn-lg btn-dark border-0" type="button" name="button">Apply</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav class="navbar fixed-bottom px-4">
-        <button class="btn btn-success vw-100" type="button" data-toggle="modal" data-target="#onboardingPaymentOptions">Go to Payment Options</button>
-      </nav>
-    </div>
-  </div>
-</div><!-- / modal -->
-
-<!-- IDEA: modal onboardingSubscriptionPeriod -->
-<div class="modal fade fixed-right" id="onboardingPaymentOptions" tabindex="-17" role="dialog" aria-labelledby="onboardingPaymentOptions" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
-    <div class="modal-content">
-      <div class="modal-header py-2">
-        <button class="btn btn-link text-dark" type="button" name="button" data-dismiss="modal" aria-label="Close">
-          <i class="fe fe-arrow-left h2"></i>
-        </button>
-        <button type="button" class="btn btn-link text-dark ml-auto" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fe fe-x h2"></i></span>
-        </button>
-      </div>
-      <div class="modal-body pb-6">
-        <h2>Express checkout</h2>
-        <div class="card">
-          <ul class="list-group list-group-lg list-group-flush">
-            <a class="text-dark" href="#">
-              <li class="list-group-item border-bottom rounded-0">
-                <div class="row justify-content-between align-items-center">
-                  <div class="col">
-                    <h4 class="mb-0"><img class="mr-2" src="//cdn.shopify.com/s/assets/payment_icons/paypal-49e4c1e03244b6d2de0d270ca0d22dd15da6e92cc7266e93eb43762df5aa355d.svg" alt="Paypal" height="20">PayPal</h4>
-                  </div>
-                  <div class="col-auto text-right">
-                    $ 98.45
-                  </div>
-                </div>
-              </li>
-            </a>
-            <a class="text-dark" href="#">
-              <li class="list-group-item border-bottom rounded-0">
-                <div class="row justify-content-between align-items-center">
-                  <div class="col">
-                    <h4 class="mb-0"><img class="mr-2" src="//cdn.shopify.com/s/assets/payment_icons/google_pay-c66a29c63facf2053bf69352982c958e9675cabea4f2f7ccec08d169d1856b31.svg" alt="Google pay" height="20">Google Pay</h4>
-                  </div>
-                  <div class="col-auto text-right">
-                    $ 98.45
-                  </div>
-                </div>
-              </li>
-            </a>
-            <a class="text-dark" href="#">
-              <li class="list-group-item">
-                <div class="row justify-content-between align-items-center">
-                  <div class="col">
-                    <h4 class="mb-0"><img class="mr-2" src="//cdn.shopify.com/s/assets/payment_icons/amazon-92e856f82cae5a564cd0f70457f11af4d58fa037cf6e5ab7adf76f6fd3b9cafe.svg" alt="Amazon pay" height="20">Amazon Pay</h4>
-                  </div>
-                  <div class="col-auto text-right">
-                    $ 98.45
-                  </div>
-                </div>
-              </li>
-            </a>
-          </ul>
-        </div>
-        <p class="text-center text-muted my-4 small">OR</p>
-        <h2>Enter your payment details</h2>
-        <div class="card pt-2">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-12">
-                <label>Card number</label>
-                <div class="form-control StripeElement StripeElement--empty mb-4">
-                  <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;">
-                    <iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame5" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-62412839f1e5453068d5f8d48eb85168.html#componentName=cardNumber&amp;wait=false&amp;rtl=false&amp;keyMode=live&amp;apiKey=pk_live_rf5nfmaLdCmW7cAlSuuOFcre00K297kQKU&amp;origin=https%3A%2F%2Fnutrita.app&amp;referrer=https%3A%2F%2Fnutrita.app%2F&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; height: 16.8px;"></iframe>
-                    <input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;">
-                  </div>
-                </div>
-                <label class="mt-1">Expiry / CVC</label>
-                <div class="input-group mb-4">
-                  <div class="form-control w-50 border-right-0 StripeElement StripeElement--empty">
-                    <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame6" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-62412839f1e5453068d5f8d48eb85168.html#componentName=cardExpiry&amp;wait=false&amp;rtl=false&amp;keyMode=live&amp;apiKey=pk_live_rf5nfmaLdCmW7cAlSuuOFcre00K297kQKU&amp;origin=https%3A%2F%2Fnutrita.app&amp;referrer=https%3A%2F%2Fnutrita.app%2F&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; height: 16.8px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;"></div>
-                  </div>
-                  <div class="form-control w-50 border-left-0 StripeElement StripeElement--empty">
-                    <div class="__PrivateStripeElement" style="margin: 0px !important; padding: 0px !important; border: none !important; display: block !important; background: transparent !important; position: relative !important; opacity: 1 !important;"><iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeFrame7" allowpaymentrequest="true" src="https://js.stripe.com/v3/elements-inner-card-62412839f1e5453068d5f8d48eb85168.html#componentName=cardCvc&amp;wait=false&amp;rtl=false&amp;keyMode=live&amp;apiKey=pk_live_rf5nfmaLdCmW7cAlSuuOFcre00K297kQKU&amp;origin=https%3A%2F%2Fnutrita.app&amp;referrer=https%3A%2F%2Fnutrita.app%2F&amp;controllerId=__privateStripeController1" title="Secure payment input frame" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; user-select: none !important; height: 16.8px;"></iframe><input class="__PrivateStripeElement-input" aria-hidden="true" aria-label=" " autocomplete="false" maxlength="1" style="border: none !important; display: block !important; position: absolute !important; height: 1px !important; top: 0px !important; left: 0px !important; padding: 0px !important; margin: 0px !important; width: 100% !important; opacity: 0 !important; background: transparent !important; pointer-events: none !important; font-size: 16px !important;"></div>
-                  </div>
-                </div>
-                <label class="mt-1">Name on the card</label>
-                <input class="form-control mb-4" type="text" name="name" id="mce-name" placeholder="John Smith" required="">
-                <label class="mt-1">Country</label>
-                <div class="input-group mb-4">
-                  <select class="custom-select custom-select">
-                    <option value="AF">Afghanistan</option>
-                    <option value="AX">Åland Islands</option>
-                    <option value="AL">Albania</option>
-                  </select>
-                </div>
-
-                <a class="mt-2 justify-content-center" href="https://stripe.com" target="_blank" rel="noopener noreferrer"><img src="https://d2jp17o0xc32jv.cloudfront.net/img/powered_by_stripe@2x.png" alt="stripe logo" style="max-width: 100px;"></a>
-
-                <small id="cardNumber" class="form-text text-muted mt-2">Your credit card details are never stored on or even reach our servers. Payments and credit card data are handled by Stripe.</small>
-                <hr>
-                <div class="table-responsive">
-                  <table class="table mb-0">
-                    <thead>
-                      <tr>
-                        <th class="px-0 bg-transparent border-top-0"><span class="h6">Product</span></th>
-                        <th class="px-0 bg-transparent border-top-0 text-right">
-                          <span class="h6">Cost</span>
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td class="px-0">Yearly billing<br>
-                          <span class="small text-muted">7-days trial</span>
-                        </td>
-                        <td class="px-0 text-right">Free<br></td>
-                      </tr>
-                      <tr>
-                        <td class="px-0 pb-0">After 7-day free trial<br>
-                          <span class="small text-muted">Starting May 13, 2020</span>
-                        </td>
-                        <td class="px-0 pb-0 text-right"></td>
-                      </tr>
-                      <tr>
-                        <td class="px-0 border-top-0">
-                          <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
-                            <input type="radio" id="customRadio0" name="customRadio" class="custom-control-input" value="Monthly">
-                            <label class="custom-control-label" for="customRadio0">
-                              <div class="row justify-content-between align-items-center mb-2">
-                                <div class="col">
-                                  <h4 class="mb-0 mt-1">Monthly billing</h4>
-                                </div>
-                              </div>
-                            </label>
-                          </div>
-                        </td>
-                        <td class="px-0 text-right small border-top-0">12 x $9 <br>
-                          <span class="badge badge-soft-primary">Save 40%</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-0 border-top-0">
-                          <div class="custom-control custom-radio d-flex justify-content-between align-items-center">
-                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="Yearly" checked="">
-                            <label class="custom-control-label" for="customRadio1">
-                              <div class="row justify-content-between align-items-center mb-2">
-                                <div class="col">
-                                  <h4 class="mb-0 mt-1">Yearly billing</h4>
-                                </div>
-                              </div>
-                            </label>
-                          </div>
-                        </td>
-                        <td class="px-0 text-right small border-top-0">$89 <br>
-                          <span class="badge badge-soft-primary">Save 50%</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-0 border-top border-top-1">
-                          <strong>Value added tax</strong>
-                        </td>
-                        <td colspan="2" class="px-0 text-right border-top border-top-1">
-                          <span class="h3">$17.8</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="px-0 border-top border-top-1"><strong>Total</strong></td>
-                        <td colspan="2" class="px-0 text-right border-top border-top-1">
-                          <span class="h3">$106.8</span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Title -->
-        <h6 class="text-uppercase">
-          Notes
-        </h6>
-
-        <!-- Text -->
-        <p class="text-muted small">
-          By tapping or clicking 'Subscribe', you accept the following terms of service. You also agree that your purchase will be available immediately and that (except for services) you waive your statuory right to withdrawal. Check our refund policy.
-        </p>
-
-        <!-- Text -->
-        <p class="text-muted small">
-          Nutrita is a continuous subscription. By tapping or clicking 'Subscribe', your authorise Nutrita to charge you the subscription cost monthly or annually according to your choice. You can cancel at any time. Find out more
-        </p>
-      </div>
-      <nav class="navbar fixed-bottom px-4">
-        <a class="btn btn-success vw-100" href="dashboard-full.html">Subscribe</a>
-      </nav>
-    </div>
-  </div>
-</div><!-- / modal -->
 
 <!-- IDEA: modal error -->
 <div class="modal fade fixed-right" id="ModalError" tabindex="-16" role="dialog" aria-labelledby="ModalError" aria-hidden="true">

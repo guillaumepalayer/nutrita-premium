@@ -123,7 +123,7 @@
   max-width: 250px;
 }
 .modal-dialog-vertical{
-  max-width: 756px;
+  max-width: 100%;
 }
 .btn-slide-right{
     position: absolute !important;
@@ -319,4 +319,8 @@ li:hover .circle {
   .nav-tabs .nav-item:last-child {
     padding-right: 16px
   }
+}
+@media (min-width: 1280px) {
+  .w-lg-60{width: 60%};
+  .w-lg-40{width: 40%}
 }
