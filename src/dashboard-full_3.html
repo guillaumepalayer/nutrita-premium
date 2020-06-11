@@ -137,31 +137,32 @@
           </div>
           <div class="col-12 col-lg-8 px-lg-0">
             <div class="card mb-5">
-              <div class="card-header border-0">
+              <div class="card-header border-1">
                 <h4 class="card-header-title text-center">
                   Macros • <span class="text-muted">Today</span>
                 </h4>
               </div>
               <div class="card-body py-0">
-                <div class="row justify-content-center mb-4 mx-n4">
-                  <div class="col-auto col-lg-2 pr-1 text-center">
-                    <span class="d-block chart-legend-item mb-2"><i class="chart-legend-indicator bg-green-light"></i><span class="small text-secondary">Fat cal.</span></span>
-                    <span class="d-block text-dark h2 mb-2">10% kcal</span>
-                    <span class="d-block h5 text-secondary mb-0">000/000g</span>
-                    <span class="h5 text-secondary mb-0">10%</span>
-                  </div>
-                  <div class="col-auto col-lg-2 pr-1 text-center">
-                    <span class="d-block chart-legend-item mb-2"><i class="chart-legend-indicator bg-orange-light"></i><span class="small text-secondary">Protein target</span></span>
-                    <span class="d-block text-dark h2 mb-2">10% kcal</span>
-                    <span class="d-block h5 text-secondary mb-0">000/000g</span>
+                <div class="row justify-content-center mb-4 mx-n4 border-bottom border-light">
+                  <a class="col-auto col-lg-3 text-center py-3 border-right lift" href="#" data-toggle="modal" data-target="#macroNutrients">
+                    <i class="chart-legend-indicator bg-green-light"></i>
+                    <span class="d-block chart-legend-item mb-2"><span class="small text-secondary">Fat cal.</span></span>
+                    <span class="d-block text-dark h4 mb-0">10% kcal</span>
+                    <span class="h5 text-secondary mb-0">10% of Est.</span>
+                  </a>
+                  <a class="col-auto col-lg-3 text-center py-3 border-right lift" href="#" data-toggle="modal" data-target="#macroNutrients">
+                    <i class="chart-legend-indicator bg-orange-light"></i>
+                    <span class="d-block chart-legend-item mb-2"><span class="small text-secondary">Protein</span></span>
+                    <span class="d-block text-dark h4 mb-0">10% kcal</span>
                     <span class="h5 text-secondary mb-0">10% of target</span>
-                  </div>
-                  <div class="col-auto col-lg-2 pr-0 text-center">
-                    <span class="d-block chart-legend-item mb-2"><i class="chart-legend-indicator bg-danger"></i><span class="small text-secondary">Carbs limit</span></span>
-                    <span class="d-block text-dark h2 mb-2">10% kcal</span>
-                    <span class="d-block h5 text-secondary mb-0">000/000g</span>
+                  </a>
+                  <a class="col-auto col-lg-3 text-center py-3 lift" href="#" data-toggle="modal" data-target="#macroNutrients">
+                    <i class="chart-legend-indicator bg-danger"></i><i class="chart-legend-indicator bg-pink-light"></i><br>
+                    <span class="chart-legend-item mb-2"><span class="small text-secondary">Carbs</span></span>
+                    <span class="chart-legend-item mb-2 ml-2"><span class="small text-secondary">Fiber</span></span>
+                    <span class="d-block text-dark h4 mb-0">10% kcal</span>
                     <span class="h5 text-secondary mb-0">10% of limit</span>
-                  </div>
+                  </a>
                 </div>
                 <div class="row justify-content-center">
                   <div class="col d-flex align-items-center justify-content-center">
@@ -170,11 +171,14 @@
                 </div>
                 <div class="row justify-content-center mb-4">
                   <div class="col d-flex align-items-center justify-content-center" style="height: 260px">
-                    <div class="avatar avatar-xxl">
-                      <img src="https://pbs.twimg.com/profile_images/1046781704608915458/5xxk-UR7_400x400.jpg" alt="Profile pic" class="avatar-img rounded-circle shadow">
-                      <!-- IDEA: if no profile pic, First letter of First and last name -->
-                      <span class="avatar-title rounded-circle bg-success shadow d-none">GP</span>
-                    </div>
+                    <a href="profile.html">
+                      <div class="avatar avatar-xxl">
+                        <img class="avatar-img rounded-circle shadow lift" src="https://pbs.twimg.com/profile_images/1046781704608915458/5xxk-UR7_400x400.jpg" alt="Profile pic">
+                        <!-- IDEA: if no profile pic, First letter of First and last name -->
+                        <span class="avatar-title rounded-circle bg-success shadow d-none">GP</span>
+                      </div>
+                    </a>
+
                   </div>
                 </div>
                 <div class="row no-gutters border-bottom">
@@ -1875,7 +1879,7 @@
             </div>
             <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 mb-5 pl-3 mx-n3 mr-lg-0">
               <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                <a class="d-block" data-toggle="modal" href="#modalFood" style="width: 128px">
                   <!-- Image -->
                   <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
                   <!-- Title -->
@@ -1889,7 +1893,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                <a class="d-block" data-toggle="modal" href="#modalFood" style="width: 128px">
                   <!-- Image -->
                   <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
                   <!-- Title -->
@@ -1903,7 +1907,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                <a class="d-block" data-toggle="modal" href="#modalFood" style="width: 128px">
                   <!-- Image -->
                   <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
                   <!-- Title -->
@@ -1917,7 +1921,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                <a class="d-block" data-toggle="modal" href="#modalFood" style="width: 128px">
                   <!-- Image -->
                   <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
                   <!-- Title -->
@@ -1931,7 +1935,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                <a class="d-block" data-toggle="modal" href="#modalFood" style="width: 128px">
                   <!-- Image -->
                   <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
                   <!-- Title -->
@@ -1945,7 +1949,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                <a class="d-block" data-toggle="modal" href="#modalFood" style="width: 128px">
                   <!-- Image -->
                   <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
                   <!-- Title -->
@@ -1959,7 +1963,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                <a class="d-block" data-toggle="modal" href="#modalFood" style="width: 128px">
                   <!-- Image -->
                   <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
                   <!-- Title -->
@@ -1973,7 +1977,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                <a class="d-block" data-toggle="modal" href="#modalFood" style="width: 128px">
                   <!-- Image -->
                   <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
                   <!-- Title -->
@@ -1987,7 +1991,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                <a class="d-block" data-toggle="modal" href="#modalFood" style="width: 128px">
                   <!-- Image -->
                   <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
                   <!-- Title -->
@@ -2001,7 +2005,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a class="d-block" data-toggle="modal" href="#modalRecipe" style="width: 128px">
+                <a class="d-block" data-toggle="modal" href="#modalFood" style="width: 128px">
                   <!-- Image -->
                   <img src="https://d3n85fzfv5z2vw.cloudfront.net/oyster,%20eastern,%20raw.jpg" alt="..." class="img-thumbnail mb-3">
                   <!-- Title -->

@@ -32,13 +32,29 @@
                 </p>
                 <div class="row justify-content-between">
                   <div class="col">
-                    <h2 class="mb-4">Your recommended macro</h2>
+                    <h2 class="mb-4">Recommended macro</h2>
                   </div>
                   <div class="col-auto">
                     <a href="#">Reset</a>
                   </div>
                 </div>
-
+                <div class="row justify-content-between mb-5">
+                  <div class="col-auto col-lg-4">
+                    <i class="chart-legend-indicator bg-green-light"></i>
+                    <span class="d-block chart-legend-item mb-2"><span class="small text-secondary">Fat cal.</span></span>
+                    <span class="h5 text-secondary mb-0">70% &bull; 000g</span>
+                  </div>
+                  <div class="col-auto col-lg-4">
+                    <i class="chart-legend-indicator bg-orange-light"></i>
+                    <span class="d-block chart-legend-item mb-2"><span class="small text-secondary">Protein</span></span>
+                    <span class="h5 text-secondary mb-0">25% &bull; 000g</span>
+                  </div>
+                  <div class="col-auto col-lg-4">
+                    <i class="chart-legend-indicator bg-danger"></i>
+                    <span class="d-block chart-legend-item mb-2"><span class="small text-secondary">Carbs</span></span>
+                    <span class="h5 text-secondary mb-0">5% &bull; 000g</span>
+                  </div>
+                </div>
                 <div class="table-responsive">
                   <table class="table mb-0">
                     <tbody>
@@ -243,10 +259,26 @@
         </div>
       </div>
     </div><!-- / .fixed bottom -->
-    <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none">
-      <a class="nav-link text-dark h5 py-0 text-center mb-0 px-1" href="dashboard-full.html"><i class="fe fe-home text-success d-block mb-2"></i>Home</a>
+    <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none m-3 rounded">
+      <div class="collapse w-100 mb-5" id="collapseAddFoodRecipe">
+        <nav class="nav flex-column">
+          <a class="nav-link pl-0 py-3 text-secondary border-bottom" href="search-zero-state.html">
+            <i class="fe fe-search h3 mr-2"></i>Search food
+          </a>
+          <a class="nav-link pl-0 py-3 text-secondary border-bottom" data-toggle="modal" href="#addMissingFood">
+            <i class="fe fe-file-plus h3 mr-2"></i>Custom food
+          </a>
+          <a class="nav-link pl-0 py-3 text-secondary border-bottom" data-toggle="modal" href="#addMissingFood">
+            <i class="fe fe-airplay h3 mr-2"></i>Weight
+          </a>
+          <a class="nav-link pl-0 py-3 text-secondary" data-toggle="modal" href="#addMissingFood">
+            <i class="fe fe-droplet h3 mr-2"></i>blood glucose
+          </a>
+        </nav>
+      </div>
+      <a class="nav-link text-dark h5 py-0 text-center mb-0 px-1" href="dashboard-full_2.html"><i class="fe fe-home text-success d-block mb-2"></i>Home</a>
       <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="journal.html"><i class="fe fe-activity d-block mb-2"></i>Journal</a>
-      <a class="nav-link btn btn-rounded-circle btn-success text-secondary text-center mb-0 mt-n4 font-weight-normal" href="search-zero-state.html"><i class="fe fe-plus d-block text-white"></i></a>
+      <a class="nav-link btn btn-rounded-circle btn-success text-secondary text-center mb-0 mt-n4 font-weight-normal" data-toggle="collapse" data-target="#collapseAddFoodRecipe" aria-expanded="false" aria-controls="collapseAddFoodRecipe"><i class="fe fe-plus d-block text-white"></i></a>
       <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="profile.html"><i class="fe fe-user d-block mb-2"></i>Profile</a>
       <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="settings.html"><i class="fe fe-settings d-block mb-2"></i>Settings</a>
     </nav>

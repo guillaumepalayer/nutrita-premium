@@ -545,6 +545,13 @@ var data = [
           {
             value: 5,
             color: {
+                solid: '#f8bbd0',
+                background: 'white'
+            }
+          },
+          {
+            value: 10,
+            color: {
                 solid: '#e63757',
                 background: 'white'
             }
@@ -557,7 +564,7 @@ var data = [
             }
           },
           {
-            value: 70,
+            value: 65,
             color: {
                 solid: '#00d97e',
                 background: 'white'
