@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc." />
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/fonts/feather/feather.css" />
@@ -54,8 +53,8 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light px-3 mb-2 mb-md-5 bg-white fixed-top d-none d-lg-flex" id="topnav">
       <div class="container">
-        <div class="row d-flex justify-content-between no-gutters w-100">
-          <div class="col d-flex align-items-center">
+        <div class="row w-100">
+          <div class="col-auto d-flex align-items-center">
             <!-- Brand -->
             <a class="text-dark" href="#" data-toggle="modal" data-target="#sidebarModalUserConnected"><i class="fe fe-menu mr-3 h1 mb-0"></i></a>
             <a class="navbar-brand mr-auto d-flex align-items-center" href="dashboard-full_3.html">
@@ -63,32 +62,25 @@
               <span class="text-secondary ml-2 h3 mb-0">Nutrita</span>
             </a>
           </div>
-          <div class="col-lg-6 mr-3">
-            <!-- Search Form mobile -->
-            <a href="search-zero-state.html">
-              <form class="form-inline">
-                <div class="input-group input-group-merge input-group-lg w-100 rounded" data-toggle="lists" data-lists-values='["name"]'>
-
-                  <!-- Input -->
-                  <input type="search" class="form-control form-control-prepended form-control-appended bg-white" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled>
-                  <div class="input-group-prepend">
-                    <div class="input-group-text bg-white">
-                      <i class="fe fe-search"></i>
-                    </div>
-                  </div>
-                  <div class="input-group-append">
-                    <div class="input-group-text bg-white">
-                      <i class="fe fe-x"></i>
-                    </div>
-                  </div>
-                </div>
-              </form>
+          <div class="col-auto d-flex align-items-center mx-3">
+            <button class="btn btn-lg btn-white" type="button" name="button">Today</button>
+            <button class="btn btn-link btn-lg text-dark" type="button" name="button" data-toggle="modal" data-target="#modalCalendar"><i class="fe fe-calendar mr-2"></i>June 2020 <span class="badge badge-light">Week 24</span> <i class="fe fe-chevron-down ml-2"></i></button>
+          </div>
+          <div class="col-auto d-none ml-auto d-lg-flex justify-content-end align-items-center">
+            <a class="btn btn-link btn-lg text-dark mr-3" href="search-zero-state.html">
+              <i class="fe fe-search h3 mb-0"></i>
             </a>
+            <a class="btn btn-lg btn-success mr-3" href="#" data-toggle="modal" data-target="#addMissingFood">
+              Custom food
+            </a>
+            <div class="btn-group btn-group-lg" role="group" aria-label="Track">
+              <button type="button" class="btn btn-white border-right-0" data-toggle="modal" data-target="#addNewValue">Weight</button>
+              <button type="button" class="btn btn-white" data-toggle="modal" data-target="#addNewValue">Blood</button>
+            </div>
+
           </div>
-          <div class="col-auto mr-3">
-            <button class="btn btn-white btn-lg" type="button" name="button" data-toggle="modal" data-target="#modalCalendar"><i class="fe fe-calendar mr-2"></i>June 2020 <span class="badge badge-light">Week 24</span></button>
-          </div>
-          <div class="col ml-auto d-flex justify-content-end">
+
+          <div class="col-auto d-flex justify-content-end">
             <div class="navbar-user">
               <a href="https://gitbook.com" class="btn btn-link text-secondary" role="button" target="_blank">
                 <i class="fe fe-help-circle h2"></i>
@@ -395,7 +387,7 @@
               <div class="col-auto ml-auto">
                 <button class="btn btn-link text-dark btn-lg px-2" type="button" name="button" data-toggle="modal" data-target="#modalCalendar"><i class="fe fe-calendar"></i></button>
               </div>
-              <div class="col-auto d-flex justify-content-end">
+              <div class="col-auto d-flex justify-content-end pr-0">
                 <div class="navbar-user">
 
                   <!-- Dropdown -->
