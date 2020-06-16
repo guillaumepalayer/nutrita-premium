@@ -106,14 +106,20 @@
               <a class="nav-link pl-0 py-3 text-secondary" href="settings.html">
                 <i class="fe fe-settings h3 mr-2"></i>Settings
               </a>
+              <a class="nav-link pl-0 py-3 text-secondary" href="invite.html">
+                <i class="fe fe-users h3 mr-2"></i>Invite friends<br><span class="badge badge-soft-success">Get $$$</span>
+              </a>
             </nav>
           </div>
           <div class="col-12 col-lg-8 px-lg-0">
             <div class="card mb-5">
               <div class="card-header border-1">
-                <h4 class="card-header-title text-center">
+                <h4 class="card-header-title">
                   Macros • <span class="text-muted">Today</span>
                 </h4>
+                <a class="d-block ml-auto" href="profile.html">
+                  <i class="fe fe-settings text-dark"></i>
+                </a>
               </div>
               <div class="card-body py-0">
                 <div class="row justify-content-center mb-4 mx-n4 border-bottom border-light">
@@ -206,9 +212,41 @@
         </div>
         <div class="row justify-content-center mb-4">
           <div class="col-12 col-lg-8 px-lg-0">
+            <!-- Title -->
+            <h2 class="header-title mb-4">
+              Get started
+            </h2>
+            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0">
+              <li class="nav-item">
+                <a href="#" data-toggle="modal" data-target="getStarted">
+                  <div class="card" style="width: 150px">
+                    <div class="card-body">
+                      <i class="fe fe-plus h1 text-dark mb-3 d-block"></i>
+                      <h2 class="h4 text-dark mb-2">Add first food</h2>
+                      <small class="text-secondary"><i class="fe fe-clock"></i> 1 min</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" data-toggle="modal" data-target="getStarted">
+                  <div class="card" style="width: 150px">
+                    <div class="card-body">
+                      <i class="fe fe-airplay h1 text-dark mb-3 d-block"></i>
+                      <h2 class="h4 text-dark mb-2">Log weight</h2>
+                      <small class="text-secondary"><i class="fe fe-clock"></i> 1 min</small>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-4">
+          <div class="col-12 col-lg-8 px-lg-0">
             <div class="row mb-4">
               <div class="col">
-                <h2 class="header-title text-dark mb-2">
+                <h2 class="header-title mb-2">
                   Food equivalents
                 </h2>
                 <h3 class="h4 text-secondary mb-0">Tailored to your macros</h3>
@@ -2152,7 +2190,7 @@
         </div>
       </div><!-- / .fixed bottom -->
 
-      <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-md-none m-3 rounded">
+      <nav class="navbar fixed-bottom bg-white border border-top-1 justify-content-between py-2 d-flex d-lg-none m-3 rounded">
         <div class="collapse w-100 mb-5" id="collapseAddFoodRecipe">
           <nav class="nav flex-column">
             <a class="nav-link pl-0 py-3 text-secondary border-bottom" href="search-zero-state.html">
@@ -2176,7 +2214,7 @@
         <a class="nav-link text-secondary h5 py-0 text-center mb-0 font-weight-normal px-1" href="settings.html"><i class="fe fe-settings d-block mb-2"></i>Settings</a>
       </nav>
     </div>
-
+    @@include("partials/footer-2.html")
 
     <!-- JAVASCRIPT
     ================================================== -->

@@ -1418,36 +1418,31 @@
                 <div class="row justify-content-center mb-4">
                   <div class="col-6">
                     <a href="#" data-toggle="modal" data-target="#onboardingPaymentOptions">
-                      <div class="card mb-0" style="min-height: 220px">
-                        <div class="card-header bg-primary text-white border-0">
-                          Billed monthly
+                      <div class="card mb-0" style="min-height: 206px;">
+                        <div class="card-header bg-success text-white border-0 small px-3 justify-content-center">
+                          Billed annually
                         </div>
-                        <div class="card-body text-center">
-                          <div class="btn btn-rounded-circle bg-primary mb-3">
-                            💰
-                          </div>
-                          <p class="h2 mb-0 text-dark">
-                            7.99 €
+                        <div class="card-body text-center px-3">
+                          <p class="h2 mb-2 text-dark">
+                            <small class="align-top mr-1">$</small><span class="display-4 mr-1">5.00</span><small class="align-baseline">by month</small>
                           </p>
+                          <p class="h5 mb-2 text-dark">$44 by year</p>
+                          <p class="text-center text-success mb-0 h5">Save 15%</p>
                         </div>
                       </div>
                     </a>
                   </div>
+
                   <div class="col-6">
                     <a href="#" data-toggle="modal" data-target="#onboardingPaymentOptions">
-                      <div class="card mb-0" style="min-height: 220px">
-                        <div class="card-header bg-success text-white border-0">
-                          Billed annually
+                      <div class="card mb-0" style="min-height: 206px">
+                        <div class="card-header bg-primary text-white border-0 small px-3 justify-content-center">
+                          Billed monthly
                         </div>
-                        <div class="card-body text-center">
-                          <div class="btn btn-rounded-circle bg-green-light mb-3">
-                            🤑
-                          </div>
+                        <div class="card-body text-center px-3">
                           <p class="h2 mb-2 text-dark">
-                            47.99 €
+                            <small class="align-top mr-1">$</small><span class="display-4">7.99</span>
                           </p>
-                          <p class="h5 mb-2 text-dark">Save 15%</p>
-                          <p class="text-center text-dark mb-0 h6">$5 by month</p>
                         </div>
                       </div>
                     </a>
@@ -5315,6 +5310,57 @@
     </div>
   </div>
 </div><!-- / modal HbA1c% -->
+
+<!-- IDEA: modal getStarted -->
+<div class="modal fade fixed-right" id="getStarted" tabindex="-1" role="dialog" aria-labelledby="getStarted" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+    <div class="modal-content">
+      <div class="modal-body pt-0 py-lg-0">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-6 col-xl-6 pt-0 pr-lg-5">
+            <div class="row no-gutters mb-4">
+              <div class="col-auto mr-auto">
+                <button class="btn btn-link text-dark pl-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                  <i class="fe fe-arrow-left h2 mb-0"></i>
+                </button>
+              </div>
+            </div>
+            <div class="row justify-content-center no-gutters">
+              <div class="col-12 col-lg-10">
+
+                <!-- Heading -->
+                <h1 class="text-center">
+                  Add your first food
+                </h1>
+
+              </div>
+              <div class="col-12 col-lg-6 pt-3">
+
+                <!-- Submit -->
+                <button class="btn btn-block btn-lg btn-success mb-3 d-none d-md-block mb-6" type="button" data-toggle="modal" data-target="#valueReport">
+                  Got it
+                </button>
+                <div class="d-block d-md-none fixed-bottom p-4">
+                  <button class="btn btn-lg btn-block btn-success" type="button" data-toggle="modal" data-target="#valueReport">
+                    Got it
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-6 bg-success p-4 py-6 px-lg-5 mr-lg-n4 minvh100 d-none d-lg-block">
+            <div class="row justify-content-center">
+              <div class="col-10">
+                <h3>Why asking me these details</h3>
+                <p>Your personal information are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- / modal  -->
 
 <!-- IDEA: modal addNewValue -->
 <div class="modal fade fixed-right" id="addNewValue" tabindex="-1" role="dialog" aria-labelledby="addNewValue" aria-hidden="true">
