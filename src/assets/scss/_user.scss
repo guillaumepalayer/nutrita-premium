@@ -282,7 +282,7 @@ li:hover .circle {
 }
 @media (max-width: 768px) {
   .modal-dialog-vertical{
-    max-width: 350px;
+    max-width: 100%;
   }
   .avatar-xxl {
       width: 8rem;
@@ -299,8 +299,4 @@ li:hover .circle {
   .nav-tabs .nav-item:last-child {
     padding-right: 16px
   }
-}
-@media (min-width: 1024px) {
-  .w-lg-60{width: 60%};
-  .w-lg-40{width: 40%}
 }
