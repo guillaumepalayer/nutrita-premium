@@ -12235,6 +12235,9 @@ li:hover .circle {
   font-weight: bold;
   font-size: 30px; }
 
+.card-price {
+  min-height: 226px; }
+
 @media (max-width: 768px) {
   .modal-dialog-vertical {
     max-width: 100%; }
@@ -12248,4 +12251,6 @@ li:hover .circle {
     background-image: url(../../assets/img/covers/home-bg-mobile.jpg);
     background-size: 180% auto; }
   .nav-tabs .nav-item:last-child {
-    padding-right: 16px; } }
+    padding-right: 16px; }
+  .card-price {
+    min-height: 206px; } }
