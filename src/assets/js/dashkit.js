@@ -101,10 +101,10 @@
   }
 })();
 
-// Traffic chart
+// Macrodashboard
 
 (function() {
-  var chart = document.getElementById('trafficChart');
+  var chart = document.getElementById('macroDashboard');
 
   if (typeof Chart !== 'undefined' && chart) {
     new Chart(chart, {
@@ -113,20 +113,16 @@
         tooltips: {
           callbacks: {
             afterLabel: function() {
-              return '%'
+              return '% kcal'
             }
           }
         }
       },
       data: {
-        labels: ['Direct', 'Organic', 'Referral'],
+        labels: ['Carbs', 'Protein', 'Fat', 'Fiber'],
         datasets: [{
-          data: [60, 25, 15],
-          backgroundColor: ['#2C7BE5', '#A6C5F7', '#D2DDEC']
-        }, {
-          data: [15, 45, 20],
-          backgroundColor: ['#2C7BE5', '#A6C5F7', '#D2DDEC'],
-          hidden: true
+          data: [8, 20, 70, 2],
+          backgroundColor: ['#e63757', '#f6c343', '#00d97e', '#f8bbd0']
         }]
       }
     });

@@ -74,19 +74,9 @@
                 <i class="fe fe-activity mr-1"></i>Log your weight
               </H6>
             </a>
+            
           </div>
         </div>
-
-        <div class="row">
-          <div class="col">
-            <div class="row justify-content-center align-items-center ">
-              <div class="col-12 col-md-auto">
-                <ul class="week nav-overflow mr-n3"></ul>
-              </div>
-            </div>
-
-          </div>
-        </div> <!-- / .row -->
       </div>
     </div>
     <div class="main-content mt-n64">
@@ -126,27 +116,32 @@
                   <a class="col-4 col-lg-3 text-center py-3 border-right lift" href="#" data-toggle="modal" data-target="#macroNutrients">
                     <i class="chart-legend-indicator bg-green-light"></i>
                     <span class="d-block chart-legend-item mb-2"><span class="small text-secondary">Fat &bull; 23g</span></span>
-                    <span class="d-block text-dark h4 mb-0">10% kcal</span>
+                    <span class="d-block text-dark h4 mb-0">70% kcal</span>
                   </a>
                   <a class="col-4 col-lg-3 text-center py-3 border-right lift" href="#" data-toggle="modal" data-target="#macroNutrients">
                     <i class="chart-legend-indicator bg-orange-light"></i>
                     <span class="d-block chart-legend-item mb-2"><span class="small text-secondary">Protein &bull; 23g</span></span>
-                    <span class="d-block text-dark h4 mb-0">10% kcal</span>
+                    <span class="d-block text-dark h4 mb-0">20% kcal</span>
                   </a>
                   <a class="col-4 col-lg-3 text-center py-3 lift" href="#" data-toggle="modal" data-target="#macroNutrients">
                     <i class="chart-legend-indicator bg-danger"></i><i class="chart-legend-indicator bg-pink-light"></i><br>
                     <span class="chart-legend-item mb-lg-2 ml-0 d-block d-lg-inline-block"><span class="small text-secondary">Carbs &bull; 23g</span></span>
+                    <span class="d-none d-lg-inline-block text-dark">|</span>
                     <span class="chart-legend-item mb-2 ml-0"><span class="small text-secondary">Fiber &bull; 2g</span></span>
                     <span class="d-block text-dark h4 mb-0">10% kcal</span>
                   </a>
                 </div>
                 <div class="row justify-content-center">
                   <div class="col d-flex align-items-center justify-content-center">
-                    <div class="main-radial-progress-chart position-absolute d-block" style="top: 50%;"></div>
+                    <div class="chart chart-appended" style="top: 5%;">
+                      <canvas class="chart-canvas" id="macroDashboard"></canvas>
+                    </div>
+                    
+                    <div class="main-radial-progress-chart position-absolute d-none" style="top: 50%;"></div>
                   </div>
                 </div>
-                <div class="row justify-content-center mb-4">
-                  <div class="col d-flex align-items-center justify-content-center" style="height: 260px">
+                <div class="row justify-content-center mb-7 mt-n7">
+                  <div class="col d-flex align-items-center justify-content-center" style="height: 0px;">
                     <a href="profile.html">
                       <div class="avatar avatar-xxl">
                         <img class="avatar-img rounded-circle shadow lift" src="https://pbs.twimg.com/profile_images/1046781704608915458/5xxk-UR7_400x400.jpg" alt="Profile pic">
@@ -157,9 +152,17 @@
 
                   </div>
                 </div>
-                <div class="row no-gutters border-bottom">
+                <div class="row no-gutters border-bottom pt-3">
                   <a class="col-6 py-4 text-center lift" href="#" data-toggle="modal" data-target="#valueReport">
-                    <!-- Heading -->
+                    <div 
+                    id="popoverDemo" 
+                    data-toggle="popover" 
+                    data-content="<img class='image-fluid w-100 my-3' src='https://media1.tenor.com/images/584568ad053eb1dd81bdcc2f0913f9c9/tenor.gif?itemid=10227305'><p class='small mb-3'>In the waves of change we find our true direction.</p> <a class='text-white' href='#'>Got it</a>" 
+                    data-html="true" 
+                    data-trigger="manual" 
+                    title=""
+                    data-original-title="Nutrient completeness score" aria-describedby="">
+                      <!-- Heading -->
                     <h6 class="text-uppercase text-muted">
                       Nutrient Completeness <span class="fe fe-info h4 align-middle"></span>
                     </h6>
@@ -167,6 +170,8 @@
                     <!-- Value -->
                     <h2 class="mb-0 text-dark">6/10</h2> <span class="badge badge-soft-success">Good</span>
 
+                    </div>
+                    
 
                   </a>
                   <a class="col-6 py-4 text-center border-left lift" href="#" data-toggle="modal" data-target="#valueReport">
