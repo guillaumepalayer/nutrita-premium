@@ -119,10 +119,10 @@
         }
       },
       data: {
-        labels: ['Carbs', 'Protein', 'Fat', 'Fiber'],
+        labels: ['Net Carbs', 'Protein', 'Fat'],
         datasets: [{
-          data: [8, 20, 70, 2],
-          backgroundColor: ['#e63757', '#f6c343', '#00d97e', '#f8bbd0']
+          data: [8, 20, 70],
+          backgroundColor: ['#e63757', '#f6c343', '#00d97e']
         }]
       }
     });
