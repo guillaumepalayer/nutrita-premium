@@ -12206,7 +12206,13 @@ li:hover .circle {
 .card-price {
   min-height: 226px; }
 
+.mobile-app-banner {
+  width: 500px;
+  overflow: hidden; }
+
 @media (max-width: 768px) {
+  .mobile-app-banner {
+    width: auto; }
   .modal-dialog-vertical {
     max-width: 100%; }
   .avatar-xxl {
