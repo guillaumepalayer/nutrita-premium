@@ -1076,11 +1076,11 @@
                       </div>
                     </div>
                     <!-- Submit -->
-                    <button class="btn btn-block btn-lg btn-success mb-3 d-none d-md-block mb-6" type="button" data-toggle="modal" data-target="#onboardingAboutYou">
+                    <button class="btn btn-block btn-lg btn-success mb-3 d-none d-md-block mb-6" type="button" data-toggle="modal" data-target="#onboardingDiet">
                       Continue
                     </button>
                     <div class="d-block d-md-none fixed-bottom p-4">
-                      <button class="btn btn-lg btn-block btn-success" type="button" data-toggle="modal" data-target="#onboardingAboutYou">
+                      <button class="btn btn-lg btn-block btn-success" type="button" data-toggle="modal" data-target="#onboardingDiet">
                         Continue
                       </button>
                     </div>
@@ -1123,6 +1123,98 @@
         </div>
       </div>
     </div><!-- / modal idealWeight -->
+
+    <!-- IDEA: modal onboarding-diet -->
+    <div class="modal fade fixed-right" id="onboardingDiet" tabindex="-1" role="dialog" aria-labelledby="onboardingDiet" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content">
+          <div class="modal-body pt-0 py-lg-0">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-6 col-xl-6 pt-0 pr-lg-5">
+                <div class="row no-gutters mb-4">
+                  <div class="col-auto mr-auto">
+                    <button class="btn btn-link text-dark pl-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                      <i class="fe fe-arrow-left h2 mb-0"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="row justify-content-center no-gutters">
+                  <div class="col-12 col-lg-10">
+
+                    <!-- Heading -->
+                    <h1 class="text-center">
+                      Diet
+                    </h1>
+
+                  </div>
+                  <div class="col-12 col-lg-6 pt-3">
+
+                    <form class="mb-4">
+                      <select class="custom-select custom-select-lg mb-3">
+                        <option selected>Low-carb</option>
+                        <option>Ketogenic</option>
+                        <option>High-carb paleo</option>
+                        <option>Carnivore</option>
+                      </select>
+                    </form>
+                    <dl class="mb-4">
+                      <dt>Low-carb</dt>
+                      <dd>40% carbs / 30% protein / 30% fat</dd>
+                      <dt>Ketogenic</dt>
+                      <dd>40% carbs / 30% protein / 30% fat</dd>
+                      <dt>High-carb paleo</dt>
+                      <dd>40% carbs / 30% protein / 30% fat</dd>
+                      <dt>Carnivore</dt>
+                      <dd>40% carbs / 30% protein / 30% fat</dd>
+                    </dl>
+
+                    <!-- Submit -->
+                    <button class="btn btn-block btn-lg btn-success mb-3 d-none d-md-block mb-6" type="button" data-toggle="modal" data-target="#onboardingAboutYou">
+                      Continue
+                    </button>
+                    <div class="d-block d-md-none fixed-bottom p-4">
+                      <button class="btn btn-lg btn-block btn-success" type="button" data-toggle="modal" data-target="#onboardingAboutYou">
+                        Continue
+                      </button>
+                    </div>
+                    <div class="d-block d-lg-none mb-6">
+                      <img class="img-fluid my-4" src="assets/img/illustrations/happiness.svg" alt="">
+                      <h3>Why asking me these details</h3>
+                      <p class="mb-5">Your personal information are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-10">
+                    <div class="card card-inactive mb-5">
+                      <div class="card-body">
+                        <h3>How does the 7-day trial work?</h3>
+                        <p class="text-secondary mb-4">Cancel at any time in your account settings. You won't be charged if you cancel before 28 Apr 2019.</p>
+                        <h3>How do I pay for your service?</h3>
+                        <p class="text-secondary mb-4">At the end of your free trial, you will be charged automatically in order to continue to use the service. You can choose between Monthly and Yearly billing. We accept credit &amp; debit cards, PayPal, Google Pay, and Apple Pay.</p>
+                        <h3>How can I cancel my subscription?</h3>
+                        <p class="text-secondary mb-4">You can cancel your plan anytime. When your subscription period expires, you will lose access to your Nutrita account.</p>
+                        <h3>I have a different question…</h3>
+                        <p class="text-secondary mb-4">Explore our <a href="#" target="_blank">Help Center</a>, or just ask via e-mail at hello@nutrita.app</p>
+                        <h3>Can I recover an expired account?</h3>
+                        <p class="text-secondary">You can recover an expired account by buying a plan and re-access everything you've been tracking. Your data will remain intact for 14 days.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 col-xl-6 bg-success-soft p-4 py-6 px-lg-5 mr-lg-n4 minvh100 d-none d-lg-block">
+                <div class="row justify-content-center">
+                  <div class="col-10">
+                    <img class="img-fluid mb-4" src="assets/img/illustrations/happiness.svg" alt="">
+                    <h3>Why asking me these details</h3>
+                    <p class="mb-5">Your personal information are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- / modal -->
 
     <!-- IDEA: modal onboardingAboutYou -->
     <div class="modal fade fixed-right" id="onboardingAboutYou" tabindex="-1" role="dialog" aria-labelledby="onboardingAboutYou" aria-hidden="true">
@@ -1219,6 +1311,8 @@
         </div>
       </div>
     </div><!-- / modal -->
+
+
 
     <!-- IDEA: modal onboarding-activity -->
     <div class="modal fade fixed-right" id="onboardingActivity" tabindex="-1" role="dialog" aria-labelledby="onboardingActivity" aria-hidden="true">

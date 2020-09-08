@@ -1057,11 +1057,11 @@
                       </div>
                     </div>
                     <!-- Submit -->
-                    <button class="btn btn-block btn-lg btn-success mb-3 d-none d-md-block mb-6" type="button" data-toggle="modal" data-target="#onboardingAboutYou">
+                    <button class="btn btn-block btn-lg btn-success mb-3 d-none d-md-block mb-6" type="button" data-toggle="modal" data-target="#onboardingDiet">
                       Continue
                     </button>
                     <div class="d-block d-md-none fixed-bottom p-4">
-                      <button class="btn btn-lg btn-block btn-success" type="button" data-toggle="modal" data-target="#onboardingAboutYou">
+                      <button class="btn btn-lg btn-block btn-success" type="button" data-toggle="modal" data-target="#onboardingDiet">
                         Continue
                       </button>
                     </div>
@@ -1104,6 +1104,98 @@
         </div>
       </div>
     </div><!-- / modal idealWeight -->
+
+    <!-- IDEA: modal onboarding-diet -->
+    <div class="modal fade fixed-right" id="onboardingDiet" tabindex="-1" role="dialog" aria-labelledby="onboardingDiet" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content">
+          <div class="modal-body pt-0 py-lg-0">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-6 col-xl-6 pt-0 pr-lg-5">
+                <div class="row no-gutters mb-4">
+                  <div class="col-auto mr-auto">
+                    <button class="btn btn-link text-dark pl-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                      <i class="fe fe-arrow-left h2 mb-0"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="row justify-content-center no-gutters">
+                  <div class="col-12 col-lg-10">
+
+                    <!-- Heading -->
+                    <h1 class="text-center">
+                      Diet
+                    </h1>
+
+                  </div>
+                  <div class="col-12 col-lg-6 pt-3">
+
+                    <form class="mb-4">
+                      <select class="custom-select custom-select-lg mb-3">
+                        <option selected>Low-carb</option>
+                        <option>Ketogenic</option>
+                        <option>High-carb paleo</option>
+                        <option>Carnivore</option>
+                      </select>
+                    </form>
+                    <dl class="mb-4">
+                      <dt>Low-carb</dt>
+                      <dd>40% carbs / 30% protein / 30% fat</dd>
+                      <dt>Ketogenic</dt>
+                      <dd>40% carbs / 30% protein / 30% fat</dd>
+                      <dt>High-carb paleo</dt>
+                      <dd>40% carbs / 30% protein / 30% fat</dd>
+                      <dt>Carnivore</dt>
+                      <dd>40% carbs / 30% protein / 30% fat</dd>
+                    </dl>
+
+                    <!-- Submit -->
+                    <button class="btn btn-block btn-lg btn-success mb-3 d-none d-md-block mb-6" type="button" data-toggle="modal" data-target="#onboardingAboutYou">
+                      Continue
+                    </button>
+                    <div class="d-block d-md-none fixed-bottom p-4">
+                      <button class="btn btn-lg btn-block btn-success" type="button" data-toggle="modal" data-target="#onboardingAboutYou">
+                        Continue
+                      </button>
+                    </div>
+                    <div class="d-block d-lg-none mb-6">
+                      <img class="img-fluid my-4" src="assets/img/illustrations/happiness.svg" alt="">
+                      <h3>Why asking me these details</h3>
+                      <p class="mb-5">Your personal information are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-10">
+                    <div class="card card-inactive mb-5">
+                      <div class="card-body">
+                        <h3>How does the 7-day trial work?</h3>
+                        <p class="text-secondary mb-4">Cancel at any time in your account settings. You won't be charged if you cancel before 28 Apr 2019.</p>
+                        <h3>How do I pay for your service?</h3>
+                        <p class="text-secondary mb-4">At the end of your free trial, you will be charged automatically in order to continue to use the service. You can choose between Monthly and Yearly billing. We accept credit &amp; debit cards, PayPal, Google Pay, and Apple Pay.</p>
+                        <h3>How can I cancel my subscription?</h3>
+                        <p class="text-secondary mb-4">You can cancel your plan anytime. When your subscription period expires, you will lose access to your Nutrita account.</p>
+                        <h3>I have a different question…</h3>
+                        <p class="text-secondary mb-4">Explore our <a href="#" target="_blank">Help Center</a>, or just ask via e-mail at hello@nutrita.app</p>
+                        <h3>Can I recover an expired account?</h3>
+                        <p class="text-secondary">You can recover an expired account by buying a plan and re-access everything you've been tracking. Your data will remain intact for 14 days.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 col-xl-6 bg-success-soft p-4 py-6 px-lg-5 mr-lg-n4 minvh100 d-none d-lg-block">
+                <div class="row justify-content-center">
+                  <div class="col-10">
+                    <img class="img-fluid mb-4" src="assets/img/illustrations/happiness.svg" alt="">
+                    <h3>Why asking me these details</h3>
+                    <p class="mb-5">Your personal information are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- / modal -->
 
     <!-- IDEA: modal onboardingAboutYou -->
     <div class="modal fade fixed-right" id="onboardingAboutYou" tabindex="-1" role="dialog" aria-labelledby="onboardingAboutYou" aria-hidden="true">
@@ -1200,6 +1292,8 @@
         </div>
       </div>
     </div><!-- / modal -->
+
+
 
     <!-- IDEA: modal onboarding-activity -->
     <div class="modal fade fixed-right" id="onboardingActivity" tabindex="-1" role="dialog" aria-labelledby="onboardingActivity" aria-hidden="true">
@@ -7285,9 +7379,10 @@
                   Track diet quality &ndash; not calories
                 </h2>
                 <p class="lead mb-5 text-secondary">Nutrita is the smart diet coaching app that will help you achieve long lasting results by adapting your targets and limits according to your progress.</p>
-                <a class="btn btn-lg btn-success mb-4" href="#" data-toggle="modal" data-target="#onboardingConnect">Get 7 days free</a>
+                
+                <a class="btn btn-lg btn-success mb-3" href="#" data-toggle="modal" data-target="#onboardingConnect">Get 7 days free</a>
 
-                <p class="text-secondary text-center small">Download the Beta app</p>
+                <p class="text-secondary text-center small mb-4">1.3kg average fat loss after 1 week.</p>
                 <div class="row no-gutters align-items-center justify-content-center mb-3 mx-n2">
                   <div class="col-auto col-lg-auto mb-lg-0">
                     <a href="#">
@@ -7302,16 +7397,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="row justify-content-start align-items-center mb-4 d-none">
-                  <div class="col">
-                    <img src="assets/img/star-24px.svg" alt="star">
-                    <img src="assets/img/star-24px.svg" alt="star">
-                    <img src="assets/img/star-24px.svg" alt="star">
-                    <img src="assets/img/star-24px.svg" alt="star">
-                    <img src="assets/img/star_half-24px.svg" alt="star half">
-                    <span class="text-dark align-bottom ml-2">Rated 4.5 on the <a class="text-dark" href="#">App store</a></span>
-                  </div>
-                </div>
+
                 <a class="btn btn-lg btn-link text-success mb-3 d-none" href="dashboard-full_3.html" target="_blank">Show me a demo <i class="fe fe-play text-success align-bottom"></i></a>
                 <div class="app-preview mb-5">
                   <img class="img-fluid" src="assets/img/iPhoneX-nutrita-mobile-app.png" alt="Nutrita app preview">
@@ -7322,17 +7408,35 @@
         </div> <!-- / .container -->
         <div class="container mb-6 mb-lg-7">
           <div class="row justify-content-center">
-            <div class="col-12 col-lg-8 text-center">
-              <h2 class="display-3 d-none d-lg-block text-dark">Nutrita works with all diet preferences
+            <div class="col-12 text-center">
+              <h2 class="display-3 d-none d-lg-block text-dark mb-5">Reach your goal with custom diets
               </h2>
-              <h2 class="display-4 d-block d-lg-none  text-dark">Nutrita works with all diet preferences
+              <h2 class="display-4 d-block d-lg-none text-dark mb-5">Reach your goal with custom diets
               </h2>
-              <p class="lead text-secondary mb-4">Choose from these 4 dieting goals and Nutrita will recommend how much protein, carbs, and fat to consume according to your progress. Adjustments are made to your calories in order to keep you on track.
-              </p>
+              <div class="row justify-content-center mb-5">
+                <div class="col-12 col-lg-2 mb-4 mb-lg-0">
+                  <span class="h2">🥑</span>
+                  <h3 class="my-3 text-dark">Low-carb</h3>
+                </div>
+                <div class="col-12 col-lg-2 mb-4 mb-lg-0">
+                  <span class="h2">🥓</span>
+                  <h3 class="my-3 text-dark">Ketogenic</h3>
+                </div>
+                <div class="col-12 col-lg-2 mb-4 mb-lg-0">
+                  <span class="h2">🍍</span>
+                  <h3 class="my-3 text-dark">High-carb paleo</h3>
+                </div>
+                <div class="col-12 col-lg-2 mb-4 mb-lg-0">
+                  <span class="h2">🥩</span>
+                  <h3 class="my-3 text-dark">Carnivore</h3>
+                </div> 
+              </div>
             </div>
           </div>
           <div class="row justify-content-center mb-5">
             <div class="col-12 col-lg-8">
+              <p class="lead text-center text-secondary mb-4">Fine-tune macros & monitor your micronutrient intake for your dieting goal:
+              </p>
                 <div class="row justify-content-center">
                   <div class="col-6 col-lg-3">
                     <a href="#" data-toggle="modal" data-target="#idealWeight">
@@ -7401,6 +7505,76 @@
       <div class="container mb-6 mb-lg-7">
         <div class="row justify-content-center">
           <div class="col-12 col-lg-8 text-center">
+            <h2 class="display-3 d-none d-lg-block text-dark">Learn with our in-house food scores</h2>
+            <h2 class="display-4 d-block d-lg-none text-dark">Learn with our in-house food scores</h2>
+            <p class="lead text-secondary mb-4">
+              We used clinical data and our biochemistry expertise to create 3 scores: the <a href="insulin-index.html">insulin score</a> tells you how a food affects the hormone insulin, the <a href="keto-score.html">keto score</a> tells you what’s keto and what’s not, and the <a href="nutrient-density.html">nutrient density score</a> tells you how nourishing a particular food or recipe truly is.
+            </p></div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <ul class="nav nav-tabs nav-tabs-sm nav-overflow border-0 pb-5">
+              <li class="nav-item mr-4">
+                <a href="https://nutrita.app/pro/keto-score">
+                  <div class="card mb-0 bg-green" style="width:260px">
+                    <div class="card-body p-4">
+                      <div class="media">
+                        <div class="media-body mr-3">
+                          <h6 class="text-uppercase text-dark mb-1">Reach your goal</h6>
+                          <h4 class="text-dark">Discover our Keto score</h4>
+                          <div class="btn btn-outline-dark btn-sm h5 font-weight-normal mb-2">Explore</div>
+                        </div>
+                        <div class="align-self-end">
+                          <img class="mb-n4 mr-n5" src="assets\img\illustrations\keto-score-mobile-ui.png" alt="keto-score-mobile-ui" width="92">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item mr-4">
+                <a href="https://nutrita.app/pro/nutrient-density">
+                  <div class="card mb-0 bg-blue-light" style="width:260px">
+                    <div class="card-body p-4">
+                      <div class="media">
+                        <div class="media-body mr-3">
+                          <h6 class="text-uppercase text-dark mb-1">Explore food details</h6>
+                          <h4 class="text-dark">With our Nutrient density</h4>
+                          <div class="btn btn-outline-dark btn-sm h5 font-weight-normal mb-2">Learn more</div>
+                        </div>
+                        <div class="align-self-end">
+                          <img class="mb-n4 mr-n5" src="assets\img\illustrations\nutrient-density-mobile-ui.png" alt="keto-score-mobile-ui" width="92">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://nutrita.app/pro/insulin-index">
+                  <div class="card mb-0 bg-pink-light" style="width:260px">
+                    <div class="card-body p-4">
+                      <div class="media">
+                        <div class="media-body mr-3">
+                          <h6 class="text-uppercase text-dark mb-1">Probe your insulin</h6>
+                          <h4 class="text-dark">With our Insulin index</h4>
+                          <div class="btn btn-outline-dark btn-sm h5 font-weight-normal mb-2">Discover</div>
+                        </div>
+                        <div class="align-self-end">
+                          <img class="mb-n4 mr-n5" src="assets\img\illustrations\insulin-index-mobile-ui.png" alt="keto-score-mobile-ui" width="92">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>           
+      <div class="container mb-6 mb-lg-7">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8 text-center">
             <h2 class="display-3 d-none d-lg-block text-dark">Designed by PhDs and MDs</h2>
             <h2 class="display-4 d-block d-lg-none text-dark">Designed by PhDs and MDs</h2>
             <p class="lead text-secondary mb-4">The Nutrita app is designed by leading experts in nutritional science.</p>
@@ -7438,10 +7612,10 @@
           <div class="col-12 col-lg-6">
             <div class="tab-content" id="v-pills-tabContent">
               <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
-                <div class="card">
+                <div class="card bg-dark text-white">
                   <div class="card-body"> 
                     <h3 class="h2">Raphael Sirtoli</h3>
-                    <p class="lead text-secondary">
+                    <p class="lead">
                       All user funds are locked in smart contracts without
                       any third party having direct access to those funds.
                     </p>
@@ -7457,10 +7631,10 @@
                 </div>
               </div>
               <div class="tab-pane fade" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
-                <div class="card">
+                <div class="card bg-dark text-white">
                   <div class="card-body"> 
                     <h3 class="h2">Raphael Sirtoli</h3>
-                    <p class="lead text-secondary">
+                    <p class="lead">
                       All user funds are locked in smart contracts without
                       any third party having direct access to those funds.
                     </p>
@@ -7476,10 +7650,10 @@
                 </div>
               </div>
               <div class="tab-pane fade" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
-                <div class="card">
+                <div class="card bg-dark text-white">
                   <div class="card-body"> 
                     <h3 class="h2">Raphael Sirtoli</h3>
-                    <p class="lead text-secondary">
+                    <p class="lead">
                       All user funds are locked in smart contracts without
                       any third party having direct access to those funds.
                     </p>
@@ -7495,6 +7669,8 @@
                 </div>
               </div>
             </div>
+            <p class="text-center text-secondary">Knowledge is power and we want it to empower all our users, which is why all of our <a href="https://nutrita.app/blog/" target="_blank">scientific content</a> is available for free. All of it is medically reviewed by the doctors on our <a href="about-nutrita.html">board of advisors</a>. Our team produces the highest quality scientific content on health and nutrition because of its wide range of expertise, covering medicine, scientific research, computer learning, science communication and design.</p>
+          
           </div>
         </div>
       </div>        
@@ -7503,7 +7679,17 @@
           <div class="col-12 col-lg-8 text-center">
             <h2 class="display-3 d-none d-lg-block text-dark">Don’t just take our word for it</h2>
             <h2 class="display-4 d-block d-lg-none text-dark">Don’t just take our word for it</h2>
-            <p class="lead text-secondary mb-4">See what our customers have to say about us. Read customer service reviews on <a href="https://www.trustpilot.com/review/nutrita.app" target="_blank">Trustpilot</a>.</p>
+            <p class="lead text-secondary mb-4">See what our customers have to say about us.</p>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center mb-4">
+          <div class="col-auto">
+            <img src="assets/img/star-24px.svg" alt="star">
+            <img src="assets/img/star-24px.svg" alt="star">
+            <img src="assets/img/star-24px.svg" alt="star">
+            <img src="assets/img/star-24px.svg" alt="star">
+            <img src="assets/img/star_half-24px.svg" alt="star half">
+            <span class="text-dark align-bottom ml-2">Rated 4.3 on the <a href="https://www.trustpilot.com/review/nutrita.app" target="_blank">Trustpilot</a></span>
           </div>
         </div>
         <div class="row justify-content-center">
