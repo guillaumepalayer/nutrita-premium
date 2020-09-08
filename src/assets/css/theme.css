@@ -11924,7 +11924,7 @@ a:focus, button:focus {
   pointer-events: none; }
 
 .app-preview {
-  width: 420px;
+  width: 320px;
   max-width: 100%;
   margin: 0 auto;
   pointer-events: none;
@@ -11941,16 +11941,8 @@ a:focus, button:focus {
 .navbar-collapse:before {
   border-top-width: 0; }
 
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-item.show .nav-link {
-  border-bottom-width: 3px;
-  border-color: #22C88A; }
-
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #FFFFFF;
-  background-color: #2C7BE5;
-  background: #22c88a1a; }
+.nav-pills .nav-link.active {
+  background-color: white !important; }
 
 .bg-soft-red {
   background-color: #f3a39a; }
