@@ -1915,8 +1915,6 @@
       </div>
     </div><!-- / modal -->
 
-
-
     <!-- IDEA: modal onboarding-activity -->
     <div class="modal fade fixed-right" id="onboardingActivity" tabindex="-1" role="dialog" aria-labelledby="onboardingActivity" aria-hidden="true">
       <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
@@ -6933,13 +6931,40 @@
                         </div>
                       </div>
                     </div>
+                    <div class="form-group">
+                      <div class="form-row">
+                        <div class="col-12 col-md-6 mb-3">
+                          <label for="validationServer03">Date</label>
+                          <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="mm/dd/yyyy" required="">
+                          <div class="invalid-feedback">
+                            Please provide a valid date.
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-3">
+                          <label for="validationServer04">Time</label>
+                          <div class="input-group">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="12:30">
+                            <div class="input-group-append">
+                              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">AM</button>
+                              <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">AM</a>
+                                <a class="dropdown-item" href="#">PM</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="invalid-feedback">
+                            Please provide a valid time.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
                     <!-- Submit -->
-                    <button class="btn btn-block btn-lg btn-success mb-3 d-none d-md-block mb-6" type="button" data-toggle="modal" data-target="#valueReport">
+                    <button class="btn btn-block btn-lg btn-success mb-3 d-none d-md-block mb-6" type="button" data-toggle="modal" data-target="#NewMacroCalRecap">
                       Continue
                     </button>
                     <div class="d-block d-md-none fixed-bottom p-4">
-                      <button class="btn btn-lg btn-block btn-success" type="button" data-toggle="modal" data-target="#valueReport">
+                      <button class="btn btn-lg btn-block btn-success" type="button" data-toggle="modal" data-target="#NewMacroCalRecap">
                         Continue
                       </button>
                     </div>
@@ -6954,6 +6979,106 @@
                 <div class="row justify-content-center">
                   <div class="col-10">
                     <h3>Why asking me these details</h3>
+                    <p>Your personal information are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- / modal addNewValue -->
+
+    <!-- IDEA: modal NewMacroCalRecap -->
+    <div class="modal fade fixed-right" id="NewMacroCalRecap" tabindex="-1" role="dialog" aria-labelledby="NewMacroCalRecap" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-vertical bg-white" role="document">
+        <div class="modal-content">
+          <div class="modal-body pt-0 py-lg-0">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-6 col-xl-6 pt-0 pr-lg-5">
+                <div class="row no-gutters mb-4">
+                  <div class="col-auto mr-auto">
+                    <button class="btn btn-link text-dark pl-0" type="button" name="button" data-dismiss="modal" aria-label="Close">
+                      <i class="fe fe-arrow-left h2 mb-0"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="row justify-content-center no-gutters">
+                  <div class="col-12 col-lg-10">
+
+                    <!-- Heading -->
+                    <h1 class="text-center">
+                      Your new recommendation
+                    </h1>
+
+                  </div>
+                  <div class="col-12 col-lg-8 pt-3">
+                    <ul class="list-group mb-4">
+                      <li class="list-group-item">
+                        <div class="row justify-content-between align-items-center">
+                          <div class="col-auto">
+                            <i class="chart-legend-indicator bg-green-light"></i>
+                          <span class="text-dark small">Fat</span>
+                          </div>
+                          <div class="col-auto text-right">
+                            <span class="small text-dark d-block">100g</span>
+                          <span class="text-dark h4 mb-0">20% kcal</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row justify-content-between align-items-center">
+                          <div class="col-auto">
+                            <i class="chart-legend-indicator bg-orange-light"></i>
+                          <span class="text-dark small">Protein</span>
+                          </div>
+                          <div class="col-auto text-right">
+                            <span class="small text-dark d-block">100g</span>
+                          <span class="text-dark h4 mb-0">20% kcal</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row justify-content-between align-items-center">
+                          <div class="col-auto">
+                            <i class="chart-legend-indicator bg-danger"></i>
+                          <span class="text-dark small">Net Carbs</span>
+                          </div>
+                          <div class="col-auto text-right">
+                            <span class="small text-dark d-block">100g</span>
+                            <span class="h5 font-weight-light text-secondary d-block">(Total • 100g)</span>
+                          <span class="text-dark h4 mb-0">20% kcal</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item">
+                        <div class="row justify-content-between align-items-center">
+                          <div class="col-auto">
+                          <span class="text-dark small">Calorie estimate</span>
+                          </div>
+                          <div class="col-auto text-right">
+                            <span class="small text-dark d-block">3000 kcal</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+                    <!-- Submit -->
+                    <a href="dashboard-full_3.html" class="btn btn-block btn-lg btn-success mb-3 d-none d-md-block mb-6">
+                      Go to dashboard
+                    </button>
+                    <div class="d-block d-md-none fixed-bottom p-4">
+                      <a href="dashboard-full_3.html" class="btn btn-lg btn-block btn-success">
+                        Go to dashboard
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 col-xl-6 bg-success-soft p-4 py-6 px-lg-5 mr-lg-n4 minvh100 d-none d-lg-block">
+                <div class="row justify-content-center">
+                  <div class="col-10">
+                    <h3>How does it work?</h3>
                     <p>Your personal information are used to give you detailed guidance and interpretation of your nutrition. To make sure you get reliable data from your tracking, it's important to give as accurate information as possible. Your physical settings are never public, only you can see them.</p>
                   </div>
                 </div>

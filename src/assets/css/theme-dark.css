@@ -12007,6 +12007,9 @@ a:focus, button:focus {
   margin: auto;
   height: 128px; }
 
+.chart-legend-indicator {
+  margin-right: 0; }
+
 .bg-green-light {
   background-color: #00d97e; }
 
