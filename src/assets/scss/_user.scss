@@ -15,8 +15,7 @@
   pointer-events: none;
 }
 .app-preview {
-    width: 320px;
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
     pointer-events: none;
     -webkit-user-select: none;
@@ -30,8 +29,9 @@
 .navbar-collapse:before{
   border-top-width: 0
 }
-.nav-pills .nav-link.active {
+.nav-item > .nav-link.active {
   background-color:white!important; 
+  border-color:transparent!important;
 }
 .bg-soft-red{
   background-color: rgba(243,163,154,1);
@@ -286,5 +286,8 @@ li:hover .circle {
   }
   .card-price{
     min-height: 206px
+  }
+  .app-preview {
+    max-width: 100%;
   }
 }

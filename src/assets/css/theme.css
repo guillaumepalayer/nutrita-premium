@@ -11924,8 +11924,7 @@ a:focus, button:focus {
   pointer-events: none; }
 
 .app-preview {
-  width: 320px;
-  max-width: 100%;
+  max-width: 80%;
   margin: 0 auto;
   pointer-events: none;
   -webkit-user-select: none; }
@@ -11941,8 +11940,9 @@ a:focus, button:focus {
 .navbar-collapse:before {
   border-top-width: 0; }
 
-.nav-pills .nav-link.active {
-  background-color: white !important; }
+.nav-item > .nav-link.active {
+  background-color: white !important;
+  border-color: transparent !important; }
 
 .bg-soft-red {
   background-color: #f3a39a; }
@@ -12177,4 +12177,6 @@ li:hover .circle {
   .nav-tabs .nav-item:last-child {
     padding-right: 16px; }
   .card-price {
-    min-height: 206px; } }
+    min-height: 206px; }
+  .app-preview {
+    max-width: 100%; } }
