@@ -12208,6 +12208,9 @@ li:hover .circle {
   width: 500px;
   overflow: hidden; }
 
+.chart-legend-item {
+  margin-right: 8px; }
+
 @media (max-width: 768px) {
   .mobile-app-banner {
     width: auto; }
