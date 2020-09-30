@@ -47,7 +47,7 @@ var demoMode = (function() {
           'boundary': 'viewport',
           'offset': '50px',
           'placement': 'top',
-          'template': '<div class="popover popover-lg popover-dark d-none d-md-block" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
+          'template': '<div class="popover popover-lg popover-dark d-md-block" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>'
         }).popover('show');
       }
 
