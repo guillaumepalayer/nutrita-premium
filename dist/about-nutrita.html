@@ -122,6 +122,69 @@
       </div> <!-- / .container -->
     </nav>
 
+    <div class="modal fade" id="modalNPS" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-card card" >
+            <div class="card-header">
+
+              <!-- Title -->
+              <h4 class="card-header-title" id="exampleModalCenterTitle">
+                How likely are you to recommend Nutrita to a friend?
+              </h4>
+
+              <!-- Close -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+
+            </div>
+            <div class="card-body">
+              <button class="btn btn-white btn-block text-success" data-toggle="modal" data-target="#modalNPSstep2">10 - very likely</button>
+              <button class="btn btn-white btn-block text-success">9</button>
+              <button class="btn btn-white btn-block text-success">8</button>
+              <button class="btn btn-white btn-block text-success">7</button>
+              <button class="btn btn-white btn-block text-success">6</button>
+              <button class="btn btn-white btn-block text-success">5</button>
+              <button class="btn btn-white btn-block text-success">4</button>
+              <button class="btn btn-white btn-block text-success">3</button>
+              <button class="btn btn-white btn-block text-success">2</button>
+              <button class="btn btn-white btn-block text-success">1 - not likely</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalNPSstep2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-card card" >
+            <div class="card-header">
+
+              <!-- Title -->
+              <h4 class="card-header-title" id="exampleModalCenterTitle">
+                One thing you'd like to change on Nutrita?
+              </h4>
+
+              <!-- Close -->
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+
+            </div>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Write here (optional)</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success btn-block">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="modal fade" id="modalCalendar" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -1328,6 +1391,16 @@
 
                   </div>
                   <div class="col-12 col-lg-6 pt-3">
+                    <div class="form-row mb-4">
+                      <div class="form-group col-6 mb-0">
+                        <label for="firstName">First name</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="First name" aria-label="firstName" id="firstName">
+                      </div>
+                      <div class="form-group col-6 mb-0">
+                        <label for="lastName">Last name</label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Last name" aria-label="lastName" id="lastName">
+                      </div>
+                    </div>
                     <div class="form-row mb-4">
                       <div class="form-group col-6 mb-0">
                         <label for="gender">Gender</label>
@@ -7656,7 +7729,7 @@
               <div class="card mb-6 mb-md-3">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/Raphael_Sirtolie.png" class="avatar-img rounded-circle border border-4 border-card" alt="Romain Arandel">
+                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/Raphael_Sirtolie.png" class="avatar-img rounded-circle border border-4 border-card" alt="">
                   </span>
                   <h2 class="card-title text-center">
                     Raphael Sirtoli
@@ -7679,7 +7752,7 @@
               <div class="card mb-6 mb-md-3 ">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/Edouard-Soutzo.png" class="avatar-img rounded-circle border border-4 border-card" alt="Romain Arandel">
+                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/Edouard-Soutzo.png" class="avatar-img rounded-circle border border-4 border-card" alt="">
                   </span>
                   <h2 class="card-title text-center">
                     Edouard Soutzo
@@ -7702,7 +7775,7 @@
               <div class="card mb-6 mb-md-3 ">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/Guillaume_palayer.png" class="avatar-img rounded-circle border border-4 border-card" alt="Romain Arandel">
+                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/Guillaume_palayer.png" class="avatar-img rounded-circle border border-4 border-card" alt="">
                   </span>
                   <h2 class="card-title text-center">
                     Guillaume Palayer
@@ -7727,7 +7800,7 @@
               <div class="card mb-6 mb-md-3">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/Tomazs_Rojek.png" class="avatar-img rounded-circle border border-4 border-card" alt="Romain Arandel">
+                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/Tomazs_Rojek.png" class="avatar-img rounded-circle border border-4 border-card" alt="">
                   </span>
                   <h2 class="card-title text-center">
                     Tomasz Rojek
@@ -7747,7 +7820,7 @@
               <div class="card mb-6 mb-md-3">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/Sarah_neidler.png" class="avatar-img rounded-circle border border-4 border-card" alt="Romain Arandel">
+                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/Sarah_neidler.png" class="avatar-img rounded-circle border border-4 border-card" alt="">
                   </span>
                   <h2 class="card-title text-center">
                     Sarah Neidler
@@ -7767,7 +7840,7 @@
               <div class="card mb-6 mb-md-3 ">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/Andrea_Barret.png" class="avatar-img rounded-circle border border-4 border-card" alt="Romain Arandel">
+                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/Andrea_Barret.png" class="avatar-img rounded-circle border border-4 border-card" alt="">
                   </span>
                   <h2 class="card-title text-center">
                     Andrea Barrett
@@ -7828,7 +7901,7 @@
               <div class="card mb-6 mb-md-3">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/d0906012-46a3-4493-a7c8-d4aa125281bd.jpg" class="avatar-img rounded-circle border border-4 border-card" alt="Romain Arandel">
+                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/03/d0906012-46a3-4493-a7c8-d4aa125281bd.jpg" class="avatar-img rounded-circle border border-4 border-card" alt="">
                   </span>
                   <h2 class="card-title text-center">
                     Dominic D'Agostino
@@ -7851,22 +7924,19 @@
               <div class="card mb-6 mb-md-3 ">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/04/Dr.Eric-Sodicoff.png" class="avatar-img rounded-circle border border-4 border-card" alt="Romain Arandel">
+                    <img src="assets/img/avatars/profiles/juan-carlos-peirano.jpg" class="avatar-img rounded-circle border border-4 border-card" alt="">
                   </span>
                   <h2 class="card-title text-center">
-                    Eric Sodicoff
+                    Juan Carlos Peirano
                   </h2>
                   <small class="text-center d-block">MD</small>
                   <p class="card-text text-muted mt-4">
-                    Eric completed his undergraduate studies from from Temple University’s School of Medicine in 1996 and finished his internal medicine residency in 1999. He’s a primary care physician board certified in internal and obesity medicine. His special interest is in low-carb/ketogenic diets with an emphasis on root cause analyses.
+                    Juan completed his medical degree at the Universidad Austral in Buenos Aires, Argentina. He is both an MD and a research fellow at the Grippo Glaucoma Center, where he coordinates research activities, conducts clinical ophthalmologic tests and pours over medical research on a daily basis. Juan is well versed in nutritional sciences, benefitting from his work at the intersection of the clinical and research worlds.
                   </p>
-                </div>
+                </div>                
                 <div class="card-footer border border-0 text-center">
-                  <a href="https://twitter.com/ESodicoffMD" class="btn btn-white">
+                  <a href="https://twitter.com/JuanPeirano" class="btn btn-white">
                     <span class="fe fe-twitter text-primary"></span>
-                  </a>
-                  <a href="https://www.linkedin.com/in/eric-sodicoff-4ab669109/" class="btn btn-white">
-                    <span class="fe fe-linkedin text-primary"></span>
                   </a>
                 </div>
               </div>
@@ -7874,7 +7944,7 @@
               <div class="card mb-6 mb-md-3">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/04/Jacqui-van-Kemenade.png" class="avatar-img rounded-circle border border-4 border-card" alt="Romain Arandel">
+                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/04/Jacqui-van-Kemenade.png" class="avatar-img rounded-circle border border-4 border-card" alt="">
                   </span>
                   <h2 class="card-title text-center">
                     Jacqui van Kemenade
@@ -7896,7 +7966,7 @@
               <div class="card mb-6 mb-md-3">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/04/Tucker-Goodrich.png" class="avatar-img rounded-circle border border-4 border-card" alt="Romain Arandel">
+                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/04/Tucker-Goodrich.png" class="avatar-img rounded-circle border border-4 border-card" alt="">
                   </span>
                   <h2 class="card-title text-center">
                     Tucker Goodrich
@@ -7916,7 +7986,7 @@
               <div class="card mb-6 mb-md-3 ">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/04/antonio.png" class="avatar-img rounded-circle border border-4 border-card" alt="Romain Arandel">
+                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/04/antonio.png" class="avatar-img rounded-circle border border-4 border-card" alt="">
                   </span>
                   <h2 class="card-title text-center">
                     Antonio Martinez
@@ -7934,7 +8004,7 @@
               <div class="card mb-6 mb-md-3 ">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/04/Steven-Horvitz-D.png" class="avatar-img rounded-circle border border-4 border-card" alt="Romain Arandel">
+                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/04/Steven-Horvitz-D.png" class="avatar-img rounded-circle border border-4 border-card" alt="">
                   </span>
                   <h2 class="card-title text-center">
                     Steven Horvitz
@@ -7956,7 +8026,7 @@
               <div class="card col col-lg-4 mb-6 mb-md-3">
                 <div class="card-body">
                   <span class="avatar avatar-xl card-avatar card-avatar-top">
-                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/04/download.jpg" class="avatar-img rounded-circle border border-4 border-card" alt="Romain Arandel">
+                    <img src="https://nutrita-4grzg6kjhc2etf.netdna-ssl.com/wp-content/uploads/2019/04/download.jpg" class="avatar-img rounded-circle border border-4 border-card" alt="">
                   </span>
                   <h2 class="card-title text-center">
                     Gabor Erdosi
@@ -8042,10 +8112,21 @@
 
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
-
     <script src="./assets/libs/emoji.js"></script>
     <script src="./assets/libs/start.js"></script>
-
+    <script type="text/javascript">
+        !function(e,t,r,n){if(!e[n]){for(var a=e[n]=[],i=["survey","reset","config","init","set","get","event","identify","track","page","screen","group","alias"],c=0;c<i.length;c++){var s=i[c];a[s]=a[s]||function(e){return function(){var t=Array.prototype.slice.call(arguments);a.push([e,t])}}(s)}a.SNIPPET_VERSION="1.0.1";var o=t.createElement("script");o.type="text/javascript",o.async=!0,o.src="https://d2yyd1h5u9mauk.cloudfront.net/integrations/web/v1/library/"+r+"/"+n+".js";var f=t.getElementsByTagName("script")[0];f.parentNode.insertBefore(o,f)}}(window,document,"fH02CHEcveXETf2i","delighted");
+  
+        delighted.survey({
+          email: "customer@hemandstitch.com", // customer email (optional)
+          name: "Bailey Dixon",               // customer name (optional)
+          createdAt: "2016-01-01T12:00:00Z",  // time subscribed (optional)
+          properties: {                       // extra context (optional)
+            plan: "Medium",
+            company: "Hem & Stitch"
+          }
+        });
+      </script>
 
   </body>
 </html>
