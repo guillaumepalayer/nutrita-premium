@@ -6399,8 +6399,22 @@
                 <span class="text-dark ml-2 h3 mb-0">Nutrita</span>
               </a>
             </div>
-            <div class="col-lg-6 d-flex align-items-center justify-content-center">
-              <ul class="navbar-nav">
+            <div class="col-md-6 col-lg-8 d-flex align-items-center">
+              <!-- Search Form mobile -->
+              <a class="d-block w-100" href="search-zero-state.html">
+                <form class="form-inline">
+                  <div class="input-group input-group-merge input-group-lg w-100 rounded" data-toggle="lists" data-lists-values="[&quot;name&quot;]">
+                    <!-- Input -->
+                    <input type="search" class="form-control form-control-prepended bg-white pl-0" data-toggle="dropdown" placeholder="Search Food, Brand..." aria-label="Search" disabled="">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text bg-white pl-4 pr-4">
+                        <i class="fe fe-search"></i>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </a>
+              <ul class="navbar-nav d-none">
                 <li class="nav-item mr-4">
                   <a class="text-secondary" href="#">
                     Insulin Index
@@ -6437,12 +6451,12 @@
               <ul class="navbar-nav">
                 <li class="nav-item mr-2 d-flex align-items-center">
                   <a class="btn btn-link btn-lg text-dark" href="#" data-toggle="modal" data-target="#signIn">
-                    <i class="fe fe-lock text-dark mr-2"></i>Log in
+                    <i class="fe fe-lock text-dark mr-2"></i>Sign&nbsp;in
                   </a>
                 </li>
                 <li class="nav-item mr-2 d-flex align-items-center">
                   <a class="btn btn-success btn-lg" href="#" data-toggle="modal" data-target="#onboardingConnect">
-                    Sign up
+                    Sign&nbsp;up
                   </a>
                 </li>
               </ul>
