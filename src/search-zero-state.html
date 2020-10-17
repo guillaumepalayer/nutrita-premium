@@ -7,6 +7,7 @@
   </head>
   <body>
     @@include("partials/topnav-search.html")
+    @@include("partials/modals.html")
 
     <!-- MAIN CONTENT
     ================================================== -->
@@ -33,10 +34,16 @@
           <div class="col-12 col-lg-8 col-xl-8">
             <ul class="list-group bg-white mx-lg-n3">
               <li class="list-group-item pl-4 border-bottom-0">
-                <a class="d-block w-100 align-items-center text-body align-items-center d-flex" href="search-results.html"><i class="fe fe-tag text-muted mr-4 h3 mb-0 align-center"></i>Foods</a>
+                <small class="text-secondary">Search by</small>
+              </li>
+              <li class="list-group-item pl-4 border-bottom-0">
+                <a class="d-block w-100 align-items-center text-body align-items-center d-flex" href="#" data-toggle="modal" data-target="#modalFilter">Nutrients density</a>
+              </li>
+              <li class="list-group-item pl-4 border-bottom-0">
+                <a class="d-block w-100 align-items-center text-body align-items-center d-flex" href="#" data-toggle="modal" data-target="#modalFilter">Keto score</a>
               </li>
               <li class="list-group-item pl-4">
-                <a class="d-block w-100 align-items-center text-body align-items-center d-flex" href="search-results.html"><i class="fe fe-file-text text-muted mr-4 h3 mb-0 align-center"></i>Recipes</a>
+                <a class="d-block w-100 align-items-center text-body align-items-center d-flex" href="#" data-toggle="modal" data-target="#modalFilter">Insulin index</a>
               </li>
             </ul>
           </div>
